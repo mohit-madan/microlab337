@@ -10,12 +10,12 @@ ENTITY ram IS
 	);
 	PORT
 	(
-		clock			: IN  std_logic;
-		data			: IN  std_logic_vector(DATA_WIDTH - 1 DOWNTO 0);
-		write_address			: IN  std_logic_vector(ADDRESS_WIDTH - 1 DOWNTO 0);
-		read_address			: IN  std_logic_vector(ADDRESS_WIDTH - 1 DOWNTO 0);
-		we			: IN  std_logic;
-		q			: OUT std_logic_vector(DATA_WIDTH - 1 DOWNTO 0)
+		clock				: IN  std_logic;
+		data				: IN  std_logic_vector(DATA_WIDTH - 1 DOWNTO 0);
+		write_address		: IN  std_logic_vector(ADDRESS_WIDTH - 1 DOWNTO 0);
+		read_address		: IN  std_logic_vector(ADDRESS_WIDTH - 1 DOWNTO 0);
+		we					: IN  std_logic;
+		q					: OUT std_logic_vector(DATA_WIDTH - 1 DOWNTO 0)
 	);
 END ram;
 
