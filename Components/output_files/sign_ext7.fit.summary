@@ -1,0 +1,11 @@
+Fitter Status : Successful - Sun Oct 29 09:12:02 2017
+Quartus Prime Version : 16.1.0 Build 196 10/24/2016 SJ Lite Edition
+Revision Name : sign_ext7
+Top-level Entity Name : alu
+Family : MAX V
+Device : 5M1270ZT144C5
+Timing Models : Final
+Total logic elements : 123 / 1,270 ( 10 % )
+Total pins : 55 / 114 ( 48 % )
+Total virtual pins : 0
+UFM blocks : 0 / 1 ( 0 % )

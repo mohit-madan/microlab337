@@ -1,0 +1,462 @@
+TimeQuest Timing Analyzer report for sign_ext7
+Sun Oct 29 09:12:06 2017
+Quartus Prime Version 16.1.0 Build 196 10/24/2016 SJ Lite Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. TimeQuest Timing Analyzer Summary
+  3. Parallel Compilation
+  4. Clocks
+  5. Fmax Summary
+  6. Setup Summary
+  7. Hold Summary
+  8. Recovery Summary
+  9. Removal Summary
+ 10. Minimum Pulse Width Summary
+ 11. Setup: 'op_sel[0]'
+ 12. Hold: 'op_sel[0]'
+ 13. Setup Transfers
+ 14. Hold Transfers
+ 15. Report TCCS
+ 16. Report RSKM
+ 17. Unconstrained Paths Summary
+ 18. Clock Status Summary
+ 19. Unconstrained Input Ports
+ 20. Unconstrained Output Ports
+ 21. Unconstrained Input Ports
+ 22. Unconstrained Output Ports
+ 23. TimeQuest Timing Analyzer Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 2016  Intel Corporation. All rights reserved.
+Your use of Intel Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Intel Program License 
+Subscription Agreement, the Intel Quartus Prime License Agreement,
+the Intel MegaCore Function License Agreement, or other 
+applicable license agreement, including, without limitation, 
+that your use is for the sole purpose of programming logic 
+devices manufactured by Intel and sold by Intel or its 
+authorized distributors.  Please refer to the applicable 
+agreement for further details.
+
+
+
++-----------------------------------------------------------------------------+
+; TimeQuest Timing Analyzer Summary                                           ;
++-----------------------+-----------------------------------------------------+
+; Quartus Prime Version ; Version 16.1.0 Build 196 10/24/2016 SJ Lite Edition ;
+; Timing Analyzer       ; TimeQuest                                           ;
+; Revision Name         ; sign_ext7                                           ;
+; Device Family         ; MAX V                                               ;
+; Device Name           ; 5M1270ZT144C5                                       ;
+; Timing Models         ; Final                                               ;
+; Delay Model           ; Slow Model                                          ;
+; Rise/Fall Delays      ; Unavailable                                         ;
++-----------------------+-----------------------------------------------------+
+
+
++------------------------------------------+
+; Parallel Compilation                     ;
++----------------------------+-------------+
+; Processors                 ; Number      ;
++----------------------------+-------------+
+; Number detected on machine ; 4           ;
+; Maximum allowed            ; 2           ;
+;                            ;             ;
+; Average used               ; 1.00        ;
+; Maximum used               ; 1           ;
+;                            ;             ;
+; Usage by Processor         ; % Time Used ;
+;     Processor 1            ; 100.0%      ;
++----------------------------+-------------+
+
+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Clocks                                                                                                                                                                                ;
++------------+------+--------+------------+-------+-------+------------+-----------+-------------+-------+--------+-----------+------------+----------+--------+--------+---------------+
+; Clock Name ; Type ; Period ; Frequency  ; Rise  ; Fall  ; Duty Cycle ; Divide by ; Multiply by ; Phase ; Offset ; Edge List ; Edge Shift ; Inverted ; Master ; Source ; Targets       ;
++------------+------+--------+------------+-------+-------+------------+-----------+-------------+-------+--------+-----------+------------+----------+--------+--------+---------------+
+; op_sel[0]  ; Base ; 1.000  ; 1000.0 MHz ; 0.000 ; 0.500 ;            ;           ;             ;       ;        ;           ;            ;          ;        ;        ; { op_sel[0] } ;
++------------+------+--------+------------+-------+-------+------------+-----------+-------------+-------+--------+-----------+------------+----------+--------+--------+---------------+
+
+
++-------------------------------------------------+
+; Fmax Summary                                    ;
++-----------+-----------------+------------+------+
+; Fmax      ; Restricted Fmax ; Clock Name ; Note ;
++-----------+-----------------+------------+------+
+; 147.8 MHz ; 147.8 MHz       ; op_sel[0]  ;      ;
++-----------+-----------------+------------+------+
+This panel reports FMAX for every clock in the design, regardless of the user-specified clock periods.  FMAX is only computed for paths where the source and destination registers or ports are driven by the same clock.  Paths of different clocks, including generated clocks, are ignored.  For paths between a clock and its inversion, FMAX is computed as if the rising and falling edges are scaled along with FMAX, such that the duty cycle (in terms of a percentage) is maintained. Altera recommends that you always use clock constraints and other slack reports for sign-off analysis.
+
+
++------------------------------------+
+; Setup Summary                      ;
++-----------+--------+---------------+
+; Clock     ; Slack  ; End Point TNS ;
++-----------+--------+---------------+
+; op_sel[0] ; -2.883 ; -35.967       ;
++-----------+--------+---------------+
+
+
++------------------------------------+
+; Hold Summary                       ;
++-----------+--------+---------------+
+; Clock     ; Slack  ; End Point TNS ;
++-----------+--------+---------------+
+; op_sel[0] ; -0.306 ; -0.309        ;
++-----------+--------+---------------+
+
+
+--------------------
+; Recovery Summary ;
+--------------------
+No paths to report.
+
+
+-------------------
+; Removal Summary ;
+-------------------
+No paths to report.
+
+
++------------------------------------+
+; Minimum Pulse Width Summary        ;
++-----------+--------+---------------+
+; Clock     ; Slack  ; End Point TNS ;
++-----------+--------+---------------+
+; op_sel[0] ; -2.289 ; -6.381        ;
++-----------+--------+---------------+
+
+
++------------------------------------------------------------------------------------------------------------+
+; Setup: 'op_sel[0]'                                                                                         ;
++--------+-----------+-----------------+--------------+-------------+--------------+------------+------------+
+; Slack  ; From Node ; To Node         ; Launch Clock ; Latch Clock ; Relationship ; Clock Skew ; Data Delay ;
++--------+-----------+-----------------+--------------+-------------+--------------+------------+------------+
+; -2.883 ; op_sel[0] ; reg_c[7]$latch  ; op_sel[0]    ; op_sel[0]   ; 0.500        ; 9.687      ; 10.937     ;
+; -2.651 ; op_sel[0] ; reg_c[10]$latch ; op_sel[0]    ; op_sel[0]   ; 0.500        ; 9.682      ; 10.701     ;
+; -2.405 ; op_sel[0] ; reg_c[0]$latch  ; op_sel[0]    ; op_sel[0]   ; 0.500        ; 9.617      ; 10.644     ;
+; -2.397 ; op_sel[0] ; reg_c[13]$latch ; op_sel[0]    ; op_sel[0]   ; 0.500        ; 9.683      ; 11.151     ;
+; -2.383 ; op_sel[0] ; reg_c[7]$latch  ; op_sel[0]    ; op_sel[0]   ; 1.000        ; 9.687      ; 10.937     ;
+; -2.348 ; op_sel[0] ; reg_c[8]$latch  ; op_sel[0]    ; op_sel[0]   ; 0.500        ; 9.691      ; 10.573     ;
+; -2.309 ; op_sel[0] ; reg_c[15]$latch ; op_sel[0]    ; op_sel[0]   ; 0.500        ; 10.031     ; 10.999     ;
+; -2.211 ; op_sel[0] ; reg_c[4]$latch  ; op_sel[0]    ; op_sel[0]   ; 0.500        ; 9.634      ; 10.915     ;
+; -2.151 ; op_sel[0] ; reg_c[10]$latch ; op_sel[0]    ; op_sel[0]   ; 1.000        ; 9.682      ; 10.701     ;
+; -2.109 ; op_sel[0] ; reg_c[11]$latch ; op_sel[0]    ; op_sel[0]   ; 0.500        ; 9.969      ; 10.719     ;
+; -2.084 ; op_sel[0] ; reg_c[3]$latch  ; op_sel[0]    ; op_sel[0]   ; 0.500        ; 9.973      ; 10.725     ;
+; -2.050 ; op_sel[0] ; reg_c[12]$latch ; op_sel[0]    ; op_sel[0]   ; 0.500        ; 9.976      ; 10.694     ;
+; -1.980 ; op_sel[0] ; reg_c[1]$latch  ; op_sel[0]    ; op_sel[0]   ; 0.500        ; 9.631      ; 10.681     ;
+; -1.905 ; op_sel[0] ; reg_c[0]$latch  ; op_sel[0]    ; op_sel[0]   ; 1.000        ; 9.617      ; 10.644     ;
+; -1.897 ; op_sel[0] ; reg_c[13]$latch ; op_sel[0]    ; op_sel[0]   ; 1.000        ; 9.683      ; 11.151     ;
+; -1.856 ; op_sel[0] ; reg_c[14]$latch ; op_sel[0]    ; op_sel[0]   ; 0.500        ; 9.685      ; 10.601     ;
+; -1.852 ; op_sel[0] ; z$latch         ; op_sel[0]    ; op_sel[0]   ; 0.500        ; 5.482      ; 6.358      ;
+; -1.848 ; op_sel[0] ; reg_c[8]$latch  ; op_sel[0]    ; op_sel[0]   ; 1.000        ; 9.691      ; 10.573     ;
+; -1.809 ; op_sel[0] ; reg_c[15]$latch ; op_sel[0]    ; op_sel[0]   ; 1.000        ; 10.031     ; 10.999     ;
+; -1.760 ; op_sel[0] ; reg_c[9]$latch  ; op_sel[0]    ; op_sel[0]   ; 0.500        ; 9.689      ; 10.520     ;
+; -1.719 ; op_sel[0] ; reg_c[6]$latch  ; op_sel[0]    ; op_sel[0]   ; 0.500        ; 9.705      ; 10.486     ;
+; -1.715 ; op_sel[0] ; reg_c[5]$latch  ; op_sel[0]    ; op_sel[0]   ; 0.500        ; 9.700      ; 10.485     ;
+; -1.711 ; op_sel[0] ; reg_c[4]$latch  ; op_sel[0]    ; op_sel[0]   ; 1.000        ; 9.634      ; 10.915     ;
+; -1.638 ; op_sel[0] ; reg_c[2]$latch  ; op_sel[0]    ; op_sel[0]   ; 0.500        ; 9.635      ; 10.335     ;
+; -1.609 ; op_sel[0] ; reg_c[11]$latch ; op_sel[0]    ; op_sel[0]   ; 1.000        ; 9.969      ; 10.719     ;
+; -1.584 ; op_sel[0] ; reg_c[3]$latch  ; op_sel[0]    ; op_sel[0]   ; 1.000        ; 9.973      ; 10.725     ;
+; -1.550 ; op_sel[0] ; reg_c[12]$latch ; op_sel[0]    ; op_sel[0]   ; 1.000        ; 9.976      ; 10.694     ;
+; -1.480 ; op_sel[0] ; reg_c[1]$latch  ; op_sel[0]    ; op_sel[0]   ; 1.000        ; 9.631      ; 10.681     ;
+; -1.356 ; op_sel[0] ; reg_c[14]$latch ; op_sel[0]    ; op_sel[0]   ; 1.000        ; 9.685      ; 10.601     ;
+; -1.352 ; op_sel[0] ; z$latch         ; op_sel[0]    ; op_sel[0]   ; 1.000        ; 5.482      ; 6.358      ;
+; -1.260 ; op_sel[0] ; reg_c[9]$latch  ; op_sel[0]    ; op_sel[0]   ; 1.000        ; 9.689      ; 10.520     ;
+; -1.219 ; op_sel[0] ; reg_c[6]$latch  ; op_sel[0]    ; op_sel[0]   ; 1.000        ; 9.705      ; 10.486     ;
+; -1.215 ; op_sel[0] ; reg_c[5]$latch  ; op_sel[0]    ; op_sel[0]   ; 1.000        ; 9.700      ; 10.485     ;
+; -1.138 ; op_sel[0] ; reg_c[2]$latch  ; op_sel[0]    ; op_sel[0]   ; 1.000        ; 9.635      ; 10.335     ;
++--------+-----------+-----------------+--------------+-------------+--------------+------------+------------+
+
+
++------------------------------------------------------------------------------------------------------------+
+; Hold: 'op_sel[0]'                                                                                          ;
++--------+-----------+-----------------+--------------+-------------+--------------+------------+------------+
+; Slack  ; From Node ; To Node         ; Launch Clock ; Latch Clock ; Relationship ; Clock Skew ; Data Delay ;
++--------+-----------+-----------------+--------------+-------------+--------------+------------+------------+
+; -0.306 ; op_sel[0] ; z$latch         ; op_sel[0]    ; op_sel[0]   ; 0.000        ; 6.664      ; 6.358      ;
+; -0.003 ; op_sel[0] ; reg_c[12]$latch ; op_sel[0]    ; op_sel[0]   ; 0.000        ; 9.976      ; 9.973      ;
+; 0.006  ; op_sel[0] ; reg_c[11]$latch ; op_sel[0]    ; op_sel[0]   ; 0.000        ; 9.969      ; 9.975      ;
+; 0.185  ; op_sel[0] ; reg_c[3]$latch  ; op_sel[0]    ; op_sel[0]   ; 0.000        ; 9.973      ; 10.158     ;
+; 0.194  ; op_sel[0] ; z$latch         ; op_sel[0]    ; op_sel[0]   ; -0.500       ; 6.664      ; 6.358      ;
+; 0.210  ; op_sel[0] ; reg_c[7]$latch  ; op_sel[0]    ; op_sel[0]   ; 0.000        ; 9.687      ; 9.897      ;
+; 0.273  ; op_sel[0] ; reg_c[15]$latch ; op_sel[0]    ; op_sel[0]   ; 0.000        ; 10.031     ; 10.304     ;
+; 0.291  ; op_sel[0] ; reg_c[9]$latch  ; op_sel[0]    ; op_sel[0]   ; 0.000        ; 9.689      ; 9.980      ;
+; 0.318  ; op_sel[0] ; reg_c[8]$latch  ; op_sel[0]    ; op_sel[0]   ; 0.000        ; 9.691      ; 10.009     ;
+; 0.323  ; op_sel[0] ; reg_c[5]$latch  ; op_sel[0]    ; op_sel[0]   ; 0.000        ; 9.700      ; 10.023     ;
+; 0.337  ; op_sel[0] ; reg_c[1]$latch  ; op_sel[0]    ; op_sel[0]   ; 0.000        ; 9.631      ; 9.968      ;
+; 0.403  ; op_sel[0] ; reg_c[6]$latch  ; op_sel[0]    ; op_sel[0]   ; 0.000        ; 9.705      ; 10.108     ;
+; 0.417  ; op_sel[0] ; reg_c[14]$latch ; op_sel[0]    ; op_sel[0]   ; 0.000        ; 9.685      ; 10.102     ;
+; 0.424  ; op_sel[0] ; reg_c[2]$latch  ; op_sel[0]    ; op_sel[0]   ; 0.000        ; 9.635      ; 10.059     ;
+; 0.497  ; op_sel[0] ; reg_c[12]$latch ; op_sel[0]    ; op_sel[0]   ; -0.500       ; 9.976      ; 9.973      ;
+; 0.506  ; op_sel[0] ; reg_c[11]$latch ; op_sel[0]    ; op_sel[0]   ; -0.500       ; 9.969      ; 9.975      ;
+; 0.562  ; op_sel[0] ; reg_c[13]$latch ; op_sel[0]    ; op_sel[0]   ; 0.000        ; 9.683      ; 10.245     ;
+; 0.566  ; op_sel[0] ; reg_c[10]$latch ; op_sel[0]    ; op_sel[0]   ; 0.000        ; 9.682      ; 10.248     ;
+; 0.571  ; op_sel[0] ; reg_c[4]$latch  ; op_sel[0]    ; op_sel[0]   ; 0.000        ; 9.634      ; 10.205     ;
+; 0.580  ; op_sel[0] ; reg_c[0]$latch  ; op_sel[0]    ; op_sel[0]   ; 0.000        ; 9.617      ; 10.197     ;
+; 0.685  ; op_sel[0] ; reg_c[3]$latch  ; op_sel[0]    ; op_sel[0]   ; -0.500       ; 9.973      ; 10.158     ;
+; 0.710  ; op_sel[0] ; reg_c[7]$latch  ; op_sel[0]    ; op_sel[0]   ; -0.500       ; 9.687      ; 9.897      ;
+; 0.773  ; op_sel[0] ; reg_c[15]$latch ; op_sel[0]    ; op_sel[0]   ; -0.500       ; 10.031     ; 10.304     ;
+; 0.791  ; op_sel[0] ; reg_c[9]$latch  ; op_sel[0]    ; op_sel[0]   ; -0.500       ; 9.689      ; 9.980      ;
+; 0.818  ; op_sel[0] ; reg_c[8]$latch  ; op_sel[0]    ; op_sel[0]   ; -0.500       ; 9.691      ; 10.009     ;
+; 0.823  ; op_sel[0] ; reg_c[5]$latch  ; op_sel[0]    ; op_sel[0]   ; -0.500       ; 9.700      ; 10.023     ;
+; 0.837  ; op_sel[0] ; reg_c[1]$latch  ; op_sel[0]    ; op_sel[0]   ; -0.500       ; 9.631      ; 9.968      ;
+; 0.903  ; op_sel[0] ; reg_c[6]$latch  ; op_sel[0]    ; op_sel[0]   ; -0.500       ; 9.705      ; 10.108     ;
+; 0.917  ; op_sel[0] ; reg_c[14]$latch ; op_sel[0]    ; op_sel[0]   ; -0.500       ; 9.685      ; 10.102     ;
+; 0.924  ; op_sel[0] ; reg_c[2]$latch  ; op_sel[0]    ; op_sel[0]   ; -0.500       ; 9.635      ; 10.059     ;
+; 1.062  ; op_sel[0] ; reg_c[13]$latch ; op_sel[0]    ; op_sel[0]   ; -0.500       ; 9.683      ; 10.245     ;
+; 1.066  ; op_sel[0] ; reg_c[10]$latch ; op_sel[0]    ; op_sel[0]   ; -0.500       ; 9.682      ; 10.248     ;
+; 1.071  ; op_sel[0] ; reg_c[4]$latch  ; op_sel[0]    ; op_sel[0]   ; -0.500       ; 9.634      ; 10.205     ;
+; 1.080  ; op_sel[0] ; reg_c[0]$latch  ; op_sel[0]    ; op_sel[0]   ; -0.500       ; 9.617      ; 10.197     ;
++--------+-----------+-----------------+--------------+-------------+--------------+------------+------------+
+
+
++--------------------------------------------------------------------+
+; Setup Transfers                                                    ;
++------------+-----------+----------+----------+----------+----------+
+; From Clock ; To Clock  ; RR Paths ; FR Paths ; RF Paths ; FF Paths ;
++------------+-----------+----------+----------+----------+----------+
+; op_sel[0]  ; op_sel[0] ; 0        ; 0        ; 79       ; 79       ;
++------------+-----------+----------+----------+----------+----------+
+Entries labeled "false path" only account for clock-to-clock false paths and not path-based false paths. As a result, actual path counts may be lower than reported.
+
+
++--------------------------------------------------------------------+
+; Hold Transfers                                                     ;
++------------+-----------+----------+----------+----------+----------+
+; From Clock ; To Clock  ; RR Paths ; FR Paths ; RF Paths ; FF Paths ;
++------------+-----------+----------+----------+----------+----------+
+; op_sel[0]  ; op_sel[0] ; 0        ; 0        ; 79       ; 79       ;
++------------+-----------+----------+----------+----------+----------+
+Entries labeled "false path" only account for clock-to-clock false paths and not path-based false paths. As a result, actual path counts may be lower than reported.
+
+
+---------------
+; Report TCCS ;
+---------------
+No dedicated SERDES Transmitter circuitry present in device or used in design
+
+
+---------------
+; Report RSKM ;
+---------------
+No non-DPA dedicated SERDES Receiver circuitry present in device or used in design
+
+
++------------------------------------------------+
+; Unconstrained Paths Summary                    ;
++---------------------------------+-------+------+
+; Property                        ; Setup ; Hold ;
++---------------------------------+-------+------+
+; Illegal Clocks                  ; 0     ; 0    ;
+; Unconstrained Clocks            ; 0     ; 0    ;
+; Unconstrained Input Ports       ; 34    ; 34   ;
+; Unconstrained Input Port Paths  ; 304   ; 304  ;
+; Unconstrained Output Ports      ; 17    ; 17   ;
+; Unconstrained Output Port Paths ; 17    ; 17   ;
++---------------------------------+-------+------+
+
+
++--------------------------------------------+
+; Clock Status Summary                       ;
++-----------+-----------+------+-------------+
+; Target    ; Clock     ; Type ; Status      ;
++-----------+-----------+------+-------------+
+; op_sel[0] ; op_sel[0] ; Base ; Constrained ;
++-----------+-----------+------+-------------+
+
+
++---------------------------------------------------------------------------------------------------+
+; Unconstrained Input Ports                                                                         ;
++------------+--------------------------------------------------------------------------------------+
+; Input Port ; Comment                                                                              ;
++------------+--------------------------------------------------------------------------------------+
+; op_sel[1]  ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; op_sel[2]  ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; reg_a[0]   ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; reg_a[1]   ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; reg_a[2]   ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; reg_a[3]   ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; reg_a[4]   ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; reg_a[5]   ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; reg_a[6]   ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; reg_a[7]   ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; reg_a[8]   ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; reg_a[9]   ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; reg_a[10]  ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; reg_a[11]  ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; reg_a[12]  ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; reg_a[13]  ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; reg_a[14]  ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; reg_a[15]  ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; reg_b[0]   ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; reg_b[1]   ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; reg_b[2]   ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; reg_b[3]   ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; reg_b[4]   ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; reg_b[5]   ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; reg_b[6]   ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; reg_b[7]   ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; reg_b[8]   ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; reg_b[9]   ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; reg_b[10]  ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; reg_b[11]  ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; reg_b[12]  ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; reg_b[13]  ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; reg_b[14]  ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; reg_b[15]  ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
++------------+--------------------------------------------------------------------------------------+
+
+
++-----------------------------------------------------------------------------------------------------+
+; Unconstrained Output Ports                                                                          ;
++-------------+---------------------------------------------------------------------------------------+
+; Output Port ; Comment                                                                               ;
++-------------+---------------------------------------------------------------------------------------+
+; reg_c[0]    ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; reg_c[1]    ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; reg_c[2]    ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; reg_c[3]    ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; reg_c[4]    ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; reg_c[5]    ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; reg_c[6]    ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; reg_c[7]    ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; reg_c[8]    ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; reg_c[9]    ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; reg_c[10]   ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; reg_c[11]   ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; reg_c[12]   ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; reg_c[13]   ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; reg_c[14]   ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; reg_c[15]   ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; z           ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
++-------------+---------------------------------------------------------------------------------------+
+
+
++---------------------------------------------------------------------------------------------------+
+; Unconstrained Input Ports                                                                         ;
++------------+--------------------------------------------------------------------------------------+
+; Input Port ; Comment                                                                              ;
++------------+--------------------------------------------------------------------------------------+
+; op_sel[1]  ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; op_sel[2]  ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; reg_a[0]   ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; reg_a[1]   ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; reg_a[2]   ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; reg_a[3]   ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; reg_a[4]   ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; reg_a[5]   ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; reg_a[6]   ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; reg_a[7]   ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; reg_a[8]   ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; reg_a[9]   ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; reg_a[10]  ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; reg_a[11]  ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; reg_a[12]  ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; reg_a[13]  ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; reg_a[14]  ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; reg_a[15]  ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; reg_b[0]   ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; reg_b[1]   ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; reg_b[2]   ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; reg_b[3]   ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; reg_b[4]   ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; reg_b[5]   ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; reg_b[6]   ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; reg_b[7]   ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; reg_b[8]   ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; reg_b[9]   ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; reg_b[10]  ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; reg_b[11]  ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; reg_b[12]  ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; reg_b[13]  ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; reg_b[14]  ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; reg_b[15]  ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
++------------+--------------------------------------------------------------------------------------+
+
+
++-----------------------------------------------------------------------------------------------------+
+; Unconstrained Output Ports                                                                          ;
++-------------+---------------------------------------------------------------------------------------+
+; Output Port ; Comment                                                                               ;
++-------------+---------------------------------------------------------------------------------------+
+; reg_c[0]    ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; reg_c[1]    ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; reg_c[2]    ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; reg_c[3]    ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; reg_c[4]    ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; reg_c[5]    ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; reg_c[6]    ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; reg_c[7]    ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; reg_c[8]    ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; reg_c[9]    ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; reg_c[10]   ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; reg_c[11]   ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; reg_c[12]   ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; reg_c[13]   ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; reg_c[14]   ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; reg_c[15]   ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; z           ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
++-------------+---------------------------------------------------------------------------------------+
+
+
++------------------------------------+
+; TimeQuest Timing Analyzer Messages ;
++------------------------------------+
+Info: *******************************************************************
+Info: Running Quartus Prime TimeQuest Timing Analyzer
+    Info: Version 16.1.0 Build 196 10/24/2016 SJ Lite Edition
+    Info: Processing started: Sun Oct 29 09:12:05 2017
+Info: Command: quartus_sta sign_ext7 -c sign_ext7
+Info: qsta_default_script.tcl version: #1
+Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
+Info (20030): Parallel compilation is enabled and will use 2 of the 2 processors detected
+Info (21077): Low junction temperature is 0 degrees C
+Info (21077): High junction temperature is 85 degrees C
+Info (334003): Started post-fitting delay annotation
+Info (334004): Delay annotation completed successfully
+Warning (335093): TimeQuest Timing Analyzer is analyzing 17 combinational loops as latches. For more details, run the Check Timing command in the TimeQuest Timing Analyzer or view the "User-Specified and Inferred Latches" table in the Analysis & Synthesis report.
+Critical Warning (332012): Synopsys Design Constraints File file not found: 'sign_ext7.sdc'. A Synopsys Design Constraints File is required by the TimeQuest Timing Analyzer to get proper timing constraints. Without it, the Compiler will not properly optimize the design.
+Info (332142): No user constrained base clocks found in the design. Calling "derive_clocks -period 1.0"
+Info (332105): Deriving Clocks
+    Info (332105): create_clock -period 1.000 -name op_sel[0] op_sel[0]
+Info: Found TIMEQUEST_REPORT_SCRIPT_INCLUDE_DEFAULT_ANALYSIS = ON
+Info: Can't run Report Timing Closure Recommendations. The current device family is not supported.
+Critical Warning (332148): Timing requirements not met
+Info (332146): Worst-case setup slack is -2.883
+    Info (332119):     Slack       End Point TNS Clock 
+    Info (332119): ========= =================== =====================
+    Info (332119):    -2.883             -35.967 op_sel[0] 
+Info (332146): Worst-case hold slack is -0.306
+    Info (332119):     Slack       End Point TNS Clock 
+    Info (332119): ========= =================== =====================
+    Info (332119):    -0.306              -0.309 op_sel[0] 
+Info (332140): No Recovery paths to report
+Info (332140): No Removal paths to report
+Info (332146): Worst-case minimum pulse width slack is -2.289
+    Info (332119):     Slack       End Point TNS Clock 
+    Info (332119): ========= =================== =====================
+    Info (332119):    -2.289              -6.381 op_sel[0] 
+Info (332001): The selected device family is not supported by the report_metastability command.
+Info (332102): Design is not fully constrained for setup requirements
+Info (332102): Design is not fully constrained for hold requirements
+Info: Quartus Prime TimeQuest Timing Analyzer was successful. 0 errors, 4 warnings
+    Info: Peak virtual memory: 723 megabytes
+    Info: Processing ended: Sun Oct 29 09:12:06 2017
+    Info: Elapsed time: 00:00:01
+    Info: Total CPU time (on all processors): 00:00:01
+
+

@@ -4,7 +4,7 @@ use ieee.numeric_std.all;
 
 entity priorityEncoder is
      port(
-         din 	: in STD_LOGIC_VECTOR(7 downto 0);
+         din 	: in STD_LOGIC_VECTOR(15 downto 0);
          dout 	: out STD_LOGIC_VECTOR(2 downto 0);
 	 valid  : out STD_LOGIC :='1'
 
