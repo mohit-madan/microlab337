@@ -96,8 +96,6 @@ end component;
 component alu is
  Port ( reg_a 	: in signed(15 downto 0); 			--input A
  		reg_b  	: in signed(15 downto 0); 			--input B
- 		en_c 	: in STD_LOGIC; 					--enable for carry flag
- 		en_z 	: in STD_LOGIC; 					-- enable for zero flag
  		op_sel 	: in STD_LOGIC_VECTOR (2 downto 0); --operation select
  		reg_c 	: out signed(15 downto 0); 			--output
 	    c 		: out STD_LOGIC;					--carry flag
@@ -115,7 +113,8 @@ component sign_ext is
  	);
 end component;
 
-	signal 
+------------signals----------------------------
+	signal t1_alu_mux,t1_mema_mux,t1_memd_mux,rfd1_t1_mux,t3_t1_mux,o_t1_mux,mux_t1
 
 begin
 
