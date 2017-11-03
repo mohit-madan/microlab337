@@ -102,98 +102,98 @@ begin
 	case state is
 				when s1=>
 					if (opcode = '0000') and ((op_type = '01' and zero = '0') or (op_type = '10' and carry = '0')) then
-						state <= s5;
+						next_state <= s5;
 					else if opcode = '0010' and ((op_type = '10' and carry = '0') or (op_type = '01' and zero = '0')) then
-						state <= s5;
+						next_state <= s5;
 					else if opcode = '0011' then
-						state <= s9;
+						next_state <= s9;
 					else if opcode = '1000' then
-						state <= s18;
+						next_state <= s18;
 					else if opcode = '1001' then
-						state <= s13;
+						next_state <= s13;
 					else
-						state <= s2;
+						next_state <= s2;
 					end if;
 					
 				when s2=>
 					if opcode = '0001' or opcode = '0100' then
-						state <= s7;
+						next_state <= s7;
 					else if opcode = '0110' or opcode = '0111' then					then
-						state <= s8;
+						next_state <= s8;
 					else 
-						state <= s3;
+						next_state <= s3;
 					end if;
 				
 				when s3=>
 					if opcode = '0100' then
-						state <= s12;
+						next_state <= s12;
 					if opcode = '1100' then
 						if zero = '0' then
-							state <= s5;
+							next_state <= s5;
 						else 
-							state <= s17;
+							next_state <= s17;
 					else
-						state <= s4;
+						next_state <= s4;
 				
 				when s4 =>
-					state <= s5;
+					next_state <= s5;
 				
 				when s5 =>
-					state <= s1;
+					next_state <= s1;
 					
 				when s6 =>
-					state <= s1;
+					next_state <= s1;
 				
 				when s7 =>
 					if opcode = '0001' then
-						state <= s4;
+						next_state <= s4;
 					else if opcode = '0100' then	
-						state <= s11;
+						next_state <= s11;
 					else if opcode = '0101' then
-						state <= s14;
+						next_state <= s14;
 					end if;
 					
 				when s8 =>
 					if ((opcode = '0110') or (opcode = '0111')) 
 						if valid = '0' then
-							state <= s5;
+							next_state <= s5;
 						else
-							state <= s10;
+							next_state <= s10;
 					end if;
 					
 				when s9 =>
-					state <= s5;
+					next_state <= s5;
 				
 				when s10 =>
 					if opcode = '0110' then
-						state <= s8;
+						next_state <= s8;
 					else if opcode = '0111' then
-						state <= s15;
+						next_state <= s15;
 					end if;
 					
 				when s11 =>
-					state <= s3;
+					next_state <= s3;
 					
 				when s12 =>
-					state <= s5;
+					next_state <= s5;
 					
 				when s13 =>
-					state <= s6;
+					next_state <= s6;
 					
 				when s15 =>
-					state <= s16;
+					next_state <= s16;
 					
 				when s16 =>
-					state <= s8;
+					next_state <= s8;
 				
 				when s17 =>
-					state <= s5;
+					next_state <= s5;
 					
 				when s18 =>
-					state <= s19;
+					next_state <= s19;
 				
 				when s19 =>
-					state <= s1;
+					next_state <= s1;
 									
 			end case;
 			
