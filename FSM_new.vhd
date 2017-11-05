@@ -8,6 +8,7 @@ entity mealy_4s is
 		reset	 		: in	std_logic;
 		carry,zero,valid	: in 	std_logic;
 		IR_3_5			: in std_logic_vector(2 down to 0) ;
+		IR_7			: in std_logic
 		control_store 	: out 	std_logic_vector (19 downto 0);
 		data_out		: out	std_logic_vector(1 downto 0)
 	);
@@ -156,7 +157,7 @@ begin
 					
 				when s8 =>
 					if (opcode = '0110') then
-						if (valid = '0' and IR_3_5= '111') then
+						if (valid = '0' and IR_7= '1') then
 							next_state <= s1;
 						else if (valid ='1')
 							next_state <= s10;
