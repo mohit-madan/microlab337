@@ -6,7 +6,8 @@ entity mealy_4s is
 		opcode			: in	std_logic_vector(3 downto 0);
 		op_type 		: in 	std_logic ;
 		reset	 		: in	std_logic;
-		carry,zero,valid: in 	std_logic;
+		carry,zero,valid	: in 	std_logic;
+		IR_3_5			: in std_logic_vector(2 down to 0) ;
 		control_store 	: out 	std_logic_vector (19 downto 0);
 		data_out		: out	std_logic_vector(1 downto 0)
 	);
@@ -16,7 +17,7 @@ end entity;
 architecture rtl of mealy_4s is
 
 	-- Build an enumerated op_type for the state machine
-	type state_op_type is (s1, s2, s3, s4, s5, s6, s7, s8, s9, s10, s11, s12, s13, s14, s15, s16, s17, s18, s19);
+	type state_op_type is (s1, s2, s3, s4, s5, s6, s7, s8, s9, s10, s11, s12, s13, s14, s15, s16, s17, s18, s19, s20);
 	
 	-- Register to hold the current state
 	signal state, next_state : state_type;
@@ -91,7 +92,9 @@ begin
 					control_store <= '00000100000011101001';	
 					
 				when s19 =>
-					control_store <= '00000000000000001010';	
+					control_store <= '00000000000000001010';
+				when s20 =>
+					control_store <= '00100001000000001100';	
 					
 			end case;
 			
@@ -101,24 +104,19 @@ NEXT_STATE_DECODE : process (state, opcode,op_type,carry,zero,valid)
 begin
 	case state is
 				when s1=>
-					if (opcode = '0000') and ((op_type = '01' and zero = '0') or (op_type = '10' and carry = '0')) then
+					next_state <= s2 ;
+					
+				when s2=>
+
+				if (opcode = '0000') and ((op_type = '01' and zero = '0') or (op_type = '10' and carry = '0')) then
 						next_state <= s5;
+					if opcode = '0001' or opcode = '0100' then
+						next_state <= s7;
 					else if opcode = '0010' and ((op_type = '10' and carry = '0') or (op_type = '01' and zero = '0')) then
 						next_state <= s5;
 					else if opcode = '0011' then
 						next_state <= s9;
-					else if opcode = '1000' then
-						next_state <= s18;
-					else if opcode = '1001' then
-						next_state <= s13;
-					else
-						next_state <= s2;
-					end if;
-					
-				when s2=>
-					if opcode = '0001' or opcode = '0100' then
-						next_state <= s7;
-					else if opcode = '0110' or opcode = '0111' then					then
+					else if opcode = '0110' or opcode = '0111' then
 						next_state <= s8;
 					else 
 						next_state <= s3;
@@ -136,7 +134,10 @@ begin
 						next_state <= s4;
 				
 				when s4 =>
-					next_state <= s5;
+					if(IR_3_5 = '000' )
+						next_state <= s1;
+					else
+						next_state <= s5 ;
 				
 				when s5 =>
 					next_state <= s1;
@@ -154,15 +155,22 @@ begin
 					end if;
 					
 				when s8 =>
-					if ((opcode = '0110') or (opcode = '0111')) 
-						if valid = '0' then
-							next_state <= s5;
-						else
+					if (opcode = '0110') then
+						if (valid = '0' and IR_3_5= '111') then
+							next_state <= s1;
+						else if (valid ='1')
 							next_state <= s10;
+					if (opcode = '0111' and valid = '1') then
+							next_state <= s20 ;
+					else
+						next_state <= s5 ;
 					end if;
 					
 				when s9 =>
-					next_state <= s5;
+					if (IR_3_5 != '111') then
+						next_state <= s1 ;
+					else
+						next_state <= s5;
 				
 				when s10 =>
 					if opcode = '0110' then
@@ -175,7 +183,10 @@ begin
 					next_state <= s3;
 					
 				when s12 =>
-					next_state <= s5;
+					if (IR_3_5 != '111') then
+						next_state <= s1 ;
+					else
+						next_state <= s5;
 					
 				when s13 =>
 					next_state <= s6;
@@ -194,6 +205,8 @@ begin
 				
 				when s19 =>
 					next_state <= s1;
+				when s20 =>
+					next_state <= s15;
 									
 			end case;
 			
