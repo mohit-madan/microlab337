@@ -11,11 +11,11 @@ ENTITY ram IS
 	PORT
 	(
 		clock				: IN  std_logic;
-		data				: IN  std_logic_vector(DATA_WIDTH - 1 DOWNTO 0);
-		write_address		: IN  std_logic_vector(ADDRESS_WIDTH - 1 DOWNTO 0);
-		read_address		: IN  std_logic_vector(ADDRESS_WIDTH - 1 DOWNTO 0);
-		we					: IN  std_logic;
-		q					: OUT std_logic_vector(DATA_WIDTH - 1 DOWNTO 0)
+		data_in				: IN  std_logic_vector(DATA_WIDTH - 1 DOWNTO 0);
+		address				: IN  std_logic_vector(ADDRESS_WIDTH - 1 DOWNTO 0);
+		wr_en				: IN  std_logic;
+		rd_en				: IN  std_logic;
+		data_out			: OUT std_logic_vector(DATA_WIDTH - 1 DOWNTO 0)
 	);
 END ram;
 
@@ -27,11 +27,12 @@ BEGIN
 	PROCESS (clock)
 	BEGIN
 		IF (clock'event AND clock = '1') THEN
-			IF (we = '1') THEN
-			    ram_block(to_integer(unsigned(write_address))) <= data;
+			IF (wr_en = '1') THEN
+			    ram_block(to_integer(unsigned(address))) <= data_in;
 			END IF;
-
-			q <= ram_block(to_integer(unsigned(read_address)));
+			IF (rd_en = '1') THEN
+				data_out <= ram_block(to_integer(unsigned(address)));
+			END IF;
 		END IF;
 	END PROCESS;
 END rtl;
