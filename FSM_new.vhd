@@ -10,7 +10,6 @@ entity mealy_4s is
 		IR_3_5			: in std_logic_vector(2 down to 0) ;
 		IR_7			: in std_logic
 		control_store 	: out 	std_logic_vector (19 downto 0);
-		data_out		: out	std_logic_vector(1 downto 0)
 	);
 	
 end entity;
