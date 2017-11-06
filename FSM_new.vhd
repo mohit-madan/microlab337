@@ -7,7 +7,7 @@ entity mealy_4s is
 		op_type 		: in 	std_logic ;
 		reset	 		: in	std_logic;
 		carry,zero,valid	: in 	std_logic;
-		IR_3_5			: in std_logic_vector(2 down to 0) ;
+		IR_3_5			: in std_logic ;
 		IR_7			: in std_logic
 		control_store 	: out 	std_logic_vector (19 downto 0);
 	);
@@ -134,7 +134,7 @@ begin
 						next_state <= s4;
 				
 				when s4 =>
-					if(IR_3_5 = '000' )
+					if(IR_3_5 = '0' )
 						next_state <= s1;
 					else
 						next_state <= s5 ;
@@ -167,7 +167,7 @@ begin
 					end if;
 					
 				when s9 =>
-					if (IR_3_5 != '111') then
+					if (IR_3_5 != '1') then
 						next_state <= s1 ;
 					else
 						next_state <= s5;
@@ -183,7 +183,7 @@ begin
 					next_state <= s3;
 					
 				when s12 =>
-					if (IR_3_5 != '111') then
+					if (IR_3_5 != '1') then
 						next_state <= s1 ;
 					else
 						next_state <= s5;
