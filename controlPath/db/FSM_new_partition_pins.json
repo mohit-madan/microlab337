@@ -1,0 +1,149 @@
+{
+	"partitions" : [
+		{
+			"name" : "Top",
+			"pins" : [
+				{
+					"name" : "control_store[0]",
+					"strict" : false
+				},
+				{
+					"name" : "control_store[1]",
+					"strict" : false
+				},
+				{
+					"name" : "control_store[2]",
+					"strict" : false
+				},
+				{
+					"name" : "control_store[3]",
+					"strict" : false
+				},
+				{
+					"name" : "control_store[4]",
+					"strict" : false
+				},
+				{
+					"name" : "control_store[5]",
+					"strict" : false
+				},
+				{
+					"name" : "control_store[6]",
+					"strict" : false
+				},
+				{
+					"name" : "control_store[7]",
+					"strict" : false
+				},
+				{
+					"name" : "control_store[8]",
+					"strict" : false
+				},
+				{
+					"name" : "control_store[9]",
+					"strict" : false
+				},
+				{
+					"name" : "control_store[10]",
+					"strict" : false
+				},
+				{
+					"name" : "control_store[11]",
+					"strict" : false
+				},
+				{
+					"name" : "control_store[12]",
+					"strict" : false
+				},
+				{
+					"name" : "control_store[13]",
+					"strict" : false
+				},
+				{
+					"name" : "control_store[14]",
+					"strict" : false
+				},
+				{
+					"name" : "control_store[15]",
+					"strict" : false
+				},
+				{
+					"name" : "control_store[16]",
+					"strict" : false
+				},
+				{
+					"name" : "control_store[17]",
+					"strict" : false
+				},
+				{
+					"name" : "control_store[18]",
+					"strict" : false
+				},
+				{
+					"name" : "control_store[19]",
+					"strict" : false
+				},
+				{
+					"name" : "clk",
+					"strict" : false
+				},
+				{
+					"name" : "reset",
+					"strict" : false
+				},
+				{
+					"name" : "opcode[0]",
+					"strict" : false
+				},
+				{
+					"name" : "opcode[2]",
+					"strict" : false
+				},
+				{
+					"name" : "opcode[3]",
+					"strict" : false
+				},
+				{
+					"name" : "opcode[1]",
+					"strict" : false
+				},
+				{
+					"name" : "IR_7",
+					"strict" : false
+				},
+				{
+					"name" : "valid",
+					"strict" : false
+				},
+				{
+					"name" : "IR_3_5[0]",
+					"strict" : false
+				},
+				{
+					"name" : "IR_3_5[1]",
+					"strict" : false
+				},
+				{
+					"name" : "IR_3_5[2]",
+					"strict" : false
+				},
+				{
+					"name" : "zero",
+					"strict" : false
+				},
+				{
+					"name" : "op_type[0]",
+					"strict" : false
+				},
+				{
+					"name" : "op_type[1]",
+					"strict" : false
+				},
+				{
+					"name" : "carry",
+					"strict" : false
+				}
+			]
+		}
+	]
+}

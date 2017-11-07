@@ -8,8 +8,8 @@ Port(
 	clk,reset   	 : in  STD_LOGIC; 
 	valid 	 		 : out STD_LOGIC;
 	carry,zeroflag 	 : out STD_LOGIC;
-	op_code  		 : out STD_LOGIC(3 downto 0);
-	IR_3_5 			 : out STD_LOGIC(2 downto 0)
+	op_code  		 : out STD_LOGIC_VECTOR(3 downto 0);
+	IR_3_5 			 : out STD_LOGIC_VECTOR(2 downto 0);
 	IR_7      		 : out STD_LOGIC 
 	);
 end datapath;
@@ -46,7 +46,7 @@ end component;
 ---------------mux 8 to 1 -------------------------
  
 component mux8to1 is
-generic(input_width := integer);
+generic(input_width : integer);
 port(
 	d0 : STD_LOGIC_VECTOR(15 downto 0);
 	d1 : STD_LOGIC_VECTOR(15 downto 0);
@@ -227,10 +227,10 @@ port map(
 muxt1 : mux4to1
 generic map(16)
 port map(
-	d0   => '0000000000000000',
+	d0   => "0000000000000000",
 	d1   => t3,
 	d2   => D1,
-	d3   => '1111111111111111',
+	d3   => "1111111111111111",
 	sel  => C(1 to 2),
 	dout => muxout_t1
 );
@@ -241,7 +241,7 @@ port map(
 	d0   => alu_out,
 	d1   => D1,
 	d2   => se8_out,
-	d3   => '1111111111111111',
+	d3   => "1111111111111111",
 	sel  => C(6 to 7),
 	dout => muxout_t4
 );
@@ -252,7 +252,7 @@ port map(
 	d0   => D1,
 	d1   => t1,
 	d2   => t3,
-	d3   => '1111111111111111',
+	d3   => "1111111111111111",
 	sel  => mema(1 downto 0),
 	dout => muxout_mema
 );
@@ -260,7 +260,7 @@ port map(
 alu_b_mux : mux4to1
 generic map(16)
 port map(
-	d0   => '1111111111111111',
+	d0   => "1111111111111111",
 	d1   => t2,
 	d2   => t5,
 	d3   => pc_out,
@@ -283,11 +283,10 @@ port map(
 a1_rf : mux4to1 
 generic map(3)
 port map(
-	d0   => '111',
+	d0   => "111",
 	d1   => ir_out(11 downto 9),
-	d2   => pr_enc_out 
-	d3   => '111',
-	
+	d2   => pr_enc_out, 
+	d3   => "111",
 	sel  => a1_mux(1 downto 0),
 	dout => muxout_a1
 );
@@ -296,13 +295,13 @@ a3_rf : mux8to1
 generic map(3)
 port map(
 	d0   => ir_out(5 downto 3),
-	d1   => '111',
+	d1   => "111",
 	d2   => ir_out(11 downto 9),
 	d3   => pr_enc_out,
 	d4   => ir_out(8 downto 6),
-	d5   => '1111111111111111',
-	d6   => '1111111111111111',
-	d7   => '1111111111111111',
+	d5   => "1111111111111111",
+	d6   => "1111111111111111",
+	d7   => "1111111111111111",
 	
 	sel  => a3_mux(2 downto 0),
 	dout => muxout_a3
@@ -316,9 +315,9 @@ port map(
 	d2   => se10_out,
 	d3   => t4,
 	d4   => se7_out,
-	d5   => '1111111111111111',
-	d6   => '1111111111111111',
-	d7   => '1111111111111111',
+	d5   => "1111111111111111",
+	d6   => "1111111111111111",
+	d7   => "1111111111111111",
 	
 	sel  => alu1_mux (2 downto 0),
 	dout => muxout_alu_a
@@ -326,13 +325,13 @@ port map(
 
 
 ---- alu instantiation--------
-alu: alu
+my_alu: alu
 port map(
 	reg_a	=> muxout_alu_a, 	
 	reg_b  	=> muxout_alu_b,
 	en_c 	=> alu_enc,
 	en_z 	=> alu_enz,
-	op_sel 	=> , --will be provided from opcode
+	op_sel 	=> "111", --will be provided from opcode
 	reg_c 	=> alu_out,
 	c 		=> carry, --output from the entity
 	z 		=> zeroflag -- output from the entity
@@ -483,11 +482,11 @@ a1_mux(1) <= C(16) and C(17) and not C(18) and not C(19);
 a1_mux(0) <= not C(16) and not C(17) and C(18) and not C(19);
 
 a3_mux(2) <= C(16) and not C(17) and not C(18) and not C(19); 
-a3_mux(1) <= not C(16) and C(17) and (C(18) or C(19)) or (C(16) and not C(17) and not C(18) and C(19));
-a3_mux(0) <= C(16) and not C(17) and C(18) or not C(16) and C(17) and (not(C(18) xor C(19)));
+a3_mux(1) <= (not C(16) and C(17) and (C(18) or C(19))) or (C(16) and not C(17) and not C(18) and C(19));
+a3_mux(0) <= (C(16) and not C(17) and C(18)) or (not C(16) and C(17) and (not(C(18) xor C(19))));
 
-d3_mux(1) <= C(18) and (not C(16) and C(17)) or (C(16) and not C(17) and C(19));
-d3_mux(0) <= not C(16) and C(17) and (not C(18) or C(19)) or (C(16) and C(17) and C(18));
+d3_mux(1) <= C(18) and ((not C(16) and C(17)) or (C(16) and not C(17) and C(19)));
+d3_mux(0) <= (not C(16) and C(17) and (not C(18) or C(19))) or ((C(16) and C(17) and C(18)));
 
 
 ---memory
@@ -506,13 +505,13 @@ alu_enz <= (not C(13) and C(14)) or (C(13) and (not C(14)) and C(15));
 
 alu1_mux(2) <= C(13) and C(14);
 alu1_mux(1) <= C(15) and (C(13) xor C(14));
-alu1_mux(0) <= (C(13) and not C(14)) or C(14) and not (C(13) xor C(14));
+alu1_mux(0) <= (C(13) and not C(14)) or (C(14) and not (C(13) xor C(14)));
 
 alu2_mux(1) <= C(13) and (C(14) or C(15));
 alu2_mux(0) <= C(14);
 
 ------ opcode for user -----------------
-opcode <= ir_out(15 downto 12);
+op_code <= ir_out(15 downto 12);
 IR_3_5 <= ir_out(5 downto 3);
 IR_7   <= ir_out(7);
 
