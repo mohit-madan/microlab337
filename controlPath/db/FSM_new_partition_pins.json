@@ -116,15 +116,7 @@
 					"strict" : false
 				},
 				{
-					"name" : "IR_3_5[0]",
-					"strict" : false
-				},
-				{
-					"name" : "IR_3_5[1]",
-					"strict" : false
-				},
-				{
-					"name" : "IR_3_5[2]",
+					"name" : "IR_3_5",
 					"strict" : false
 				},
 				{

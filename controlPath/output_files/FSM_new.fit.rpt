@@ -1,5 +1,5 @@
 Fitter report for FSM_new
-Tue Nov  7 21:45:15 2017
+Tue Nov  7 23:26:58 2017
 Quartus Prime Version 16.1.0 Build 196 10/24/2016 SJ Lite Edition
 
 
@@ -68,18 +68,18 @@ agreement for further details.
 +----------------------------------------------------------------------------------+
 ; Fitter Summary                                                                   ;
 +------------------------------------+---------------------------------------------+
-; Fitter Status                      ; Successful - Tue Nov  7 21:45:15 2017       ;
+; Fitter Status                      ; Successful - Tue Nov  7 23:26:58 2017       ;
 ; Quartus Prime Version              ; 16.1.0 Build 196 10/24/2016 SJ Lite Edition ;
 ; Revision Name                      ; FSM_new                                     ;
 ; Top-level Entity Name              ; FSM_new                                     ;
 ; Family                             ; Cyclone IV E                                ;
 ; Device                             ; EP4CE22F17C6                                ;
 ; Timing Models                      ; Final                                       ;
-; Total logic elements               ; 74 / 22,320 ( < 1 % )                       ;
-;     Total combinational functions  ; 73 / 22,320 ( < 1 % )                       ;
+; Total logic elements               ; 70 / 22,320 ( < 1 % )                       ;
+;     Total combinational functions  ; 70 / 22,320 ( < 1 % )                       ;
 ;     Dedicated logic registers      ; 16 / 22,320 ( < 1 % )                       ;
 ; Total registers                    ; 16                                          ;
-; Total pins                         ; 37 / 154 ( 24 % )                           ;
+; Total pins                         ; 35 / 154 ( 23 % )                           ;
 ; Total virtual pins                 ; 0                                           ;
 ; Total memory bits                  ; 0 / 608,256 ( 0 % )                         ;
 ; Embedded Multiplier 9-bit elements ; 0 / 132 ( 0 % )                             ;
@@ -155,12 +155,12 @@ agreement for further details.
 ; Number detected on machine ; 4           ;
 ; Maximum allowed            ; 2           ;
 ;                            ;             ;
-; Average used               ; 1.00        ;
+; Average used               ; 1.01        ;
 ; Maximum used               ; 2           ;
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
-;     Processor 2            ;   0.4%      ;
+;     Processor 2            ;   0.6%      ;
 +----------------------------+-------------+
 
 
@@ -170,8 +170,8 @@ agreement for further details.
 ; Type                ; Total [A + B]      ; From Design Partitions [A] ; From Rapid Recompile [B] ;
 +---------------------+--------------------+----------------------------+--------------------------+
 ; Placement (by node) ;                    ;                            ;                          ;
-;     -- Requested    ; 0.00 % ( 0 / 177 ) ; 0.00 % ( 0 / 177 )         ; 0.00 % ( 0 / 177 )       ;
-;     -- Achieved     ; 0.00 % ( 0 / 177 ) ; 0.00 % ( 0 / 177 )         ; 0.00 % ( 0 / 177 )       ;
+;     -- Requested    ; 0.00 % ( 0 / 170 ) ; 0.00 % ( 0 / 170 )         ; 0.00 % ( 0 / 170 )       ;
+;     -- Achieved     ; 0.00 % ( 0 / 170 ) ; 0.00 % ( 0 / 170 )         ; 0.00 % ( 0 / 170 )       ;
 ;                     ;                    ;                            ;                          ;
 ; Routing (by net)    ;                    ;                            ;                          ;
 ;     -- Requested    ; 0.00 % ( 0 / 0 )   ; 0.00 % ( 0 / 0 )           ; 0.00 % ( 0 / 0 )         ;
@@ -194,7 +194,7 @@ agreement for further details.
 +--------------------------------+-----------------------+-------------------------+-------------------+---------------------+-------+
 ; Partition Name                 ; Preservation Achieved ; Preservation Level Used ; Netlist Type Used ; Preservation Method ; Notes ;
 +--------------------------------+-----------------------+-------------------------+-------------------+---------------------+-------+
-; Top                            ; 0.00 % ( 0 / 167 )    ; N/A                     ; Source File       ; N/A                 ;       ;
+; Top                            ; 0.00 % ( 0 / 160 )    ; N/A                     ; Source File       ; N/A                 ;       ;
 ; hard_block:auto_generated_inst ; 0.00 % ( 0 / 10 )     ; N/A                     ; Source File       ; N/A                 ;       ;
 +--------------------------------+-----------------------+-------------------------+-------------------+---------------------+-------+
 
@@ -210,29 +210,29 @@ The pin-out file can be found in /home/mohit/microlab337/controlPath/output_file
 +---------------------------------------------+-----------------------+
 ; Resource                                    ; Usage                 ;
 +---------------------------------------------+-----------------------+
-; Total logic elements                        ; 74 / 22,320 ( < 1 % ) ;
-;     -- Combinational with no register       ; 58                    ;
-;     -- Register only                        ; 1                     ;
-;     -- Combinational with a register        ; 15                    ;
+; Total logic elements                        ; 70 / 22,320 ( < 1 % ) ;
+;     -- Combinational with no register       ; 54                    ;
+;     -- Register only                        ; 0                     ;
+;     -- Combinational with a register        ; 16                    ;
 ;                                             ;                       ;
 ; Logic element usage by number of LUT inputs ;                       ;
-;     -- 4 input functions                    ; 31                    ;
-;     -- 3 input functions                    ; 31                    ;
+;     -- 4 input functions                    ; 25                    ;
+;     -- 3 input functions                    ; 34                    ;
 ;     -- <=2 input functions                  ; 11                    ;
-;     -- Register only                        ; 1                     ;
+;     -- Register only                        ; 0                     ;
 ;                                             ;                       ;
 ; Logic elements by mode                      ;                       ;
-;     -- normal mode                          ; 73                    ;
+;     -- normal mode                          ; 70                    ;
 ;     -- arithmetic mode                      ; 0                     ;
 ;                                             ;                       ;
 ; Total registers*                            ; 16 / 23,018 ( < 1 % ) ;
 ;     -- Dedicated logic registers            ; 16 / 22,320 ( < 1 % ) ;
 ;     -- I/O registers                        ; 0 / 698 ( 0 % )       ;
 ;                                             ;                       ;
-; Total LABs:  partially or completely used   ; 7 / 1,395 ( < 1 % )   ;
+; Total LABs:  partially or completely used   ; 9 / 1,395 ( < 1 % )   ;
 ; Virtual pins                                ; 0                     ;
-; I/O pins                                    ; 37 / 154 ( 24 % )     ;
-;     -- Clock pins                           ; 2 / 7 ( 29 % )        ;
+; I/O pins                                    ; 35 / 154 ( 23 % )     ;
+;     -- Clock pins                           ; 3 / 7 ( 43 % )        ;
 ;     -- Dedicated input pins                 ; 0 / 9 ( 0 % )         ;
 ;                                             ;                       ;
 ; M9Ks                                        ; 0 / 66 ( 0 % )        ;
@@ -247,12 +247,12 @@ The pin-out file can be found in /home/mohit/microlab337/controlPath/output_file
 ; ASMI blocks                                 ; 0 / 1 ( 0 % )         ;
 ; Oscillator blocks                           ; 0 / 1 ( 0 % )         ;
 ; Impedance control blocks                    ; 0 / 4 ( 0 % )         ;
-; Average interconnect usage (total/H/V)      ; 0.3% / 0.2% / 0.3%    ;
-; Peak interconnect usage (total/H/V)         ; 4.0% / 3.4% / 4.8%    ;
+; Average interconnect usage (total/H/V)      ; 0.2% / 0.2% / 0.3%    ;
+; Peak interconnect usage (total/H/V)         ; 3.2% / 3.5% / 3.0%    ;
 ; Maximum fan-out                             ; 16                    ;
-; Highest non-global fan-out                  ; 12                    ;
-; Total fan-out                               ; 352                   ;
-; Average fan-out                             ; 1.99                  ;
+; Highest non-global fan-out                  ; 10                    ;
+; Total fan-out                               ; 334                   ;
+; Average fan-out                             ; 1.98                  ;
 +---------------------------------------------+-----------------------+
 *  Register count does not include registers inside RAM blocks or DSP blocks.
 
@@ -265,29 +265,29 @@ The pin-out file can be found in /home/mohit/microlab337/controlPath/output_file
 +---------------------------------------------+----------------------+--------------------------------+
 ; Difficulty Clustering Region                ; Low                  ; Low                            ;
 ;                                             ;                      ;                                ;
-; Total logic elements                        ; 74 / 22320 ( < 1 % ) ; 0 / 22320 ( 0 % )              ;
-;     -- Combinational with no register       ; 58                   ; 0                              ;
-;     -- Register only                        ; 1                    ; 0                              ;
-;     -- Combinational with a register        ; 15                   ; 0                              ;
+; Total logic elements                        ; 70 / 22320 ( < 1 % ) ; 0 / 22320 ( 0 % )              ;
+;     -- Combinational with no register       ; 54                   ; 0                              ;
+;     -- Register only                        ; 0                    ; 0                              ;
+;     -- Combinational with a register        ; 16                   ; 0                              ;
 ;                                             ;                      ;                                ;
 ; Logic element usage by number of LUT inputs ;                      ;                                ;
-;     -- 4 input functions                    ; 31                   ; 0                              ;
-;     -- 3 input functions                    ; 31                   ; 0                              ;
+;     -- 4 input functions                    ; 25                   ; 0                              ;
+;     -- 3 input functions                    ; 34                   ; 0                              ;
 ;     -- <=2 input functions                  ; 11                   ; 0                              ;
-;     -- Register only                        ; 1                    ; 0                              ;
+;     -- Register only                        ; 0                    ; 0                              ;
 ;                                             ;                      ;                                ;
 ; Logic elements by mode                      ;                      ;                                ;
-;     -- normal mode                          ; 73                   ; 0                              ;
+;     -- normal mode                          ; 70                   ; 0                              ;
 ;     -- arithmetic mode                      ; 0                    ; 0                              ;
 ;                                             ;                      ;                                ;
 ; Total registers                             ; 16                   ; 0                              ;
 ;     -- Dedicated logic registers            ; 16 / 22320 ( < 1 % ) ; 0 / 22320 ( 0 % )              ;
 ;     -- I/O registers                        ; 0                    ; 0                              ;
 ;                                             ;                      ;                                ;
-; Total LABs:  partially or completely used   ; 7 / 1395 ( < 1 % )   ; 0 / 1395 ( 0 % )               ;
+; Total LABs:  partially or completely used   ; 9 / 1395 ( < 1 % )   ; 0 / 1395 ( 0 % )               ;
 ;                                             ;                      ;                                ;
 ; Virtual pins                                ; 0                    ; 0                              ;
-; I/O pins                                    ; 37                   ; 0                              ;
+; I/O pins                                    ; 35                   ; 0                              ;
 ; Embedded Multiplier 9-bit elements          ; 0 / 132 ( 0 % )      ; 0 / 132 ( 0 % )                ;
 ; Total memory bits                           ; 0                    ; 0                              ;
 ; Total RAM block bits                        ; 0                    ; 0                              ;
@@ -300,7 +300,7 @@ The pin-out file can be found in /home/mohit/microlab337/controlPath/output_file
 ;     -- Registered Output Connections        ; 0                    ; 0                              ;
 ;                                             ;                      ;                                ;
 ; Internal Connections                        ;                      ;                                ;
-;     -- Total Connections                    ; 347                  ; 5                              ;
+;     -- Total Connections                    ; 329                  ; 5                              ;
 ;     -- Registered Connections               ; 88                   ; 0                              ;
 ;                                             ;                      ;                                ;
 ; External Connections                        ;                      ;                                ;
@@ -308,7 +308,7 @@ The pin-out file can be found in /home/mohit/microlab337/controlPath/output_file
 ;     -- hard_block:auto_generated_inst       ; 0                    ; 0                              ;
 ;                                             ;                      ;                                ;
 ; Partition Interface                         ;                      ;                                ;
-;     -- Input Ports                          ; 15                   ; 0                              ;
+;     -- Input Ports                          ; 13                   ; 0                              ;
 ;     -- Output Ports                         ; 22                   ; 0                              ;
 ;     -- Bidir Ports                          ; 0                    ; 0                              ;
 ;                                             ;                      ;                                ;
@@ -333,21 +333,19 @@ The pin-out file can be found in /home/mohit/microlab337/controlPath/output_file
 +------------+-------+----------+--------------+--------------+--------------+-----------------------+--------------------+--------+----------------+---------------+-----------------+----------+--------------+--------------+---------------------------+----------------------+-----------+
 ; Name       ; Pin # ; I/O Bank ; X coordinate ; Y coordinate ; Z coordinate ; Combinational Fan-Out ; Registered Fan-Out ; Global ; Input Register ; Power Up High ; PCI I/O Enabled ; Bus Hold ; Weak Pull Up ; I/O Standard ; Termination Control Block ; Location assigned by ; Slew Rate ;
 +------------+-------+----------+--------------+--------------+--------------+-----------------------+--------------------+--------+----------------+---------------+-----------------+----------+--------------+--------------+---------------------------+----------------------+-----------+
-; IR_3_5[0]  ; M6    ; 3        ; 7            ; 0            ; 7            ; 4                     ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; --                        ; Fitter               ; no        ;
-; IR_3_5[1]  ; N5    ; 3        ; 5            ; 0            ; 7            ; 3                     ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; --                        ; Fitter               ; no        ;
-; IR_3_5[2]  ; N6    ; 3        ; 5            ; 0            ; 0            ; 3                     ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; --                        ; Fitter               ; no        ;
-; IR_7       ; P2    ; 2        ; 0            ; 4            ; 14           ; 3                     ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; --                        ; Fitter               ; no        ;
-; carry      ; P3    ; 3        ; 1            ; 0            ; 14           ; 1                     ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; --                        ; Fitter               ; no        ;
+; IR_3_5     ; F2    ; 1        ; 0            ; 24           ; 21           ; 2                     ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; --                        ; Fitter               ; no        ;
+; IR_7       ; J2    ; 2        ; 0            ; 15           ; 0            ; 3                     ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; --                        ; Fitter               ; no        ;
+; carry      ; K5    ; 2        ; 0            ; 7            ; 7            ; 1                     ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; --                        ; Fitter               ; no        ;
 ; clk        ; E1    ; 1        ; 0            ; 16           ; 7            ; 16                    ; 0                  ; yes    ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; --                        ; Fitter               ; no        ;
-; op_type[0] ; N3    ; 3        ; 1            ; 0            ; 21           ; 1                     ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; --                        ; Fitter               ; no        ;
-; op_type[1] ; J2    ; 2        ; 0            ; 15           ; 0            ; 1                     ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; --                        ; Fitter               ; no        ;
-; opcode[0]  ; M1    ; 2        ; 0            ; 16           ; 21           ; 9                     ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; --                        ; Fitter               ; no        ;
-; opcode[1]  ; P1    ; 2        ; 0            ; 4            ; 21           ; 12                    ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; --                        ; Fitter               ; no        ;
-; opcode[2]  ; K5    ; 2        ; 0            ; 7            ; 7            ; 10                    ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; --                        ; Fitter               ; no        ;
-; opcode[3]  ; L3    ; 2        ; 0            ; 10           ; 21           ; 10                    ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; --                        ; Fitter               ; no        ;
+; op_type[0] ; L1    ; 2        ; 0            ; 11           ; 7            ; 1                     ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; --                        ; Fitter               ; no        ;
+; op_type[1] ; N1    ; 2        ; 0            ; 7            ; 0            ; 1                     ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; --                        ; Fitter               ; no        ;
+; opcode[0]  ; E16   ; 6        ; 53           ; 17           ; 7            ; 10                    ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; --                        ; Fitter               ; no        ;
+; opcode[1]  ; T3    ; 3        ; 1            ; 0            ; 0            ; 10                    ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; --                        ; Fitter               ; no        ;
+; opcode[2]  ; E15   ; 6        ; 53           ; 17           ; 0            ; 6                     ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; --                        ; Fitter               ; no        ;
+; opcode[3]  ; N6    ; 3        ; 5            ; 0            ; 0            ; 7                     ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; --                        ; Fitter               ; no        ;
 ; reset      ; M2    ; 2        ; 0            ; 16           ; 14           ; 16                    ; 0                  ; yes    ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; --                        ; Fitter               ; no        ;
-; valid      ; R4    ; 3        ; 5            ; 0            ; 21           ; 5                     ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; --                        ; Fitter               ; no        ;
-; zero       ; L4    ; 2        ; 0            ; 6            ; 14           ; 3                     ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; --                        ; Fitter               ; no        ;
+; valid      ; F3    ; 1        ; 0            ; 26           ; 14           ; 5                     ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; --                        ; Fitter               ; no        ;
+; zero       ; L3    ; 2        ; 0            ; 10           ; 21           ; 3                     ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; --                        ; Fitter               ; no        ;
 +------------+-------+----------+--------------+--------------+--------------+-----------------------+--------------------+--------+----------------+---------------+-----------------+----------+--------------+--------------+---------------------------+----------------------+-----------+
 
 
@@ -356,28 +354,28 @@ The pin-out file can be found in /home/mohit/microlab337/controlPath/output_file
 +-------------------+-------+----------+--------------+--------------+--------------+-----------------+------------------------+---------------+-----------+-----------------+------------+---------------+----------+--------------+--------------+------------------+-----------------------------------+---------------------------+----------------------------+-----------------------------+----------------------+----------------------+---------------------+
 ; Name              ; Pin # ; I/O Bank ; X coordinate ; Y coordinate ; Z coordinate ; Output Register ; Output Enable Register ; Power Up High ; Slew Rate ; PCI I/O Enabled ; Open Drain ; TRI Primitive ; Bus Hold ; Weak Pull Up ; I/O Standard ; Current Strength ; Termination                       ; Termination Control Block ; Output Buffer Pre-emphasis ; Voltage Output Differential ; Location assigned by ; Output Enable Source ; Output Enable Group ;
 +-------------------+-------+----------+--------------+--------------+--------------+-----------------+------------------------+---------------+-----------+-----------------+------------+---------------+----------+--------------+--------------+------------------+-----------------------------------+---------------------------+----------------------------+-----------------------------+----------------------+----------------------+---------------------+
-; control_store[0]  ; R6    ; 3        ; 14           ; 0            ; 7            ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; Fitter               ; -                    ; -                   ;
-; control_store[10] ; R1    ; 2        ; 0            ; 5            ; 21           ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; Fitter               ; -                    ; -                   ;
-; control_store[11] ; P6    ; 3        ; 11           ; 0            ; 21           ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; Fitter               ; -                    ; -                   ;
-; control_store[12] ; L2    ; 2        ; 0            ; 11           ; 0            ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; Fitter               ; -                    ; -                   ;
-; control_store[13] ; L1    ; 2        ; 0            ; 11           ; 7            ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; Fitter               ; -                    ; -                   ;
-; control_store[14] ; R3    ; 3        ; 1            ; 0            ; 7            ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; Fitter               ; -                    ; -                   ;
-; control_store[15] ; N2    ; 2        ; 0            ; 8            ; 21           ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; Fitter               ; -                    ; -                   ;
-; control_store[16] ; L7    ; 3        ; 16           ; 0            ; 21           ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; Fitter               ; -                    ; -                   ;
-; control_store[17] ; T4    ; 3        ; 5            ; 0            ; 14           ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; Fitter               ; -                    ; -                   ;
-; control_store[18] ; T5    ; 3        ; 14           ; 0            ; 14           ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; Fitter               ; -                    ; -                   ;
-; control_store[19] ; T3    ; 3        ; 1            ; 0            ; 0            ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; Fitter               ; -                    ; -                   ;
-; control_store[1]  ; T6    ; 3        ; 14           ; 0            ; 0            ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; Fitter               ; -                    ; -                   ;
-; control_store[2]  ; R5    ; 3        ; 14           ; 0            ; 21           ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; Fitter               ; -                    ; -                   ;
-; control_store[3]  ; J1    ; 2        ; 0            ; 15           ; 7            ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; Fitter               ; -                    ; -                   ;
-; control_store[4]  ; N1    ; 2        ; 0            ; 7            ; 0            ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; Fitter               ; -                    ; -                   ;
-; control_store[5]  ; G2    ; 1        ; 0            ; 23           ; 14           ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; Fitter               ; -                    ; -                   ;
-; control_store[6]  ; K1    ; 2        ; 0            ; 12           ; 7            ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; Fitter               ; -                    ; -                   ;
-; control_store[7]  ; K2    ; 2        ; 0            ; 12           ; 0            ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; Fitter               ; -                    ; -                   ;
-; control_store[8]  ; M7    ; 3        ; 11           ; 0            ; 14           ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; Fitter               ; -                    ; -                   ;
-; control_store[9]  ; T2    ; 3        ; 3            ; 0            ; 0            ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; Fitter               ; -                    ; -                   ;
-; data_out[0]       ; C11   ; 7        ; 38           ; 34           ; 0            ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; Fitter               ; -                    ; -                   ;
-; data_out[1]       ; B4    ; 8        ; 7            ; 34           ; 0            ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; Fitter               ; -                    ; -                   ;
+; control_store[0]  ; L2    ; 2        ; 0            ; 11           ; 0            ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; Fitter               ; -                    ; -                   ;
+; control_store[10] ; J1    ; 2        ; 0            ; 15           ; 7            ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; Fitter               ; -                    ; -                   ;
+; control_store[11] ; D1    ; 1        ; 0            ; 25           ; 7            ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; Fitter               ; -                    ; -                   ;
+; control_store[12] ; C2    ; 1        ; 0            ; 27           ; 0            ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; Fitter               ; -                    ; -                   ;
+; control_store[13] ; G2    ; 1        ; 0            ; 23           ; 14           ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; Fitter               ; -                    ; -                   ;
+; control_store[14] ; G1    ; 1        ; 0            ; 23           ; 21           ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; Fitter               ; -                    ; -                   ;
+; control_store[15] ; D5    ; 8        ; 5            ; 34           ; 14           ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; Fitter               ; -                    ; -                   ;
+; control_store[16] ; R1    ; 2        ; 0            ; 5            ; 21           ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; Fitter               ; -                    ; -                   ;
+; control_store[17] ; K1    ; 2        ; 0            ; 12           ; 7            ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; Fitter               ; -                    ; -                   ;
+; control_store[18] ; R4    ; 3        ; 5            ; 0            ; 21           ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; Fitter               ; -                    ; -                   ;
+; control_store[19] ; G5    ; 1        ; 0            ; 24           ; 14           ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; Fitter               ; -                    ; -                   ;
+; control_store[1]  ; L4    ; 2        ; 0            ; 6            ; 14           ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; Fitter               ; -                    ; -                   ;
+; control_store[2]  ; P2    ; 2        ; 0            ; 4            ; 14           ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; Fitter               ; -                    ; -                   ;
+; control_store[3]  ; B1    ; 1        ; 0            ; 28           ; 7            ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; Fitter               ; -                    ; -                   ;
+; control_store[4]  ; F1    ; 1        ; 0            ; 23           ; 0            ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; Fitter               ; -                    ; -                   ;
+; control_store[5]  ; N2    ; 2        ; 0            ; 8            ; 21           ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; Fitter               ; -                    ; -                   ;
+; control_store[6]  ; K2    ; 2        ; 0            ; 12           ; 0            ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; Fitter               ; -                    ; -                   ;
+; control_store[7]  ; T2    ; 3        ; 3            ; 0            ; 0            ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; Fitter               ; -                    ; -                   ;
+; control_store[8]  ; B3    ; 8        ; 3            ; 34           ; 0            ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; Fitter               ; -                    ; -                   ;
+; control_store[9]  ; P1    ; 2        ; 0            ; 4            ; 21           ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; Fitter               ; -                    ; -                   ;
+; data_out[0]       ; R12   ; 4        ; 36           ; 0            ; 14           ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; Fitter               ; -                    ; -                   ;
+; data_out[1]       ; D14   ; 7        ; 51           ; 34           ; 7            ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; Fitter               ; -                    ; -                   ;
 +-------------------+-------+----------+--------------+--------------+--------------+-----------------+------------------------+---------------+-----------+-----------------+------------+---------------+----------+--------------+--------------+------------------+-----------------------------------+---------------------------+----------------------------+-----------------------------+----------------------+----------------------+---------------------+
 
 
@@ -399,7 +397,7 @@ The pin-out file can be found in /home/mohit/microlab337/controlPath/output_file
 ; G12      ; MSEL2                       ; -                        ; -                       ; Dedicated Programming Pin ;
 ; G12      ; MSEL3                       ; -                        ; -                       ; Dedicated Programming Pin ;
 ; F16      ; DIFFIO_R4n, nCEO            ; Use as programming pin   ; ~ALTERA_nCEO~           ; Dual Purpose Pin          ;
-; B4       ; DIFFIO_T3p, DATA11          ; Use as regular IO        ; data_out[1]             ; Dual Purpose Pin          ;
+; B3       ; DATA12, DQS1T/CQ1T#,CDPCLK7 ; Use as regular IO        ; control_store[8]        ; Dual Purpose Pin          ;
 +----------+-----------------------------+--------------------------+-------------------------+---------------------------+
 
 
@@ -408,14 +406,14 @@ The pin-out file can be found in /home/mohit/microlab337/controlPath/output_file
 +----------+-------------------+---------------+--------------+
 ; I/O Bank ; Usage             ; VCCIO Voltage ; VREF Voltage ;
 +----------+-------------------+---------------+--------------+
-; 1        ; 6 / 14 ( 43 % )   ; 2.5V          ; --           ;
-; 2        ; 16 / 16 ( 100 % ) ; 2.5V          ; --           ;
-; 3        ; 17 / 25 ( 68 % )  ; 2.5V          ; --           ;
-; 4        ; 0 / 20 ( 0 % )    ; 2.5V          ; --           ;
+; 1        ; 14 / 14 ( 100 % ) ; 2.5V          ; --           ;
+; 2        ; 15 / 16 ( 94 % )  ; 2.5V          ; --           ;
+; 3        ; 4 / 25 ( 16 % )   ; 2.5V          ; --           ;
+; 4        ; 1 / 20 ( 5 % )    ; 2.5V          ; --           ;
 ; 5        ; 0 / 18 ( 0 % )    ; 2.5V          ; --           ;
-; 6        ; 1 / 13 ( 8 % )    ; 2.5V          ; --           ;
+; 6        ; 3 / 13 ( 23 % )   ; 2.5V          ; --           ;
 ; 7        ; 1 / 24 ( 4 % )    ; 2.5V          ; --           ;
-; 8        ; 1 / 24 ( 4 % )    ; 2.5V          ; --           ;
+; 8        ; 2 / 24 ( 8 % )    ; 2.5V          ; --           ;
 +----------+-------------------+---------------+--------------+
 
 
@@ -440,10 +438,10 @@ The pin-out file can be found in /home/mohit/microlab337/controlPath/output_file
 ; A14      ; 181        ; 7        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
 ; A15      ; 191        ; 7        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
 ; A16      ;            ; 7        ; VCCIO7                                                    ; power  ;              ; 2.5V    ; --         ;                 ; --       ; --           ;
-; B1       ; 5          ; 1        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Row I/O    ;                 ; no       ; On           ;
+; B1       ; 5          ; 1        ; control_store[3]                                          ; output ; 2.5 V        ;         ; Row I/O    ; N               ; no       ; Off          ;
 ; B2       ;            ;          ; GND                                                       ; gnd    ;              ;         ; --         ;                 ; --       ; --           ;
-; B3       ; 242        ; 8        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
-; B4       ; 237        ; 8        ; data_out[1]                                               ; output ; 2.5 V        ;         ; Column I/O ; N               ; no       ; Off          ;
+; B3       ; 242        ; 8        ; control_store[8]                                          ; output ; 2.5 V        ;         ; Column I/O ; N               ; no       ; Off          ;
+; B4       ; 237        ; 8        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
 ; B5       ; 233        ; 8        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
 ; B6       ; 226        ; 8        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
 ; B7       ; 221        ; 8        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
@@ -457,7 +455,7 @@ The pin-out file can be found in /home/mohit/microlab337/controlPath/output_file
 ; B15      ;            ;          ; GND                                                       ; gnd    ;              ;         ; --         ;                 ; --       ; --           ;
 ; B16      ; 164        ; 6        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Row I/O    ;                 ; no       ; On           ;
 ; C1       ; 7          ; 1        ; ~ALTERA_ASDO_DATA1~ / RESERVED_INPUT_WITH_WEAK_PULLUP     ; input  ; 2.5 V        ;         ; Row I/O    ; N               ; no       ; On           ;
-; C2       ; 6          ; 1        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Row I/O    ;                 ; no       ; On           ;
+; C2       ; 6          ; 1        ; control_store[12]                                         ; output ; 2.5 V        ;         ; Row I/O    ; N               ; no       ; Off          ;
 ; C3       ; 245        ; 8        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
 ; C4       ;            ; 8        ; VCCIO8                                                    ; power  ;              ; 2.5V    ; --         ;                 ; --       ; --           ;
 ; C5       ;            ;          ; GND                                                       ; gnd    ;              ;         ; --         ;                 ; --       ; --           ;
@@ -466,17 +464,17 @@ The pin-out file can be found in /home/mohit/microlab337/controlPath/output_file
 ; C8       ; 215        ; 8        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
 ; C9       ; 200        ; 7        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
 ; C10      ;            ; 7        ; VCCIO7                                                    ; power  ;              ; 2.5V    ; --         ;                 ; --       ; --           ;
-; C11      ; 190        ; 7        ; data_out[0]                                               ; output ; 2.5 V        ;         ; Column I/O ; N               ; no       ; Off          ;
+; C11      ; 190        ; 7        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Column I/O ;                 ; --       ; --           ;
 ; C12      ;            ;          ; GND                                                       ; gnd    ;              ;         ; --         ;                 ; --       ; --           ;
 ; C13      ;            ; 7        ; VCCIO7                                                    ; power  ;              ; 2.5V    ; --         ;                 ; --       ; --           ;
 ; C14      ; 175        ; 7        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
 ; C15      ; 174        ; 6        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Row I/O    ;                 ; no       ; On           ;
 ; C16      ; 173        ; 6        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Row I/O    ;                 ; no       ; On           ;
-; D1       ; 10         ; 1        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Row I/O    ;                 ; no       ; On           ;
+; D1       ; 10         ; 1        ; control_store[11]                                         ; output ; 2.5 V        ;         ; Row I/O    ; N               ; no       ; Off          ;
 ; D2       ; 9          ; 1        ; ~ALTERA_FLASH_nCE_nCSO~ / RESERVED_INPUT_WITH_WEAK_PULLUP ; input  ; 2.5 V        ;         ; Row I/O    ; N               ; no       ; On           ;
 ; D3       ; 246        ; 8        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
 ; D4       ;            ;          ; VCCD_PLL3                                                 ; power  ;              ; 1.2V    ; --         ;                 ; --       ; --           ;
-; D5       ; 241        ; 8        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
+; D5       ; 241        ; 8        ; control_store[15]                                         ; output ; 2.5 V        ;         ; Column I/O ; N               ; no       ; Off          ;
 ; D6       ; 234        ; 8        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
 ; D7       ;            ;          ; GND                                                       ; gnd    ;              ;         ; --         ;                 ; --       ; --           ;
 ; D8       ; 216        ; 8        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
@@ -485,7 +483,7 @@ The pin-out file can be found in /home/mohit/microlab337/controlPath/output_file
 ; D11      ; 177        ; 7        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
 ; D12      ; 178        ; 7        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
 ; D13      ;            ;          ; VCCD_PLL2                                                 ; power  ;              ; 1.2V    ; --         ;                 ; --       ; --           ;
-; D14      ; 176        ; 7        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
+; D14      ; 176        ; 7        ; data_out[1]                                               ; output ; 2.5 V        ;         ; Column I/O ; N               ; no       ; Off          ;
 ; D15      ; 170        ; 6        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Row I/O    ;                 ; no       ; On           ;
 ; D16      ; 169        ; 6        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Row I/O    ;                 ; no       ; On           ;
 ; E1       ; 26         ; 1        ; clk                                                       ; input  ; 2.5 V        ;         ; Row I/O    ; N               ; no       ; Off          ;
@@ -502,11 +500,11 @@ The pin-out file can be found in /home/mohit/microlab337/controlPath/output_file
 ; E12      ;            ;          ; GNDA2                                                     ; gnd    ;              ;         ; --         ;                 ; --       ; --           ;
 ; E13      ;            ;          ; GND                                                       ; gnd    ;              ;         ; --         ;                 ; --       ; --           ;
 ; E14      ;            ; 6        ; VCCIO6                                                    ; power  ;              ; 2.5V    ; --         ;                 ; --       ; --           ;
-; E15      ; 151        ; 6        ; GND+                                                      ;        ;              ;         ; Row I/O    ;                 ; --       ; --           ;
-; E16      ; 150        ; 6        ; GND+                                                      ;        ;              ;         ; Row I/O    ;                 ; --       ; --           ;
-; F1       ; 14         ; 1        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Row I/O    ;                 ; no       ; On           ;
-; F2       ; 13         ; 1        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Row I/O    ;                 ; no       ; On           ;
-; F3       ; 8          ; 1        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Row I/O    ;                 ; --       ; --           ;
+; E15      ; 151        ; 6        ; opcode[2]                                                 ; input  ; 2.5 V        ;         ; Row I/O    ; N               ; no       ; Off          ;
+; E16      ; 150        ; 6        ; opcode[0]                                                 ; input  ; 2.5 V        ;         ; Row I/O    ; N               ; no       ; Off          ;
+; F1       ; 14         ; 1        ; control_store[4]                                          ; output ; 2.5 V        ;         ; Row I/O    ; N               ; no       ; Off          ;
+; F2       ; 13         ; 1        ; IR_3_5                                                    ; input  ; 2.5 V        ;         ; Row I/O    ; N               ; no       ; Off          ;
+; F3       ; 8          ; 1        ; valid                                                     ; input  ; 2.5 V        ;         ; Row I/O    ; N               ; no       ; Off          ;
 ; F4       ; 11         ; 1        ; ^nSTATUS                                                  ;        ;              ;         ; --         ;                 ; --       ; --           ;
 ; F5       ;            ; --       ; VCCA3                                                     ; power  ;              ; 2.5V    ; --         ;                 ; --       ; --           ;
 ; F6       ;            ;          ; GND                                                       ; gnd    ;              ;         ; --         ;                 ; --       ; --           ;
@@ -520,11 +518,11 @@ The pin-out file can be found in /home/mohit/microlab337/controlPath/output_file
 ; F14      ; 167        ; 6        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Row I/O    ;                 ; --       ; --           ;
 ; F15      ; 163        ; 6        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Row I/O    ;                 ; no       ; On           ;
 ; F16      ; 162        ; 6        ; ~ALTERA_nCEO~ / RESERVED_OUTPUT_OPEN_DRAIN                ; output ; 2.5 V        ;         ; Row I/O    ; N               ; no       ; Off          ;
-; G1       ; 16         ; 1        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Row I/O    ;                 ; no       ; On           ;
-; G2       ; 15         ; 1        ; control_store[5]                                          ; output ; 2.5 V        ;         ; Row I/O    ; N               ; no       ; Off          ;
+; G1       ; 16         ; 1        ; control_store[14]                                         ; output ; 2.5 V        ;         ; Row I/O    ; N               ; no       ; Off          ;
+; G2       ; 15         ; 1        ; control_store[13]                                         ; output ; 2.5 V        ;         ; Row I/O    ; N               ; no       ; Off          ;
 ; G3       ;            ; 1        ; VCCIO1                                                    ; power  ;              ; 2.5V    ; --         ;                 ; --       ; --           ;
 ; G4       ;            ;          ; GND                                                       ; gnd    ;              ;         ; --         ;                 ; --       ; --           ;
-; G5       ; 12         ; 1        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Row I/O    ;                 ; no       ; On           ;
+; G5       ; 12         ; 1        ; control_store[19]                                         ; output ; 2.5 V        ;         ; Row I/O    ; N               ; no       ; Off          ;
 ; G6       ;            ;          ; VCCINT                                                    ; power  ;              ; 1.2V    ; --         ;                 ; --       ; --           ;
 ; G7       ;            ;          ; VCCINT                                                    ; power  ;              ; 1.2V    ; --         ;                 ; --       ; --           ;
 ; G8       ;            ;          ; VCCINT                                                    ; power  ;              ; 1.2V    ; --         ;                 ; --       ; --           ;
@@ -553,8 +551,8 @@ The pin-out file can be found in /home/mohit/microlab337/controlPath/output_file
 ; H14      ; 152        ; 6        ; ^CONF_DONE                                                ;        ;              ;         ; --         ;                 ; --       ; --           ;
 ; H15      ;            ;          ; GND                                                       ; gnd    ;              ;         ; --         ;                 ; --       ; --           ;
 ; H16      ;            ;          ; GND                                                       ; gnd    ;              ;         ; --         ;                 ; --       ; --           ;
-; J1       ; 30         ; 2        ; control_store[3]                                          ; output ; 2.5 V        ;         ; Row I/O    ; N               ; no       ; Off          ;
-; J2       ; 29         ; 2        ; op_type[1]                                                ; input  ; 2.5 V        ;         ; Row I/O    ; N               ; no       ; Off          ;
+; J1       ; 30         ; 2        ; control_store[10]                                         ; output ; 2.5 V        ;         ; Row I/O    ; N               ; no       ; Off          ;
+; J2       ; 29         ; 2        ; IR_7                                                      ; input  ; 2.5 V        ;         ; Row I/O    ; N               ; no       ; Off          ;
 ; J3       ; 24         ; 1        ; ^nCE                                                      ;        ;              ;         ; --         ;                 ; --       ; --           ;
 ; J4       ; 23         ; 1        ; #TDO                                                      ; output ;              ;         ; --         ;                 ; --       ; --           ;
 ; J5       ; 22         ; 1        ; #TMS                                                      ; input  ;              ;         ; --         ;                 ; --       ; --           ;
@@ -569,11 +567,11 @@ The pin-out file can be found in /home/mohit/microlab337/controlPath/output_file
 ; J14      ; 144        ; 5        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Row I/O    ;                 ; no       ; On           ;
 ; J15      ; 143        ; 5        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Row I/O    ;                 ; no       ; On           ;
 ; J16      ; 142        ; 5        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Row I/O    ;                 ; no       ; On           ;
-; K1       ; 37         ; 2        ; control_store[6]                                          ; output ; 2.5 V        ;         ; Row I/O    ; N               ; no       ; Off          ;
-; K2       ; 36         ; 2        ; control_store[7]                                          ; output ; 2.5 V        ;         ; Row I/O    ; N               ; no       ; Off          ;
+; K1       ; 37         ; 2        ; control_store[17]                                         ; output ; 2.5 V        ;         ; Row I/O    ; N               ; no       ; Off          ;
+; K2       ; 36         ; 2        ; control_store[6]                                          ; output ; 2.5 V        ;         ; Row I/O    ; N               ; no       ; Off          ;
 ; K3       ;            ; 2        ; VCCIO2                                                    ; power  ;              ; 2.5V    ; --         ;                 ; --       ; --           ;
 ; K4       ;            ;          ; GND                                                       ; gnd    ;              ;         ; --         ;                 ; --       ; --           ;
-; K5       ; 45         ; 2        ; opcode[2]                                                 ; input  ; 2.5 V        ;         ; Row I/O    ; N               ; no       ; Off          ;
+; K5       ; 45         ; 2        ; carry                                                     ; input  ; 2.5 V        ;         ; Row I/O    ; N               ; no       ; Off          ;
 ; K6       ;            ;          ; GND                                                       ; gnd    ;              ;         ; --         ;                 ; --       ; --           ;
 ; K7       ;            ;          ; VCCINT                                                    ; power  ;              ; 1.2V    ; --         ;                 ; --       ; --           ;
 ; K8       ;            ;          ; GND                                                       ; gnd    ;              ;         ; --         ;                 ; --       ; --           ;
@@ -585,13 +583,13 @@ The pin-out file can be found in /home/mohit/microlab337/controlPath/output_file
 ; K14      ;            ; 5        ; VCCIO5                                                    ; power  ;              ; 2.5V    ; --         ;                 ; --       ; --           ;
 ; K15      ; 141        ; 5        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Row I/O    ;                 ; no       ; On           ;
 ; K16      ; 140        ; 5        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Row I/O    ;                 ; no       ; On           ;
-; L1       ; 39         ; 2        ; control_store[13]                                         ; output ; 2.5 V        ;         ; Row I/O    ; N               ; no       ; Off          ;
-; L2       ; 38         ; 2        ; control_store[12]                                         ; output ; 2.5 V        ;         ; Row I/O    ; N               ; no       ; Off          ;
-; L3       ; 40         ; 2        ; opcode[3]                                                 ; input  ; 2.5 V        ;         ; Row I/O    ; N               ; no       ; Off          ;
-; L4       ; 46         ; 2        ; zero                                                      ; input  ; 2.5 V        ;         ; Row I/O    ; N               ; no       ; Off          ;
+; L1       ; 39         ; 2        ; op_type[0]                                                ; input  ; 2.5 V        ;         ; Row I/O    ; N               ; no       ; Off          ;
+; L2       ; 38         ; 2        ; control_store[0]                                          ; output ; 2.5 V        ;         ; Row I/O    ; N               ; no       ; Off          ;
+; L3       ; 40         ; 2        ; zero                                                      ; input  ; 2.5 V        ;         ; Row I/O    ; N               ; no       ; Off          ;
+; L4       ; 46         ; 2        ; control_store[1]                                          ; output ; 2.5 V        ;         ; Row I/O    ; N               ; no       ; Off          ;
 ; L5       ;            ; --       ; VCCA1                                                     ; power  ;              ; 2.5V    ; --         ;                 ; --       ; --           ;
 ; L6       ;            ;          ; VCCINT                                                    ; power  ;              ; 1.2V    ; --         ;                 ; --       ; --           ;
-; L7       ; 75         ; 3        ; control_store[16]                                         ; output ; 2.5 V        ;         ; Column I/O ; N               ; no       ; Off          ;
+; L7       ; 75         ; 3        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
 ; L8       ; 79         ; 3        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
 ; L9       ;            ;          ; GND                                                       ; gnd    ;              ;         ; --         ;                 ; --       ; --           ;
 ; L10      ;            ;          ; GND                                                       ; gnd    ;              ;         ; --         ;                 ; --       ; --           ;
@@ -601,13 +599,13 @@ The pin-out file can be found in /home/mohit/microlab337/controlPath/output_file
 ; L14      ; 134        ; 5        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Row I/O    ;                 ; --       ; --           ;
 ; L15      ; 138        ; 5        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Row I/O    ;                 ; no       ; On           ;
 ; L16      ; 137        ; 5        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Row I/O    ;                 ; no       ; On           ;
-; M1       ; 28         ; 2        ; opcode[0]                                                 ; input  ; 2.5 V        ;         ; Row I/O    ; N               ; no       ; Off          ;
+; M1       ; 28         ; 2        ; GND+                                                      ;        ;              ;         ; Row I/O    ;                 ; --       ; --           ;
 ; M2       ; 27         ; 2        ; reset                                                     ; input  ; 2.5 V        ;         ; Row I/O    ; N               ; no       ; Off          ;
 ; M3       ;            ; 2        ; VCCIO2                                                    ; power  ;              ; 2.5V    ; --         ;                 ; --       ; --           ;
 ; M4       ;            ;          ; GND                                                       ; gnd    ;              ;         ; --         ;                 ; --       ; --           ;
 ; M5       ;            ;          ; GNDA1                                                     ; gnd    ;              ;         ; --         ;                 ; --       ; --           ;
-; M6       ; 64         ; 3        ; IR_3_5[0]                                                 ; input  ; 2.5 V        ;         ; Column I/O ; N               ; no       ; Off          ;
-; M7       ; 68         ; 3        ; control_store[8]                                          ; output ; 2.5 V        ;         ; Column I/O ; N               ; no       ; Off          ;
+; M6       ; 64         ; 3        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
+; M7       ; 68         ; 3        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
 ; M8       ; 81         ; 3        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
 ; M9       ;            ;          ; VCCINT                                                    ; power  ;              ; 1.2V    ; --         ;                 ; --       ; --           ;
 ; M10      ; 111        ; 4        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
@@ -617,12 +615,12 @@ The pin-out file can be found in /home/mohit/microlab337/controlPath/output_file
 ; M14      ;            ; 5        ; VCCIO5                                                    ; power  ;              ; 2.5V    ; --         ;                 ; --       ; --           ;
 ; M15      ; 149        ; 5        ; GND+                                                      ;        ;              ;         ; Row I/O    ;                 ; --       ; --           ;
 ; M16      ; 148        ; 5        ; GND+                                                      ;        ;              ;         ; Row I/O    ;                 ; --       ; --           ;
-; N1       ; 44         ; 2        ; control_store[4]                                          ; output ; 2.5 V        ;         ; Row I/O    ; N               ; no       ; Off          ;
-; N2       ; 43         ; 2        ; control_store[15]                                         ; output ; 2.5 V        ;         ; Row I/O    ; N               ; no       ; Off          ;
-; N3       ; 52         ; 3        ; op_type[0]                                                ; input  ; 2.5 V        ;         ; Column I/O ; N               ; no       ; Off          ;
+; N1       ; 44         ; 2        ; op_type[1]                                                ; input  ; 2.5 V        ;         ; Row I/O    ; N               ; no       ; Off          ;
+; N2       ; 43         ; 2        ; control_store[5]                                          ; output ; 2.5 V        ;         ; Row I/O    ; N               ; no       ; Off          ;
+; N3       ; 52         ; 3        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
 ; N4       ;            ;          ; VCCD_PLL1                                                 ; power  ;              ; 1.2V    ; --         ;                 ; --       ; --           ;
-; N5       ; 62         ; 3        ; IR_3_5[1]                                                 ; input  ; 2.5 V        ;         ; Column I/O ; N               ; no       ; Off          ;
-; N6       ; 63         ; 3        ; IR_3_5[2]                                                 ; input  ; 2.5 V        ;         ; Column I/O ; N               ; no       ; Off          ;
+; N5       ; 62         ; 3        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
+; N6       ; 63         ; 3        ; opcode[3]                                                 ; input  ; 2.5 V        ;         ; Column I/O ; N               ; no       ; Off          ;
 ; N7       ;            ;          ; GND                                                       ; gnd    ;              ;         ; --         ;                 ; --       ; --           ;
 ; N8       ; 82         ; 3        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
 ; N9       ; 93         ; 4        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
@@ -633,12 +631,12 @@ The pin-out file can be found in /home/mohit/microlab337/controlPath/output_file
 ; N14      ; 126        ; 5        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Row I/O    ;                 ; no       ; On           ;
 ; N15      ; 133        ; 5        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Row I/O    ;                 ; no       ; On           ;
 ; N16      ; 132        ; 5        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Row I/O    ;                 ; no       ; On           ;
-; P1       ; 51         ; 2        ; opcode[1]                                                 ; input  ; 2.5 V        ;         ; Row I/O    ; N               ; no       ; Off          ;
-; P2       ; 50         ; 2        ; IR_7                                                      ; input  ; 2.5 V        ;         ; Row I/O    ; N               ; no       ; Off          ;
-; P3       ; 53         ; 3        ; carry                                                     ; input  ; 2.5 V        ;         ; Column I/O ; N               ; no       ; Off          ;
+; P1       ; 51         ; 2        ; control_store[9]                                          ; output ; 2.5 V        ;         ; Row I/O    ; N               ; no       ; Off          ;
+; P2       ; 50         ; 2        ; control_store[2]                                          ; output ; 2.5 V        ;         ; Row I/O    ; N               ; no       ; Off          ;
+; P3       ; 53         ; 3        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
 ; P4       ;            ; 3        ; VCCIO3                                                    ; power  ;              ; 2.5V    ; --         ;                 ; --       ; --           ;
 ; P5       ;            ;          ; GND                                                       ; gnd    ;              ;         ; --         ;                 ; --       ; --           ;
-; P6       ; 67         ; 3        ; control_store[11]                                         ; output ; 2.5 V        ;         ; Column I/O ; N               ; no       ; Off          ;
+; P6       ; 67         ; 3        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Column I/O ;                 ; --       ; --           ;
 ; P7       ;            ; 3        ; VCCIO3                                                    ; power  ;              ; 2.5V    ; --         ;                 ; --       ; --           ;
 ; P8       ; 85         ; 3        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
 ; P9       ; 105        ; 4        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
@@ -649,28 +647,28 @@ The pin-out file can be found in /home/mohit/microlab337/controlPath/output_file
 ; P14      ; 119        ; 4        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
 ; P15      ; 127        ; 5        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Row I/O    ;                 ; no       ; On           ;
 ; P16      ; 128        ; 5        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Row I/O    ;                 ; no       ; On           ;
-; R1       ; 49         ; 2        ; control_store[10]                                         ; output ; 2.5 V        ;         ; Row I/O    ; N               ; no       ; Off          ;
+; R1       ; 49         ; 2        ; control_store[16]                                         ; output ; 2.5 V        ;         ; Row I/O    ; N               ; no       ; Off          ;
 ; R2       ;            ;          ; GND                                                       ; gnd    ;              ;         ; --         ;                 ; --       ; --           ;
-; R3       ; 54         ; 3        ; control_store[14]                                         ; output ; 2.5 V        ;         ; Column I/O ; N               ; no       ; Off          ;
-; R4       ; 60         ; 3        ; valid                                                     ; input  ; 2.5 V        ;         ; Column I/O ; N               ; no       ; Off          ;
-; R5       ; 71         ; 3        ; control_store[2]                                          ; output ; 2.5 V        ;         ; Column I/O ; N               ; no       ; Off          ;
-; R6       ; 73         ; 3        ; control_store[0]                                          ; output ; 2.5 V        ;         ; Column I/O ; N               ; no       ; Off          ;
+; R3       ; 54         ; 3        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
+; R4       ; 60         ; 3        ; control_store[18]                                         ; output ; 2.5 V        ;         ; Column I/O ; N               ; no       ; Off          ;
+; R5       ; 71         ; 3        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
+; R6       ; 73         ; 3        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
 ; R7       ; 76         ; 3        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
 ; R8       ; 86         ; 3        ; GND+                                                      ;        ;              ;         ; Column I/O ;                 ; --       ; --           ;
 ; R9       ; 88         ; 4        ; GND+                                                      ;        ;              ;         ; Column I/O ;                 ; --       ; --           ;
 ; R10      ; 96         ; 4        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
 ; R11      ; 98         ; 4        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
-; R12      ; 100        ; 4        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
+; R12      ; 100        ; 4        ; data_out[0]                                               ; output ; 2.5 V        ;         ; Column I/O ; N               ; no       ; Off          ;
 ; R13      ; 107        ; 4        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
 ; R14      ; 120        ; 4        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
 ; R15      ;            ;          ; GND                                                       ; gnd    ;              ;         ; --         ;                 ; --       ; --           ;
 ; R16      ; 129        ; 5        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Row I/O    ;                 ; no       ; On           ;
 ; T1       ;            ; 3        ; VCCIO3                                                    ; power  ;              ; 2.5V    ; --         ;                 ; --       ; --           ;
-; T2       ; 59         ; 3        ; control_store[9]                                          ; output ; 2.5 V        ;         ; Column I/O ; N               ; no       ; Off          ;
-; T3       ; 55         ; 3        ; control_store[19]                                         ; output ; 2.5 V        ;         ; Column I/O ; N               ; no       ; Off          ;
-; T4       ; 61         ; 3        ; control_store[17]                                         ; output ; 2.5 V        ;         ; Column I/O ; N               ; no       ; Off          ;
-; T5       ; 72         ; 3        ; control_store[18]                                         ; output ; 2.5 V        ;         ; Column I/O ; N               ; no       ; Off          ;
-; T6       ; 74         ; 3        ; control_store[1]                                          ; output ; 2.5 V        ;         ; Column I/O ; N               ; no       ; Off          ;
+; T2       ; 59         ; 3        ; control_store[7]                                          ; output ; 2.5 V        ;         ; Column I/O ; N               ; no       ; Off          ;
+; T3       ; 55         ; 3        ; opcode[1]                                                 ; input  ; 2.5 V        ;         ; Column I/O ; N               ; no       ; Off          ;
+; T4       ; 61         ; 3        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
+; T5       ; 72         ; 3        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
+; T6       ; 74         ; 3        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
 ; T7       ; 77         ; 3        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
 ; T8       ; 87         ; 3        ; GND+                                                      ;        ;              ;         ; Column I/O ;                 ; --       ; --           ;
 ; T9       ; 89         ; 4        ; GND+                                                      ;        ;              ;         ; Column I/O ;                 ; --       ; --           ;
@@ -720,9 +718,7 @@ Note: Pin directions (input, output or bidir) are based on device operating in u
 ; opcode[1]         ; Incomplete set of assignments ;
 ; IR_7              ; Incomplete set of assignments ;
 ; valid             ; Incomplete set of assignments ;
-; IR_3_5[0]         ; Incomplete set of assignments ;
-; IR_3_5[1]         ; Incomplete set of assignments ;
-; IR_3_5[2]         ; Incomplete set of assignments ;
+; IR_3_5            ; Incomplete set of assignments ;
 ; zero              ; Incomplete set of assignments ;
 ; op_type[0]        ; Incomplete set of assignments ;
 ; op_type[1]        ; Incomplete set of assignments ;
@@ -757,9 +753,7 @@ Note: Pin directions (input, output or bidir) are based on device operating in u
 ; opcode[1]         ; Missing location assignment   ;
 ; IR_7              ; Missing location assignment   ;
 ; valid             ; Missing location assignment   ;
-; IR_3_5[0]         ; Missing location assignment   ;
-; IR_3_5[1]         ; Missing location assignment   ;
-; IR_3_5[2]         ; Missing location assignment   ;
+; IR_3_5            ; Missing location assignment   ;
 ; zero              ; Missing location assignment   ;
 ; op_type[0]        ; Missing location assignment   ;
 ; op_type[1]        ; Missing location assignment   ;
@@ -772,7 +766,7 @@ Note: Pin directions (input, output or bidir) are based on device operating in u
 +----------------------------+-------------+---------------------------+---------------+-------------+------+--------------+---------+-----------+------+--------------+--------------+-------------------+------------------+---------------------+-------------+--------------+
 ; Compilation Hierarchy Node ; Logic Cells ; Dedicated Logic Registers ; I/O Registers ; Memory Bits ; M9Ks ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; LUT-Only LCs ; Register-Only LCs ; LUT/Register LCs ; Full Hierarchy Name ; Entity Name ; Library Name ;
 +----------------------------+-------------+---------------------------+---------------+-------------+------+--------------+---------+-----------+------+--------------+--------------+-------------------+------------------+---------------------+-------------+--------------+
-; |FSM_new                   ; 74 (74)     ; 16 (16)                   ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 37   ; 0            ; 58 (58)      ; 1 (1)             ; 15 (15)          ; |FSM_new            ; FSM_new     ; work         ;
+; |FSM_new                   ; 70 (70)     ; 16 (16)                   ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 35   ; 0            ; 54 (54)      ; 0 (0)             ; 16 (16)          ; |FSM_new            ; FSM_new     ; work         ;
 +----------------------------+-------------+---------------------------+---------------+-------------+------+--------------+---------+-----------+------+--------------+--------------+-------------------+------------------+---------------------+-------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
@@ -807,16 +801,14 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; clk               ; Input    ; (0) 0 ps      ; --            ; --                    ; --  ; --   ;
 ; reset             ; Input    ; (0) 0 ps      ; --            ; --                    ; --  ; --   ;
 ; opcode[0]         ; Input    ; (0) 0 ps      ; --            ; --                    ; --  ; --   ;
-; opcode[2]         ; Input    ; --            ; (6) 1314 ps   ; --                    ; --  ; --   ;
+; opcode[2]         ; Input    ; (0) 0 ps      ; --            ; --                    ; --  ; --   ;
 ; opcode[3]         ; Input    ; --            ; (6) 1314 ps   ; --                    ; --  ; --   ;
 ; opcode[1]         ; Input    ; (6) 1314 ps   ; --            ; --                    ; --  ; --   ;
-; IR_7              ; Input    ; (1) 382 ps    ; (0) 0 ps      ; --                    ; --  ; --   ;
-; valid             ; Input    ; (6) 1314 ps   ; --            ; --                    ; --  ; --   ;
-; IR_3_5[0]         ; Input    ; --            ; (6) 1314 ps   ; --                    ; --  ; --   ;
-; IR_3_5[1]         ; Input    ; (6) 1314 ps   ; (6) 1314 ps   ; --                    ; --  ; --   ;
-; IR_3_5[2]         ; Input    ; --            ; (6) 1314 ps   ; --                    ; --  ; --   ;
+; IR_7              ; Input    ; (0) 0 ps      ; (0) 0 ps      ; --                    ; --  ; --   ;
+; valid             ; Input    ; --            ; (6) 1314 ps   ; --                    ; --  ; --   ;
+; IR_3_5            ; Input    ; (6) 1314 ps   ; --            ; --                    ; --  ; --   ;
 ; zero              ; Input    ; (6) 1314 ps   ; --            ; --                    ; --  ; --   ;
-; op_type[0]        ; Input    ; --            ; (6) 1314 ps   ; --                    ; --  ; --   ;
+; op_type[0]        ; Input    ; (6) 1314 ps   ; --            ; --                    ; --  ; --   ;
 ; op_type[1]        ; Input    ; (6) 1314 ps   ; --            ; --                    ; --  ; --   ;
 ; carry             ; Input    ; --            ; (6) 1314 ps   ; --                    ; --  ; --   ;
 +-------------------+----------+---------------+---------------+-----------------------+-----+------+
@@ -831,69 +823,44 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; reset                      ;                   ;         ;
 ; opcode[0]                  ;                   ;         ;
 ; opcode[2]                  ;                   ;         ;
-;      - Equal7~0            ; 1                 ; 6       ;
-;      - Equal5~0            ; 1                 ; 6       ;
-;      - Equal8~0            ; 1                 ; 6       ;
-;      - Equal11~0           ; 1                 ; 6       ;
-;      - Equal11~1           ; 1                 ; 6       ;
-;      - Selector29~3        ; 1                 ; 6       ;
-;      - Selector10~4        ; 1                 ; 6       ;
-;      - Selector13~0        ; 1                 ; 6       ;
-;      - Selector8~0         ; 1                 ; 6       ;
-;      - Selector29~5        ; 1                 ; 6       ;
 ; opcode[3]                  ;                   ;         ;
-;      - Equal7~0            ; 1                 ; 6       ;
+;      - Equal6~0            ; 1                 ; 6       ;
 ;      - Equal5~0            ; 1                 ; 6       ;
-;      - Equal8~0            ; 1                 ; 6       ;
-;      - Equal11~0           ; 1                 ; 6       ;
-;      - Equal11~1           ; 1                 ; 6       ;
-;      - Selector29~3        ; 1                 ; 6       ;
-;      - Selector10~4        ; 1                 ; 6       ;
-;      - Selector13~0        ; 1                 ; 6       ;
-;      - Selector8~1         ; 1                 ; 6       ;
-;      - Selector29~5        ; 1                 ; 6       ;
+;      - Equal7~0            ; 1                 ; 6       ;
+;      - Selector29~0        ; 1                 ; 6       ;
+;      - Equal9~0            ; 1                 ; 6       ;
+;      - Selector10~3        ; 1                 ; 6       ;
+;      - Selector8~2         ; 1                 ; 6       ;
 ; opcode[1]                  ;                   ;         ;
 ;      - Selector9~0         ; 0                 ; 6       ;
 ;      - Equal5~0            ; 0                 ; 6       ;
-;      - Equal8~0            ; 0                 ; 6       ;
-;      - Equal11~0           ; 0                 ; 6       ;
-;      - Equal11~1           ; 0                 ; 6       ;
-;      - Selector29~3        ; 0                 ; 6       ;
+;      - Equal7~0            ; 0                 ; 6       ;
+;      - Selector29~0        ; 0                 ; 6       ;
+;      - Equal9~0            ; 0                 ; 6       ;
 ;      - Selector14~0        ; 0                 ; 6       ;
 ;      - Selector18~0        ; 0                 ; 6       ;
 ;      - Selector12~0        ; 0                 ; 6       ;
-;      - Selector13~0        ; 0                 ; 6       ;
 ;      - Selector8~0         ; 0                 ; 6       ;
-;      - Selector29~5        ; 0                 ; 6       ;
+;      - Selector8~1         ; 0                 ; 6       ;
 ; IR_7                       ;                   ;         ;
-;      - Selector29~2        ; 1                 ; 0       ;
-;      - Selector15~0        ; 0                 ; 1       ;
-;      - Selector6~2         ; 0                 ; 1       ;
+;      - Selector29~2        ; 0                 ; 0       ;
+;      - Selector15~1        ; 1                 ; 0       ;
+;      - Selector6~2         ; 1                 ; 0       ;
 ; valid                      ;                   ;         ;
-;      - Selector29~2        ; 0                 ; 6       ;
-;      - Selector15~0        ; 0                 ; 6       ;
-;      - Selector6~1         ; 0                 ; 6       ;
-;      - Selector10~0        ; 0                 ; 6       ;
-;      - Selector5~0         ; 0                 ; 6       ;
-; IR_3_5[0]                  ;                   ;         ;
-;      - Selector6~3         ; 1                 ; 6       ;
-;      - Selector6~4         ; 1                 ; 6       ;
-;      - Selector10~1        ; 1                 ; 6       ;
-;      - Selector10~3        ; 1                 ; 6       ;
-; IR_3_5[1]                  ;                   ;         ;
-;      - Selector6~3         ; 1                 ; 6       ;
-;      - Selector10~1        ; 1                 ; 6       ;
-;      - Selector10~3        ; 0                 ; 6       ;
-; IR_3_5[2]                  ;                   ;         ;
-;      - Selector6~3         ; 1                 ; 6       ;
-;      - Selector10~1        ; 1                 ; 6       ;
-;      - Selector10~3        ; 1                 ; 6       ;
+;      - Selector29~2        ; 1                 ; 6       ;
+;      - Selector15~1        ; 1                 ; 6       ;
+;      - Selector6~2         ; 1                 ; 6       ;
+;      - Selector10~0        ; 1                 ; 6       ;
+;      - Selector5~0         ; 1                 ; 6       ;
+; IR_3_5                     ;                   ;         ;
+;      - Selector6~0         ; 0                 ; 6       ;
+;      - Selector10~1        ; 0                 ; 6       ;
 ; zero                       ;                   ;         ;
 ;      - Selector10~2        ; 0                 ; 6       ;
 ;      - NEXT_STATE_DECODE~0 ; 0                 ; 6       ;
 ;      - Selector21~0        ; 0                 ; 6       ;
 ; op_type[0]                 ;                   ;         ;
-;      - NEXT_STATE_DECODE~0 ; 1                 ; 6       ;
+;      - NEXT_STATE_DECODE~0 ; 0                 ; 6       ;
 ; op_type[1]                 ;                   ;         ;
 ;      - NEXT_STATE_DECODE~0 ; 0                 ; 6       ;
 ; carry                      ;                   ;         ;
@@ -906,7 +873,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +--------------+------------------+---------+--------------+--------+----------------------+------------------+---------------------------+
 ; Name         ; Location         ; Fan-Out ; Usage        ; Global ; Global Resource Used ; Global Line Name ; Enable Signal Source Name ;
 +--------------+------------------+---------+--------------+--------+----------------------+------------------+---------------------------+
-; Selector29~4 ; LCCOMB_X5_Y4_N28 ; 16      ; Latch enable ; yes    ; Global Clock         ; GCLK1            ; --                        ;
+; Selector29~2 ; LCCOMB_X1_Y16_N6 ; 16      ; Latch enable ; yes    ; Global Clock         ; GCLK0            ; --                        ;
 ; clk          ; PIN_E1           ; 4       ; Clock        ; no     ; --                   ; --               ; --                        ;
 ; clk          ; PIN_E1           ; 13      ; Clock        ; yes    ; Global Clock         ; GCLK2            ; --                        ;
 ; reset        ; PIN_M2           ; 16      ; Async. clear ; yes    ; Global Clock         ; GCLK4            ; --                        ;
@@ -918,8 +885,8 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +--------------+------------------+---------+--------------------------------------+----------------------+------------------+---------------------------+
 ; Name         ; Location         ; Fan-Out ; Fan-Out Using Intentional Clock Skew ; Global Resource Used ; Global Line Name ; Enable Signal Source Name ;
 +--------------+------------------+---------+--------------------------------------+----------------------+------------------+---------------------------+
-; Selector29~4 ; LCCOMB_X5_Y4_N28 ; 16      ; 0                                    ; Global Clock         ; GCLK1            ; --                        ;
-; clk          ; PIN_E1           ; 13      ; 1                                    ; Global Clock         ; GCLK2            ; --                        ;
+; Selector29~2 ; LCCOMB_X1_Y16_N6 ; 16      ; 0                                    ; Global Clock         ; GCLK0            ; --                        ;
+; clk          ; PIN_E1           ; 13      ; 9                                    ; Global Clock         ; GCLK2            ; --                        ;
 ; reset        ; PIN_M2           ; 16      ; 0                                    ; Global Clock         ; GCLK4            ; --                        ;
 +--------------+------------------+---------+--------------------------------------+----------------------+------------------+---------------------------+
 
@@ -929,30 +896,66 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +-----------------------+------------------------+
 ; Routing Resource Type ; Usage                  ;
 +-----------------------+------------------------+
-; Block interconnects   ; 143 / 71,559 ( < 1 % ) ;
-; C16 interconnects     ; 4 / 2,597 ( < 1 % )    ;
-; C4 interconnects      ; 156 / 46,848 ( < 1 % ) ;
-; Direct links          ; 9 / 71,559 ( < 1 % )   ;
+; Block interconnects   ; 147 / 71,559 ( < 1 % ) ;
+; C16 interconnects     ; 7 / 2,597 ( < 1 % )    ;
+; C4 interconnects      ; 110 / 46,848 ( < 1 % ) ;
+; Direct links          ; 17 / 71,559 ( < 1 % )  ;
 ; Global clocks         ; 3 / 20 ( 15 % )        ;
-; Local interconnects   ; 28 / 24,624 ( < 1 % )  ;
-; R24 interconnects     ; 7 / 2,496 ( < 1 % )    ;
-; R4 interconnects      ; 149 / 62,424 ( < 1 % ) ;
+; Local interconnects   ; 25 / 24,624 ( < 1 % )  ;
+; R24 interconnects     ; 5 / 2,496 ( < 1 % )    ;
+; R4 interconnects      ; 117 / 62,424 ( < 1 % ) ;
 +-----------------------+------------------------+
 
 
++--------------------------------------------------------------------------+
+; LAB Logic Elements                                                       ;
++--------------------------------------------+-----------------------------+
+; Number of Logic Elements  (Average = 7.78) ; Number of LABs  (Total = 9) ;
++--------------------------------------------+-----------------------------+
+; 1                                          ; 4                           ;
+; 2                                          ; 1                           ;
+; 3                                          ; 0                           ;
+; 4                                          ; 0                           ;
+; 5                                          ; 0                           ;
+; 6                                          ; 0                           ;
+; 7                                          ; 0                           ;
+; 8                                          ; 0                           ;
+; 9                                          ; 0                           ;
+; 10                                         ; 0                           ;
+; 11                                         ; 0                           ;
+; 12                                         ; 0                           ;
+; 13                                         ; 0                           ;
+; 14                                         ; 0                           ;
+; 15                                         ; 0                           ;
+; 16                                         ; 4                           ;
++--------------------------------------------+-----------------------------+
+
+
++------------------------------------------------------------------+
+; LAB-wide Signals                                                 ;
++------------------------------------+-----------------------------+
+; LAB-wide Signals  (Average = 0.89) ; Number of LABs  (Total = 9) ;
++------------------------------------+-----------------------------+
+; 1 Async. clear                     ; 4                           ;
+; 1 Clock                            ; 3                           ;
+; 2 Clocks                           ; 1                           ;
++------------------------------------+-----------------------------+
+
+
 +---------------------------------------------------------------------------+
-; LAB Logic Elements                                                        ;
+; LAB Signals Sourced                                                       ;
 +---------------------------------------------+-----------------------------+
-; Number of Logic Elements  (Average = 10.57) ; Number of LABs  (Total = 7) ;
+; Number of Signals Sourced  (Average = 9.56) ; Number of LABs  (Total = 9) ;
 +---------------------------------------------+-----------------------------+
-; 1                                           ; 2                           ;
-; 2                                           ; 0                           ;
+; 0                                           ; 0                           ;
+; 1                                           ; 4                           ;
+; 2                                           ; 1                           ;
 ; 3                                           ; 0                           ;
 ; 4                                           ; 0                           ;
 ; 5                                           ; 0                           ;
 ; 6                                           ; 0                           ;
 ; 7                                           ; 0                           ;
-; 8                                           ; 1                           ;
+; 8                                           ; 0                           ;
 ; 9                                           ; 0                           ;
 ; 10                                          ; 0                           ;
 ; 11                                          ; 0                           ;
@@ -960,102 +963,65 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; 13                                          ; 0                           ;
 ; 14                                          ; 0                           ;
 ; 15                                          ; 0                           ;
-; 16                                          ; 4                           ;
+; 16                                          ; 0                           ;
+; 17                                          ; 0                           ;
+; 18                                          ; 1                           ;
+; 19                                          ; 1                           ;
+; 20                                          ; 1                           ;
+; 21                                          ; 0                           ;
+; 22                                          ; 0                           ;
+; 23                                          ; 1                           ;
 +---------------------------------------------+-----------------------------+
-
-
-+------------------------------------------------------------------+
-; LAB-wide Signals                                                 ;
-+------------------------------------+-----------------------------+
-; LAB-wide Signals  (Average = 1.43) ; Number of LABs  (Total = 7) ;
-+------------------------------------+-----------------------------+
-; 1 Async. clear                     ; 5                           ;
-; 1 Clock                            ; 5                           ;
-+------------------------------------+-----------------------------+
-
-
-+----------------------------------------------------------------------------+
-; LAB Signals Sourced                                                        ;
-+----------------------------------------------+-----------------------------+
-; Number of Signals Sourced  (Average = 12.86) ; Number of LABs  (Total = 7) ;
-+----------------------------------------------+-----------------------------+
-; 0                                            ; 0                           ;
-; 1                                            ; 2                           ;
-; 2                                            ; 0                           ;
-; 3                                            ; 0                           ;
-; 4                                            ; 0                           ;
-; 5                                            ; 0                           ;
-; 6                                            ; 0                           ;
-; 7                                            ; 0                           ;
-; 8                                            ; 0                           ;
-; 9                                            ; 1                           ;
-; 10                                           ; 0                           ;
-; 11                                           ; 0                           ;
-; 12                                           ; 0                           ;
-; 13                                           ; 0                           ;
-; 14                                           ; 0                           ;
-; 15                                           ; 0                           ;
-; 16                                           ; 0                           ;
-; 17                                           ; 0                           ;
-; 18                                           ; 0                           ;
-; 19                                           ; 3                           ;
-; 20                                           ; 0                           ;
-; 21                                           ; 0                           ;
-; 22                                           ; 1                           ;
-+----------------------------------------------+-----------------------------+
 
 
 +-------------------------------------------------------------------------------+
 ; LAB Signals Sourced Out                                                       ;
 +-------------------------------------------------+-----------------------------+
-; Number of Signals Sourced Out  (Average = 7.00) ; Number of LABs  (Total = 7) ;
+; Number of Signals Sourced Out  (Average = 5.33) ; Number of LABs  (Total = 9) ;
 +-------------------------------------------------+-----------------------------+
 ; 0                                               ; 0                           ;
-; 1                                               ; 2                           ;
-; 2                                               ; 0                           ;
+; 1                                               ; 4                           ;
+; 2                                               ; 1                           ;
 ; 3                                               ; 0                           ;
 ; 4                                               ; 0                           ;
 ; 5                                               ; 0                           ;
-; 6                                               ; 1                           ;
+; 6                                               ; 0                           ;
 ; 7                                               ; 1                           ;
 ; 8                                               ; 0                           ;
-; 9                                               ; 1                           ;
+; 9                                               ; 0                           ;
 ; 10                                              ; 0                           ;
 ; 11                                              ; 1                           ;
-; 12                                              ; 0                           ;
-; 13                                              ; 0                           ;
-; 14                                              ; 1                           ;
+; 12                                              ; 2                           ;
 +-------------------------------------------------+-----------------------------+
 
 
-+----------------------------------------------------------------------------+
-; LAB Distinct Inputs                                                        ;
-+----------------------------------------------+-----------------------------+
-; Number of Distinct Inputs  (Average = 11.86) ; Number of LABs  (Total = 7) ;
-+----------------------------------------------+-----------------------------+
-; 0                                            ; 0                           ;
-; 1                                            ; 0                           ;
-; 2                                            ; 2                           ;
-; 3                                            ; 0                           ;
-; 4                                            ; 0                           ;
-; 5                                            ; 0                           ;
-; 6                                            ; 0                           ;
-; 7                                            ; 0                           ;
-; 8                                            ; 0                           ;
-; 9                                            ; 0                           ;
-; 10                                           ; 0                           ;
-; 11                                           ; 1                           ;
-; 12                                           ; 0                           ;
-; 13                                           ; 0                           ;
-; 14                                           ; 1                           ;
-; 15                                           ; 1                           ;
-; 16                                           ; 0                           ;
-; 17                                           ; 0                           ;
-; 18                                           ; 1                           ;
-; 19                                           ; 0                           ;
-; 20                                           ; 0                           ;
-; 21                                           ; 1                           ;
-+----------------------------------------------+-----------------------------+
++---------------------------------------------------------------------------+
+; LAB Distinct Inputs                                                       ;
++---------------------------------------------+-----------------------------+
+; Number of Distinct Inputs  (Average = 8.67) ; Number of LABs  (Total = 9) ;
++---------------------------------------------+-----------------------------+
+; 0                                           ; 0                           ;
+; 1                                           ; 0                           ;
+; 2                                           ; 2                           ;
+; 3                                           ; 2                           ;
+; 4                                           ; 1                           ;
+; 5                                           ; 0                           ;
+; 6                                           ; 0                           ;
+; 7                                           ; 0                           ;
+; 8                                           ; 0                           ;
+; 9                                           ; 0                           ;
+; 10                                          ; 0                           ;
+; 11                                          ; 0                           ;
+; 12                                          ; 1                           ;
+; 13                                          ; 0                           ;
+; 14                                          ; 0                           ;
+; 15                                          ; 0                           ;
+; 16                                          ; 2                           ;
+; 17                                          ; 0                           ;
+; 18                                          ; 0                           ;
+; 19                                          ; 0                           ;
+; 20                                          ; 1                           ;
++---------------------------------------------+-----------------------------+
 
 
 +------------------------------------------+
@@ -1115,9 +1081,9 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +--------------------+--------------+--------------+--------------+--------------+--------------+-----------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+-----------+-----------+-----------+--------------+--------------+
 ; Pin/Rules          ; IO_000002    ; IO_000003    ; IO_000001    ; IO_000004    ; IO_000005    ; IO_000006 ; IO_000007    ; IO_000008    ; IO_000022    ; IO_000021    ; IO_000046    ; IO_000023    ; IO_000024    ; IO_000026    ; IO_000027    ; IO_000045    ; IO_000047    ; IO_000020    ; IO_000019    ; IO_000018    ; IO_000015    ; IO_000014    ; IO_000013    ; IO_000012    ; IO_000011    ; IO_000010 ; IO_000009 ; IO_000033 ; IO_000034    ; IO_000042    ;
 +--------------------+--------------+--------------+--------------+--------------+--------------+-----------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+-----------+-----------+-----------+--------------+--------------+
-; Total Pass         ; 0            ; 0            ; 0            ; 0            ; 0            ; 37        ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 22           ; 0            ; 0            ; 0            ; 0            ; 15           ; 22           ; 0            ; 15           ; 0            ; 0            ; 22           ; 0            ; 37        ; 37        ; 37        ; 0            ; 0            ;
+; Total Pass         ; 0            ; 0            ; 0            ; 0            ; 0            ; 35        ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 22           ; 0            ; 0            ; 0            ; 0            ; 13           ; 22           ; 0            ; 13           ; 0            ; 0            ; 22           ; 0            ; 35        ; 35        ; 35        ; 0            ; 0            ;
 ; Total Unchecked    ; 0            ; 0            ; 0            ; 0            ; 0            ; 0         ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0         ; 0         ; 0         ; 0            ; 0            ;
-; Total Inapplicable ; 37           ; 37           ; 37           ; 37           ; 37           ; 0         ; 37           ; 37           ; 37           ; 37           ; 37           ; 37           ; 15           ; 37           ; 37           ; 37           ; 37           ; 22           ; 15           ; 37           ; 22           ; 37           ; 37           ; 15           ; 37           ; 0         ; 0         ; 0         ; 37           ; 37           ;
+; Total Inapplicable ; 35           ; 35           ; 35           ; 35           ; 35           ; 0         ; 35           ; 35           ; 35           ; 35           ; 35           ; 35           ; 13           ; 35           ; 35           ; 35           ; 35           ; 22           ; 13           ; 35           ; 22           ; 35           ; 35           ; 13           ; 35           ; 0         ; 0         ; 0         ; 35           ; 35           ;
 ; Total Fail         ; 0            ; 0            ; 0            ; 0            ; 0            ; 0         ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0         ; 0         ; 0         ; 0            ; 0            ;
 ; control_store[0]   ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Pass      ; Pass      ; Pass      ; Inapplicable ; Inapplicable ;
 ; control_store[1]   ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Pass      ; Pass      ; Pass      ; Inapplicable ; Inapplicable ;
@@ -1149,9 +1115,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; opcode[1]          ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Pass      ; Inapplicable ; Inapplicable ;
 ; IR_7               ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Pass      ; Inapplicable ; Inapplicable ;
 ; valid              ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Pass      ; Inapplicable ; Inapplicable ;
-; IR_3_5[0]          ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Pass      ; Inapplicable ; Inapplicable ;
-; IR_3_5[1]          ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Pass      ; Inapplicable ; Inapplicable ;
-; IR_3_5[2]          ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Pass      ; Inapplicable ; Inapplicable ;
+; IR_3_5             ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Pass      ; Inapplicable ; Inapplicable ;
 ; zero               ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Pass      ; Inapplicable ; Inapplicable ;
 ; op_type[0]         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Pass      ; Inapplicable ; Inapplicable ;
 ; op_type[1]         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Pass      ; Inapplicable ; Inapplicable ;
@@ -1200,9 +1164,10 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +-----------------+----------------------+-------------------+
 ; Source Clock(s) ; Destination Clock(s) ; Delay Added in ns ;
 +-----------------+----------------------+-------------------+
-; clk             ; IR_7                 ; 36.9              ;
-; clk,I/O         ; IR_7                 ; 25.0              ;
-; I/O             ; IR_7                 ; 4.1               ;
+; clk             ; IR_7                 ; 13.8              ;
+; clk,I/O         ; IR_7                 ; 10.1              ;
+; I/O             ; IR_7                 ; 3.3               ;
+; I/O             ; clk                  ; 1.3               ;
 +-----------------+----------------------+-------------------+
 Note: For more information on problematic transfers, consider running the Fitter again with the Optimize hold timing option (Settings Menu) turned off.
 This will disable optimization of problematic paths and expose them for further analysis using the TimeQuest Timing Analyzer.
@@ -1213,37 +1178,36 @@ This will disable optimization of problematic paths and expose them for further 
 +-----------------+----------------------+-------------------+
 ; Source Register ; Destination Register ; Delay Added in ns ;
 +-----------------+----------------------+-------------------+
-; IR_7            ; next_state.s10_806   ; 4.256             ;
-; state.s15       ; next_state.s16_674   ; 3.138             ;
-; state.s1        ; next_state.s2_982    ; 3.125             ;
-; state.s8        ; next_state.s10_806   ; 2.992             ;
-; state.s20       ; next_state.s15_696   ; 2.944             ;
-; state.s3        ; next_state.s12_762   ; 2.944             ;
-; state.s10       ; next_state.s8_850    ; 2.896             ;
-; state.s7        ; next_state.s14_718   ; 2.776             ;
-; state.s16       ; next_state.s8_850    ; 2.758             ;
-; state.s5        ; next_state.s1_1004   ; 2.739             ;
-; state.s2        ; next_state.s9_828    ; 2.736             ;
-; state.s11       ; next_state.s3_960    ; 2.735             ;
-; state.s14       ; next_state.s1_1004   ; 2.685             ;
-; valid           ; next_state.s1_1004   ; 2.685             ;
-; opcode[0]       ; next_state.s1_1004   ; 2.685             ;
-; opcode[2]       ; next_state.s1_1004   ; 2.685             ;
-; opcode[3]       ; next_state.s1_1004   ; 2.685             ;
-; opcode[1]       ; next_state.s1_1004   ; 2.685             ;
-; state.s17       ; next_state.s5_916    ; 2.645             ;
-; state.s4        ; next_state.s1_1004   ; 2.542             ;
-; state.s12       ; next_state.s1_1004   ; 2.472             ;
-; state.s9        ; next_state.s1_1004   ; 2.470             ;
-; IR_3_5[0]       ; next_state.s1_1004   ; 1.942             ;
-; IR_3_5[1]       ; next_state.s1_1004   ; 1.942             ;
-; IR_3_5[2]       ; next_state.s1_1004   ; 1.942             ;
-; op_type[0]      ; next_state.s5_916    ; 1.659             ;
-; op_type[1]      ; next_state.s5_916    ; 1.659             ;
-; zero            ; next_state.s5_916    ; 1.659             ;
-; carry           ; next_state.s5_916    ; 1.659             ;
+; IR_7            ; next_state.s1_994    ; 2.643             ;
+; state.s8        ; next_state.s20_576   ; 1.574             ;
+; state.s15       ; next_state.s16_664   ; 1.408             ;
+; state.s1        ; next_state.s2_972    ; 1.395             ;
+; state.s7        ; next_state.s14_708   ; 1.293             ;
+; state.s10       ; next_state.s15_686   ; 1.288             ;
+; state.s20       ; next_state.s15_686   ; 1.214             ;
+; state.s11       ; next_state.s3_950    ; 1.214             ;
+; state.s3        ; next_state.s17_642   ; 1.212             ;
+; state.s16       ; next_state.s8_840    ; 1.185             ;
+; opcode[1]       ; next_state.s10_796   ; 1.165             ;
+; opcode[2]       ; next_state.s10_796   ; 1.165             ;
+; opcode[3]       ; next_state.s10_796   ; 1.165             ;
+; opcode[0]       ; next_state.s10_796   ; 1.165             ;
+; valid           ; next_state.s10_796   ; 1.075             ;
+; state.s5        ; next_state.s1_994    ; 1.047             ;
+; state.s14       ; next_state.s1_994    ; 1.017             ;
+; state.s9        ; next_state.s1_994    ; 1.017             ;
+; state.s12       ; next_state.s1_994    ; 1.017             ;
+; IR_3_5          ; next_state.s1_994    ; 1.017             ;
+; state.s4        ; next_state.s1_994    ; 1.017             ;
+; state.s2        ; next_state.s7_862    ; 1.002             ;
+; state.s17       ; next_state.s5_906    ; 0.927             ;
+; clk             ; state.s8             ; 0.712             ;
+; zero            ; next_state.s17_642   ; 0.606             ;
+; op_type[0]      ; next_state.s5_906    ; 0.568             ;
+; op_type[1]      ; next_state.s5_906    ; 0.568             ;
+; carry           ; next_state.s5_906    ; 0.568             ;
 +-----------------+----------------------+-------------------+
-Note: This table only shows the top 29 path(s) that have the largest delay added for hold.
+Note: This table only shows the top 28 path(s) that have the largest delay added for hold.
 
 
 +-----------------+
@@ -1267,7 +1231,7 @@ Info (169124): Fitter converted 5 user pins into dedicated programming pins
     Info (169125): Pin ~ALTERA_DATA0~ is reserved at location H2
     Info (169125): Pin ~ALTERA_nCEO~ is reserved at location F16
 Warning (15714): Some pins have incomplete I/O assignments. Refer to the I/O Assignment Warnings report for details
-Critical Warning (169085): No exact pin location assignment(s) for 37 pins of 37 total pins. For the list of pins please refer to the I/O Assignment Warnings table in the fitter report.
+Critical Warning (169085): No exact pin location assignment(s) for 35 pins of 35 total pins. For the list of pins please refer to the I/O Assignment Warnings table in the fitter report.
 Warning (335093): TimeQuest Timing Analyzer is analyzing 16 combinational loops as latches. For more details, run the Check Timing command in the TimeQuest Timing Analyzer or view the "User-Specified and Inferred Latches" table in the Analysis & Synthesis report.
 Critical Warning (332012): Synopsys Design Constraints File file not found: 'FSM_new.sdc'. A Synopsys Design Constraints File is required by the TimeQuest Timing Analyzer to get proper timing constraints. Without it, the Compiler will not properly optimize the design.
 Info (332144): No user constrained base clocks found in the design
@@ -1280,7 +1244,7 @@ Info (176353): Automatically promoted node clk~input (placed in PIN E1 (CLK1, DI
         Info (176357): Destination node state.s7 File: /home/mohit/microlab337/controlPath/FSM_new.vhd Line: 28
         Info (176357): Destination node state.s8 File: /home/mohit/microlab337/controlPath/FSM_new.vhd Line: 28
         Info (176357): Destination node state.s10 File: /home/mohit/microlab337/controlPath/FSM_new.vhd Line: 28
-Info (176353): Automatically promoted node Selector29~4  File: /home/mohit/microlab337/controlPath/FSM_new.vhd Line: 109
+Info (176353): Automatically promoted node Selector29~2  File: /home/mohit/microlab337/controlPath/FSM_new.vhd Line: 109
     Info (176355): Automatically promoted destinations to use location or clock signal Global Clock
 Info (176353): Automatically promoted node reset~input (placed in PIN M2 (CLK2, DIFFCLK_1p)) File: /home/mohit/microlab337/controlPath/FSM_new.vhd Line: 12
     Info (176355): Automatically promoted destinations to use location or clock signal Global Clock CLKCTRL_G4
@@ -1288,7 +1252,7 @@ Info (176233): Starting register packing
 Info (176235): Finished register packing
     Extra Info (176219): No registers were packed into other blocks
 Info (176214): Statistics of I/O pins that need to be placed that use the same VCCIO and VREF, before I/O pin placement
-    Info (176211): Number of I/O pins in group: 35 (unused VREF, 2.5V VCCIO, 13 input, 22 output, 0 bidirectional)
+    Info (176211): Number of I/O pins in group: 33 (unused VREF, 2.5V VCCIO, 11 input, 22 output, 0 bidirectional)
         Info (176212): I/O standards used: 2.5 V.
 Info (176215): I/O bank details before I/O pin placement
     Info (176214): Statistics of I/O banks
@@ -1300,7 +1264,7 @@ Info (176215): I/O bank details before I/O pin placement
         Info (176213): I/O bank number 6 does not use VREF pins and has undetermined VCCIO pins. 1 total pin(s) used --  12 pins available
         Info (176213): I/O bank number 7 does not use VREF pins and has undetermined VCCIO pins. 0 total pin(s) used --  24 pins available
         Info (176213): I/O bank number 8 does not use VREF pins and has undetermined VCCIO pins. 0 total pin(s) used --  24 pins available
-Info (171121): Fitter preparation operations ending: elapsed time is 00:00:02
+Info (171121): Fitter preparation operations ending: elapsed time is 00:00:01
 Info (14896): Fitter has disabled Advanced Physical Optimization because it is not supported for the current family.
 Info (170189): Fitter placement preparation operations beginning
 Info (170190): Fitter placement preparation operations ending: elapsed time is 00:00:00
@@ -1309,11 +1273,11 @@ Info (170137): Fitter placement was successful
 Info (170192): Fitter placement operations ending: elapsed time is 00:00:01
 Info (170193): Fitter routing operations beginning
 Info (170195): Router estimated average interconnect usage is 0% of the available device resources
-    Info (170196): Router estimated peak interconnect usage is 3% of the available device resources in the region that extends from location X0_Y0 to location X9_Y10
+    Info (170196): Router estimated peak interconnect usage is 2% of the available device resources in the region that extends from location X0_Y11 to location X9_Y22
 Info (170199): The Fitter performed an Auto Fit compilation.  Optimizations were skipped to reduce compilation time.
     Info (170201): Optimizations that may affect the design's routability were skipped
 Info (170194): Fitter routing operations ending: elapsed time is 00:00:01
-Info (11888): Total time spent on timing analysis during the Fitter is 0.10 seconds.
+Info (11888): Total time spent on timing analysis during the Fitter is 0.08 seconds.
 Info (334003): Started post-fitting delay annotation
 Info (334004): Delay annotation completed successfully
 Info (334003): Started post-fitting delay annotation
@@ -1321,10 +1285,10 @@ Info (334004): Delay annotation completed successfully
 Info (11218): Fitter post-fit operations ending: elapsed time is 00:00:01
 Info (144001): Generated suppressed messages file /home/mohit/microlab337/controlPath/output_files/FSM_new.fit.smsg
 Info: Quartus Prime Fitter was successful. 0 errors, 6 warnings
-    Info: Peak virtual memory: 1166 megabytes
-    Info: Processing ended: Tue Nov  7 21:45:15 2017
-    Info: Elapsed time: 00:00:13
-    Info: Total CPU time (on all processors): 00:00:09
+    Info: Peak virtual memory: 1164 megabytes
+    Info: Processing ended: Tue Nov  7 23:26:58 2017
+    Info: Elapsed time: 00:00:06
+    Info: Total CPU time (on all processors): 00:00:08
 
 
 +----------------------------+
