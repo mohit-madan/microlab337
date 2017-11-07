@@ -118,6 +118,10 @@ begin
 						next_state <= s9;
 					else if opcode = '0110' or opcode = '0111' then
 						next_state <= s8;
+					else if opcode = '1000' then
+						next_state <= s18;
+					else if opcode = '1001' then
+						next_state <= s13;
 					else 
 						next_state <= s3;
 					end if;
