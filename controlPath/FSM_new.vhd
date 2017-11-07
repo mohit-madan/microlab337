@@ -11,7 +11,7 @@ entity FSM_new is
 		op_type 				: in 	std_logic_vector(1 downto 0);
 		reset	 				: in	std_logic;
 		carry,zero,valid	: in 	std_logic;
-		IR_3_5				: in  std_logic_vector(2 downto 0) ;
+		IR_3_5				: in  std_logic;
 		IR_7					: in  std_logic;
 		control_store 		: out std_logic_vector (19 downto 0);
 		data_out				: out	std_logic_vector(1 downto 0)
@@ -140,7 +140,7 @@ begin
 					end if;	
 				
 				when s4 =>
-					if(IR_3_5 = "000" ) then
+					if(IR_3_5 = '0' ) then
 						next_state <= s1;
 					else
 						next_state <= s5;
@@ -175,7 +175,7 @@ begin
 					end if;
 					
 				when s9 =>
-					if (IR_3_5 /= "111") then
+					if (IR_3_5 = '0') then
 						next_state <= s1 ;
 					else
 						next_state <= s5;
@@ -191,7 +191,7 @@ begin
 					next_state <= s3;
 					
 				when s12 =>
-					if (IR_3_5 /= "111") then
+					if (IR_3_5 = '0') then
 						next_state <= s1 ;
 					else
 						next_state <= s5;

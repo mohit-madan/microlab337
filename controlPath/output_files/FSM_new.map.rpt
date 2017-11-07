@@ -1,5 +1,5 @@
 Analysis & Synthesis report for FSM_new
-Tue Nov  7 21:45:01 2017
+Tue Nov  7 23:26:51 2017
 Quartus Prime Version 16.1.0 Build 196 10/24/2016 SJ Lite Edition
 
 
@@ -46,16 +46,16 @@ agreement for further details.
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +------------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Tue Nov  7 21:45:01 2017       ;
+; Analysis & Synthesis Status        ; Successful - Tue Nov  7 23:26:51 2017       ;
 ; Quartus Prime Version              ; 16.1.0 Build 196 10/24/2016 SJ Lite Edition ;
 ; Revision Name                      ; FSM_new                                     ;
 ; Top-level Entity Name              ; FSM_new                                     ;
 ; Family                             ; Cyclone IV E                                ;
-; Total logic elements               ; 73                                          ;
-;     Total combinational functions  ; 73                                          ;
+; Total logic elements               ; 70                                          ;
+;     Total combinational functions  ; 70                                          ;
 ;     Dedicated logic registers      ; 16                                          ;
 ; Total registers                    ; 16                                          ;
-; Total pins                         ; 37                                          ;
+; Total pins                         ; 35                                          ;
 ; Total virtual pins                 ; 0                                           ;
 ; Total memory bits                  ; 0                                           ;
 ; Embedded Multiplier 9-bit elements ; 0                                           ;
@@ -180,30 +180,30 @@ agreement for further details.
 +---------------------------------------------+--------------+
 ; Resource                                    ; Usage        ;
 +---------------------------------------------+--------------+
-; Estimated Total logic elements              ; 73           ;
+; Estimated Total logic elements              ; 70           ;
 ;                                             ;              ;
-; Total combinational functions               ; 73           ;
+; Total combinational functions               ; 70           ;
 ; Logic element usage by number of LUT inputs ;              ;
-;     -- 4 input functions                    ; 31           ;
-;     -- 3 input functions                    ; 31           ;
+;     -- 4 input functions                    ; 25           ;
+;     -- 3 input functions                    ; 34           ;
 ;     -- <=2 input functions                  ; 11           ;
 ;                                             ;              ;
 ; Logic elements by mode                      ;              ;
-;     -- normal mode                          ; 73           ;
+;     -- normal mode                          ; 70           ;
 ;     -- arithmetic mode                      ; 0            ;
 ;                                             ;              ;
 ; Total registers                             ; 16           ;
 ;     -- Dedicated logic registers            ; 16           ;
 ;     -- I/O registers                        ; 0            ;
 ;                                             ;              ;
-; I/O pins                                    ; 37           ;
+; I/O pins                                    ; 35           ;
 ;                                             ;              ;
 ; Embedded Multiplier 9-bit elements          ; 0            ;
 ;                                             ;              ;
-; Maximum fan-out node                        ; Selector29~4 ;
+; Maximum fan-out node                        ; Selector29~2 ;
 ; Maximum fan-out                             ; 16           ;
-; Total fan-out                               ; 343          ;
-; Average fan-out                             ; 2.10         ;
+; Total fan-out                               ; 326          ;
+; Average fan-out                             ; 2.09         ;
 +---------------------------------------------+--------------+
 
 
@@ -212,7 +212,7 @@ agreement for further details.
 +----------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+---------------------+-------------+--------------+
 ; Compilation Hierarchy Node ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name ; Entity Name ; Library Name ;
 +----------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+---------------------+-------------+--------------+
-; |FSM_new                   ; 73 (73)             ; 16 (16)                   ; 0           ; 0            ; 0       ; 0         ; 37   ; 0            ; |FSM_new            ; FSM_new     ; work         ;
+; |FSM_new                   ; 70 (70)             ; 16 (16)                   ; 0           ; 0            ; 0       ; 0         ; 35   ; 0            ; |FSM_new            ; FSM_new     ; work         ;
 +----------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+---------------------+-------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
@@ -251,22 +251,22 @@ Encoding Type:  One-Hot
 +-----------------------------------------------------+---------------------+------------------------+
 ; Latch Name                                          ; Latch Enable Signal ; Free of Timing Hazards ;
 +-----------------------------------------------------+---------------------+------------------------+
-; next_state.s1_1004                                  ; Selector29          ; yes                    ;
-; next_state.s4_938                                   ; Selector29          ; yes                    ;
-; next_state.s10_806                                  ; Selector29          ; yes                    ;
-; next_state.s2_982                                   ; Selector29          ; yes                    ;
-; next_state.s9_828                                   ; Selector29          ; yes                    ;
-; next_state.s5_916                                   ; Selector29          ; yes                    ;
-; next_state.s14_718                                  ; Selector29          ; yes                    ;
-; next_state.s20_586                                  ; Selector29          ; yes                    ;
-; next_state.s12_762                                  ; Selector29          ; yes                    ;
-; next_state.s7_872                                   ; Selector29          ; yes                    ;
-; next_state.s16_674                                  ; Selector29          ; yes                    ;
-; next_state.s17_652                                  ; Selector29          ; yes                    ;
-; next_state.s8_850                                   ; Selector29          ; yes                    ;
-; next_state.s11_784                                  ; Selector29          ; yes                    ;
-; next_state.s15_696                                  ; Selector29          ; yes                    ;
-; next_state.s3_960                                   ; Selector29          ; yes                    ;
+; next_state.s1_994                                   ; Selector29          ; yes                    ;
+; next_state.s4_928                                   ; Selector29          ; yes                    ;
+; next_state.s10_796                                  ; Selector29          ; yes                    ;
+; next_state.s2_972                                   ; Selector29          ; yes                    ;
+; next_state.s9_818                                   ; Selector29          ; yes                    ;
+; next_state.s5_906                                   ; Selector29          ; yes                    ;
+; next_state.s14_708                                  ; Selector29          ; yes                    ;
+; next_state.s20_576                                  ; Selector29          ; yes                    ;
+; next_state.s12_752                                  ; Selector29          ; yes                    ;
+; next_state.s7_862                                   ; Selector29          ; yes                    ;
+; next_state.s16_664                                  ; Selector29          ; yes                    ;
+; next_state.s17_642                                  ; Selector29          ; yes                    ;
+; next_state.s8_840                                   ; Selector29          ; yes                    ;
+; next_state.s11_774                                  ; Selector29          ; yes                    ;
+; next_state.s15_686                                  ; Selector29          ; yes                    ;
+; next_state.s3_950                                   ; Selector29          ; yes                    ;
 ; Number of user-specified and inferred latches = 16  ;                     ;                        ;
 +-----------------------------------------------------+---------------------+------------------------+
 Note: All latches listed above may not be present at the end of synthesis due to various synthesis optimizations.
@@ -305,19 +305,19 @@ Note: All latches listed above may not be present at the end of synthesis due to
 +-----------------------+-----------------------------+
 ; Type                  ; Count                       ;
 +-----------------------+-----------------------------+
-; boundary_port         ; 37                          ;
+; boundary_port         ; 35                          ;
 ; cycloneiii_ff         ; 16                          ;
 ;     CLR               ; 16                          ;
-; cycloneiii_lcell_comb ; 76                          ;
-;     normal            ; 76                          ;
+; cycloneiii_lcell_comb ; 73                          ;
+;     normal            ; 73                          ;
 ;         0 data inputs ; 1                           ;
 ;         1 data inputs ; 3                           ;
 ;         2 data inputs ; 10                          ;
-;         3 data inputs ; 31                          ;
-;         4 data inputs ; 31                          ;
+;         3 data inputs ; 34                          ;
+;         4 data inputs ; 25                          ;
 ;                       ;                             ;
 ; Max LUT depth         ; 5.00                        ;
-; Average LUT depth     ; 2.80                        ;
+; Average LUT depth     ; 2.89                        ;
 +-----------------------+-----------------------------+
 
 
@@ -326,7 +326,7 @@ Note: All latches listed above may not be present at the end of synthesis due to
 +----------------+--------------+
 ; Partition Name ; Elapsed Time ;
 +----------------+--------------+
-; Top            ; 00:00:01     ;
+; Top            ; 00:00:00     ;
 +----------------+--------------+
 
 
@@ -336,10 +336,13 @@ Note: All latches listed above may not be present at the end of synthesis due to
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 16.1.0 Build 196 10/24/2016 SJ Lite Edition
-    Info: Processing started: Tue Nov  7 21:44:45 2017
+    Info: Processing started: Tue Nov  7 23:26:38 2017
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off FSM_new -c FSM_new
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 2 of the 2 processors detected
+Info (12021): Found 2 design units, including 1 entities, in source file testbench_control.vhd
+    Info (12022): Found design unit 1: testbench_control-Behave File: /home/mohit/microlab337/controlPath/testbench_control.vhd Line: 10
+    Info (12023): Found entity 1: testbench_control File: /home/mohit/microlab337/controlPath/testbench_control.vhd Line: 7
 Info (12021): Found 2 design units, including 1 entities, in source file FSM_new.vhd
     Info (12022): Found design unit 1: FSM_new-rtl File: /home/mohit/microlab337/controlPath/FSM_new.vhd Line: 22
     Info (12023): Found entity 1: FSM_new File: /home/mohit/microlab337/controlPath/FSM_new.vhd Line: 5
@@ -370,33 +373,33 @@ Info (10041): Inferred latch for "next_state.s4" at FSM_new.vhd(107) File: /home
 Info (10041): Inferred latch for "next_state.s3" at FSM_new.vhd(107) File: /home/mohit/microlab337/controlPath/FSM_new.vhd Line: 107
 Info (10041): Inferred latch for "next_state.s2" at FSM_new.vhd(107) File: /home/mohit/microlab337/controlPath/FSM_new.vhd Line: 107
 Info (10041): Inferred latch for "next_state.s1" at FSM_new.vhd(107) File: /home/mohit/microlab337/controlPath/FSM_new.vhd Line: 107
-Warning (13012): Latch next_state.s1_1004 has unsafe behavior File: /home/mohit/microlab337/controlPath/FSM_new.vhd Line: 107
+Warning (13012): Latch next_state.s1_994 has unsafe behavior File: /home/mohit/microlab337/controlPath/FSM_new.vhd Line: 107
     Warning (13013): Ports D and ENA on the latch are fed by the same signal state.s8 File: /home/mohit/microlab337/controlPath/FSM_new.vhd Line: 28
-Warning (13012): Latch next_state.s4_938 has unsafe behavior File: /home/mohit/microlab337/controlPath/FSM_new.vhd Line: 107
+Warning (13012): Latch next_state.s4_928 has unsafe behavior File: /home/mohit/microlab337/controlPath/FSM_new.vhd Line: 107
     Warning (13013): Ports D and ENA on the latch are fed by the same signal state.s7 File: /home/mohit/microlab337/controlPath/FSM_new.vhd Line: 28
-Warning (13012): Latch next_state.s10_806 has unsafe behavior File: /home/mohit/microlab337/controlPath/FSM_new.vhd Line: 107
+Warning (13012): Latch next_state.s10_796 has unsafe behavior File: /home/mohit/microlab337/controlPath/FSM_new.vhd Line: 107
     Warning (13013): Ports D and ENA on the latch are fed by the same signal state.s8 File: /home/mohit/microlab337/controlPath/FSM_new.vhd Line: 28
-Warning (13012): Latch next_state.s9_828 has unsafe behavior File: /home/mohit/microlab337/controlPath/FSM_new.vhd Line: 107
+Warning (13012): Latch next_state.s9_818 has unsafe behavior File: /home/mohit/microlab337/controlPath/FSM_new.vhd Line: 107
     Warning (13013): Ports D and ENA on the latch are fed by the same signal opcode[0] File: /home/mohit/microlab337/controlPath/FSM_new.vhd Line: 10
-Warning (13012): Latch next_state.s5_916 has unsafe behavior File: /home/mohit/microlab337/controlPath/FSM_new.vhd Line: 107
+Warning (13012): Latch next_state.s5_906 has unsafe behavior File: /home/mohit/microlab337/controlPath/FSM_new.vhd Line: 107
     Warning (13013): Ports D and ENA on the latch are fed by the same signal state.s8 File: /home/mohit/microlab337/controlPath/FSM_new.vhd Line: 28
-Warning (13012): Latch next_state.s14_718 has unsafe behavior File: /home/mohit/microlab337/controlPath/FSM_new.vhd Line: 107
+Warning (13012): Latch next_state.s14_708 has unsafe behavior File: /home/mohit/microlab337/controlPath/FSM_new.vhd Line: 107
     Warning (13013): Ports D and ENA on the latch are fed by the same signal state.s7 File: /home/mohit/microlab337/controlPath/FSM_new.vhd Line: 28
-Warning (13012): Latch next_state.s20_586 has unsafe behavior File: /home/mohit/microlab337/controlPath/FSM_new.vhd Line: 107
+Warning (13012): Latch next_state.s20_576 has unsafe behavior File: /home/mohit/microlab337/controlPath/FSM_new.vhd Line: 107
     Warning (13013): Ports D and ENA on the latch are fed by the same signal state.s8 File: /home/mohit/microlab337/controlPath/FSM_new.vhd Line: 28
-Warning (13012): Latch next_state.s12_762 has unsafe behavior File: /home/mohit/microlab337/controlPath/FSM_new.vhd Line: 107
+Warning (13012): Latch next_state.s12_752 has unsafe behavior File: /home/mohit/microlab337/controlPath/FSM_new.vhd Line: 107
     Warning (13013): Ports D and ENA on the latch are fed by the same signal opcode[0] File: /home/mohit/microlab337/controlPath/FSM_new.vhd Line: 10
-Warning (13012): Latch next_state.s7_872 has unsafe behavior File: /home/mohit/microlab337/controlPath/FSM_new.vhd Line: 107
+Warning (13012): Latch next_state.s7_862 has unsafe behavior File: /home/mohit/microlab337/controlPath/FSM_new.vhd Line: 107
     Warning (13013): Ports D and ENA on the latch are fed by the same signal opcode[0] File: /home/mohit/microlab337/controlPath/FSM_new.vhd Line: 10
-Warning (13012): Latch next_state.s17_652 has unsafe behavior File: /home/mohit/microlab337/controlPath/FSM_new.vhd Line: 107
+Warning (13012): Latch next_state.s17_642 has unsafe behavior File: /home/mohit/microlab337/controlPath/FSM_new.vhd Line: 107
     Warning (13013): Ports D and ENA on the latch are fed by the same signal opcode[0] File: /home/mohit/microlab337/controlPath/FSM_new.vhd Line: 10
-Warning (13012): Latch next_state.s8_850 has unsafe behavior File: /home/mohit/microlab337/controlPath/FSM_new.vhd Line: 107
+Warning (13012): Latch next_state.s8_840 has unsafe behavior File: /home/mohit/microlab337/controlPath/FSM_new.vhd Line: 107
     Warning (13013): Ports D and ENA on the latch are fed by the same signal state.s10 File: /home/mohit/microlab337/controlPath/FSM_new.vhd Line: 28
-Warning (13012): Latch next_state.s11_784 has unsafe behavior File: /home/mohit/microlab337/controlPath/FSM_new.vhd Line: 107
+Warning (13012): Latch next_state.s11_774 has unsafe behavior File: /home/mohit/microlab337/controlPath/FSM_new.vhd Line: 107
     Warning (13013): Ports D and ENA on the latch are fed by the same signal state.s7 File: /home/mohit/microlab337/controlPath/FSM_new.vhd Line: 28
-Warning (13012): Latch next_state.s15_696 has unsafe behavior File: /home/mohit/microlab337/controlPath/FSM_new.vhd Line: 107
+Warning (13012): Latch next_state.s15_686 has unsafe behavior File: /home/mohit/microlab337/controlPath/FSM_new.vhd Line: 107
     Warning (13013): Ports D and ENA on the latch are fed by the same signal state.s10 File: /home/mohit/microlab337/controlPath/FSM_new.vhd Line: 28
-Warning (13012): Latch next_state.s3_960 has unsafe behavior File: /home/mohit/microlab337/controlPath/FSM_new.vhd Line: 107
+Warning (13012): Latch next_state.s3_950 has unsafe behavior File: /home/mohit/microlab337/controlPath/FSM_new.vhd Line: 107
     Warning (13013): Ports D and ENA on the latch are fed by the same signal opcode[3] File: /home/mohit/microlab337/controlPath/FSM_new.vhd Line: 10
 Warning (13024): Output pins are stuck at VCC or GND
     Warning (13410): Pin "data_out[0]" is stuck at GND File: /home/mohit/microlab337/controlPath/FSM_new.vhd Line: 17
@@ -404,14 +407,14 @@ Warning (13024): Output pins are stuck at VCC or GND
 Info (286030): Timing-Driven Synthesis is running
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 125 device resources after synthesis - the final resource count might be different
-    Info (21058): Implemented 15 input pins
+Info (21057): Implemented 120 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 13 input pins
     Info (21059): Implemented 22 output pins
-    Info (21061): Implemented 88 logic cells
+    Info (21061): Implemented 85 logic cells
 Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 38 warnings
-    Info: Peak virtual memory: 963 megabytes
-    Info: Processing ended: Tue Nov  7 21:45:01 2017
-    Info: Elapsed time: 00:00:16
-    Info: Total CPU time (on all processors): 00:00:33
+    Info: Peak virtual memory: 964 megabytes
+    Info: Processing ended: Tue Nov  7 23:26:51 2017
+    Info: Elapsed time: 00:00:13
+    Info: Total CPU time (on all processors): 00:00:32
 
 
