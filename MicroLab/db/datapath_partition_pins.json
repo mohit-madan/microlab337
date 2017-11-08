@@ -4,223 +4,127 @@
 			"name" : "Top",
 			"pins" : [
 				{
-					"name" : "reg_c[0]",
-					"strict" : false
-				},
-				{
-					"name" : "reg_c[1]",
-					"strict" : false
-				},
-				{
-					"name" : "reg_c[2]",
-					"strict" : false
-				},
-				{
-					"name" : "reg_c[3]",
-					"strict" : false
-				},
-				{
-					"name" : "reg_c[4]",
-					"strict" : false
-				},
-				{
-					"name" : "reg_c[5]",
-					"strict" : false
-				},
-				{
-					"name" : "reg_c[6]",
-					"strict" : false
-				},
-				{
-					"name" : "reg_c[7]",
-					"strict" : false
-				},
-				{
-					"name" : "reg_c[8]",
-					"strict" : false
-				},
-				{
-					"name" : "reg_c[9]",
-					"strict" : false
-				},
-				{
-					"name" : "reg_c[10]",
-					"strict" : false
-				},
-				{
-					"name" : "reg_c[11]",
-					"strict" : false
-				},
-				{
-					"name" : "reg_c[12]",
-					"strict" : false
-				},
-				{
-					"name" : "reg_c[13]",
-					"strict" : false
-				},
-				{
-					"name" : "reg_c[14]",
-					"strict" : false
-				},
-				{
-					"name" : "reg_c[15]",
-					"strict" : false
-				},
-				{
 					"name" : "carry",
 					"strict" : false
 				},
 				{
-					"name" : "zero",
+					"name" : "zeroflag",
 					"strict" : false
 				},
 				{
-					"name" : "reg_a[14]",
+					"name" : "op_code[0]",
 					"strict" : false
 				},
 				{
-					"name" : "reg_a[13]",
+					"name" : "op_code[1]",
 					"strict" : false
 				},
 				{
-					"name" : "reg_a[12]",
+					"name" : "op_code[2]",
 					"strict" : false
 				},
 				{
-					"name" : "reg_a[11]",
+					"name" : "op_code[3]",
 					"strict" : false
 				},
 				{
-					"name" : "reg_a[10]",
+					"name" : "IR_3_5[0]",
 					"strict" : false
 				},
 				{
-					"name" : "reg_a[9]",
+					"name" : "IR_3_5[1]",
 					"strict" : false
 				},
 				{
-					"name" : "reg_a[8]",
+					"name" : "IR_3_5[2]",
 					"strict" : false
 				},
 				{
-					"name" : "reg_a[7]",
+					"name" : "IR_7",
 					"strict" : false
 				},
 				{
-					"name" : "reg_a[6]",
+					"name" : "C[13]",
 					"strict" : false
 				},
 				{
-					"name" : "reg_a[5]",
+					"name" : "C[14]",
 					"strict" : false
 				},
 				{
-					"name" : "reg_a[4]",
+					"name" : "C[15]",
 					"strict" : false
 				},
 				{
-					"name" : "reg_a[3]",
+					"name" : "clk",
 					"strict" : false
 				},
 				{
-					"name" : "reg_a[2]",
+					"name" : "C[9]",
 					"strict" : false
 				},
 				{
-					"name" : "reg_a[1]",
+					"name" : "C[1]",
 					"strict" : false
 				},
 				{
-					"name" : "reg_a[0]",
+					"name" : "C[2]",
 					"strict" : false
 				},
 				{
-					"name" : "reg_a[15]",
+					"name" : "C[19]",
 					"strict" : false
 				},
 				{
-					"name" : "reg_b[15]",
+					"name" : "C[18]",
 					"strict" : false
 				},
 				{
-					"name" : "reg_b[0]",
+					"name" : "C[16]",
 					"strict" : false
 				},
 				{
-					"name" : "op_sel[0]",
+					"name" : "C[17]",
 					"strict" : false
 				},
 				{
-					"name" : "op_sel[2]",
+					"name" : "C[6]",
 					"strict" : false
 				},
 				{
-					"name" : "op_sel[3]",
+					"name" : "C[7]",
 					"strict" : false
 				},
 				{
-					"name" : "op_sel[1]",
+					"name" : "C[4]",
 					"strict" : false
 				},
 				{
-					"name" : "add1bit",
+					"name" : "C[3]",
 					"strict" : false
 				},
 				{
-					"name" : "reg_b[1]",
+					"name" : "C[12]",
 					"strict" : false
 				},
 				{
-					"name" : "reg_b[2]",
+					"name" : "C[10]",
 					"strict" : false
 				},
 				{
-					"name" : "reg_b[3]",
+					"name" : "C[11]",
 					"strict" : false
 				},
 				{
-					"name" : "reg_b[4]",
+					"name" : "C[0]",
 					"strict" : false
 				},
 				{
-					"name" : "reg_b[5]",
+					"name" : "C[8]",
 					"strict" : false
 				},
 				{
-					"name" : "reg_b[6]",
-					"strict" : false
-				},
-				{
-					"name" : "reg_b[7]",
-					"strict" : false
-				},
-				{
-					"name" : "reg_b[8]",
-					"strict" : false
-				},
-				{
-					"name" : "reg_b[9]",
-					"strict" : false
-				},
-				{
-					"name" : "reg_b[10]",
-					"strict" : false
-				},
-				{
-					"name" : "reg_b[11]",
-					"strict" : false
-				},
-				{
-					"name" : "reg_b[12]",
-					"strict" : false
-				},
-				{
-					"name" : "reg_b[13]",
-					"strict" : false
-				},
-				{
-					"name" : "reg_b[14]",
+					"name" : "C[5]",
 					"strict" : false
 				}
 			]

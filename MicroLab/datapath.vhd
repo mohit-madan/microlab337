@@ -10,7 +10,8 @@ Port(
 	carry,zeroflag  : out STD_LOGIC;
 	op_code  		 : out STD_LOGIC_VECTOR(3 downto 0);
 	IR_3_5 			 : out STD_LOGIC_VECTOR(2 downto 0);
-	IR_7      		 : out STD_LOGIC 
+	IR_7      		 : out STD_LOGIC;
+	cmp              : out std_logic 
 	);
 end datapath;
 
@@ -158,8 +159,9 @@ component alu is
 	     add1bit: in std_logic;
         op_sel: in std_logic_vector(3 downto 0);
         reg_c: out std_logic_vector(15 downto 0);
-        carry_flag: out std_logic;
-        zero_flag: out std_logic);
+        carry: out std_logic;
+        zero: out std_logic;
+   		cmp       : out std_logic);
 end component;
 
 -------------sign extender----------------
@@ -342,8 +344,9 @@ port map(
 	add1bit => en1_bit,
 	op_sel 	=> ir_out(15 downto 12), --will be provided from opcode
 	reg_c 	=> alu_out,
-	carry_flag 		=> carry1, --output from the entity
-	zero_flag 		=> zeroflag1 -- output from the entity
+	carry		=> carry1, --output from the entity
+	zero	=> zeroflag1, -- output from the entity\
+	cmp             => cmp
 );
 car : registers
 port map(
