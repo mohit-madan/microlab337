@@ -10,7 +10,7 @@ entity FSM_new is
 		opcode				: in	std_logic_vector(3 downto 0);
 		op_type 				: in 	std_logic_vector(1 downto 0);
 		reset	 				: in	std_logic;
-		carry,zero,valid	: in 	std_logic;
+		carry,zero,valid,cmp	: in 	std_logic;
 		IR_3_5				: in  std_logic_vector(2 downto 0) ;
 		IR_7					: in  std_logic;
 		control_store 		: out std_logic_vector (19 downto 0);
@@ -104,7 +104,7 @@ begin
 			
 		
 	end process;
-NEXT_STATE_DECODE : process (state, opcode,op_type,carry,zero,valid)
+NEXT_STATE_DECODE : process (state, opcode,op_type,carry,zero,valid,cmp)
 begin
 	case state is
 				when s1=>
@@ -130,7 +130,7 @@ begin
 					if (opcode = "0100") then
 						next_state <= s12;
 					elsif opcode = "1100" then
-						if (zero = '0') then
+						if (cmp = '0') then
 							next_state <= s5;
 						else 
 							next_state <= s17;
