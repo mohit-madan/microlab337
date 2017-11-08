@@ -11,6 +11,7 @@ entity TopLevel is
 end entity TopLevel;
 
 architecture Struct of TopLevel is
+
 	component FSM_new is
   		port
 		(
@@ -22,10 +23,9 @@ architecture Struct of TopLevel is
 			IR_3_5				: in  std_logic;
 			IR_7				: in  std_logic;
 			control_store 		: out std_logic_vector (19 downto 0);
-			data_out			: out std_logic_vector(1 downto 0));
 	end component;
 
-	component datapth is
+	component datapath is
 		port
 		(
 			C     	 		 : in  STD_LOGIC_VECTOR(19 downto 0); --control signals 
@@ -47,7 +47,7 @@ architecture Struct of TopLevel is
 
 begin
 
-FSM_new: ControlPath
+ControlPath:FSM_new
     port map (
     clk	=> clk,
     opcode => opcode,
@@ -58,11 +58,10 @@ FSM_new: ControlPath
     valid => valid,
     IR_3_5 => IR_3_5,
     IR_7 => IR_7,
-    control_store => control_store,
-    data_out => data_out);
+    control_store => control_store);
 
 
-Data: Datapath
+Data: datapath
     port map (
     C => C,
     clk => clk,
