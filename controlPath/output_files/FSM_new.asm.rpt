@@ -1,6 +1,6 @@
 Assembler report for FSM_new
-Tue Nov  7 23:27:00 2017
-Quartus Prime Version 16.1.0 Build 196 10/24/2016 SJ Lite Edition
+Wed Nov  8 22:19:51 2017
+Quartus Prime Version 17.0.0 Build 595 04/25/2017 SJ Lite Edition
 
 
 ---------------------
@@ -18,7 +18,7 @@ Quartus Prime Version 16.1.0 Build 196 10/24/2016 SJ Lite Edition
 ----------------
 ; Legal Notice ;
 ----------------
-Copyright (C) 2016  Intel Corporation. All rights reserved.
+Copyright (C) 2017  Intel Corporation. All rights reserved.
 Your use of Intel Corporation's design tools, logic functions 
 and other software and tools, and its AMPP partner logic 
 functions, and any output files from any of the foregoing 
@@ -38,7 +38,7 @@ agreement for further details.
 +---------------------------------------------------------------+
 ; Assembler Summary                                             ;
 +-----------------------+---------------------------------------+
-; Assembler Status      ; Successful - Tue Nov  7 23:27:00 2017 ;
+; Assembler Status      ; Successful - Wed Nov  8 22:19:51 2017 ;
 ; Revision Name         ; FSM_new                               ;
 ; Top-level Entity Name ; FSM_new                               ;
 ; Family                ; Cyclone IV E                          ;
@@ -53,13 +53,13 @@ agreement for further details.
 +--------+---------+---------------+
 
 
-+---------------------------+
-; Assembler Generated Files ;
-+---------------------------+
-; File Name                 ;
-+---------------------------+
-; FSM_new.sof               ;
-+---------------------------+
++------------------------------------------------------------------------+
+; Assembler Generated Files                                              ;
++------------------------------------------------------------------------+
+; File Name                                                              ;
++------------------------------------------------------------------------+
+; /home/shrey/Documents/microlab337/controlPath/output_files/FSM_new.sof ;
++------------------------------------------------------------------------+
 
 
 +---------------------------------------+
@@ -67,9 +67,8 @@ agreement for further details.
 +----------------+----------------------+
 ; Option         ; Setting              ;
 +----------------+----------------------+
-; Device         ; EP4CE22F17C6         ;
-; JTAG usercode  ; 0x001430E3           ;
-; Checksum       ; 0x001430E3           ;
+; JTAG usercode  ; 0x00143063           ;
+; Checksum       ; 0x00143063           ;
 +----------------+----------------------+
 
 
@@ -78,16 +77,16 @@ agreement for further details.
 +--------------------+
 Info: *******************************************************************
 Info: Running Quartus Prime Assembler
-    Info: Version 16.1.0 Build 196 10/24/2016 SJ Lite Edition
-    Info: Processing started: Tue Nov  7 23:26:59 2017
+    Info: Version 17.0.0 Build 595 04/25/2017 SJ Lite Edition
+    Info: Processing started: Wed Nov  8 22:19:51 2017
 Info: Command: quartus_asm --read_settings_files=off --write_settings_files=off FSM_new -c FSM_new
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (115031): Writing out detailed assembly data for power analysis
 Info (115030): Assembler is generating device programming files
 Info: Quartus Prime Assembler was successful. 0 errors, 1 warning
-    Info: Peak virtual memory: 816 megabytes
-    Info: Processing ended: Tue Nov  7 23:27:00 2017
-    Info: Elapsed time: 00:00:01
+    Info: Peak virtual memory: 820 megabytes
+    Info: Processing ended: Wed Nov  8 22:19:51 2017
+    Info: Elapsed time: 00:00:00
     Info: Total CPU time (on all processors): 00:00:01
 
 

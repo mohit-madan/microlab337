@@ -6,37 +6,37 @@
 # vmap work rtl_work
 # Model Technology ModelSim - Intel FPGA Edition vmap 10.5b Lib Mapping Utility 2016.10 Oct  5 2016
 # vmap work rtl_work 
-# Copying /home/mohit/intelFPGA_lite/16.1/modelsim_ase/linuxaloem/../modelsim.ini to modelsim.ini
+# Copying /home/shrey/intelFPGA_lite/17.0/modelsim_ase/linuxaloem/../modelsim.ini to modelsim.ini
 # Modifying modelsim.ini
 # 
-# vcom -93 -work work {/home/mohit/microlab337/controlPath/FSM_new.vhd}
+# vcom -93 -work work {/home/shrey/Documents/microlab337/controlPath/FSM_new.vhd}
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 23:27:14 on Nov 07,2017
-# vcom -reportprogress 300 -93 -work work /home/mohit/microlab337/controlPath/FSM_new.vhd 
+# Start time: 22:20:03 on Nov 08,2017
+# vcom -reportprogress 300 -93 -work work /home/shrey/Documents/microlab337/controlPath/FSM_new.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
 # -- Loading package NUMERIC_STD
 # -- Compiling entity FSM_new
 # -- Compiling architecture rtl of FSM_new
-# End time: 23:27:15 on Nov 07,2017, Elapsed time: 0:00:01
+# End time: 22:20:03 on Nov 08,2017, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # 
-# vcom -93 -work work {/home/mohit/microlab337/controlPath/testbench_control.vhd}
+# vcom -93 -work work {/home/shrey/Documents/microlab337/controlPath/testbench_control.vhd}
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 23:27:15 on Nov 07,2017
-# vcom -reportprogress 300 -93 -work work /home/mohit/microlab337/controlPath/testbench_control.vhd 
+# Start time: 22:20:03 on Nov 08,2017
+# vcom -reportprogress 300 -93 -work work /home/shrey/Documents/microlab337/controlPath/testbench_control.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
 # -- Compiling entity testbench_control
 # -- Compiling architecture Behave of testbench_control
-# End time: 23:27:15 on Nov 07,2017, Elapsed time: 0:00:00
+# End time: 22:20:03 on Nov 08,2017, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # 
 # vsim -t 1ps -L altera -L lpm -L sgate -L altera_mf -L altera_lnsim -L cycloneive -L rtl_work -L work -voptargs="+acc"  testbench_control
 # vsim -t 1ps -L altera -L lpm -L sgate -L altera_mf -L altera_lnsim -L cycloneive -L rtl_work -L work -voptargs=""+acc"" testbench_control 
-# Start time: 23:27:15 on Nov 07,2017
+# Start time: 22:20:03 on Nov 08,2017
 # Loading std.standard
 # Loading std.textio(body)
 # Loading ieee.std_logic_1164(body)
@@ -45,14 +45,42 @@
 # Loading work.fsm_new(rtl)
 # 
 # add wave *
+# ** Error: Unable to lock WLF file "vsim.wlf". Retrying 1 times, errno 11
+# ** Error: Unable to lock WLF file "vsim.wlf". Retrying 2 times, errno 11
+# ** Error: Unable to lock WLF file "vsim.wlf". Retrying 3 times, errno 11
+# ** Error: Cannot lock WLF file: "vsim.wlf"
+#           errno 11: Resource temporarily unavailable.
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+#           File in use by: unknown  Hostname: spectre  ProcessID: 7343
+#           Attempting to use alternate WLF file "./wlfta1jQF9".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+#           Using alternate file: ./wlfta1jQF9
 # view structure
 # .main_pane.structure.interior.cs.body.struct
 # view signals
 # .main_pane.objects.interior.cs.body.tree
 # run -all
+# ** Error: (vsim-3549) TEXTIO procedure READ(BIT_VECTOR) : Wrong BIT_VECTOR length. Expected 11, found 0.
+#    Time: 1230 ns  Iteration: 0  Instance: /testbench_control
+# ** Error: (vsim-3549) TEXTIO procedure READ(BIT_VECTOR) : Wrong BIT_VECTOR length. Expected 20, found 0.
+#    Time: 1230 ns  Iteration: 0  Instance: /testbench_control
 # ** Error: FAILURE, some tests failed.
-#    Time: 3280 ns  Iteration: 0  Instance: /testbench_control
-# Break key hit
-# Simulation stop requested.
-# End time: 23:28:34 on Nov 07,2017, Elapsed time: 0:01:19
-# Errors: 1, Warnings: 0
+#    Time: 1240 ns  Iteration: 0  Instance: /testbench_control
+# 
+# stdin: <EOF>
+force -freeze sim:/testbench_control/clk 1 0, 0 {50 ps} -r 100
+force -freeze sim:/testbench_control/reset 1 0
+force -freeze sim:/testbench_control/din 00000000000 0
+run
+force -freeze sim:/testbench_control/reset 0 0
+run
+run
+run
+run
+run
+run
+force -freeze sim:/testbench_control/din 00000000010 0
+run
+run
+# End time: 22:40:59 on Nov 08,2017, Elapsed time: 0:20:56
+# Errors: 7, Warnings: 2

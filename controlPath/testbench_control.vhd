@@ -97,8 +97,8 @@ begin
 
     process 
         variable err_flag : boolean := false;
-        File INFILE: text open read_mode is "/home/mohit/microlab337/controlPath/TRACEFILE.txt";
-        FILE OUTFILE: text  open write_mode is "/home/mohit/microlab337/controlPath/0UTPUTS.txt";
+        File INFILE: text open read_mode is "/home/shrey/Documents/microlab337/controlPath/TRACEFILE.txt";
+        FILE OUTFILE: text  open write_mode is "/home/shrey/Documents/microlab337/controlPath/0UTPUTS.txt";
         
         ---------------------------------------------------
         -- DUT variables

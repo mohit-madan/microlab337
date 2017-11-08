@@ -1,6 +1,6 @@
 Flow report for FSM_new
-Tue Nov  7 23:27:03 2017
-Quartus Prime Version 16.1.0 Build 196 10/24/2016 SJ Lite Edition
+Wed Nov  8 22:19:54 2017
+Quartus Prime Version 17.0.0 Build 595 04/25/2017 SJ Lite Edition
 
 
 ---------------------
@@ -21,7 +21,7 @@ Quartus Prime Version 16.1.0 Build 196 10/24/2016 SJ Lite Edition
 ----------------
 ; Legal Notice ;
 ----------------
-Copyright (C) 2016  Intel Corporation. All rights reserved.
+Copyright (C) 2017  Intel Corporation. All rights reserved.
 Your use of Intel Corporation's design tools, logic functions 
 and other software and tools, and its AMPP partner logic 
 functions, and any output files from any of the foregoing 
@@ -41,17 +41,17 @@ agreement for further details.
 +----------------------------------------------------------------------------------+
 ; Flow Summary                                                                     ;
 +------------------------------------+---------------------------------------------+
-; Flow Status                        ; Successful - Tue Nov  7 23:27:03 2017       ;
-; Quartus Prime Version              ; 16.1.0 Build 196 10/24/2016 SJ Lite Edition ;
+; Flow Status                        ; Successful - Wed Nov  8 22:19:54 2017       ;
+; Quartus Prime Version              ; 17.0.0 Build 595 04/25/2017 SJ Lite Edition ;
 ; Revision Name                      ; FSM_new                                     ;
 ; Top-level Entity Name              ; FSM_new                                     ;
 ; Family                             ; Cyclone IV E                                ;
 ; Device                             ; EP4CE22F17C6                                ;
 ; Timing Models                      ; Final                                       ;
-; Total logic elements               ; 70 / 22,320 ( < 1 % )                       ;
-;     Total combinational functions  ; 70 / 22,320 ( < 1 % )                       ;
-;     Dedicated logic registers      ; 16 / 22,320 ( < 1 % )                       ;
-; Total registers                    ; 16                                          ;
+; Total logic elements               ; 71 / 22,320 ( < 1 % )                       ;
+;     Total combinational functions  ; 71 / 22,320 ( < 1 % )                       ;
+;     Dedicated logic registers      ; 17 / 22,320 ( < 1 % )                       ;
+; Total registers                    ; 17                                          ;
 ; Total pins                         ; 35 / 154 ( 23 % )                           ;
 ; Total virtual pins                 ; 0                                           ;
 ; Total memory bits                  ; 0 / 608,256 ( 0 % )                         ;
@@ -65,7 +65,7 @@ agreement for further details.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 11/07/2017 23:26:38 ;
+; Start date & time ; 11/08/2017 22:19:34 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; FSM_new             ;
 +-------------------+---------------------+
@@ -76,7 +76,7 @@ agreement for further details.
 +--------------------------------------+----------------------------------------+---------------+-------------+-------------------+
 ; Assignment Name                      ; Value                                  ; Default Value ; Entity Name ; Section Id        ;
 +--------------------------------------+----------------------------------------+---------------+-------------+-------------------+
-; COMPILER_SIGNATURE_ID                ; 128504334292561.151007739811325        ; --            ; --          ; --                ;
+; COMPILER_SIGNATURE_ID                ; 273063033327445.151015977407708        ; --            ; --          ; --                ;
 ; EDA_DESIGN_INSTANCE_NAME             ; NA                                     ; --            ; --          ; testbench_control ;
 ; EDA_NATIVELINK_SIMULATION_TEST_BENCH ; testbench_control                      ; --            ; --          ; eda_simulation    ;
 ; EDA_OUTPUT_DATA_FORMAT               ; Verilog Hdl                            ; --            ; --          ; eda_simulation    ;
@@ -103,26 +103,26 @@ agreement for further details.
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name               ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis      ; 00:00:13     ; 1.0                     ; 954 MB              ; 00:00:32                           ;
-; Fitter                    ; 00:00:06     ; 1.0                     ; 1164 MB             ; 00:00:07                           ;
-; Assembler                 ; 00:00:01     ; 1.0                     ; 816 MB              ; 00:00:01                           ;
-; TimeQuest Timing Analyzer ; 00:00:01     ; 1.0                     ; 832 MB              ; 00:00:02                           ;
-; EDA Netlist Writer        ; 00:00:00     ; 1.0                     ; 1047 MB             ; 00:00:01                           ;
-; Total                     ; 00:00:21     ; --                      ; --                  ; 00:00:43                           ;
+; Analysis & Synthesis      ; 00:00:11     ; 1.0                     ; 962 MB              ; 00:00:24                           ;
+; Fitter                    ; 00:00:05     ; 1.0                     ; 1169 MB             ; 00:00:06                           ;
+; Assembler                 ; 00:00:00     ; 1.0                     ; 820 MB              ; 00:00:01                           ;
+; TimeQuest Timing Analyzer ; 00:00:01     ; 1.0                     ; 829 MB              ; 00:00:01                           ;
+; EDA Netlist Writer        ; 00:00:00     ; 1.0                     ; 1053 MB             ; 00:00:00                           ;
+; Total                     ; 00:00:17     ; --                      ; --                  ; 00:00:32                           ;
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 
-+------------------------------------------------------------------------------------------------------------+
-; Flow OS Summary                                                                                            ;
-+---------------------------+---------------------------------+----------------+------------+----------------+
-; Module Name               ; Machine Hostname                ; OS Name        ; OS Version ; Processor type ;
-+---------------------------+---------------------------------+----------------+------------+----------------+
-; Analysis & Synthesis      ; mohit-Lenovo-ideapad-500S-14ISK ; Ubuntu 16.04.3 ; 16         ; x86_64         ;
-; Fitter                    ; mohit-Lenovo-ideapad-500S-14ISK ; Ubuntu 16.04.3 ; 16         ; x86_64         ;
-; Assembler                 ; mohit-Lenovo-ideapad-500S-14ISK ; Ubuntu 16.04.3 ; 16         ; x86_64         ;
-; TimeQuest Timing Analyzer ; mohit-Lenovo-ideapad-500S-14ISK ; Ubuntu 16.04.3 ; 16         ; x86_64         ;
-; EDA Netlist Writer        ; mohit-Lenovo-ideapad-500S-14ISK ; Ubuntu 16.04.3 ; 16         ; x86_64         ;
-+---------------------------+---------------------------------+----------------+------------+----------------+
++---------------------------------------------------------------------------------------------+
+; Flow OS Summary                                                                             ;
++---------------------------+------------------+----------------+------------+----------------+
+; Module Name               ; Machine Hostname ; OS Name        ; OS Version ; Processor type ;
++---------------------------+------------------+----------------+------------+----------------+
+; Analysis & Synthesis      ; spectre          ; Ubuntu 16.04.3 ; 16         ; x86_64         ;
+; Fitter                    ; spectre          ; Ubuntu 16.04.3 ; 16         ; x86_64         ;
+; Assembler                 ; spectre          ; Ubuntu 16.04.3 ; 16         ; x86_64         ;
+; TimeQuest Timing Analyzer ; spectre          ; Ubuntu 16.04.3 ; 16         ; x86_64         ;
+; EDA Netlist Writer        ; spectre          ; Ubuntu 16.04.3 ; 16         ; x86_64         ;
++---------------------------+------------------+----------------+------------+----------------+
 
 
 ------------
