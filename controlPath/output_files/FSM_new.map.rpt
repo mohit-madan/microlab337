@@ -1,5 +1,5 @@
 Analysis & Synthesis report for FSM_new
-Wed Nov  8 22:19:45 2017
+Wed Nov  8 23:30:11 2017
 Quartus Prime Version 17.0.0 Build 595 04/25/2017 SJ Lite Edition
 
 
@@ -46,7 +46,7 @@ agreement for further details.
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +------------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Wed Nov  8 22:19:45 2017       ;
+; Analysis & Synthesis Status        ; Successful - Wed Nov  8 23:30:11 2017       ;
 ; Quartus Prime Version              ; 17.0.0 Build 595 04/25/2017 SJ Lite Edition ;
 ; Revision Name                      ; FSM_new                                     ;
 ; Top-level Entity Name              ; FSM_new                                     ;
@@ -337,7 +337,7 @@ Note: All latches listed above may not be present at the end of synthesis due to
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 17.0.0 Build 595 04/25/2017 SJ Lite Edition
-    Info: Processing started: Wed Nov  8 22:19:34 2017
+    Info: Processing started: Wed Nov  8 23:30:00 2017
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off FSM_new -c FSM_new
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 2 of the 2 processors detected
@@ -349,59 +349,59 @@ Info (12021): Found 2 design units, including 1 entities, in source file FSM_new
     Info (12023): Found entity 1: FSM_new File: /home/shrey/Documents/microlab337/controlPath/FSM_new.vhd Line: 5
 Info (12127): Elaborating entity "FSM_new" for the top level hierarchy
 Warning (10541): VHDL Signal Declaration warning at FSM_new.vhd(17): used implicit default value for signal "data_out" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations. File: /home/shrey/Documents/microlab337/controlPath/FSM_new.vhd Line: 17
-Warning (10492): VHDL Process Statement warning at FSM_new.vhd(147): signal "IR_3_5" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: /home/shrey/Documents/microlab337/controlPath/FSM_new.vhd Line: 147
-Warning (10492): VHDL Process Statement warning at FSM_new.vhd(170): signal "IR_7" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: /home/shrey/Documents/microlab337/controlPath/FSM_new.vhd Line: 170
-Warning (10492): VHDL Process Statement warning at FSM_new.vhd(182): signal "IR_3_5" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: /home/shrey/Documents/microlab337/controlPath/FSM_new.vhd Line: 182
-Warning (10492): VHDL Process Statement warning at FSM_new.vhd(198): signal "IR_3_5" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: /home/shrey/Documents/microlab337/controlPath/FSM_new.vhd Line: 198
-Warning (10631): VHDL Process Statement warning at FSM_new.vhd(109): inferring latch(es) for signal or variable "next_state", which holds its previous value in one or more paths through the process File: /home/shrey/Documents/microlab337/controlPath/FSM_new.vhd Line: 109
-Info (10041): Inferred latch for "next_state.s20" at FSM_new.vhd(109) File: /home/shrey/Documents/microlab337/controlPath/FSM_new.vhd Line: 109
-Info (10041): Inferred latch for "next_state.s19" at FSM_new.vhd(109) File: /home/shrey/Documents/microlab337/controlPath/FSM_new.vhd Line: 109
-Info (10041): Inferred latch for "next_state.s18" at FSM_new.vhd(109) File: /home/shrey/Documents/microlab337/controlPath/FSM_new.vhd Line: 109
-Info (10041): Inferred latch for "next_state.s17" at FSM_new.vhd(109) File: /home/shrey/Documents/microlab337/controlPath/FSM_new.vhd Line: 109
-Info (10041): Inferred latch for "next_state.s16" at FSM_new.vhd(109) File: /home/shrey/Documents/microlab337/controlPath/FSM_new.vhd Line: 109
-Info (10041): Inferred latch for "next_state.s15" at FSM_new.vhd(109) File: /home/shrey/Documents/microlab337/controlPath/FSM_new.vhd Line: 109
-Info (10041): Inferred latch for "next_state.s14" at FSM_new.vhd(109) File: /home/shrey/Documents/microlab337/controlPath/FSM_new.vhd Line: 109
-Info (10041): Inferred latch for "next_state.s13" at FSM_new.vhd(109) File: /home/shrey/Documents/microlab337/controlPath/FSM_new.vhd Line: 109
-Info (10041): Inferred latch for "next_state.s12" at FSM_new.vhd(109) File: /home/shrey/Documents/microlab337/controlPath/FSM_new.vhd Line: 109
-Info (10041): Inferred latch for "next_state.s11" at FSM_new.vhd(109) File: /home/shrey/Documents/microlab337/controlPath/FSM_new.vhd Line: 109
-Info (10041): Inferred latch for "next_state.s10" at FSM_new.vhd(109) File: /home/shrey/Documents/microlab337/controlPath/FSM_new.vhd Line: 109
-Info (10041): Inferred latch for "next_state.s9" at FSM_new.vhd(109) File: /home/shrey/Documents/microlab337/controlPath/FSM_new.vhd Line: 109
-Info (10041): Inferred latch for "next_state.s8" at FSM_new.vhd(109) File: /home/shrey/Documents/microlab337/controlPath/FSM_new.vhd Line: 109
-Info (10041): Inferred latch for "next_state.s7" at FSM_new.vhd(109) File: /home/shrey/Documents/microlab337/controlPath/FSM_new.vhd Line: 109
-Info (10041): Inferred latch for "next_state.s6" at FSM_new.vhd(109) File: /home/shrey/Documents/microlab337/controlPath/FSM_new.vhd Line: 109
-Info (10041): Inferred latch for "next_state.s5" at FSM_new.vhd(109) File: /home/shrey/Documents/microlab337/controlPath/FSM_new.vhd Line: 109
-Info (10041): Inferred latch for "next_state.s4" at FSM_new.vhd(109) File: /home/shrey/Documents/microlab337/controlPath/FSM_new.vhd Line: 109
-Info (10041): Inferred latch for "next_state.s3" at FSM_new.vhd(109) File: /home/shrey/Documents/microlab337/controlPath/FSM_new.vhd Line: 109
-Info (10041): Inferred latch for "next_state.s2" at FSM_new.vhd(109) File: /home/shrey/Documents/microlab337/controlPath/FSM_new.vhd Line: 109
-Info (10041): Inferred latch for "next_state.s1" at FSM_new.vhd(109) File: /home/shrey/Documents/microlab337/controlPath/FSM_new.vhd Line: 109
-Info (10041): Inferred latch for "next_state.s0" at FSM_new.vhd(109) File: /home/shrey/Documents/microlab337/controlPath/FSM_new.vhd Line: 109
-Warning (13012): Latch next_state.s1_1014 has unsafe behavior File: /home/shrey/Documents/microlab337/controlPath/FSM_new.vhd Line: 109
+Warning (10492): VHDL Process Statement warning at FSM_new.vhd(148): signal "IR_3_5" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: /home/shrey/Documents/microlab337/controlPath/FSM_new.vhd Line: 148
+Warning (10492): VHDL Process Statement warning at FSM_new.vhd(171): signal "IR_7" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: /home/shrey/Documents/microlab337/controlPath/FSM_new.vhd Line: 171
+Warning (10492): VHDL Process Statement warning at FSM_new.vhd(183): signal "IR_3_5" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: /home/shrey/Documents/microlab337/controlPath/FSM_new.vhd Line: 183
+Warning (10492): VHDL Process Statement warning at FSM_new.vhd(199): signal "IR_3_5" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: /home/shrey/Documents/microlab337/controlPath/FSM_new.vhd Line: 199
+Warning (10631): VHDL Process Statement warning at FSM_new.vhd(110): inferring latch(es) for signal or variable "next_state", which holds its previous value in one or more paths through the process File: /home/shrey/Documents/microlab337/controlPath/FSM_new.vhd Line: 110
+Info (10041): Inferred latch for "next_state.s20" at FSM_new.vhd(110) File: /home/shrey/Documents/microlab337/controlPath/FSM_new.vhd Line: 110
+Info (10041): Inferred latch for "next_state.s19" at FSM_new.vhd(110) File: /home/shrey/Documents/microlab337/controlPath/FSM_new.vhd Line: 110
+Info (10041): Inferred latch for "next_state.s18" at FSM_new.vhd(110) File: /home/shrey/Documents/microlab337/controlPath/FSM_new.vhd Line: 110
+Info (10041): Inferred latch for "next_state.s17" at FSM_new.vhd(110) File: /home/shrey/Documents/microlab337/controlPath/FSM_new.vhd Line: 110
+Info (10041): Inferred latch for "next_state.s16" at FSM_new.vhd(110) File: /home/shrey/Documents/microlab337/controlPath/FSM_new.vhd Line: 110
+Info (10041): Inferred latch for "next_state.s15" at FSM_new.vhd(110) File: /home/shrey/Documents/microlab337/controlPath/FSM_new.vhd Line: 110
+Info (10041): Inferred latch for "next_state.s14" at FSM_new.vhd(110) File: /home/shrey/Documents/microlab337/controlPath/FSM_new.vhd Line: 110
+Info (10041): Inferred latch for "next_state.s13" at FSM_new.vhd(110) File: /home/shrey/Documents/microlab337/controlPath/FSM_new.vhd Line: 110
+Info (10041): Inferred latch for "next_state.s12" at FSM_new.vhd(110) File: /home/shrey/Documents/microlab337/controlPath/FSM_new.vhd Line: 110
+Info (10041): Inferred latch for "next_state.s11" at FSM_new.vhd(110) File: /home/shrey/Documents/microlab337/controlPath/FSM_new.vhd Line: 110
+Info (10041): Inferred latch for "next_state.s10" at FSM_new.vhd(110) File: /home/shrey/Documents/microlab337/controlPath/FSM_new.vhd Line: 110
+Info (10041): Inferred latch for "next_state.s9" at FSM_new.vhd(110) File: /home/shrey/Documents/microlab337/controlPath/FSM_new.vhd Line: 110
+Info (10041): Inferred latch for "next_state.s8" at FSM_new.vhd(110) File: /home/shrey/Documents/microlab337/controlPath/FSM_new.vhd Line: 110
+Info (10041): Inferred latch for "next_state.s7" at FSM_new.vhd(110) File: /home/shrey/Documents/microlab337/controlPath/FSM_new.vhd Line: 110
+Info (10041): Inferred latch for "next_state.s6" at FSM_new.vhd(110) File: /home/shrey/Documents/microlab337/controlPath/FSM_new.vhd Line: 110
+Info (10041): Inferred latch for "next_state.s5" at FSM_new.vhd(110) File: /home/shrey/Documents/microlab337/controlPath/FSM_new.vhd Line: 110
+Info (10041): Inferred latch for "next_state.s4" at FSM_new.vhd(110) File: /home/shrey/Documents/microlab337/controlPath/FSM_new.vhd Line: 110
+Info (10041): Inferred latch for "next_state.s3" at FSM_new.vhd(110) File: /home/shrey/Documents/microlab337/controlPath/FSM_new.vhd Line: 110
+Info (10041): Inferred latch for "next_state.s2" at FSM_new.vhd(110) File: /home/shrey/Documents/microlab337/controlPath/FSM_new.vhd Line: 110
+Info (10041): Inferred latch for "next_state.s1" at FSM_new.vhd(110) File: /home/shrey/Documents/microlab337/controlPath/FSM_new.vhd Line: 110
+Info (10041): Inferred latch for "next_state.s0" at FSM_new.vhd(110) File: /home/shrey/Documents/microlab337/controlPath/FSM_new.vhd Line: 110
+Warning (13012): Latch next_state.s1_1014 has unsafe behavior File: /home/shrey/Documents/microlab337/controlPath/FSM_new.vhd Line: 110
     Warning (13013): Ports D and ENA on the latch are fed by the same signal state.s8 File: /home/shrey/Documents/microlab337/controlPath/FSM_new.vhd Line: 28
-Warning (13012): Latch next_state.s4_948 has unsafe behavior File: /home/shrey/Documents/microlab337/controlPath/FSM_new.vhd Line: 109
+Warning (13012): Latch next_state.s4_948 has unsafe behavior File: /home/shrey/Documents/microlab337/controlPath/FSM_new.vhd Line: 110
     Warning (13013): Ports D and ENA on the latch are fed by the same signal state.s7 File: /home/shrey/Documents/microlab337/controlPath/FSM_new.vhd Line: 28
-Warning (13012): Latch next_state.s10_816 has unsafe behavior File: /home/shrey/Documents/microlab337/controlPath/FSM_new.vhd Line: 109
+Warning (13012): Latch next_state.s10_816 has unsafe behavior File: /home/shrey/Documents/microlab337/controlPath/FSM_new.vhd Line: 110
     Warning (13013): Ports D and ENA on the latch are fed by the same signal state.s8 File: /home/shrey/Documents/microlab337/controlPath/FSM_new.vhd Line: 28
-Warning (13012): Latch next_state.s9_838 has unsafe behavior File: /home/shrey/Documents/microlab337/controlPath/FSM_new.vhd Line: 109
+Warning (13012): Latch next_state.s9_838 has unsafe behavior File: /home/shrey/Documents/microlab337/controlPath/FSM_new.vhd Line: 110
     Warning (13013): Ports D and ENA on the latch are fed by the same signal opcode[0] File: /home/shrey/Documents/microlab337/controlPath/FSM_new.vhd Line: 10
-Warning (13012): Latch next_state.s5_926 has unsafe behavior File: /home/shrey/Documents/microlab337/controlPath/FSM_new.vhd Line: 109
+Warning (13012): Latch next_state.s5_926 has unsafe behavior File: /home/shrey/Documents/microlab337/controlPath/FSM_new.vhd Line: 110
     Warning (13013): Ports D and ENA on the latch are fed by the same signal state.s8 File: /home/shrey/Documents/microlab337/controlPath/FSM_new.vhd Line: 28
-Warning (13012): Latch next_state.s14_728 has unsafe behavior File: /home/shrey/Documents/microlab337/controlPath/FSM_new.vhd Line: 109
+Warning (13012): Latch next_state.s14_728 has unsafe behavior File: /home/shrey/Documents/microlab337/controlPath/FSM_new.vhd Line: 110
     Warning (13013): Ports D and ENA on the latch are fed by the same signal state.s7 File: /home/shrey/Documents/microlab337/controlPath/FSM_new.vhd Line: 28
-Warning (13012): Latch next_state.s20_596 has unsafe behavior File: /home/shrey/Documents/microlab337/controlPath/FSM_new.vhd Line: 109
+Warning (13012): Latch next_state.s20_596 has unsafe behavior File: /home/shrey/Documents/microlab337/controlPath/FSM_new.vhd Line: 110
     Warning (13013): Ports D and ENA on the latch are fed by the same signal state.s8 File: /home/shrey/Documents/microlab337/controlPath/FSM_new.vhd Line: 28
-Warning (13012): Latch next_state.s12_772 has unsafe behavior File: /home/shrey/Documents/microlab337/controlPath/FSM_new.vhd Line: 109
+Warning (13012): Latch next_state.s12_772 has unsafe behavior File: /home/shrey/Documents/microlab337/controlPath/FSM_new.vhd Line: 110
     Warning (13013): Ports D and ENA on the latch are fed by the same signal opcode[0] File: /home/shrey/Documents/microlab337/controlPath/FSM_new.vhd Line: 10
-Warning (13012): Latch next_state.s7_882 has unsafe behavior File: /home/shrey/Documents/microlab337/controlPath/FSM_new.vhd Line: 109
+Warning (13012): Latch next_state.s7_882 has unsafe behavior File: /home/shrey/Documents/microlab337/controlPath/FSM_new.vhd Line: 110
     Warning (13013): Ports D and ENA on the latch are fed by the same signal opcode[0] File: /home/shrey/Documents/microlab337/controlPath/FSM_new.vhd Line: 10
-Warning (13012): Latch next_state.s17_662 has unsafe behavior File: /home/shrey/Documents/microlab337/controlPath/FSM_new.vhd Line: 109
+Warning (13012): Latch next_state.s17_662 has unsafe behavior File: /home/shrey/Documents/microlab337/controlPath/FSM_new.vhd Line: 110
     Warning (13013): Ports D and ENA on the latch are fed by the same signal opcode[0] File: /home/shrey/Documents/microlab337/controlPath/FSM_new.vhd Line: 10
-Warning (13012): Latch next_state.s8_860 has unsafe behavior File: /home/shrey/Documents/microlab337/controlPath/FSM_new.vhd Line: 109
+Warning (13012): Latch next_state.s8_860 has unsafe behavior File: /home/shrey/Documents/microlab337/controlPath/FSM_new.vhd Line: 110
     Warning (13013): Ports D and ENA on the latch are fed by the same signal state.s10 File: /home/shrey/Documents/microlab337/controlPath/FSM_new.vhd Line: 28
-Warning (13012): Latch next_state.s11_794 has unsafe behavior File: /home/shrey/Documents/microlab337/controlPath/FSM_new.vhd Line: 109
+Warning (13012): Latch next_state.s11_794 has unsafe behavior File: /home/shrey/Documents/microlab337/controlPath/FSM_new.vhd Line: 110
     Warning (13013): Ports D and ENA on the latch are fed by the same signal state.s7 File: /home/shrey/Documents/microlab337/controlPath/FSM_new.vhd Line: 28
-Warning (13012): Latch next_state.s15_706 has unsafe behavior File: /home/shrey/Documents/microlab337/controlPath/FSM_new.vhd Line: 109
+Warning (13012): Latch next_state.s15_706 has unsafe behavior File: /home/shrey/Documents/microlab337/controlPath/FSM_new.vhd Line: 110
     Warning (13013): Ports D and ENA on the latch are fed by the same signal state.s10 File: /home/shrey/Documents/microlab337/controlPath/FSM_new.vhd Line: 28
-Warning (13012): Latch next_state.s3_970 has unsafe behavior File: /home/shrey/Documents/microlab337/controlPath/FSM_new.vhd Line: 109
+Warning (13012): Latch next_state.s3_970 has unsafe behavior File: /home/shrey/Documents/microlab337/controlPath/FSM_new.vhd Line: 110
     Warning (13013): Ports D and ENA on the latch are fed by the same signal opcode[3] File: /home/shrey/Documents/microlab337/controlPath/FSM_new.vhd Line: 10
 Warning (13024): Output pins are stuck at VCC or GND
     Warning (13410): Pin "data_out[0]" is stuck at GND File: /home/shrey/Documents/microlab337/controlPath/FSM_new.vhd Line: 17
@@ -414,9 +414,9 @@ Info (21057): Implemented 122 device resources after synthesis - the final resou
     Info (21059): Implemented 22 output pins
     Info (21061): Implemented 87 logic cells
 Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 38 warnings
-    Info: Peak virtual memory: 977 megabytes
-    Info: Processing ended: Wed Nov  8 22:19:45 2017
+    Info: Peak virtual memory: 976 megabytes
+    Info: Processing ended: Wed Nov  8 23:30:11 2017
     Info: Elapsed time: 00:00:11
-    Info: Total CPU time (on all processors): 00:00:24
+    Info: Total CPU time (on all processors): 00:00:25
 
 

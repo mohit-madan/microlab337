@@ -47,10 +47,10 @@ begin
 					control_store <= "10000000010010010001";
 					
 				when s2=>
-					control_store <= "01011010000000000010";
+					control_store <= "00111001000000000010";
 					
 				when s3=>
-					control_store <= "00101100000000000000";
+					control_store <= "01001100000000000000";
 					
 				when s4 =>
 					control_store <= "00000000000000000011";	
@@ -65,7 +65,7 @@ begin
 					control_store <= "00001100000000110000";	
 					
 				when s8 =>
-					control_store <= "00110100100101000000";	
+					control_store <= "01010100100101000000";	
 					
 				when s9 =>
 					control_store <= "00000000000000000110";	
@@ -74,7 +74,7 @@ begin
 					control_store <= "01101000000001010111";	
 					
 				when s11 =>
-					control_store <= "01010000000110000000";	
+					control_store <= "00110000000110000000";	
 					
 				when s12 =>
 					control_store <= "00000000000000001000";	
@@ -83,10 +83,10 @@ begin
 					control_store <= "00011000000000000101";	
 					
 				when s14 =>
-					control_store <= "00100000001000000100";
+					control_store <= "01000000001000000100";
 					
 				when s15 =>
-					control_store <= "00100011001010000000";
+					control_store <= "01000011001010000000";
 					
 				when s16 =>
 					control_store <= "00000000000001010000";	
@@ -99,8 +99,9 @@ begin
 					
 				when s19 =>
 					control_store <= "00000000000000001010";
+					
 				when s20 =>
-					control_store <= "00100001000000001100";	
+					control_store <= "01000010000000001100";	
 					
 			end case;
 			

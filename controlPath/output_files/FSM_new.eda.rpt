@@ -1,5 +1,5 @@
 EDA Netlist Writer report for FSM_new
-Wed Nov  8 22:19:54 2017
+Wed Nov  8 23:30:21 2017
 Quartus Prime Version 17.0.0 Build 595 04/25/2017 SJ Lite Edition
 
 
@@ -37,7 +37,7 @@ agreement for further details.
 +-------------------------------------------------------------------+
 ; EDA Netlist Writer Summary                                        ;
 +---------------------------+---------------------------------------+
-; EDA Netlist Writer Status ; Successful - Wed Nov  8 22:19:54 2017 ;
+; EDA Netlist Writer Status ; Successful - Wed Nov  8 23:30:21 2017 ;
 ; Revision Name             ; FSM_new                               ;
 ; Top-level Entity Name     ; FSM_new                               ;
 ; Family                    ; Cyclone IV E                          ;
@@ -89,7 +89,7 @@ agreement for further details.
 Info: *******************************************************************
 Info: Running Quartus Prime EDA Netlist Writer
     Info: Version 17.0.0 Build 595 04/25/2017 SJ Lite Edition
-    Info: Processing started: Wed Nov  8 22:19:54 2017
+    Info: Processing started: Wed Nov  8 23:30:20 2017
 Info: Command: quartus_eda --read_settings_files=off --write_settings_files=off FSM_new -c FSM_new
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (204019): Generated file FSM_new_6_1200mv_85c_slow.vo in folder "/home/shrey/Documents/microlab337/controlPath/simulation/modelsim/" for EDA simulation tool
@@ -101,9 +101,9 @@ Info (204019): Generated file FSM_new_6_1200mv_0c_v_slow.sdo in folder "/home/sh
 Info (204019): Generated file FSM_new_min_1200mv_0c_v_fast.sdo in folder "/home/shrey/Documents/microlab337/controlPath/simulation/modelsim/" for EDA simulation tool
 Info (204019): Generated file FSM_new_v.sdo in folder "/home/shrey/Documents/microlab337/controlPath/simulation/modelsim/" for EDA simulation tool
 Info: Quartus Prime EDA Netlist Writer was successful. 0 errors, 1 warning
-    Info: Peak virtual memory: 1053 megabytes
-    Info: Processing ended: Wed Nov  8 22:19:54 2017
-    Info: Elapsed time: 00:00:00
-    Info: Total CPU time (on all processors): 00:00:01
+    Info: Peak virtual memory: 1055 megabytes
+    Info: Processing ended: Wed Nov  8 23:30:21 2017
+    Info: Elapsed time: 00:00:01
+    Info: Total CPU time (on all processors): 00:00:00
 
 
