@@ -1,15 +1,15 @@
-Fitter Status : Successful - Thu Nov  9 02:26:18 2017
+Fitter Status : Successful - Thu Nov  9 04:24:51 2017
 Quartus Prime Version : 16.1.0 Build 196 10/24/2016 SJ Lite Edition
 Revision Name : datapath
 Top-level Entity Name : ALU
 Family : Cyclone IV E
 Device : EP4CE22F17C6
 Timing Models : Final
-Total logic elements : 224 / 22,320 ( 1 % )
-    Total combinational functions : 224 / 22,320 ( 1 % )
+Total logic elements : 225 / 22,320 ( 1 % )
+    Total combinational functions : 225 / 22,320 ( 1 % )
     Dedicated logic registers : 0 / 22,320 ( 0 % )
 Total registers : 0
-Total pins : 55 / 154 ( 36 % )
+Total pins : 56 / 154 ( 36 % )
 Total virtual pins : 0
 Total memory bits : 0 / 608,256 ( 0 % )
 Embedded Multiplier 9-bit elements : 0 / 132 ( 0 % )

@@ -8,7 +8,9 @@ entity ALU is
         op_sel: in std_logic_vector(3 downto 0);
         reg_c: out std_logic_vector(15 downto 0);
         carry: out std_logic;
-        zero: out std_logic);
+        zero: out std_logic;
+		  cmp: out std_logic
+		  );
 end entity;
  
 architecture Struct of ALU is
@@ -57,7 +59,7 @@ if(add1bit = '1') then --add1
 	alu_out_read <= std_logic_vector(unsigned(reg_a) + "0000000000000001");  
 	two_complement_add <= std_logic_vector(unsigned(two_complement1) + "0000000000000001");
 
-elsif(op_sel = "0000" or op_sel ="0001" or op_sel = "0100" or op_sel = "0101" or op_sel ="1100" or op_sel = "1000" or op_sel = "1001"  ) then--add
+elsif(op_sel = "0000" or op_sel ="0001" or op_sel = "0100" or op_sel = "0101" or op_sel = "1000" or op_sel = "1001"  ) then--add
 	alu_out_read <= std_logic_vector(unsigned(reg_a) + unsigned(reg_b));
    two_complement_add <= std_logic_vector(unsigned(two_complement1) + unsigned(two_complement2));
 
@@ -68,6 +70,10 @@ elsif(op_sel = "0010") then -- nand
 elsif(op_sel = "0110" or op_sel = "0111" ) then -- xor
 	alu_out_read <= reg_a xor reg_b;
 	two_complement_add <= reg_a xor reg_b; 
+elsif(op_sel = "1100") then	
+	if(reg_a = reg_b) then
+		cmp <= '1';
+	end if;	
 end if;
 	  
 end process; 

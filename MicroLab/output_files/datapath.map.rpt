@@ -1,5 +1,5 @@
 Analysis & Synthesis report for datapath
-Thu Nov  9 02:26:11 2017
+Thu Nov  9 04:24:42 2017
 Quartus Prime Version 16.1.0 Build 196 10/24/2016 SJ Lite Edition
 
 
@@ -45,16 +45,16 @@ agreement for further details.
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +------------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Thu Nov  9 02:26:11 2017       ;
+; Analysis & Synthesis Status        ; Successful - Thu Nov  9 04:24:42 2017       ;
 ; Quartus Prime Version              ; 16.1.0 Build 196 10/24/2016 SJ Lite Edition ;
 ; Revision Name                      ; datapath                                    ;
 ; Top-level Entity Name              ; ALU                                         ;
 ; Family                             ; Cyclone IV E                                ;
-; Total logic elements               ; 224                                         ;
-;     Total combinational functions  ; 224                                         ;
+; Total logic elements               ; 225                                         ;
+;     Total combinational functions  ; 225                                         ;
 ;     Dedicated logic registers      ; 0                                           ;
 ; Total registers                    ; 0                                           ;
-; Total pins                         ; 55                                          ;
+; Total pins                         ; 56                                          ;
 ; Total virtual pins                 ; 0                                           ;
 ; Total memory bits                  ; 0                                           ;
 ; Embedded Multiplier 9-bit elements ; 0                                           ;
@@ -180,30 +180,30 @@ agreement for further details.
 +---------------------------------------------+---------------+
 ; Resource                                    ; Usage         ;
 +---------------------------------------------+---------------+
-; Estimated Total logic elements              ; 224           ;
+; Estimated Total logic elements              ; 225           ;
 ;                                             ;               ;
-; Total combinational functions               ; 224           ;
+; Total combinational functions               ; 225           ;
 ; Logic element usage by number of LUT inputs ;               ;
-;     -- 4 input functions                    ; 59            ;
-;     -- 3 input functions                    ; 95            ;
-;     -- <=2 input functions                  ; 70            ;
+;     -- 4 input functions                    ; 58            ;
+;     -- 3 input functions                    ; 92            ;
+;     -- <=2 input functions                  ; 75            ;
 ;                                             ;               ;
 ; Logic elements by mode                      ;               ;
-;     -- normal mode                          ; 126           ;
+;     -- normal mode                          ; 127           ;
 ;     -- arithmetic mode                      ; 98            ;
 ;                                             ;               ;
 ; Total registers                             ; 0             ;
 ;     -- Dedicated logic registers            ; 0             ;
 ;     -- I/O registers                        ; 0             ;
 ;                                             ;               ;
-; I/O pins                                    ; 55            ;
+; I/O pins                                    ; 56            ;
 ;                                             ;               ;
 ; Embedded Multiplier 9-bit elements          ; 0             ;
 ;                                             ;               ;
 ; Maximum fan-out node                        ; add1bit~input ;
-; Maximum fan-out                             ; 41            ;
-; Total fan-out                               ; 731           ;
-; Average fan-out                             ; 2.19          ;
+; Maximum fan-out                             ; 35            ;
+; Total fan-out                               ; 729           ;
+; Average fan-out                             ; 2.16          ;
 +---------------------------------------------+---------------+
 
 
@@ -212,7 +212,7 @@ agreement for further details.
 +----------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+--------------------------+----------------+--------------+
 ; Compilation Hierarchy Node ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name      ; Entity Name    ; Library Name ;
 +----------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+--------------------------+----------------+--------------+
-; |ALU                       ; 224 (195)           ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 55   ; 0            ; |ALU                     ; ALU            ; work         ;
+; |ALU                       ; 225 (196)           ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 56   ; 0            ; |ALU                     ; ALU            ; work         ;
 ;    |TwosComplement:two1|   ; 15 (15)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ALU|TwosComplement:two1 ; TwosComplement ; work         ;
 ;    |TwosComplement:two|    ; 14 (14)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ALU|TwosComplement:two  ; TwosComplement ; work         ;
 +----------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+--------------------------+----------------+--------------+
@@ -289,19 +289,20 @@ Note: All latches listed above may not be present at the end of synthesis due to
 +-----------------------+-----------------------------+
 ; Type                  ; Count                       ;
 +-----------------------+-----------------------------+
-; boundary_port         ; 55                          ;
-; cycloneiii_lcell_comb ; 224                         ;
+; boundary_port         ; 56                          ;
+; cycloneiii_lcell_comb ; 226                         ;
 ;     arith             ; 98                          ;
 ;         2 data inputs ; 39                          ;
 ;         3 data inputs ; 59                          ;
-;     normal            ; 126                         ;
+;     normal            ; 128                         ;
+;         0 data inputs ; 1                           ;
 ;         1 data inputs ; 3                           ;
-;         2 data inputs ; 28                          ;
-;         3 data inputs ; 36                          ;
-;         4 data inputs ; 59                          ;
+;         2 data inputs ; 33                          ;
+;         3 data inputs ; 33                          ;
+;         4 data inputs ; 58                          ;
 ;                       ;                             ;
 ; Max LUT depth         ; 6.30                        ;
-; Average LUT depth     ; 4.95                        ;
+; Average LUT depth     ; 4.86                        ;
 +-----------------------+-----------------------------+
 
 
@@ -320,7 +321,7 @@ Note: All latches listed above may not be present at the end of synthesis due to
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 16.1.0 Build 196 10/24/2016 SJ Lite Edition
-    Info: Processing started: Thu Nov  9 02:25:59 2017
+    Info: Processing started: Thu Nov  9 04:24:27 2017
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off datapath -c datapath
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 2 of the 2 processors detected
@@ -364,120 +365,124 @@ Info (12021): Found 2 design units, including 1 entities, in source file decoder
     Info (12022): Found design unit 1: decoder3_16-decoder3_16_arc File: /home/mohit/microlab337/MicroLab/decoder3_16.vhd Line: 12
     Info (12023): Found entity 1: decoder3_16 File: /home/mohit/microlab337/MicroLab/decoder3_16.vhd Line: 4
 Info (12021): Found 2 design units, including 1 entities, in source file alu.vhd
-    Info (12022): Found design unit 1: ALU-Struct File: /home/mohit/microlab337/MicroLab/alu.vhd Line: 14
+    Info (12022): Found design unit 1: ALU-Struct File: /home/mohit/microlab337/MicroLab/alu.vhd Line: 16
     Info (12023): Found entity 1: ALU File: /home/mohit/microlab337/MicroLab/alu.vhd Line: 5
 Info (12021): Found 2 design units, including 1 entities, in source file datapath.vhd
     Info (12022): Found design unit 1: datapath-rtl File: /home/mohit/microlab337/MicroLab/datapath.vhd Line: 17
     Info (12023): Found entity 1: datapath File: /home/mohit/microlab337/MicroLab/datapath.vhd Line: 5
 Info (12127): Elaborating entity "alu" for the top level hierarchy
-Warning (10492): VHDL Process Statement warning at alu.vhd(56): signal "add1bit" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: /home/mohit/microlab337/MicroLab/alu.vhd Line: 56
-Warning (10631): VHDL Process Statement warning at alu.vhd(51): inferring latch(es) for signal or variable "alu_out_read", which holds its previous value in one or more paths through the process File: /home/mohit/microlab337/MicroLab/alu.vhd Line: 51
-Warning (10631): VHDL Process Statement warning at alu.vhd(51): inferring latch(es) for signal or variable "two_complement_add", which holds its previous value in one or more paths through the process File: /home/mohit/microlab337/MicroLab/alu.vhd Line: 51
-Info (10041): Inferred latch for "two_complement_add[0]" at alu.vhd(51) File: /home/mohit/microlab337/MicroLab/alu.vhd Line: 51
-Info (10041): Inferred latch for "two_complement_add[1]" at alu.vhd(51) File: /home/mohit/microlab337/MicroLab/alu.vhd Line: 51
-Info (10041): Inferred latch for "two_complement_add[2]" at alu.vhd(51) File: /home/mohit/microlab337/MicroLab/alu.vhd Line: 51
-Info (10041): Inferred latch for "two_complement_add[3]" at alu.vhd(51) File: /home/mohit/microlab337/MicroLab/alu.vhd Line: 51
-Info (10041): Inferred latch for "two_complement_add[4]" at alu.vhd(51) File: /home/mohit/microlab337/MicroLab/alu.vhd Line: 51
-Info (10041): Inferred latch for "two_complement_add[5]" at alu.vhd(51) File: /home/mohit/microlab337/MicroLab/alu.vhd Line: 51
-Info (10041): Inferred latch for "two_complement_add[6]" at alu.vhd(51) File: /home/mohit/microlab337/MicroLab/alu.vhd Line: 51
-Info (10041): Inferred latch for "two_complement_add[7]" at alu.vhd(51) File: /home/mohit/microlab337/MicroLab/alu.vhd Line: 51
-Info (10041): Inferred latch for "two_complement_add[8]" at alu.vhd(51) File: /home/mohit/microlab337/MicroLab/alu.vhd Line: 51
-Info (10041): Inferred latch for "two_complement_add[9]" at alu.vhd(51) File: /home/mohit/microlab337/MicroLab/alu.vhd Line: 51
-Info (10041): Inferred latch for "two_complement_add[10]" at alu.vhd(51) File: /home/mohit/microlab337/MicroLab/alu.vhd Line: 51
-Info (10041): Inferred latch for "two_complement_add[11]" at alu.vhd(51) File: /home/mohit/microlab337/MicroLab/alu.vhd Line: 51
-Info (10041): Inferred latch for "two_complement_add[12]" at alu.vhd(51) File: /home/mohit/microlab337/MicroLab/alu.vhd Line: 51
-Info (10041): Inferred latch for "two_complement_add[13]" at alu.vhd(51) File: /home/mohit/microlab337/MicroLab/alu.vhd Line: 51
-Info (10041): Inferred latch for "two_complement_add[14]" at alu.vhd(51) File: /home/mohit/microlab337/MicroLab/alu.vhd Line: 51
-Info (10041): Inferred latch for "alu_out_read[0]" at alu.vhd(51) File: /home/mohit/microlab337/MicroLab/alu.vhd Line: 51
-Info (10041): Inferred latch for "alu_out_read[1]" at alu.vhd(51) File: /home/mohit/microlab337/MicroLab/alu.vhd Line: 51
-Info (10041): Inferred latch for "alu_out_read[2]" at alu.vhd(51) File: /home/mohit/microlab337/MicroLab/alu.vhd Line: 51
-Info (10041): Inferred latch for "alu_out_read[3]" at alu.vhd(51) File: /home/mohit/microlab337/MicroLab/alu.vhd Line: 51
-Info (10041): Inferred latch for "alu_out_read[4]" at alu.vhd(51) File: /home/mohit/microlab337/MicroLab/alu.vhd Line: 51
-Info (10041): Inferred latch for "alu_out_read[5]" at alu.vhd(51) File: /home/mohit/microlab337/MicroLab/alu.vhd Line: 51
-Info (10041): Inferred latch for "alu_out_read[6]" at alu.vhd(51) File: /home/mohit/microlab337/MicroLab/alu.vhd Line: 51
-Info (10041): Inferred latch for "alu_out_read[7]" at alu.vhd(51) File: /home/mohit/microlab337/MicroLab/alu.vhd Line: 51
-Info (10041): Inferred latch for "alu_out_read[8]" at alu.vhd(51) File: /home/mohit/microlab337/MicroLab/alu.vhd Line: 51
-Info (10041): Inferred latch for "alu_out_read[9]" at alu.vhd(51) File: /home/mohit/microlab337/MicroLab/alu.vhd Line: 51
-Info (10041): Inferred latch for "alu_out_read[10]" at alu.vhd(51) File: /home/mohit/microlab337/MicroLab/alu.vhd Line: 51
-Info (10041): Inferred latch for "alu_out_read[11]" at alu.vhd(51) File: /home/mohit/microlab337/MicroLab/alu.vhd Line: 51
-Info (10041): Inferred latch for "alu_out_read[12]" at alu.vhd(51) File: /home/mohit/microlab337/MicroLab/alu.vhd Line: 51
-Info (10041): Inferred latch for "alu_out_read[13]" at alu.vhd(51) File: /home/mohit/microlab337/MicroLab/alu.vhd Line: 51
-Info (10041): Inferred latch for "alu_out_read[14]" at alu.vhd(51) File: /home/mohit/microlab337/MicroLab/alu.vhd Line: 51
-Info (10041): Inferred latch for "alu_out_read[15]" at alu.vhd(51) File: /home/mohit/microlab337/MicroLab/alu.vhd Line: 51
-Info (12128): Elaborating entity "TwosComplement" for hierarchy "TwosComplement:two" File: /home/mohit/microlab337/MicroLab/alu.vhd Line: 29
-Warning (13012): Latch alu_out_read[0] has unsafe behavior File: /home/mohit/microlab337/MicroLab/alu.vhd Line: 51
+Warning (10492): VHDL Process Statement warning at alu.vhd(58): signal "add1bit" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: /home/mohit/microlab337/MicroLab/alu.vhd Line: 58
+Warning (10631): VHDL Process Statement warning at alu.vhd(53): inferring latch(es) for signal or variable "alu_out_read", which holds its previous value in one or more paths through the process File: /home/mohit/microlab337/MicroLab/alu.vhd Line: 53
+Warning (10631): VHDL Process Statement warning at alu.vhd(53): inferring latch(es) for signal or variable "two_complement_add", which holds its previous value in one or more paths through the process File: /home/mohit/microlab337/MicroLab/alu.vhd Line: 53
+Warning (10631): VHDL Process Statement warning at alu.vhd(53): inferring latch(es) for signal or variable "cmp", which holds its previous value in one or more paths through the process File: /home/mohit/microlab337/MicroLab/alu.vhd Line: 53
+Info (10041): Inferred latch for "cmp" at alu.vhd(53) File: /home/mohit/microlab337/MicroLab/alu.vhd Line: 53
+Info (10041): Inferred latch for "two_complement_add[0]" at alu.vhd(53) File: /home/mohit/microlab337/MicroLab/alu.vhd Line: 53
+Info (10041): Inferred latch for "two_complement_add[1]" at alu.vhd(53) File: /home/mohit/microlab337/MicroLab/alu.vhd Line: 53
+Info (10041): Inferred latch for "two_complement_add[2]" at alu.vhd(53) File: /home/mohit/microlab337/MicroLab/alu.vhd Line: 53
+Info (10041): Inferred latch for "two_complement_add[3]" at alu.vhd(53) File: /home/mohit/microlab337/MicroLab/alu.vhd Line: 53
+Info (10041): Inferred latch for "two_complement_add[4]" at alu.vhd(53) File: /home/mohit/microlab337/MicroLab/alu.vhd Line: 53
+Info (10041): Inferred latch for "two_complement_add[5]" at alu.vhd(53) File: /home/mohit/microlab337/MicroLab/alu.vhd Line: 53
+Info (10041): Inferred latch for "two_complement_add[6]" at alu.vhd(53) File: /home/mohit/microlab337/MicroLab/alu.vhd Line: 53
+Info (10041): Inferred latch for "two_complement_add[7]" at alu.vhd(53) File: /home/mohit/microlab337/MicroLab/alu.vhd Line: 53
+Info (10041): Inferred latch for "two_complement_add[8]" at alu.vhd(53) File: /home/mohit/microlab337/MicroLab/alu.vhd Line: 53
+Info (10041): Inferred latch for "two_complement_add[9]" at alu.vhd(53) File: /home/mohit/microlab337/MicroLab/alu.vhd Line: 53
+Info (10041): Inferred latch for "two_complement_add[10]" at alu.vhd(53) File: /home/mohit/microlab337/MicroLab/alu.vhd Line: 53
+Info (10041): Inferred latch for "two_complement_add[11]" at alu.vhd(53) File: /home/mohit/microlab337/MicroLab/alu.vhd Line: 53
+Info (10041): Inferred latch for "two_complement_add[12]" at alu.vhd(53) File: /home/mohit/microlab337/MicroLab/alu.vhd Line: 53
+Info (10041): Inferred latch for "two_complement_add[13]" at alu.vhd(53) File: /home/mohit/microlab337/MicroLab/alu.vhd Line: 53
+Info (10041): Inferred latch for "two_complement_add[14]" at alu.vhd(53) File: /home/mohit/microlab337/MicroLab/alu.vhd Line: 53
+Info (10041): Inferred latch for "alu_out_read[0]" at alu.vhd(53) File: /home/mohit/microlab337/MicroLab/alu.vhd Line: 53
+Info (10041): Inferred latch for "alu_out_read[1]" at alu.vhd(53) File: /home/mohit/microlab337/MicroLab/alu.vhd Line: 53
+Info (10041): Inferred latch for "alu_out_read[2]" at alu.vhd(53) File: /home/mohit/microlab337/MicroLab/alu.vhd Line: 53
+Info (10041): Inferred latch for "alu_out_read[3]" at alu.vhd(53) File: /home/mohit/microlab337/MicroLab/alu.vhd Line: 53
+Info (10041): Inferred latch for "alu_out_read[4]" at alu.vhd(53) File: /home/mohit/microlab337/MicroLab/alu.vhd Line: 53
+Info (10041): Inferred latch for "alu_out_read[5]" at alu.vhd(53) File: /home/mohit/microlab337/MicroLab/alu.vhd Line: 53
+Info (10041): Inferred latch for "alu_out_read[6]" at alu.vhd(53) File: /home/mohit/microlab337/MicroLab/alu.vhd Line: 53
+Info (10041): Inferred latch for "alu_out_read[7]" at alu.vhd(53) File: /home/mohit/microlab337/MicroLab/alu.vhd Line: 53
+Info (10041): Inferred latch for "alu_out_read[8]" at alu.vhd(53) File: /home/mohit/microlab337/MicroLab/alu.vhd Line: 53
+Info (10041): Inferred latch for "alu_out_read[9]" at alu.vhd(53) File: /home/mohit/microlab337/MicroLab/alu.vhd Line: 53
+Info (10041): Inferred latch for "alu_out_read[10]" at alu.vhd(53) File: /home/mohit/microlab337/MicroLab/alu.vhd Line: 53
+Info (10041): Inferred latch for "alu_out_read[11]" at alu.vhd(53) File: /home/mohit/microlab337/MicroLab/alu.vhd Line: 53
+Info (10041): Inferred latch for "alu_out_read[12]" at alu.vhd(53) File: /home/mohit/microlab337/MicroLab/alu.vhd Line: 53
+Info (10041): Inferred latch for "alu_out_read[13]" at alu.vhd(53) File: /home/mohit/microlab337/MicroLab/alu.vhd Line: 53
+Info (10041): Inferred latch for "alu_out_read[14]" at alu.vhd(53) File: /home/mohit/microlab337/MicroLab/alu.vhd Line: 53
+Info (10041): Inferred latch for "alu_out_read[15]" at alu.vhd(53) File: /home/mohit/microlab337/MicroLab/alu.vhd Line: 53
+Info (12128): Elaborating entity "TwosComplement" for hierarchy "TwosComplement:two" File: /home/mohit/microlab337/MicroLab/alu.vhd Line: 31
+Warning (13012): Latch alu_out_read[0] has unsafe behavior File: /home/mohit/microlab337/MicroLab/alu.vhd Line: 53
     Warning (13013): Ports D and ENA on the latch are fed by the same signal add1bit File: /home/mohit/microlab337/MicroLab/alu.vhd Line: 7
-Warning (13012): Latch alu_out_read[1] has unsafe behavior File: /home/mohit/microlab337/MicroLab/alu.vhd Line: 51
+Warning (13012): Latch alu_out_read[1] has unsafe behavior File: /home/mohit/microlab337/MicroLab/alu.vhd Line: 53
     Warning (13013): Ports D and ENA on the latch are fed by the same signal add1bit File: /home/mohit/microlab337/MicroLab/alu.vhd Line: 7
-Warning (13012): Latch alu_out_read[2] has unsafe behavior File: /home/mohit/microlab337/MicroLab/alu.vhd Line: 51
+Warning (13012): Latch alu_out_read[2] has unsafe behavior File: /home/mohit/microlab337/MicroLab/alu.vhd Line: 53
     Warning (13013): Ports D and ENA on the latch are fed by the same signal add1bit File: /home/mohit/microlab337/MicroLab/alu.vhd Line: 7
-Warning (13012): Latch alu_out_read[3] has unsafe behavior File: /home/mohit/microlab337/MicroLab/alu.vhd Line: 51
+Warning (13012): Latch alu_out_read[3] has unsafe behavior File: /home/mohit/microlab337/MicroLab/alu.vhd Line: 53
     Warning (13013): Ports D and ENA on the latch are fed by the same signal add1bit File: /home/mohit/microlab337/MicroLab/alu.vhd Line: 7
-Warning (13012): Latch alu_out_read[4] has unsafe behavior File: /home/mohit/microlab337/MicroLab/alu.vhd Line: 51
+Warning (13012): Latch alu_out_read[4] has unsafe behavior File: /home/mohit/microlab337/MicroLab/alu.vhd Line: 53
     Warning (13013): Ports D and ENA on the latch are fed by the same signal add1bit File: /home/mohit/microlab337/MicroLab/alu.vhd Line: 7
-Warning (13012): Latch alu_out_read[5] has unsafe behavior File: /home/mohit/microlab337/MicroLab/alu.vhd Line: 51
+Warning (13012): Latch alu_out_read[5] has unsafe behavior File: /home/mohit/microlab337/MicroLab/alu.vhd Line: 53
     Warning (13013): Ports D and ENA on the latch are fed by the same signal add1bit File: /home/mohit/microlab337/MicroLab/alu.vhd Line: 7
-Warning (13012): Latch alu_out_read[6] has unsafe behavior File: /home/mohit/microlab337/MicroLab/alu.vhd Line: 51
+Warning (13012): Latch alu_out_read[6] has unsafe behavior File: /home/mohit/microlab337/MicroLab/alu.vhd Line: 53
     Warning (13013): Ports D and ENA on the latch are fed by the same signal add1bit File: /home/mohit/microlab337/MicroLab/alu.vhd Line: 7
-Warning (13012): Latch alu_out_read[7] has unsafe behavior File: /home/mohit/microlab337/MicroLab/alu.vhd Line: 51
+Warning (13012): Latch alu_out_read[7] has unsafe behavior File: /home/mohit/microlab337/MicroLab/alu.vhd Line: 53
     Warning (13013): Ports D and ENA on the latch are fed by the same signal add1bit File: /home/mohit/microlab337/MicroLab/alu.vhd Line: 7
-Warning (13012): Latch alu_out_read[8] has unsafe behavior File: /home/mohit/microlab337/MicroLab/alu.vhd Line: 51
+Warning (13012): Latch alu_out_read[8] has unsafe behavior File: /home/mohit/microlab337/MicroLab/alu.vhd Line: 53
     Warning (13013): Ports D and ENA on the latch are fed by the same signal add1bit File: /home/mohit/microlab337/MicroLab/alu.vhd Line: 7
-Warning (13012): Latch alu_out_read[9] has unsafe behavior File: /home/mohit/microlab337/MicroLab/alu.vhd Line: 51
+Warning (13012): Latch alu_out_read[9] has unsafe behavior File: /home/mohit/microlab337/MicroLab/alu.vhd Line: 53
     Warning (13013): Ports D and ENA on the latch are fed by the same signal add1bit File: /home/mohit/microlab337/MicroLab/alu.vhd Line: 7
-Warning (13012): Latch alu_out_read[10] has unsafe behavior File: /home/mohit/microlab337/MicroLab/alu.vhd Line: 51
+Warning (13012): Latch alu_out_read[10] has unsafe behavior File: /home/mohit/microlab337/MicroLab/alu.vhd Line: 53
     Warning (13013): Ports D and ENA on the latch are fed by the same signal add1bit File: /home/mohit/microlab337/MicroLab/alu.vhd Line: 7
-Warning (13012): Latch alu_out_read[11] has unsafe behavior File: /home/mohit/microlab337/MicroLab/alu.vhd Line: 51
+Warning (13012): Latch alu_out_read[11] has unsafe behavior File: /home/mohit/microlab337/MicroLab/alu.vhd Line: 53
     Warning (13013): Ports D and ENA on the latch are fed by the same signal add1bit File: /home/mohit/microlab337/MicroLab/alu.vhd Line: 7
-Warning (13012): Latch alu_out_read[12] has unsafe behavior File: /home/mohit/microlab337/MicroLab/alu.vhd Line: 51
+Warning (13012): Latch alu_out_read[12] has unsafe behavior File: /home/mohit/microlab337/MicroLab/alu.vhd Line: 53
     Warning (13013): Ports D and ENA on the latch are fed by the same signal add1bit File: /home/mohit/microlab337/MicroLab/alu.vhd Line: 7
-Warning (13012): Latch alu_out_read[13] has unsafe behavior File: /home/mohit/microlab337/MicroLab/alu.vhd Line: 51
+Warning (13012): Latch alu_out_read[13] has unsafe behavior File: /home/mohit/microlab337/MicroLab/alu.vhd Line: 53
     Warning (13013): Ports D and ENA on the latch are fed by the same signal add1bit File: /home/mohit/microlab337/MicroLab/alu.vhd Line: 7
-Warning (13012): Latch alu_out_read[14] has unsafe behavior File: /home/mohit/microlab337/MicroLab/alu.vhd Line: 51
+Warning (13012): Latch alu_out_read[14] has unsafe behavior File: /home/mohit/microlab337/MicroLab/alu.vhd Line: 53
     Warning (13013): Ports D and ENA on the latch are fed by the same signal add1bit File: /home/mohit/microlab337/MicroLab/alu.vhd Line: 7
-Warning (13012): Latch alu_out_read[15] has unsafe behavior File: /home/mohit/microlab337/MicroLab/alu.vhd Line: 51
+Warning (13012): Latch alu_out_read[15] has unsafe behavior File: /home/mohit/microlab337/MicroLab/alu.vhd Line: 53
     Warning (13013): Ports D and ENA on the latch are fed by the same signal add1bit File: /home/mohit/microlab337/MicroLab/alu.vhd Line: 7
-Warning (13012): Latch two_complement_add[14] has unsafe behavior File: /home/mohit/microlab337/MicroLab/alu.vhd Line: 51
+Warning (13012): Latch two_complement_add[14] has unsafe behavior File: /home/mohit/microlab337/MicroLab/alu.vhd Line: 53
     Warning (13013): Ports D and ENA on the latch are fed by the same signal add1bit File: /home/mohit/microlab337/MicroLab/alu.vhd Line: 7
-Warning (13012): Latch two_complement_add[13] has unsafe behavior File: /home/mohit/microlab337/MicroLab/alu.vhd Line: 51
+Warning (13012): Latch two_complement_add[13] has unsafe behavior File: /home/mohit/microlab337/MicroLab/alu.vhd Line: 53
     Warning (13013): Ports D and ENA on the latch are fed by the same signal add1bit File: /home/mohit/microlab337/MicroLab/alu.vhd Line: 7
-Warning (13012): Latch two_complement_add[12] has unsafe behavior File: /home/mohit/microlab337/MicroLab/alu.vhd Line: 51
+Warning (13012): Latch two_complement_add[12] has unsafe behavior File: /home/mohit/microlab337/MicroLab/alu.vhd Line: 53
     Warning (13013): Ports D and ENA on the latch are fed by the same signal add1bit File: /home/mohit/microlab337/MicroLab/alu.vhd Line: 7
-Warning (13012): Latch two_complement_add[11] has unsafe behavior File: /home/mohit/microlab337/MicroLab/alu.vhd Line: 51
+Warning (13012): Latch two_complement_add[11] has unsafe behavior File: /home/mohit/microlab337/MicroLab/alu.vhd Line: 53
     Warning (13013): Ports D and ENA on the latch are fed by the same signal add1bit File: /home/mohit/microlab337/MicroLab/alu.vhd Line: 7
-Warning (13012): Latch two_complement_add[10] has unsafe behavior File: /home/mohit/microlab337/MicroLab/alu.vhd Line: 51
+Warning (13012): Latch two_complement_add[10] has unsafe behavior File: /home/mohit/microlab337/MicroLab/alu.vhd Line: 53
     Warning (13013): Ports D and ENA on the latch are fed by the same signal add1bit File: /home/mohit/microlab337/MicroLab/alu.vhd Line: 7
-Warning (13012): Latch two_complement_add[9] has unsafe behavior File: /home/mohit/microlab337/MicroLab/alu.vhd Line: 51
+Warning (13012): Latch two_complement_add[9] has unsafe behavior File: /home/mohit/microlab337/MicroLab/alu.vhd Line: 53
     Warning (13013): Ports D and ENA on the latch are fed by the same signal add1bit File: /home/mohit/microlab337/MicroLab/alu.vhd Line: 7
-Warning (13012): Latch two_complement_add[8] has unsafe behavior File: /home/mohit/microlab337/MicroLab/alu.vhd Line: 51
+Warning (13012): Latch two_complement_add[8] has unsafe behavior File: /home/mohit/microlab337/MicroLab/alu.vhd Line: 53
     Warning (13013): Ports D and ENA on the latch are fed by the same signal add1bit File: /home/mohit/microlab337/MicroLab/alu.vhd Line: 7
-Warning (13012): Latch two_complement_add[7] has unsafe behavior File: /home/mohit/microlab337/MicroLab/alu.vhd Line: 51
+Warning (13012): Latch two_complement_add[7] has unsafe behavior File: /home/mohit/microlab337/MicroLab/alu.vhd Line: 53
     Warning (13013): Ports D and ENA on the latch are fed by the same signal add1bit File: /home/mohit/microlab337/MicroLab/alu.vhd Line: 7
-Warning (13012): Latch two_complement_add[6] has unsafe behavior File: /home/mohit/microlab337/MicroLab/alu.vhd Line: 51
+Warning (13012): Latch two_complement_add[6] has unsafe behavior File: /home/mohit/microlab337/MicroLab/alu.vhd Line: 53
     Warning (13013): Ports D and ENA on the latch are fed by the same signal add1bit File: /home/mohit/microlab337/MicroLab/alu.vhd Line: 7
-Warning (13012): Latch two_complement_add[5] has unsafe behavior File: /home/mohit/microlab337/MicroLab/alu.vhd Line: 51
+Warning (13012): Latch two_complement_add[5] has unsafe behavior File: /home/mohit/microlab337/MicroLab/alu.vhd Line: 53
     Warning (13013): Ports D and ENA on the latch are fed by the same signal add1bit File: /home/mohit/microlab337/MicroLab/alu.vhd Line: 7
-Warning (13012): Latch two_complement_add[4] has unsafe behavior File: /home/mohit/microlab337/MicroLab/alu.vhd Line: 51
+Warning (13012): Latch two_complement_add[4] has unsafe behavior File: /home/mohit/microlab337/MicroLab/alu.vhd Line: 53
     Warning (13013): Ports D and ENA on the latch are fed by the same signal add1bit File: /home/mohit/microlab337/MicroLab/alu.vhd Line: 7
-Warning (13012): Latch two_complement_add[3] has unsafe behavior File: /home/mohit/microlab337/MicroLab/alu.vhd Line: 51
+Warning (13012): Latch two_complement_add[3] has unsafe behavior File: /home/mohit/microlab337/MicroLab/alu.vhd Line: 53
     Warning (13013): Ports D and ENA on the latch are fed by the same signal add1bit File: /home/mohit/microlab337/MicroLab/alu.vhd Line: 7
-Warning (13012): Latch two_complement_add[2] has unsafe behavior File: /home/mohit/microlab337/MicroLab/alu.vhd Line: 51
+Warning (13012): Latch two_complement_add[2] has unsafe behavior File: /home/mohit/microlab337/MicroLab/alu.vhd Line: 53
     Warning (13013): Ports D and ENA on the latch are fed by the same signal add1bit File: /home/mohit/microlab337/MicroLab/alu.vhd Line: 7
-Warning (13012): Latch two_complement_add[1] has unsafe behavior File: /home/mohit/microlab337/MicroLab/alu.vhd Line: 51
+Warning (13012): Latch two_complement_add[1] has unsafe behavior File: /home/mohit/microlab337/MicroLab/alu.vhd Line: 53
     Warning (13013): Ports D and ENA on the latch are fed by the same signal add1bit File: /home/mohit/microlab337/MicroLab/alu.vhd Line: 7
-Warning (13012): Latch two_complement_add[0] has unsafe behavior File: /home/mohit/microlab337/MicroLab/alu.vhd Line: 51
+Warning (13012): Latch two_complement_add[0] has unsafe behavior File: /home/mohit/microlab337/MicroLab/alu.vhd Line: 53
     Warning (13013): Ports D and ENA on the latch are fed by the same signal add1bit File: /home/mohit/microlab337/MicroLab/alu.vhd Line: 7
+Warning (13024): Output pins are stuck at VCC or GND
+    Warning (13410): Pin "cmp" is stuck at VCC File: /home/mohit/microlab337/MicroLab/alu.vhd Line: 12
 Info (286030): Timing-Driven Synthesis is running
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 279 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 281 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 37 input pins
-    Info (21059): Implemented 18 output pins
-    Info (21061): Implemented 224 logic cells
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 66 warnings
-    Info: Peak virtual memory: 978 megabytes
-    Info: Processing ended: Thu Nov  9 02:26:11 2017
-    Info: Elapsed time: 00:00:12
-    Info: Total CPU time (on all processors): 00:00:28
+    Info (21059): Implemented 19 output pins
+    Info (21061): Implemented 225 logic cells
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 69 warnings
+    Info: Peak virtual memory: 976 megabytes
+    Info: Processing ended: Thu Nov  9 04:24:42 2017
+    Info: Elapsed time: 00:00:15
+    Info: Total CPU time (on all processors): 00:00:33
 
 

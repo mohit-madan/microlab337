@@ -1,6 +1,6 @@
 Analysis & Synthesis report for FSM_new
-Tue Nov  7 23:26:51 2017
-Quartus Prime Version 16.1.0 Build 196 10/24/2016 SJ Lite Edition
+Wed Nov  8 23:30:11 2017
+Quartus Prime Version 17.0.0 Build 595 04/25/2017 SJ Lite Edition
 
 
 ---------------------
@@ -26,7 +26,7 @@ Quartus Prime Version 16.1.0 Build 196 10/24/2016 SJ Lite Edition
 ----------------
 ; Legal Notice ;
 ----------------
-Copyright (C) 2016  Intel Corporation. All rights reserved.
+Copyright (C) 2017  Intel Corporation. All rights reserved.
 Your use of Intel Corporation's design tools, logic functions 
 and other software and tools, and its AMPP partner logic 
 functions, and any output files from any of the foregoing 
@@ -46,15 +46,15 @@ agreement for further details.
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +------------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Tue Nov  7 23:26:51 2017       ;
-; Quartus Prime Version              ; 16.1.0 Build 196 10/24/2016 SJ Lite Edition ;
+; Analysis & Synthesis Status        ; Successful - Wed Nov  8 23:30:11 2017       ;
+; Quartus Prime Version              ; 17.0.0 Build 595 04/25/2017 SJ Lite Edition ;
 ; Revision Name                      ; FSM_new                                     ;
 ; Top-level Entity Name              ; FSM_new                                     ;
 ; Family                             ; Cyclone IV E                                ;
-; Total logic elements               ; 70                                          ;
+; Total logic elements               ; 71                                          ;
 ;     Total combinational functions  ; 70                                          ;
-;     Dedicated logic registers      ; 16                                          ;
-; Total registers                    ; 16                                          ;
+;     Dedicated logic registers      ; 17                                          ;
+; Total registers                    ; 17                                          ;
 ; Total pins                         ; 35                                          ;
 ; Total virtual pins                 ; 0                                           ;
 ; Total memory bits                  ; 0                                           ;
@@ -166,45 +166,45 @@ agreement for further details.
 +----------------------------+-------------+
 
 
-+----------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                           ;
-+----------------------------------+-----------------+-----------------+-------------------------------------------------+---------+
-; File Name with User-Entered Path ; Used in Netlist ; File Type       ; File Name with Absolute Path                    ; Library ;
-+----------------------------------+-----------------+-----------------+-------------------------------------------------+---------+
-; FSM_new.vhd                      ; yes             ; User VHDL File  ; /home/mohit/microlab337/controlPath/FSM_new.vhd ;         ;
-+----------------------------------+-----------------+-----------------+-------------------------------------------------+---------+
++--------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                     ;
++----------------------------------+-----------------+-----------------+-----------------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type       ; File Name with Absolute Path                              ; Library ;
++----------------------------------+-----------------+-----------------+-----------------------------------------------------------+---------+
+; FSM_new.vhd                      ; yes             ; User VHDL File  ; /home/shrey/Documents/microlab337/controlPath/FSM_new.vhd ;         ;
++----------------------------------+-----------------+-----------------+-----------------------------------------------------------+---------+
 
 
-+------------------------------------------------------------+
-; Analysis & Synthesis Resource Usage Summary                ;
-+---------------------------------------------+--------------+
-; Resource                                    ; Usage        ;
-+---------------------------------------------+--------------+
-; Estimated Total logic elements              ; 70           ;
-;                                             ;              ;
-; Total combinational functions               ; 70           ;
-; Logic element usage by number of LUT inputs ;              ;
-;     -- 4 input functions                    ; 25           ;
-;     -- 3 input functions                    ; 34           ;
-;     -- <=2 input functions                  ; 11           ;
-;                                             ;              ;
-; Logic elements by mode                      ;              ;
-;     -- normal mode                          ; 70           ;
-;     -- arithmetic mode                      ; 0            ;
-;                                             ;              ;
-; Total registers                             ; 16           ;
-;     -- Dedicated logic registers            ; 16           ;
-;     -- I/O registers                        ; 0            ;
-;                                             ;              ;
-; I/O pins                                    ; 35           ;
-;                                             ;              ;
-; Embedded Multiplier 9-bit elements          ; 0            ;
-;                                             ;              ;
-; Maximum fan-out node                        ; Selector29~2 ;
-; Maximum fan-out                             ; 16           ;
-; Total fan-out                               ; 326          ;
-; Average fan-out                             ; 2.09         ;
-+---------------------------------------------+--------------+
++---------------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary             ;
++---------------------------------------------+-----------+
+; Resource                                    ; Usage     ;
++---------------------------------------------+-----------+
+; Estimated Total logic elements              ; 71        ;
+;                                             ;           ;
+; Total combinational functions               ; 70        ;
+; Logic element usage by number of LUT inputs ;           ;
+;     -- 4 input functions                    ; 29        ;
+;     -- 3 input functions                    ; 31        ;
+;     -- <=2 input functions                  ; 10        ;
+;                                             ;           ;
+; Logic elements by mode                      ;           ;
+;     -- normal mode                          ; 70        ;
+;     -- arithmetic mode                      ; 0         ;
+;                                             ;           ;
+; Total registers                             ; 17        ;
+;     -- Dedicated logic registers            ; 17        ;
+;     -- I/O registers                        ; 0         ;
+;                                             ;           ;
+; I/O pins                                    ; 35        ;
+;                                             ;           ;
+; Embedded Multiplier 9-bit elements          ; 0         ;
+;                                             ;           ;
+; Maximum fan-out node                        ; clk~input ;
+; Maximum fan-out                             ; 17        ;
+; Total fan-out                               ; 334       ;
+; Average fan-out                             ; 2.13      ;
++---------------------------------------------+-----------+
 
 
 +----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -212,38 +212,39 @@ agreement for further details.
 +----------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+---------------------+-------------+--------------+
 ; Compilation Hierarchy Node ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name ; Entity Name ; Library Name ;
 +----------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+---------------------+-------------+--------------+
-; |FSM_new                   ; 70 (70)             ; 16 (16)                   ; 0           ; 0            ; 0       ; 0         ; 35   ; 0            ; |FSM_new            ; FSM_new     ; work         ;
+; |FSM_new                   ; 70 (70)             ; 17 (17)                   ; 0           ; 0            ; 0       ; 0         ; 35   ; 0            ; |FSM_new            ; FSM_new     ; work         ;
 +----------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+---------------------+-------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
 
 Encoding Type:  One-Hot
-+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; State Machine - |FSM_new|state                                                                                                                                                                                                                   ;
-+-----------+-----------+-----------+-----------+-----------+-----------+-----------+-----------+-----------+-----------+-----------+-----------+----------+----------+----------+----------+----------+----------+----------+----------+----------+
-; Name      ; state.s20 ; state.s19 ; state.s18 ; state.s17 ; state.s16 ; state.s15 ; state.s14 ; state.s13 ; state.s12 ; state.s11 ; state.s10 ; state.s9 ; state.s8 ; state.s7 ; state.s6 ; state.s5 ; state.s4 ; state.s3 ; state.s2 ; state.s1 ;
-+-----------+-----------+-----------+-----------+-----------+-----------+-----------+-----------+-----------+-----------+-----------+-----------+----------+----------+----------+----------+----------+----------+----------+----------+----------+
-; state.s1  ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0        ; 0        ; 0        ; 0        ; 0        ; 0        ; 0        ; 0        ; 0        ;
-; state.s2  ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0        ; 0        ; 0        ; 0        ; 0        ; 0        ; 0        ; 1        ; 1        ;
-; state.s3  ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0        ; 0        ; 0        ; 0        ; 0        ; 0        ; 1        ; 0        ; 1        ;
-; state.s4  ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0        ; 0        ; 0        ; 0        ; 0        ; 1        ; 0        ; 0        ; 1        ;
-; state.s5  ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0        ; 0        ; 0        ; 0        ; 1        ; 0        ; 0        ; 0        ; 1        ;
-; state.s6  ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0        ; 0        ; 0        ; 1        ; 0        ; 0        ; 0        ; 0        ; 1        ;
-; state.s7  ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0        ; 0        ; 1        ; 0        ; 0        ; 0        ; 0        ; 0        ; 1        ;
-; state.s8  ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0        ; 1        ; 0        ; 0        ; 0        ; 0        ; 0        ; 0        ; 1        ;
-; state.s9  ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 1        ; 0        ; 0        ; 0        ; 0        ; 0        ; 0        ; 0        ; 1        ;
-; state.s10 ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 1         ; 0        ; 0        ; 0        ; 0        ; 0        ; 0        ; 0        ; 0        ; 1        ;
-; state.s11 ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 1         ; 0         ; 0        ; 0        ; 0        ; 0        ; 0        ; 0        ; 0        ; 0        ; 1        ;
-; state.s12 ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 1         ; 0         ; 0         ; 0        ; 0        ; 0        ; 0        ; 0        ; 0        ; 0        ; 0        ; 1        ;
-; state.s13 ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 1         ; 0         ; 0         ; 0         ; 0        ; 0        ; 0        ; 0        ; 0        ; 0        ; 0        ; 0        ; 1        ;
-; state.s14 ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 1         ; 0         ; 0         ; 0         ; 0         ; 0        ; 0        ; 0        ; 0        ; 0        ; 0        ; 0        ; 0        ; 1        ;
-; state.s15 ; 0         ; 0         ; 0         ; 0         ; 0         ; 1         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0        ; 0        ; 0        ; 0        ; 0        ; 0        ; 0        ; 0        ; 1        ;
-; state.s16 ; 0         ; 0         ; 0         ; 0         ; 1         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0        ; 0        ; 0        ; 0        ; 0        ; 0        ; 0        ; 0        ; 1        ;
-; state.s17 ; 0         ; 0         ; 0         ; 1         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0        ; 0        ; 0        ; 0        ; 0        ; 0        ; 0        ; 0        ; 1        ;
-; state.s18 ; 0         ; 0         ; 1         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0        ; 0        ; 0        ; 0        ; 0        ; 0        ; 0        ; 0        ; 1        ;
-; state.s19 ; 0         ; 1         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0        ; 0        ; 0        ; 0        ; 0        ; 0        ; 0        ; 0        ; 1        ;
-; state.s20 ; 1         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0        ; 0        ; 0        ; 0        ; 0        ; 0        ; 0        ; 0        ; 1        ;
-+-----------+-----------+-----------+-----------+-----------+-----------+-----------+-----------+-----------+-----------+-----------+-----------+----------+----------+----------+----------+----------+----------+----------+----------+----------+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; State Machine - |FSM_new|state                                                                                                                                                                                                                              ;
++-----------+-----------+-----------+-----------+-----------+-----------+-----------+-----------+-----------+-----------+-----------+-----------+----------+----------+----------+----------+----------+----------+----------+----------+----------+----------+
+; Name      ; state.s20 ; state.s19 ; state.s18 ; state.s17 ; state.s16 ; state.s15 ; state.s14 ; state.s13 ; state.s12 ; state.s11 ; state.s10 ; state.s9 ; state.s8 ; state.s7 ; state.s6 ; state.s5 ; state.s4 ; state.s3 ; state.s2 ; state.s1 ; state.s0 ;
++-----------+-----------+-----------+-----------+-----------+-----------+-----------+-----------+-----------+-----------+-----------+-----------+----------+----------+----------+----------+----------+----------+----------+----------+----------+----------+
+; state.s0  ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0        ; 0        ; 0        ; 0        ; 0        ; 0        ; 0        ; 0        ; 0        ; 0        ;
+; state.s1  ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0        ; 0        ; 0        ; 0        ; 0        ; 0        ; 0        ; 0        ; 1        ; 1        ;
+; state.s2  ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0        ; 0        ; 0        ; 0        ; 0        ; 0        ; 0        ; 1        ; 0        ; 1        ;
+; state.s3  ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0        ; 0        ; 0        ; 0        ; 0        ; 0        ; 1        ; 0        ; 0        ; 1        ;
+; state.s4  ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0        ; 0        ; 0        ; 0        ; 0        ; 1        ; 0        ; 0        ; 0        ; 1        ;
+; state.s5  ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0        ; 0        ; 0        ; 0        ; 1        ; 0        ; 0        ; 0        ; 0        ; 1        ;
+; state.s6  ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0        ; 0        ; 0        ; 1        ; 0        ; 0        ; 0        ; 0        ; 0        ; 1        ;
+; state.s7  ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0        ; 0        ; 1        ; 0        ; 0        ; 0        ; 0        ; 0        ; 0        ; 1        ;
+; state.s8  ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0        ; 1        ; 0        ; 0        ; 0        ; 0        ; 0        ; 0        ; 0        ; 1        ;
+; state.s9  ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 1        ; 0        ; 0        ; 0        ; 0        ; 0        ; 0        ; 0        ; 0        ; 1        ;
+; state.s10 ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 1         ; 0        ; 0        ; 0        ; 0        ; 0        ; 0        ; 0        ; 0        ; 0        ; 1        ;
+; state.s11 ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 1         ; 0         ; 0        ; 0        ; 0        ; 0        ; 0        ; 0        ; 0        ; 0        ; 0        ; 1        ;
+; state.s12 ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 1         ; 0         ; 0         ; 0        ; 0        ; 0        ; 0        ; 0        ; 0        ; 0        ; 0        ; 0        ; 1        ;
+; state.s13 ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 1         ; 0         ; 0         ; 0         ; 0        ; 0        ; 0        ; 0        ; 0        ; 0        ; 0        ; 0        ; 0        ; 1        ;
+; state.s14 ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 1         ; 0         ; 0         ; 0         ; 0         ; 0        ; 0        ; 0        ; 0        ; 0        ; 0        ; 0        ; 0        ; 0        ; 1        ;
+; state.s15 ; 0         ; 0         ; 0         ; 0         ; 0         ; 1         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0        ; 0        ; 0        ; 0        ; 0        ; 0        ; 0        ; 0        ; 0        ; 1        ;
+; state.s16 ; 0         ; 0         ; 0         ; 0         ; 1         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0        ; 0        ; 0        ; 0        ; 0        ; 0        ; 0        ; 0        ; 0        ; 1        ;
+; state.s17 ; 0         ; 0         ; 0         ; 1         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0        ; 0        ; 0        ; 0        ; 0        ; 0        ; 0        ; 0        ; 0        ; 1        ;
+; state.s18 ; 0         ; 0         ; 1         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0        ; 0        ; 0        ; 0        ; 0        ; 0        ; 0        ; 0        ; 0        ; 1        ;
+; state.s19 ; 0         ; 1         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0        ; 0        ; 0        ; 0        ; 0        ; 0        ; 0        ; 0        ; 0        ; 1        ;
+; state.s20 ; 1         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0        ; 0        ; 0        ; 0        ; 0        ; 0        ; 0        ; 0        ; 0        ; 1        ;
++-----------+-----------+-----------+-----------+-----------+-----------+-----------+-----------+-----------+-----------+-----------+-----------+----------+----------+----------+----------+----------+----------+----------+----------+----------+----------+
 
 
 +----------------------------------------------------------------------------------------------------+
@@ -251,22 +252,22 @@ Encoding Type:  One-Hot
 +-----------------------------------------------------+---------------------+------------------------+
 ; Latch Name                                          ; Latch Enable Signal ; Free of Timing Hazards ;
 +-----------------------------------------------------+---------------------+------------------------+
-; next_state.s1_994                                   ; Selector29          ; yes                    ;
-; next_state.s4_928                                   ; Selector29          ; yes                    ;
-; next_state.s10_796                                  ; Selector29          ; yes                    ;
-; next_state.s2_972                                   ; Selector29          ; yes                    ;
-; next_state.s9_818                                   ; Selector29          ; yes                    ;
-; next_state.s5_906                                   ; Selector29          ; yes                    ;
-; next_state.s14_708                                  ; Selector29          ; yes                    ;
-; next_state.s20_576                                  ; Selector29          ; yes                    ;
-; next_state.s12_752                                  ; Selector29          ; yes                    ;
-; next_state.s7_862                                   ; Selector29          ; yes                    ;
-; next_state.s16_664                                  ; Selector29          ; yes                    ;
-; next_state.s17_642                                  ; Selector29          ; yes                    ;
-; next_state.s8_840                                   ; Selector29          ; yes                    ;
-; next_state.s11_774                                  ; Selector29          ; yes                    ;
-; next_state.s15_686                                  ; Selector29          ; yes                    ;
-; next_state.s3_950                                   ; Selector29          ; yes                    ;
+; next_state.s1_1014                                  ; Selector29          ; yes                    ;
+; next_state.s4_948                                   ; Selector29          ; yes                    ;
+; next_state.s10_816                                  ; Selector29          ; yes                    ;
+; next_state.s2_992                                   ; Selector29          ; yes                    ;
+; next_state.s9_838                                   ; Selector29          ; yes                    ;
+; next_state.s5_926                                   ; Selector29          ; yes                    ;
+; next_state.s14_728                                  ; Selector29          ; yes                    ;
+; next_state.s20_596                                  ; Selector29          ; yes                    ;
+; next_state.s12_772                                  ; Selector29          ; yes                    ;
+; next_state.s7_882                                   ; Selector29          ; yes                    ;
+; next_state.s16_684                                  ; Selector29          ; yes                    ;
+; next_state.s17_662                                  ; Selector29          ; yes                    ;
+; next_state.s8_860                                   ; Selector29          ; yes                    ;
+; next_state.s11_794                                  ; Selector29          ; yes                    ;
+; next_state.s15_706                                  ; Selector29          ; yes                    ;
+; next_state.s3_970                                   ; Selector29          ; yes                    ;
 ; Number of user-specified and inferred latches = 16  ;                     ;                        ;
 +-----------------------------------------------------+---------------------+------------------------+
 Note: All latches listed above may not be present at the end of synthesis due to various synthesis optimizations.
@@ -290,10 +291,10 @@ Note: All latches listed above may not be present at the end of synthesis due to
 +----------------------------------------------+-------+
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
-; Total registers                              ; 16    ;
+; Total registers                              ; 17    ;
 ; Number of registers using Synchronous Clear  ; 0     ;
 ; Number of registers using Synchronous Load   ; 0     ;
-; Number of registers using Asynchronous Clear ; 16    ;
+; Number of registers using Asynchronous Clear ; 17    ;
 ; Number of registers using Asynchronous Load  ; 0     ;
 ; Number of registers using Clock Enable       ; 0     ;
 ; Number of registers using Preset             ; 0     ;
@@ -306,18 +307,18 @@ Note: All latches listed above may not be present at the end of synthesis due to
 ; Type                  ; Count                       ;
 +-----------------------+-----------------------------+
 ; boundary_port         ; 35                          ;
-; cycloneiii_ff         ; 16                          ;
-;     CLR               ; 16                          ;
-; cycloneiii_lcell_comb ; 73                          ;
-;     normal            ; 73                          ;
+; cycloneiii_ff         ; 17                          ;
+;     CLR               ; 17                          ;
+; cycloneiii_lcell_comb ; 72                          ;
+;     normal            ; 72                          ;
 ;         0 data inputs ; 1                           ;
-;         1 data inputs ; 3                           ;
+;         1 data inputs ; 1                           ;
 ;         2 data inputs ; 10                          ;
-;         3 data inputs ; 34                          ;
-;         4 data inputs ; 25                          ;
+;         3 data inputs ; 31                          ;
+;         4 data inputs ; 29                          ;
 ;                       ;                             ;
-; Max LUT depth         ; 5.00                        ;
-; Average LUT depth     ; 2.89                        ;
+; Max LUT depth         ; 4.00                        ;
+; Average LUT depth     ; 2.68                        ;
 +-----------------------+-----------------------------+
 
 
@@ -335,86 +336,87 @@ Note: All latches listed above may not be present at the end of synthesis due to
 +-------------------------------+
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
-    Info: Version 16.1.0 Build 196 10/24/2016 SJ Lite Edition
-    Info: Processing started: Tue Nov  7 23:26:38 2017
+    Info: Version 17.0.0 Build 595 04/25/2017 SJ Lite Edition
+    Info: Processing started: Wed Nov  8 23:30:00 2017
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off FSM_new -c FSM_new
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 2 of the 2 processors detected
 Info (12021): Found 2 design units, including 1 entities, in source file testbench_control.vhd
-    Info (12022): Found design unit 1: testbench_control-Behave File: /home/mohit/microlab337/controlPath/testbench_control.vhd Line: 10
-    Info (12023): Found entity 1: testbench_control File: /home/mohit/microlab337/controlPath/testbench_control.vhd Line: 7
+    Info (12022): Found design unit 1: testbench_control-Behave File: /home/shrey/Documents/microlab337/controlPath/testbench_control.vhd Line: 10
+    Info (12023): Found entity 1: testbench_control File: /home/shrey/Documents/microlab337/controlPath/testbench_control.vhd Line: 7
 Info (12021): Found 2 design units, including 1 entities, in source file FSM_new.vhd
-    Info (12022): Found design unit 1: FSM_new-rtl File: /home/mohit/microlab337/controlPath/FSM_new.vhd Line: 22
-    Info (12023): Found entity 1: FSM_new File: /home/mohit/microlab337/controlPath/FSM_new.vhd Line: 5
+    Info (12022): Found design unit 1: FSM_new-rtl File: /home/shrey/Documents/microlab337/controlPath/FSM_new.vhd Line: 22
+    Info (12023): Found entity 1: FSM_new File: /home/shrey/Documents/microlab337/controlPath/FSM_new.vhd Line: 5
 Info (12127): Elaborating entity "FSM_new" for the top level hierarchy
-Warning (10541): VHDL Signal Declaration warning at FSM_new.vhd(17): used implicit default value for signal "data_out" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations. File: /home/mohit/microlab337/controlPath/FSM_new.vhd Line: 17
-Warning (10492): VHDL Process Statement warning at FSM_new.vhd(143): signal "IR_3_5" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: /home/mohit/microlab337/controlPath/FSM_new.vhd Line: 143
-Warning (10492): VHDL Process Statement warning at FSM_new.vhd(166): signal "IR_7" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: /home/mohit/microlab337/controlPath/FSM_new.vhd Line: 166
-Warning (10492): VHDL Process Statement warning at FSM_new.vhd(178): signal "IR_3_5" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: /home/mohit/microlab337/controlPath/FSM_new.vhd Line: 178
-Warning (10492): VHDL Process Statement warning at FSM_new.vhd(194): signal "IR_3_5" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: /home/mohit/microlab337/controlPath/FSM_new.vhd Line: 194
-Warning (10631): VHDL Process Statement warning at FSM_new.vhd(107): inferring latch(es) for signal or variable "next_state", which holds its previous value in one or more paths through the process File: /home/mohit/microlab337/controlPath/FSM_new.vhd Line: 107
-Info (10041): Inferred latch for "next_state.s20" at FSM_new.vhd(107) File: /home/mohit/microlab337/controlPath/FSM_new.vhd Line: 107
-Info (10041): Inferred latch for "next_state.s19" at FSM_new.vhd(107) File: /home/mohit/microlab337/controlPath/FSM_new.vhd Line: 107
-Info (10041): Inferred latch for "next_state.s18" at FSM_new.vhd(107) File: /home/mohit/microlab337/controlPath/FSM_new.vhd Line: 107
-Info (10041): Inferred latch for "next_state.s17" at FSM_new.vhd(107) File: /home/mohit/microlab337/controlPath/FSM_new.vhd Line: 107
-Info (10041): Inferred latch for "next_state.s16" at FSM_new.vhd(107) File: /home/mohit/microlab337/controlPath/FSM_new.vhd Line: 107
-Info (10041): Inferred latch for "next_state.s15" at FSM_new.vhd(107) File: /home/mohit/microlab337/controlPath/FSM_new.vhd Line: 107
-Info (10041): Inferred latch for "next_state.s14" at FSM_new.vhd(107) File: /home/mohit/microlab337/controlPath/FSM_new.vhd Line: 107
-Info (10041): Inferred latch for "next_state.s13" at FSM_new.vhd(107) File: /home/mohit/microlab337/controlPath/FSM_new.vhd Line: 107
-Info (10041): Inferred latch for "next_state.s12" at FSM_new.vhd(107) File: /home/mohit/microlab337/controlPath/FSM_new.vhd Line: 107
-Info (10041): Inferred latch for "next_state.s11" at FSM_new.vhd(107) File: /home/mohit/microlab337/controlPath/FSM_new.vhd Line: 107
-Info (10041): Inferred latch for "next_state.s10" at FSM_new.vhd(107) File: /home/mohit/microlab337/controlPath/FSM_new.vhd Line: 107
-Info (10041): Inferred latch for "next_state.s9" at FSM_new.vhd(107) File: /home/mohit/microlab337/controlPath/FSM_new.vhd Line: 107
-Info (10041): Inferred latch for "next_state.s8" at FSM_new.vhd(107) File: /home/mohit/microlab337/controlPath/FSM_new.vhd Line: 107
-Info (10041): Inferred latch for "next_state.s7" at FSM_new.vhd(107) File: /home/mohit/microlab337/controlPath/FSM_new.vhd Line: 107
-Info (10041): Inferred latch for "next_state.s6" at FSM_new.vhd(107) File: /home/mohit/microlab337/controlPath/FSM_new.vhd Line: 107
-Info (10041): Inferred latch for "next_state.s5" at FSM_new.vhd(107) File: /home/mohit/microlab337/controlPath/FSM_new.vhd Line: 107
-Info (10041): Inferred latch for "next_state.s4" at FSM_new.vhd(107) File: /home/mohit/microlab337/controlPath/FSM_new.vhd Line: 107
-Info (10041): Inferred latch for "next_state.s3" at FSM_new.vhd(107) File: /home/mohit/microlab337/controlPath/FSM_new.vhd Line: 107
-Info (10041): Inferred latch for "next_state.s2" at FSM_new.vhd(107) File: /home/mohit/microlab337/controlPath/FSM_new.vhd Line: 107
-Info (10041): Inferred latch for "next_state.s1" at FSM_new.vhd(107) File: /home/mohit/microlab337/controlPath/FSM_new.vhd Line: 107
-Warning (13012): Latch next_state.s1_994 has unsafe behavior File: /home/mohit/microlab337/controlPath/FSM_new.vhd Line: 107
-    Warning (13013): Ports D and ENA on the latch are fed by the same signal state.s8 File: /home/mohit/microlab337/controlPath/FSM_new.vhd Line: 28
-Warning (13012): Latch next_state.s4_928 has unsafe behavior File: /home/mohit/microlab337/controlPath/FSM_new.vhd Line: 107
-    Warning (13013): Ports D and ENA on the latch are fed by the same signal state.s7 File: /home/mohit/microlab337/controlPath/FSM_new.vhd Line: 28
-Warning (13012): Latch next_state.s10_796 has unsafe behavior File: /home/mohit/microlab337/controlPath/FSM_new.vhd Line: 107
-    Warning (13013): Ports D and ENA on the latch are fed by the same signal state.s8 File: /home/mohit/microlab337/controlPath/FSM_new.vhd Line: 28
-Warning (13012): Latch next_state.s9_818 has unsafe behavior File: /home/mohit/microlab337/controlPath/FSM_new.vhd Line: 107
-    Warning (13013): Ports D and ENA on the latch are fed by the same signal opcode[0] File: /home/mohit/microlab337/controlPath/FSM_new.vhd Line: 10
-Warning (13012): Latch next_state.s5_906 has unsafe behavior File: /home/mohit/microlab337/controlPath/FSM_new.vhd Line: 107
-    Warning (13013): Ports D and ENA on the latch are fed by the same signal state.s8 File: /home/mohit/microlab337/controlPath/FSM_new.vhd Line: 28
-Warning (13012): Latch next_state.s14_708 has unsafe behavior File: /home/mohit/microlab337/controlPath/FSM_new.vhd Line: 107
-    Warning (13013): Ports D and ENA on the latch are fed by the same signal state.s7 File: /home/mohit/microlab337/controlPath/FSM_new.vhd Line: 28
-Warning (13012): Latch next_state.s20_576 has unsafe behavior File: /home/mohit/microlab337/controlPath/FSM_new.vhd Line: 107
-    Warning (13013): Ports D and ENA on the latch are fed by the same signal state.s8 File: /home/mohit/microlab337/controlPath/FSM_new.vhd Line: 28
-Warning (13012): Latch next_state.s12_752 has unsafe behavior File: /home/mohit/microlab337/controlPath/FSM_new.vhd Line: 107
-    Warning (13013): Ports D and ENA on the latch are fed by the same signal opcode[0] File: /home/mohit/microlab337/controlPath/FSM_new.vhd Line: 10
-Warning (13012): Latch next_state.s7_862 has unsafe behavior File: /home/mohit/microlab337/controlPath/FSM_new.vhd Line: 107
-    Warning (13013): Ports D and ENA on the latch are fed by the same signal opcode[0] File: /home/mohit/microlab337/controlPath/FSM_new.vhd Line: 10
-Warning (13012): Latch next_state.s17_642 has unsafe behavior File: /home/mohit/microlab337/controlPath/FSM_new.vhd Line: 107
-    Warning (13013): Ports D and ENA on the latch are fed by the same signal opcode[0] File: /home/mohit/microlab337/controlPath/FSM_new.vhd Line: 10
-Warning (13012): Latch next_state.s8_840 has unsafe behavior File: /home/mohit/microlab337/controlPath/FSM_new.vhd Line: 107
-    Warning (13013): Ports D and ENA on the latch are fed by the same signal state.s10 File: /home/mohit/microlab337/controlPath/FSM_new.vhd Line: 28
-Warning (13012): Latch next_state.s11_774 has unsafe behavior File: /home/mohit/microlab337/controlPath/FSM_new.vhd Line: 107
-    Warning (13013): Ports D and ENA on the latch are fed by the same signal state.s7 File: /home/mohit/microlab337/controlPath/FSM_new.vhd Line: 28
-Warning (13012): Latch next_state.s15_686 has unsafe behavior File: /home/mohit/microlab337/controlPath/FSM_new.vhd Line: 107
-    Warning (13013): Ports D and ENA on the latch are fed by the same signal state.s10 File: /home/mohit/microlab337/controlPath/FSM_new.vhd Line: 28
-Warning (13012): Latch next_state.s3_950 has unsafe behavior File: /home/mohit/microlab337/controlPath/FSM_new.vhd Line: 107
-    Warning (13013): Ports D and ENA on the latch are fed by the same signal opcode[3] File: /home/mohit/microlab337/controlPath/FSM_new.vhd Line: 10
+Warning (10541): VHDL Signal Declaration warning at FSM_new.vhd(17): used implicit default value for signal "data_out" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations. File: /home/shrey/Documents/microlab337/controlPath/FSM_new.vhd Line: 17
+Warning (10492): VHDL Process Statement warning at FSM_new.vhd(148): signal "IR_3_5" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: /home/shrey/Documents/microlab337/controlPath/FSM_new.vhd Line: 148
+Warning (10492): VHDL Process Statement warning at FSM_new.vhd(171): signal "IR_7" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: /home/shrey/Documents/microlab337/controlPath/FSM_new.vhd Line: 171
+Warning (10492): VHDL Process Statement warning at FSM_new.vhd(183): signal "IR_3_5" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: /home/shrey/Documents/microlab337/controlPath/FSM_new.vhd Line: 183
+Warning (10492): VHDL Process Statement warning at FSM_new.vhd(199): signal "IR_3_5" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: /home/shrey/Documents/microlab337/controlPath/FSM_new.vhd Line: 199
+Warning (10631): VHDL Process Statement warning at FSM_new.vhd(110): inferring latch(es) for signal or variable "next_state", which holds its previous value in one or more paths through the process File: /home/shrey/Documents/microlab337/controlPath/FSM_new.vhd Line: 110
+Info (10041): Inferred latch for "next_state.s20" at FSM_new.vhd(110) File: /home/shrey/Documents/microlab337/controlPath/FSM_new.vhd Line: 110
+Info (10041): Inferred latch for "next_state.s19" at FSM_new.vhd(110) File: /home/shrey/Documents/microlab337/controlPath/FSM_new.vhd Line: 110
+Info (10041): Inferred latch for "next_state.s18" at FSM_new.vhd(110) File: /home/shrey/Documents/microlab337/controlPath/FSM_new.vhd Line: 110
+Info (10041): Inferred latch for "next_state.s17" at FSM_new.vhd(110) File: /home/shrey/Documents/microlab337/controlPath/FSM_new.vhd Line: 110
+Info (10041): Inferred latch for "next_state.s16" at FSM_new.vhd(110) File: /home/shrey/Documents/microlab337/controlPath/FSM_new.vhd Line: 110
+Info (10041): Inferred latch for "next_state.s15" at FSM_new.vhd(110) File: /home/shrey/Documents/microlab337/controlPath/FSM_new.vhd Line: 110
+Info (10041): Inferred latch for "next_state.s14" at FSM_new.vhd(110) File: /home/shrey/Documents/microlab337/controlPath/FSM_new.vhd Line: 110
+Info (10041): Inferred latch for "next_state.s13" at FSM_new.vhd(110) File: /home/shrey/Documents/microlab337/controlPath/FSM_new.vhd Line: 110
+Info (10041): Inferred latch for "next_state.s12" at FSM_new.vhd(110) File: /home/shrey/Documents/microlab337/controlPath/FSM_new.vhd Line: 110
+Info (10041): Inferred latch for "next_state.s11" at FSM_new.vhd(110) File: /home/shrey/Documents/microlab337/controlPath/FSM_new.vhd Line: 110
+Info (10041): Inferred latch for "next_state.s10" at FSM_new.vhd(110) File: /home/shrey/Documents/microlab337/controlPath/FSM_new.vhd Line: 110
+Info (10041): Inferred latch for "next_state.s9" at FSM_new.vhd(110) File: /home/shrey/Documents/microlab337/controlPath/FSM_new.vhd Line: 110
+Info (10041): Inferred latch for "next_state.s8" at FSM_new.vhd(110) File: /home/shrey/Documents/microlab337/controlPath/FSM_new.vhd Line: 110
+Info (10041): Inferred latch for "next_state.s7" at FSM_new.vhd(110) File: /home/shrey/Documents/microlab337/controlPath/FSM_new.vhd Line: 110
+Info (10041): Inferred latch for "next_state.s6" at FSM_new.vhd(110) File: /home/shrey/Documents/microlab337/controlPath/FSM_new.vhd Line: 110
+Info (10041): Inferred latch for "next_state.s5" at FSM_new.vhd(110) File: /home/shrey/Documents/microlab337/controlPath/FSM_new.vhd Line: 110
+Info (10041): Inferred latch for "next_state.s4" at FSM_new.vhd(110) File: /home/shrey/Documents/microlab337/controlPath/FSM_new.vhd Line: 110
+Info (10041): Inferred latch for "next_state.s3" at FSM_new.vhd(110) File: /home/shrey/Documents/microlab337/controlPath/FSM_new.vhd Line: 110
+Info (10041): Inferred latch for "next_state.s2" at FSM_new.vhd(110) File: /home/shrey/Documents/microlab337/controlPath/FSM_new.vhd Line: 110
+Info (10041): Inferred latch for "next_state.s1" at FSM_new.vhd(110) File: /home/shrey/Documents/microlab337/controlPath/FSM_new.vhd Line: 110
+Info (10041): Inferred latch for "next_state.s0" at FSM_new.vhd(110) File: /home/shrey/Documents/microlab337/controlPath/FSM_new.vhd Line: 110
+Warning (13012): Latch next_state.s1_1014 has unsafe behavior File: /home/shrey/Documents/microlab337/controlPath/FSM_new.vhd Line: 110
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal state.s8 File: /home/shrey/Documents/microlab337/controlPath/FSM_new.vhd Line: 28
+Warning (13012): Latch next_state.s4_948 has unsafe behavior File: /home/shrey/Documents/microlab337/controlPath/FSM_new.vhd Line: 110
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal state.s7 File: /home/shrey/Documents/microlab337/controlPath/FSM_new.vhd Line: 28
+Warning (13012): Latch next_state.s10_816 has unsafe behavior File: /home/shrey/Documents/microlab337/controlPath/FSM_new.vhd Line: 110
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal state.s8 File: /home/shrey/Documents/microlab337/controlPath/FSM_new.vhd Line: 28
+Warning (13012): Latch next_state.s9_838 has unsafe behavior File: /home/shrey/Documents/microlab337/controlPath/FSM_new.vhd Line: 110
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal opcode[0] File: /home/shrey/Documents/microlab337/controlPath/FSM_new.vhd Line: 10
+Warning (13012): Latch next_state.s5_926 has unsafe behavior File: /home/shrey/Documents/microlab337/controlPath/FSM_new.vhd Line: 110
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal state.s8 File: /home/shrey/Documents/microlab337/controlPath/FSM_new.vhd Line: 28
+Warning (13012): Latch next_state.s14_728 has unsafe behavior File: /home/shrey/Documents/microlab337/controlPath/FSM_new.vhd Line: 110
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal state.s7 File: /home/shrey/Documents/microlab337/controlPath/FSM_new.vhd Line: 28
+Warning (13012): Latch next_state.s20_596 has unsafe behavior File: /home/shrey/Documents/microlab337/controlPath/FSM_new.vhd Line: 110
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal state.s8 File: /home/shrey/Documents/microlab337/controlPath/FSM_new.vhd Line: 28
+Warning (13012): Latch next_state.s12_772 has unsafe behavior File: /home/shrey/Documents/microlab337/controlPath/FSM_new.vhd Line: 110
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal opcode[0] File: /home/shrey/Documents/microlab337/controlPath/FSM_new.vhd Line: 10
+Warning (13012): Latch next_state.s7_882 has unsafe behavior File: /home/shrey/Documents/microlab337/controlPath/FSM_new.vhd Line: 110
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal opcode[0] File: /home/shrey/Documents/microlab337/controlPath/FSM_new.vhd Line: 10
+Warning (13012): Latch next_state.s17_662 has unsafe behavior File: /home/shrey/Documents/microlab337/controlPath/FSM_new.vhd Line: 110
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal opcode[0] File: /home/shrey/Documents/microlab337/controlPath/FSM_new.vhd Line: 10
+Warning (13012): Latch next_state.s8_860 has unsafe behavior File: /home/shrey/Documents/microlab337/controlPath/FSM_new.vhd Line: 110
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal state.s10 File: /home/shrey/Documents/microlab337/controlPath/FSM_new.vhd Line: 28
+Warning (13012): Latch next_state.s11_794 has unsafe behavior File: /home/shrey/Documents/microlab337/controlPath/FSM_new.vhd Line: 110
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal state.s7 File: /home/shrey/Documents/microlab337/controlPath/FSM_new.vhd Line: 28
+Warning (13012): Latch next_state.s15_706 has unsafe behavior File: /home/shrey/Documents/microlab337/controlPath/FSM_new.vhd Line: 110
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal state.s10 File: /home/shrey/Documents/microlab337/controlPath/FSM_new.vhd Line: 28
+Warning (13012): Latch next_state.s3_970 has unsafe behavior File: /home/shrey/Documents/microlab337/controlPath/FSM_new.vhd Line: 110
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal opcode[3] File: /home/shrey/Documents/microlab337/controlPath/FSM_new.vhd Line: 10
 Warning (13024): Output pins are stuck at VCC or GND
-    Warning (13410): Pin "data_out[0]" is stuck at GND File: /home/mohit/microlab337/controlPath/FSM_new.vhd Line: 17
-    Warning (13410): Pin "data_out[1]" is stuck at GND File: /home/mohit/microlab337/controlPath/FSM_new.vhd Line: 17
+    Warning (13410): Pin "data_out[0]" is stuck at GND File: /home/shrey/Documents/microlab337/controlPath/FSM_new.vhd Line: 17
+    Warning (13410): Pin "data_out[1]" is stuck at GND File: /home/shrey/Documents/microlab337/controlPath/FSM_new.vhd Line: 17
 Info (286030): Timing-Driven Synthesis is running
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 120 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 122 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 13 input pins
     Info (21059): Implemented 22 output pins
-    Info (21061): Implemented 85 logic cells
+    Info (21061): Implemented 87 logic cells
 Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 38 warnings
-    Info: Peak virtual memory: 964 megabytes
-    Info: Processing ended: Tue Nov  7 23:26:51 2017
-    Info: Elapsed time: 00:00:13
-    Info: Total CPU time (on all processors): 00:00:32
+    Info: Peak virtual memory: 976 megabytes
+    Info: Processing ended: Wed Nov  8 23:30:11 2017
+    Info: Elapsed time: 00:00:11
+    Info: Total CPU time (on all processors): 00:00:25
 
 
