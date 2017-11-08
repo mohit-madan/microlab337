@@ -1,6 +1,6 @@
 Analysis & Synthesis report for datapath
-Tue Nov  7 23:14:42 2017
-Quartus Prime Version 17.0.0 Build 595 04/25/2017 SJ Lite Edition
+Thu Nov  9 02:26:11 2017
+Quartus Prime Version 16.1.0 Build 196 10/24/2016 SJ Lite Edition
 
 
 ---------------------
@@ -10,14 +10,22 @@ Quartus Prime Version 17.0.0 Build 595 04/25/2017 SJ Lite Edition
   2. Analysis & Synthesis Summary
   3. Analysis & Synthesis Settings
   4. Parallel Compilation
-  5. Analysis & Synthesis Messages
+  5. Analysis & Synthesis Source Files Read
+  6. Analysis & Synthesis Resource Usage Summary
+  7. Analysis & Synthesis Resource Utilization by Entity
+  8. User-Specified and Inferred Latches
+  9. General Register Statistics
+ 10. Multiplexer Restructuring Statistics (Restructuring Performed)
+ 11. Post-Synthesis Netlist Statistics for Top Partition
+ 12. Elapsed Time Per Partition
+ 13. Analysis & Synthesis Messages
 
 
 
 ----------------
 ; Legal Notice ;
 ----------------
-Copyright (C) 2017  Intel Corporation. All rights reserved.
+Copyright (C) 2016  Intel Corporation. All rights reserved.
 Your use of Intel Corporation's design tools, logic functions 
 and other software and tools, and its AMPP partner logic 
 functions, and any output files from any of the foregoing 
@@ -37,20 +45,20 @@ agreement for further details.
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +------------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status        ; Failed - Tue Nov  7 23:14:42 2017           ;
-; Quartus Prime Version              ; 17.0.0 Build 595 04/25/2017 SJ Lite Edition ;
+; Analysis & Synthesis Status        ; Successful - Thu Nov  9 02:26:11 2017       ;
+; Quartus Prime Version              ; 16.1.0 Build 196 10/24/2016 SJ Lite Edition ;
 ; Revision Name                      ; datapath                                    ;
-; Top-level Entity Name              ; datapath                                    ;
+; Top-level Entity Name              ; ALU                                         ;
 ; Family                             ; Cyclone IV E                                ;
-; Total logic elements               ; N/A until Partition Merge                   ;
-;     Total combinational functions  ; N/A until Partition Merge                   ;
-;     Dedicated logic registers      ; N/A until Partition Merge                   ;
-; Total registers                    ; N/A until Partition Merge                   ;
-; Total pins                         ; N/A until Partition Merge                   ;
-; Total virtual pins                 ; N/A until Partition Merge                   ;
-; Total memory bits                  ; N/A until Partition Merge                   ;
-; Embedded Multiplier 9-bit elements ; N/A until Partition Merge                   ;
-; Total PLLs                         ; N/A until Partition Merge                   ;
+; Total logic elements               ; 224                                         ;
+;     Total combinational functions  ; 224                                         ;
+;     Dedicated logic registers      ; 0                                           ;
+; Total registers                    ; 0                                           ;
+; Total pins                         ; 55                                          ;
+; Total virtual pins                 ; 0                                           ;
+; Total memory bits                  ; 0                                           ;
+; Embedded Multiplier 9-bit elements ; 0                                           ;
+; Total PLLs                         ; 0                                           ;
 +------------------------------------+---------------------------------------------+
 
 
@@ -60,9 +68,9 @@ agreement for further details.
 ; Option                                                                     ; Setting            ; Default Value      ;
 +----------------------------------------------------------------------------+--------------------+--------------------+
 ; Device                                                                     ; EP4CE22F17C6       ;                    ;
-; Top-level entity name                                                      ; datapath           ; datapath           ;
+; Top-level entity name                                                      ; alu                ; datapath           ;
 ; Family name                                                                ; Cyclone IV E       ; Cyclone V          ;
-; Use smart compilation                                                      ; Off                ; Off                ;
+; Use smart compilation                                                      ; On                 ; Off                ;
 ; Enable parallel Assembler and TimeQuest Timing Analyzer during compilation ; On                 ; On                 ;
 ; Enable compact report table                                                ; Off                ; Off                ;
 ; Restructure Multiplexers                                                   ; Auto               ; Auto               ;
@@ -149,11 +157,161 @@ agreement for further details.
 ; Maximum allowed            ; 2           ;
 ;                            ;             ;
 ; Average used               ; 1.00        ;
-; Maximum used               ; 1           ;
+; Maximum used               ; 2           ;
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
+;     Processor 2            ;   0.0%      ;
 +----------------------------+-------------+
+
+
++----------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                 ;
++----------------------------------+-----------------+-----------------+-------------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type       ; File Name with Absolute Path                          ; Library ;
++----------------------------------+-----------------+-----------------+-------------------------------------------------------+---------+
+; ../Components/TwosComplement.vhd ; yes             ; User VHDL File  ; /home/mohit/microlab337/Components/TwosComplement.vhd ;         ;
+; alu.vhd                          ; yes             ; User VHDL File  ; /home/mohit/microlab337/MicroLab/alu.vhd              ;         ;
++----------------------------------+-----------------+-----------------+-------------------------------------------------------+---------+
+
+
++-------------------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary                 ;
++---------------------------------------------+---------------+
+; Resource                                    ; Usage         ;
++---------------------------------------------+---------------+
+; Estimated Total logic elements              ; 224           ;
+;                                             ;               ;
+; Total combinational functions               ; 224           ;
+; Logic element usage by number of LUT inputs ;               ;
+;     -- 4 input functions                    ; 59            ;
+;     -- 3 input functions                    ; 95            ;
+;     -- <=2 input functions                  ; 70            ;
+;                                             ;               ;
+; Logic elements by mode                      ;               ;
+;     -- normal mode                          ; 126           ;
+;     -- arithmetic mode                      ; 98            ;
+;                                             ;               ;
+; Total registers                             ; 0             ;
+;     -- Dedicated logic registers            ; 0             ;
+;     -- I/O registers                        ; 0             ;
+;                                             ;               ;
+; I/O pins                                    ; 55            ;
+;                                             ;               ;
+; Embedded Multiplier 9-bit elements          ; 0             ;
+;                                             ;               ;
+; Maximum fan-out node                        ; add1bit~input ;
+; Maximum fan-out                             ; 41            ;
+; Total fan-out                               ; 731           ;
+; Average fan-out                             ; 2.19          ;
++---------------------------------------------+---------------+
+
+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                              ;
++----------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+--------------------------+----------------+--------------+
+; Compilation Hierarchy Node ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name      ; Entity Name    ; Library Name ;
++----------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+--------------------------+----------------+--------------+
+; |ALU                       ; 224 (195)           ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 55   ; 0            ; |ALU                     ; ALU            ; work         ;
+;    |TwosComplement:two1|   ; 15 (15)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ALU|TwosComplement:two1 ; TwosComplement ; work         ;
+;    |TwosComplement:two|    ; 14 (14)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ALU|TwosComplement:two  ; TwosComplement ; work         ;
++----------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+--------------------------+----------------+--------------+
+Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
+
+
++----------------------------------------------------------------------------------------------------+
+; User-Specified and Inferred Latches                                                                ;
++-----------------------------------------------------+---------------------+------------------------+
+; Latch Name                                          ; Latch Enable Signal ; Free of Timing Hazards ;
++-----------------------------------------------------+---------------------+------------------------+
+; alu_out_read[0]                                     ; alu_out_read[15]    ; yes                    ;
+; alu_out_read[1]                                     ; alu_out_read[15]    ; yes                    ;
+; alu_out_read[2]                                     ; alu_out_read[15]    ; yes                    ;
+; alu_out_read[3]                                     ; alu_out_read[15]    ; yes                    ;
+; alu_out_read[4]                                     ; alu_out_read[15]    ; yes                    ;
+; alu_out_read[5]                                     ; alu_out_read[15]    ; yes                    ;
+; alu_out_read[6]                                     ; alu_out_read[15]    ; yes                    ;
+; alu_out_read[7]                                     ; alu_out_read[15]    ; yes                    ;
+; alu_out_read[8]                                     ; alu_out_read[15]    ; yes                    ;
+; alu_out_read[9]                                     ; alu_out_read[15]    ; yes                    ;
+; alu_out_read[10]                                    ; alu_out_read[15]    ; yes                    ;
+; alu_out_read[11]                                    ; alu_out_read[15]    ; yes                    ;
+; alu_out_read[12]                                    ; alu_out_read[15]    ; yes                    ;
+; alu_out_read[13]                                    ; alu_out_read[15]    ; yes                    ;
+; alu_out_read[14]                                    ; alu_out_read[15]    ; yes                    ;
+; alu_out_read[15]                                    ; alu_out_read[15]    ; yes                    ;
+; two_complement_add[14]                              ; alu_out_read[15]    ; yes                    ;
+; two_complement_add[13]                              ; alu_out_read[15]    ; yes                    ;
+; two_complement_add[12]                              ; alu_out_read[15]    ; yes                    ;
+; two_complement_add[11]                              ; alu_out_read[15]    ; yes                    ;
+; two_complement_add[10]                              ; alu_out_read[15]    ; yes                    ;
+; two_complement_add[9]                               ; alu_out_read[15]    ; yes                    ;
+; two_complement_add[8]                               ; alu_out_read[15]    ; yes                    ;
+; two_complement_add[7]                               ; alu_out_read[15]    ; yes                    ;
+; two_complement_add[6]                               ; alu_out_read[15]    ; yes                    ;
+; two_complement_add[5]                               ; alu_out_read[15]    ; yes                    ;
+; two_complement_add[4]                               ; alu_out_read[15]    ; yes                    ;
+; two_complement_add[3]                               ; alu_out_read[15]    ; yes                    ;
+; two_complement_add[2]                               ; alu_out_read[15]    ; yes                    ;
+; two_complement_add[1]                               ; alu_out_read[15]    ; yes                    ;
+; two_complement_add[0]                               ; alu_out_read[15]    ; yes                    ;
+; Number of user-specified and inferred latches = 31  ;                     ;                        ;
++-----------------------------------------------------+---------------------+------------------------+
+Note: All latches listed above may not be present at the end of synthesis due to various synthesis optimizations.
+
+
++------------------------------------------------------+
+; General Register Statistics                          ;
++----------------------------------------------+-------+
+; Statistic                                    ; Value ;
++----------------------------------------------+-------+
+; Total registers                              ; 0     ;
+; Number of registers using Synchronous Clear  ; 0     ;
+; Number of registers using Synchronous Load   ; 0     ;
+; Number of registers using Asynchronous Clear ; 0     ;
+; Number of registers using Asynchronous Load  ; 0     ;
+; Number of registers using Clock Enable       ; 0     ;
+; Number of registers using Preset             ; 0     ;
++----------------------------------------------+-------+
+
+
++------------------------------------------------------------------------------------------------------------------------------------------+
+; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                           ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------+
+; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------+
+; 3:1                ; 30 bits   ; 60 LEs        ; 60 LEs               ; 0 LEs                  ; No         ; |ALU|two_complement_add[7] ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------+
+
+
++-----------------------------------------------------+
+; Post-Synthesis Netlist Statistics for Top Partition ;
++-----------------------+-----------------------------+
+; Type                  ; Count                       ;
++-----------------------+-----------------------------+
+; boundary_port         ; 55                          ;
+; cycloneiii_lcell_comb ; 224                         ;
+;     arith             ; 98                          ;
+;         2 data inputs ; 39                          ;
+;         3 data inputs ; 59                          ;
+;     normal            ; 126                         ;
+;         1 data inputs ; 3                           ;
+;         2 data inputs ; 28                          ;
+;         3 data inputs ; 36                          ;
+;         4 data inputs ; 59                          ;
+;                       ;                             ;
+; Max LUT depth         ; 6.30                        ;
+; Average LUT depth     ; 4.95                        ;
++-----------------------+-----------------------------+
+
+
++-------------------------------+
+; Elapsed Time Per Partition    ;
++----------------+--------------+
+; Partition Name ; Elapsed Time ;
++----------------+--------------+
+; Top            ; 00:00:00     ;
++----------------+--------------+
 
 
 +-------------------------------+
@@ -161,61 +319,165 @@ agreement for further details.
 +-------------------------------+
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
-    Info: Version 17.0.0 Build 595 04/25/2017 SJ Lite Edition
-    Info: Processing started: Tue Nov  7 23:14:32 2017
+    Info: Version 16.1.0 Build 196 10/24/2016 SJ Lite Edition
+    Info: Processing started: Thu Nov  9 02:25:59 2017
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off datapath -c datapath
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 2 of the 2 processors detected
+Info (12021): Found 2 design units, including 1 entities, in source file /home/mohit/microlab337/Components/registers.vhd
+    Info (12022): Found design unit 1: registers-behav File: /home/mohit/microlab337/Components/registers.vhd Line: 13
+    Info (12023): Found entity 1: registers File: /home/mohit/microlab337/Components/registers.vhd Line: 5
+Info (12021): Found 2 design units, including 1 entities, in source file /home/mohit/microlab337/Components/TwosComplement.vhd
+    Info (12022): Found design unit 1: TwosComplement-Behave File: /home/mohit/microlab337/Components/TwosComplement.vhd Line: 12
+    Info (12023): Found entity 1: TwosComplement File: /home/mohit/microlab337/Components/TwosComplement.vhd Line: 5
+Info (12021): Found 2 design units, including 1 entities, in source file ram.vhd
+    Info (12022): Found design unit 1: ram-rtl File: /home/mohit/microlab337/MicroLab/ram.vhd Line: 22
+    Info (12023): Found entity 1: ram File: /home/mohit/microlab337/MicroLab/ram.vhd Line: 5
 Info (12021): Found 2 design units, including 1 entities, in source file trail_zero7.vhd
-    Info (12022): Found design unit 1: trail_zero7-behav File: /home/shrey/Quartus/MicroLab/trail_zero7.vhd Line: 12
-    Info (12023): Found entity 1: trail_zero7 File: /home/shrey/Quartus/MicroLab/trail_zero7.vhd Line: 5
+    Info (12022): Found design unit 1: trail_zero7-behav File: /home/mohit/microlab337/MicroLab/trail_zero7.vhd Line: 12
+    Info (12023): Found entity 1: trail_zero7 File: /home/mohit/microlab337/MicroLab/trail_zero7.vhd Line: 5
 Info (12021): Found 2 design units, including 1 entities, in source file temp_reg.vhdl
-    Info (12022): Found design unit 1: temp_reg-behav File: /home/shrey/Quartus/MicroLab/temp_reg.vhdl Line: 16
-    Info (12023): Found entity 1: temp_reg File: /home/shrey/Quartus/MicroLab/temp_reg.vhdl Line: 5
-Info (12021): Found 2 design units, including 1 entities, in source file sign_ext10.vhd
-    Info (12022): Found design unit 1: sign_ext10-behav File: /home/shrey/Quartus/MicroLab/sign_ext10.vhd Line: 12
-    Info (12023): Found entity 1: sign_ext10 File: /home/shrey/Quartus/MicroLab/sign_ext10.vhd Line: 5
-Info (12021): Found 2 design units, including 1 entities, in source file sign_ext8.vhd
-    Info (12022): Found design unit 1: sign_ext8-behav File: /home/shrey/Quartus/MicroLab/sign_ext8.vhd Line: 12
-    Info (12023): Found entity 1: sign_ext8 File: /home/shrey/Quartus/MicroLab/sign_ext8.vhd Line: 5
-Info (12021): Found 2 design units, including 1 entities, in source file sign_ext7.vhd
-    Info (12022): Found design unit 1: sign_ext7-behav File: /home/shrey/Quartus/MicroLab/sign_ext7.vhd Line: 12
-    Info (12023): Found entity 1: sign_ext7 File: /home/shrey/Quartus/MicroLab/sign_ext7.vhd Line: 5
+    Info (12022): Found design unit 1: temp_reg-behav File: /home/mohit/microlab337/MicroLab/temp_reg.vhdl Line: 16
+    Info (12023): Found entity 1: temp_reg File: /home/mohit/microlab337/MicroLab/temp_reg.vhdl Line: 5
 Info (12021): Found 2 design units, including 1 entities, in source file sign_ext.vhd
-    Info (12022): Found design unit 1: sign_ext8-rtl File: /home/shrey/Quartus/MicroLab/sign_ext.vhd Line: 16
-    Info (12023): Found entity 1: sign_ext File: /home/shrey/Quartus/MicroLab/sign_ext.vhd Line: 5
+    Info (12022): Found design unit 1: sign_ext-rtl File: /home/mohit/microlab337/MicroLab/sign_ext.vhd Line: 16
+    Info (12023): Found entity 1: sign_ext File: /home/mohit/microlab337/MicroLab/sign_ext.vhd Line: 5
 Info (12021): Found 2 design units, including 1 entities, in source file regfile.vhd
-    Info (12022): Found design unit 1: register_file-behavioral File: /home/shrey/Quartus/MicroLab/regfile.vhd Line: 21
-    Info (12023): Found entity 1: register_file File: /home/shrey/Quartus/MicroLab/regfile.vhd Line: 5
+    Info (12022): Found design unit 1: register_file-behavioral File: /home/mohit/microlab337/MicroLab/regfile.vhd Line: 21
+    Info (12023): Found entity 1: register_file File: /home/mohit/microlab337/MicroLab/regfile.vhd Line: 5
 Info (12021): Found 2 design units, including 1 entities, in source file priorityEncoder.vhd
-    Info (12022): Found design unit 1: priorityEncoder-priority_enc_arc File: /home/shrey/Quartus/MicroLab/priorityEncoder.vhd Line: 15
-    Info (12023): Found entity 1: priorityEncoder File: /home/shrey/Quartus/MicroLab/priorityEncoder.vhd Line: 5
+    Info (12022): Found design unit 1: priorityEncoder-priority_enc_arc File: /home/mohit/microlab337/MicroLab/priorityEncoder.vhd Line: 15
+    Info (12023): Found entity 1: priorityEncoder File: /home/mohit/microlab337/MicroLab/priorityEncoder.vhd Line: 5
 Info (12021): Found 2 design units, including 1 entities, in source file mux8to1.vhd
-    Info (12022): Found design unit 1: mux8to1-rtl File: /home/shrey/Quartus/MicroLab/mux8to1.vhd Line: 22
-    Info (12023): Found entity 1: mux8to1 File: /home/shrey/Quartus/MicroLab/mux8to1.vhd Line: 4
+    Info (12022): Found design unit 1: mux8to1-rtl File: /home/mohit/microlab337/MicroLab/mux8to1.vhd Line: 22
+    Info (12023): Found entity 1: mux8to1 File: /home/mohit/microlab337/MicroLab/mux8to1.vhd Line: 4
 Info (12021): Found 2 design units, including 1 entities, in source file mux4to1.vhd
-    Info (12022): Found design unit 1: mux4to1-rtl File: /home/shrey/Quartus/MicroLab/mux4to1.vhd Line: 18
-    Info (12023): Found entity 1: mux4to1 File: /home/shrey/Quartus/MicroLab/mux4to1.vhd Line: 4
+    Info (12022): Found design unit 1: mux4to1-rtl File: /home/mohit/microlab337/MicroLab/mux4to1.vhd Line: 18
+    Info (12023): Found entity 1: mux4to1 File: /home/mohit/microlab337/MicroLab/mux4to1.vhd Line: 4
 Info (12021): Found 2 design units, including 1 entities, in source file mux2to1.vhd
-    Info (12022): Found design unit 1: mux2to1-rtl File: /home/shrey/Quartus/MicroLab/mux2to1.vhd Line: 15
-    Info (12023): Found entity 1: mux2to1 File: /home/shrey/Quartus/MicroLab/mux2to1.vhd Line: 4
+    Info (12022): Found design unit 1: mux2to1-rtl File: /home/mohit/microlab337/MicroLab/mux2to1.vhd Line: 15
+    Info (12023): Found entity 1: mux2to1 File: /home/mohit/microlab337/MicroLab/mux2to1.vhd Line: 4
 Info (12021): Found 2 design units, including 1 entities, in source file instr_reg.vhd
-    Info (12022): Found design unit 1: instr_reg-behav File: /home/shrey/Quartus/MicroLab/instr_reg.vhd Line: 12
-    Info (12023): Found entity 1: instr_reg File: /home/shrey/Quartus/MicroLab/instr_reg.vhd Line: 5
+    Info (12022): Found design unit 1: instr_reg-behav File: /home/mohit/microlab337/MicroLab/instr_reg.vhd Line: 12
+    Info (12023): Found entity 1: instr_reg File: /home/mohit/microlab337/MicroLab/instr_reg.vhd Line: 5
 Info (12021): Found 2 design units, including 1 entities, in source file decoder3_16.vhd
-    Info (12022): Found design unit 1: decoder3_16-decoder3_16_arc File: /home/shrey/Quartus/MicroLab/decoder3_16.vhd Line: 12
-    Info (12023): Found entity 1: decoder3_16 File: /home/shrey/Quartus/MicroLab/decoder3_16.vhd Line: 4
+    Info (12022): Found design unit 1: decoder3_16-decoder3_16_arc File: /home/mohit/microlab337/MicroLab/decoder3_16.vhd Line: 12
+    Info (12023): Found entity 1: decoder3_16 File: /home/mohit/microlab337/MicroLab/decoder3_16.vhd Line: 4
 Info (12021): Found 2 design units, including 1 entities, in source file alu.vhd
-    Info (12022): Found design unit 1: alu-Behavioral File: /home/shrey/Quartus/MicroLab/alu.vhd Line: 18
-    Info (12023): Found entity 1: alu File: /home/shrey/Quartus/MicroLab/alu.vhd Line: 5
+    Info (12022): Found design unit 1: ALU-Struct File: /home/mohit/microlab337/MicroLab/alu.vhd Line: 14
+    Info (12023): Found entity 1: ALU File: /home/mohit/microlab337/MicroLab/alu.vhd Line: 5
 Info (12021): Found 2 design units, including 1 entities, in source file datapath.vhd
-    Info (12022): Found design unit 1: datapath-rtl File: /home/shrey/Quartus/MicroLab/datapath.vhd Line: 17
-    Info (12023): Found entity 1: datapath File: /home/shrey/Quartus/MicroLab/datapath.vhd Line: 5
-Error (10514): VHDL aggregate error at datapath.vhd(172): can't determine type of aggregate -- found 0 possible types File: /home/shrey/Quartus/MicroLab/datapath.vhd Line: 172
-Error: Quartus Prime Analysis & Synthesis was unsuccessful. 1 error, 1 warning
-    Error: Peak virtual memory: 954 megabytes
-    Error: Processing ended: Tue Nov  7 23:14:42 2017
-    Error: Elapsed time: 00:00:10
-    Error: Total CPU time (on all processors): 00:00:24
+    Info (12022): Found design unit 1: datapath-rtl File: /home/mohit/microlab337/MicroLab/datapath.vhd Line: 17
+    Info (12023): Found entity 1: datapath File: /home/mohit/microlab337/MicroLab/datapath.vhd Line: 5
+Info (12127): Elaborating entity "alu" for the top level hierarchy
+Warning (10492): VHDL Process Statement warning at alu.vhd(56): signal "add1bit" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: /home/mohit/microlab337/MicroLab/alu.vhd Line: 56
+Warning (10631): VHDL Process Statement warning at alu.vhd(51): inferring latch(es) for signal or variable "alu_out_read", which holds its previous value in one or more paths through the process File: /home/mohit/microlab337/MicroLab/alu.vhd Line: 51
+Warning (10631): VHDL Process Statement warning at alu.vhd(51): inferring latch(es) for signal or variable "two_complement_add", which holds its previous value in one or more paths through the process File: /home/mohit/microlab337/MicroLab/alu.vhd Line: 51
+Info (10041): Inferred latch for "two_complement_add[0]" at alu.vhd(51) File: /home/mohit/microlab337/MicroLab/alu.vhd Line: 51
+Info (10041): Inferred latch for "two_complement_add[1]" at alu.vhd(51) File: /home/mohit/microlab337/MicroLab/alu.vhd Line: 51
+Info (10041): Inferred latch for "two_complement_add[2]" at alu.vhd(51) File: /home/mohit/microlab337/MicroLab/alu.vhd Line: 51
+Info (10041): Inferred latch for "two_complement_add[3]" at alu.vhd(51) File: /home/mohit/microlab337/MicroLab/alu.vhd Line: 51
+Info (10041): Inferred latch for "two_complement_add[4]" at alu.vhd(51) File: /home/mohit/microlab337/MicroLab/alu.vhd Line: 51
+Info (10041): Inferred latch for "two_complement_add[5]" at alu.vhd(51) File: /home/mohit/microlab337/MicroLab/alu.vhd Line: 51
+Info (10041): Inferred latch for "two_complement_add[6]" at alu.vhd(51) File: /home/mohit/microlab337/MicroLab/alu.vhd Line: 51
+Info (10041): Inferred latch for "two_complement_add[7]" at alu.vhd(51) File: /home/mohit/microlab337/MicroLab/alu.vhd Line: 51
+Info (10041): Inferred latch for "two_complement_add[8]" at alu.vhd(51) File: /home/mohit/microlab337/MicroLab/alu.vhd Line: 51
+Info (10041): Inferred latch for "two_complement_add[9]" at alu.vhd(51) File: /home/mohit/microlab337/MicroLab/alu.vhd Line: 51
+Info (10041): Inferred latch for "two_complement_add[10]" at alu.vhd(51) File: /home/mohit/microlab337/MicroLab/alu.vhd Line: 51
+Info (10041): Inferred latch for "two_complement_add[11]" at alu.vhd(51) File: /home/mohit/microlab337/MicroLab/alu.vhd Line: 51
+Info (10041): Inferred latch for "two_complement_add[12]" at alu.vhd(51) File: /home/mohit/microlab337/MicroLab/alu.vhd Line: 51
+Info (10041): Inferred latch for "two_complement_add[13]" at alu.vhd(51) File: /home/mohit/microlab337/MicroLab/alu.vhd Line: 51
+Info (10041): Inferred latch for "two_complement_add[14]" at alu.vhd(51) File: /home/mohit/microlab337/MicroLab/alu.vhd Line: 51
+Info (10041): Inferred latch for "alu_out_read[0]" at alu.vhd(51) File: /home/mohit/microlab337/MicroLab/alu.vhd Line: 51
+Info (10041): Inferred latch for "alu_out_read[1]" at alu.vhd(51) File: /home/mohit/microlab337/MicroLab/alu.vhd Line: 51
+Info (10041): Inferred latch for "alu_out_read[2]" at alu.vhd(51) File: /home/mohit/microlab337/MicroLab/alu.vhd Line: 51
+Info (10041): Inferred latch for "alu_out_read[3]" at alu.vhd(51) File: /home/mohit/microlab337/MicroLab/alu.vhd Line: 51
+Info (10041): Inferred latch for "alu_out_read[4]" at alu.vhd(51) File: /home/mohit/microlab337/MicroLab/alu.vhd Line: 51
+Info (10041): Inferred latch for "alu_out_read[5]" at alu.vhd(51) File: /home/mohit/microlab337/MicroLab/alu.vhd Line: 51
+Info (10041): Inferred latch for "alu_out_read[6]" at alu.vhd(51) File: /home/mohit/microlab337/MicroLab/alu.vhd Line: 51
+Info (10041): Inferred latch for "alu_out_read[7]" at alu.vhd(51) File: /home/mohit/microlab337/MicroLab/alu.vhd Line: 51
+Info (10041): Inferred latch for "alu_out_read[8]" at alu.vhd(51) File: /home/mohit/microlab337/MicroLab/alu.vhd Line: 51
+Info (10041): Inferred latch for "alu_out_read[9]" at alu.vhd(51) File: /home/mohit/microlab337/MicroLab/alu.vhd Line: 51
+Info (10041): Inferred latch for "alu_out_read[10]" at alu.vhd(51) File: /home/mohit/microlab337/MicroLab/alu.vhd Line: 51
+Info (10041): Inferred latch for "alu_out_read[11]" at alu.vhd(51) File: /home/mohit/microlab337/MicroLab/alu.vhd Line: 51
+Info (10041): Inferred latch for "alu_out_read[12]" at alu.vhd(51) File: /home/mohit/microlab337/MicroLab/alu.vhd Line: 51
+Info (10041): Inferred latch for "alu_out_read[13]" at alu.vhd(51) File: /home/mohit/microlab337/MicroLab/alu.vhd Line: 51
+Info (10041): Inferred latch for "alu_out_read[14]" at alu.vhd(51) File: /home/mohit/microlab337/MicroLab/alu.vhd Line: 51
+Info (10041): Inferred latch for "alu_out_read[15]" at alu.vhd(51) File: /home/mohit/microlab337/MicroLab/alu.vhd Line: 51
+Info (12128): Elaborating entity "TwosComplement" for hierarchy "TwosComplement:two" File: /home/mohit/microlab337/MicroLab/alu.vhd Line: 29
+Warning (13012): Latch alu_out_read[0] has unsafe behavior File: /home/mohit/microlab337/MicroLab/alu.vhd Line: 51
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal add1bit File: /home/mohit/microlab337/MicroLab/alu.vhd Line: 7
+Warning (13012): Latch alu_out_read[1] has unsafe behavior File: /home/mohit/microlab337/MicroLab/alu.vhd Line: 51
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal add1bit File: /home/mohit/microlab337/MicroLab/alu.vhd Line: 7
+Warning (13012): Latch alu_out_read[2] has unsafe behavior File: /home/mohit/microlab337/MicroLab/alu.vhd Line: 51
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal add1bit File: /home/mohit/microlab337/MicroLab/alu.vhd Line: 7
+Warning (13012): Latch alu_out_read[3] has unsafe behavior File: /home/mohit/microlab337/MicroLab/alu.vhd Line: 51
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal add1bit File: /home/mohit/microlab337/MicroLab/alu.vhd Line: 7
+Warning (13012): Latch alu_out_read[4] has unsafe behavior File: /home/mohit/microlab337/MicroLab/alu.vhd Line: 51
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal add1bit File: /home/mohit/microlab337/MicroLab/alu.vhd Line: 7
+Warning (13012): Latch alu_out_read[5] has unsafe behavior File: /home/mohit/microlab337/MicroLab/alu.vhd Line: 51
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal add1bit File: /home/mohit/microlab337/MicroLab/alu.vhd Line: 7
+Warning (13012): Latch alu_out_read[6] has unsafe behavior File: /home/mohit/microlab337/MicroLab/alu.vhd Line: 51
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal add1bit File: /home/mohit/microlab337/MicroLab/alu.vhd Line: 7
+Warning (13012): Latch alu_out_read[7] has unsafe behavior File: /home/mohit/microlab337/MicroLab/alu.vhd Line: 51
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal add1bit File: /home/mohit/microlab337/MicroLab/alu.vhd Line: 7
+Warning (13012): Latch alu_out_read[8] has unsafe behavior File: /home/mohit/microlab337/MicroLab/alu.vhd Line: 51
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal add1bit File: /home/mohit/microlab337/MicroLab/alu.vhd Line: 7
+Warning (13012): Latch alu_out_read[9] has unsafe behavior File: /home/mohit/microlab337/MicroLab/alu.vhd Line: 51
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal add1bit File: /home/mohit/microlab337/MicroLab/alu.vhd Line: 7
+Warning (13012): Latch alu_out_read[10] has unsafe behavior File: /home/mohit/microlab337/MicroLab/alu.vhd Line: 51
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal add1bit File: /home/mohit/microlab337/MicroLab/alu.vhd Line: 7
+Warning (13012): Latch alu_out_read[11] has unsafe behavior File: /home/mohit/microlab337/MicroLab/alu.vhd Line: 51
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal add1bit File: /home/mohit/microlab337/MicroLab/alu.vhd Line: 7
+Warning (13012): Latch alu_out_read[12] has unsafe behavior File: /home/mohit/microlab337/MicroLab/alu.vhd Line: 51
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal add1bit File: /home/mohit/microlab337/MicroLab/alu.vhd Line: 7
+Warning (13012): Latch alu_out_read[13] has unsafe behavior File: /home/mohit/microlab337/MicroLab/alu.vhd Line: 51
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal add1bit File: /home/mohit/microlab337/MicroLab/alu.vhd Line: 7
+Warning (13012): Latch alu_out_read[14] has unsafe behavior File: /home/mohit/microlab337/MicroLab/alu.vhd Line: 51
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal add1bit File: /home/mohit/microlab337/MicroLab/alu.vhd Line: 7
+Warning (13012): Latch alu_out_read[15] has unsafe behavior File: /home/mohit/microlab337/MicroLab/alu.vhd Line: 51
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal add1bit File: /home/mohit/microlab337/MicroLab/alu.vhd Line: 7
+Warning (13012): Latch two_complement_add[14] has unsafe behavior File: /home/mohit/microlab337/MicroLab/alu.vhd Line: 51
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal add1bit File: /home/mohit/microlab337/MicroLab/alu.vhd Line: 7
+Warning (13012): Latch two_complement_add[13] has unsafe behavior File: /home/mohit/microlab337/MicroLab/alu.vhd Line: 51
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal add1bit File: /home/mohit/microlab337/MicroLab/alu.vhd Line: 7
+Warning (13012): Latch two_complement_add[12] has unsafe behavior File: /home/mohit/microlab337/MicroLab/alu.vhd Line: 51
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal add1bit File: /home/mohit/microlab337/MicroLab/alu.vhd Line: 7
+Warning (13012): Latch two_complement_add[11] has unsafe behavior File: /home/mohit/microlab337/MicroLab/alu.vhd Line: 51
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal add1bit File: /home/mohit/microlab337/MicroLab/alu.vhd Line: 7
+Warning (13012): Latch two_complement_add[10] has unsafe behavior File: /home/mohit/microlab337/MicroLab/alu.vhd Line: 51
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal add1bit File: /home/mohit/microlab337/MicroLab/alu.vhd Line: 7
+Warning (13012): Latch two_complement_add[9] has unsafe behavior File: /home/mohit/microlab337/MicroLab/alu.vhd Line: 51
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal add1bit File: /home/mohit/microlab337/MicroLab/alu.vhd Line: 7
+Warning (13012): Latch two_complement_add[8] has unsafe behavior File: /home/mohit/microlab337/MicroLab/alu.vhd Line: 51
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal add1bit File: /home/mohit/microlab337/MicroLab/alu.vhd Line: 7
+Warning (13012): Latch two_complement_add[7] has unsafe behavior File: /home/mohit/microlab337/MicroLab/alu.vhd Line: 51
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal add1bit File: /home/mohit/microlab337/MicroLab/alu.vhd Line: 7
+Warning (13012): Latch two_complement_add[6] has unsafe behavior File: /home/mohit/microlab337/MicroLab/alu.vhd Line: 51
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal add1bit File: /home/mohit/microlab337/MicroLab/alu.vhd Line: 7
+Warning (13012): Latch two_complement_add[5] has unsafe behavior File: /home/mohit/microlab337/MicroLab/alu.vhd Line: 51
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal add1bit File: /home/mohit/microlab337/MicroLab/alu.vhd Line: 7
+Warning (13012): Latch two_complement_add[4] has unsafe behavior File: /home/mohit/microlab337/MicroLab/alu.vhd Line: 51
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal add1bit File: /home/mohit/microlab337/MicroLab/alu.vhd Line: 7
+Warning (13012): Latch two_complement_add[3] has unsafe behavior File: /home/mohit/microlab337/MicroLab/alu.vhd Line: 51
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal add1bit File: /home/mohit/microlab337/MicroLab/alu.vhd Line: 7
+Warning (13012): Latch two_complement_add[2] has unsafe behavior File: /home/mohit/microlab337/MicroLab/alu.vhd Line: 51
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal add1bit File: /home/mohit/microlab337/MicroLab/alu.vhd Line: 7
+Warning (13012): Latch two_complement_add[1] has unsafe behavior File: /home/mohit/microlab337/MicroLab/alu.vhd Line: 51
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal add1bit File: /home/mohit/microlab337/MicroLab/alu.vhd Line: 7
+Warning (13012): Latch two_complement_add[0] has unsafe behavior File: /home/mohit/microlab337/MicroLab/alu.vhd Line: 51
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal add1bit File: /home/mohit/microlab337/MicroLab/alu.vhd Line: 7
+Info (286030): Timing-Driven Synthesis is running
+Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
+    Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
+Info (21057): Implemented 279 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 37 input pins
+    Info (21059): Implemented 18 output pins
+    Info (21061): Implemented 224 logic cells
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 66 warnings
+    Info: Peak virtual memory: 978 megabytes
+    Info: Processing ended: Thu Nov  9 02:26:11 2017
+    Info: Elapsed time: 00:00:12
+    Info: Total CPU time (on all processors): 00:00:28
 
 

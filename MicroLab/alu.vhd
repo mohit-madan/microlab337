@@ -1,73 +1,75 @@
-library IEEE;
-use IEEE.STD_LOGIC_1164.ALL;
-use IEEE.NUMERIC_STD.ALL;
+library ieee;
+use ieee.std_logic_1164.all;
+use ieee.numeric_std.all;
+
+entity ALU is
+   port(reg_a, reg_b: in std_logic_vector(15 downto 0);
+	     add1bit: in std_logic;
+        op_sel: in std_logic_vector(3 downto 0);
+        reg_c: out std_logic_vector(15 downto 0);
+        carry: out std_logic;
+        zero: out std_logic);
+end entity;
  
-entity alu is
- Port ( reg_a : in STD_LOGIC_VECTOR(15 downto 0);
- reg_b 		  : in STD_LOGIC_VECTOR(15 downto 0); 
- op_sel       : in STD_LOGIC_VECTOR (2 downto 0);
- reg_c        : out STD_LOGIC_VECTOR(15 downto 0);
- en_c			  : in std_logic;
- en_z			  : in std_logic;
- carry_flag            : out STD_LOGIC;
- zero_flag            : out STD_LOGIC
-);
-end alu;
+architecture Struct of ALU is
+  component TwosComplement is
+	port (
+	  input: in std_logic_vector(15 downto 0);
+	  output: out std_logic_vector(15 downto 0)
+	);
+  end component;
+  signal alu_out_read : std_logic_vector(15 downto 0);
+  signal two_complement1: std_logic_vector(15 downto 0);
+  signal two_complement2: std_logic_vector(15 downto 0);
+  signal two_complement_add: std_logic_vector(15 downto 0);
+  signal carry1, carry2: std_logic;
 
- 
-architecture Behavioral of alu is
-signal reg_a_sign,reg_b_sign,reg_c_sign : signed (15 downto 0);
+
 begin
-reg_a_sign <=signed(reg_a);
-reg_b_sign <=signed(reg_b);
-process(reg_a_sign, reg_b_sign, op_sel) 
-begin
-case op_sel is
-	when "000" => 
-		reg_c_sign <= reg_a_sign + reg_b_sign; --addition 
-		-- flag modification
-		if (reg_a_sign + reg_b_sign > "0111111111111111") and (en_c ='1') then 
-			carry_flag <= '1';
-		end if;
+   two: TwosComplement
+        port map (
+          input => reg_a,
+          output => two_complement1
+        );
+   two1: TwosComplement
+        port map (
+          input => reg_b,
+          output => two_complement2
+        );
+   
+   reg_c <= alu_out_read;
+   
+   zero <= '1' when alu_out_read = "0000000000000000" else '0';
+   
+   carry1 <= '1' when reg_a(15) = '1' and reg_b(15) = '1' and
+                      two_complement1(14 downto 0) > two_complement_add(14 downto 0) else '0';
+   carry2 <= '1' when reg_a(15) = '0' and reg_b(15) = '0' and
+                      reg_a(14 downto 0) > alu_out_read(14 downto 0) else '0';
+   carry <= '1' when (carry1 = '1' or carry2 = '1') else '0';
 
-		if(reg_a_sign + reg_b_sign = 0) and (en_z ='1') then
-			zero_flag <= '1';
-		end if;
-			---change carry logic
-	when "001" => 
-		reg_c_sign<= reg_a_sign - reg_b_sign; --subtraction
-		-- flag modification
-		if(reg_a_sign = reg_b_sign) and (en_z ='1') then
-			zero_flag <= '1';
-		end if;
-		if(reg_a_sign < reg_b_sign) and (en_c ='1') then
-			carry_flag <= '1';	
-		end if;
-	
-	when "010" => 
-		reg_c_sign<= reg_a_sign + 1; --add 1 
-	
-	when "011" => 
-		reg_c_sign<= reg_a_sign nand reg_b_sign; --nand
-		-- flag modification
-		if(reg_a_sign = reg_b_sign) and (en_z ='1') then
-			zero_flag <= '1';  
-		end if;
+-------------
+process(op_sel, reg_a, reg_b, two_complement1, two_complement2)
+   begin
 
-	when "100" =>
-		reg_c_sign<= reg_a_sign xor reg_b_sign; --xor
-		-- flag modification
-		if(reg_a_sign = reg_b_sign) and (en_z ='1') then
-			zero_flag <= '1';		
-		end if;
+-------------
 
-	when others =>
-	NULL;
+if(add1bit = '1') then --add1
+	alu_out_read <= std_logic_vector(unsigned(reg_a) + "0000000000000001");  
+	two_complement_add <= std_logic_vector(unsigned(two_complement1) + "0000000000000001");
 
-end case; 
-  
+elsif(op_sel = "0000" or op_sel ="0001" or op_sel = "0100" or op_sel = "0101" or op_sel ="1100" or op_sel = "1000" or op_sel = "1001"  ) then--add
+	alu_out_read <= std_logic_vector(unsigned(reg_a) + unsigned(reg_b));
+   two_complement_add <= std_logic_vector(unsigned(two_complement1) + unsigned(two_complement2));
+
+elsif(op_sel = "0010") then -- nand
+	alu_out_read <= reg_a nand reg_b;
+   two_complement_add <= reg_a nand reg_b;
+
+elsif(op_sel = "0110" or op_sel = "0111" ) then -- xor
+	alu_out_read <= reg_a xor reg_b;
+	two_complement_add <= reg_a xor reg_b; 
+end if;
+	  
 end process; 
-reg_c <=STD_LOGIC_VECTOR(reg_c_sign);
- 
-end Behavioral;
+end struct;
 

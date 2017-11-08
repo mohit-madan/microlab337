@@ -1,0 +1,229 @@
+{
+	"partitions" : [
+		{
+			"name" : "Top",
+			"pins" : [
+				{
+					"name" : "reg_c[0]",
+					"strict" : false
+				},
+				{
+					"name" : "reg_c[1]",
+					"strict" : false
+				},
+				{
+					"name" : "reg_c[2]",
+					"strict" : false
+				},
+				{
+					"name" : "reg_c[3]",
+					"strict" : false
+				},
+				{
+					"name" : "reg_c[4]",
+					"strict" : false
+				},
+				{
+					"name" : "reg_c[5]",
+					"strict" : false
+				},
+				{
+					"name" : "reg_c[6]",
+					"strict" : false
+				},
+				{
+					"name" : "reg_c[7]",
+					"strict" : false
+				},
+				{
+					"name" : "reg_c[8]",
+					"strict" : false
+				},
+				{
+					"name" : "reg_c[9]",
+					"strict" : false
+				},
+				{
+					"name" : "reg_c[10]",
+					"strict" : false
+				},
+				{
+					"name" : "reg_c[11]",
+					"strict" : false
+				},
+				{
+					"name" : "reg_c[12]",
+					"strict" : false
+				},
+				{
+					"name" : "reg_c[13]",
+					"strict" : false
+				},
+				{
+					"name" : "reg_c[14]",
+					"strict" : false
+				},
+				{
+					"name" : "reg_c[15]",
+					"strict" : false
+				},
+				{
+					"name" : "carry",
+					"strict" : false
+				},
+				{
+					"name" : "zero",
+					"strict" : false
+				},
+				{
+					"name" : "reg_a[14]",
+					"strict" : false
+				},
+				{
+					"name" : "reg_a[13]",
+					"strict" : false
+				},
+				{
+					"name" : "reg_a[12]",
+					"strict" : false
+				},
+				{
+					"name" : "reg_a[11]",
+					"strict" : false
+				},
+				{
+					"name" : "reg_a[10]",
+					"strict" : false
+				},
+				{
+					"name" : "reg_a[9]",
+					"strict" : false
+				},
+				{
+					"name" : "reg_a[8]",
+					"strict" : false
+				},
+				{
+					"name" : "reg_a[7]",
+					"strict" : false
+				},
+				{
+					"name" : "reg_a[6]",
+					"strict" : false
+				},
+				{
+					"name" : "reg_a[5]",
+					"strict" : false
+				},
+				{
+					"name" : "reg_a[4]",
+					"strict" : false
+				},
+				{
+					"name" : "reg_a[3]",
+					"strict" : false
+				},
+				{
+					"name" : "reg_a[2]",
+					"strict" : false
+				},
+				{
+					"name" : "reg_a[1]",
+					"strict" : false
+				},
+				{
+					"name" : "reg_a[0]",
+					"strict" : false
+				},
+				{
+					"name" : "reg_a[15]",
+					"strict" : false
+				},
+				{
+					"name" : "reg_b[15]",
+					"strict" : false
+				},
+				{
+					"name" : "reg_b[0]",
+					"strict" : false
+				},
+				{
+					"name" : "op_sel[0]",
+					"strict" : false
+				},
+				{
+					"name" : "op_sel[2]",
+					"strict" : false
+				},
+				{
+					"name" : "op_sel[3]",
+					"strict" : false
+				},
+				{
+					"name" : "op_sel[1]",
+					"strict" : false
+				},
+				{
+					"name" : "add1bit",
+					"strict" : false
+				},
+				{
+					"name" : "reg_b[1]",
+					"strict" : false
+				},
+				{
+					"name" : "reg_b[2]",
+					"strict" : false
+				},
+				{
+					"name" : "reg_b[3]",
+					"strict" : false
+				},
+				{
+					"name" : "reg_b[4]",
+					"strict" : false
+				},
+				{
+					"name" : "reg_b[5]",
+					"strict" : false
+				},
+				{
+					"name" : "reg_b[6]",
+					"strict" : false
+				},
+				{
+					"name" : "reg_b[7]",
+					"strict" : false
+				},
+				{
+					"name" : "reg_b[8]",
+					"strict" : false
+				},
+				{
+					"name" : "reg_b[9]",
+					"strict" : false
+				},
+				{
+					"name" : "reg_b[10]",
+					"strict" : false
+				},
+				{
+					"name" : "reg_b[11]",
+					"strict" : false
+				},
+				{
+					"name" : "reg_b[12]",
+					"strict" : false
+				},
+				{
+					"name" : "reg_b[13]",
+					"strict" : false
+				},
+				{
+					"name" : "reg_b[14]",
+					"strict" : false
+				}
+			]
+		}
+	]
+}

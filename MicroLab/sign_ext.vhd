@@ -8,12 +8,12 @@ entity sign_ext is
  	);
 
  port(
- 	din 	: in STD_LOGIC_VECTOR(input_width-1 downto 0);
+ 	din 	: in STD_LOGIC_VECTOR(15 - input_width downto 0);
  	dout	: out STD_LOGIC_VECTOR(15 downto 0)
  	);
 end sign_ext;
 
-architecture rtl of sign_ext8 is
+architecture rtl of sign_ext is
 
 begin
     dout <= std_logic_vector(resize(signed(din), dout'length));

@@ -7,7 +7,7 @@ Port(
 	C     	 		 : in  STD_LOGIC_VECTOR(19 downto 0); --control signals 
 	clk,reset   	 : in  STD_LOGIC; 
 	valid 	 		 : out STD_LOGIC;
-	carry,zeroflag 	 : out STD_LOGIC;
+	carry,zeroflag  : out STD_LOGIC;
 	op_code  		 : out STD_LOGIC_VECTOR(3 downto 0);
 	IR_3_5 			 : out STD_LOGIC_VECTOR(2 downto 0);
 	IR_7      		 : out STD_LOGIC 
@@ -21,10 +21,10 @@ generic(
 	input_width : integer
 	);
 port(
-	d0 : STD_LOGIC_VECTOR(15 downto 0);
-	d1 : STD_LOGIC_VECTOR(15 downto 0);
+	d0 : STD_LOGIC_VECTOR(input_width-1 downto 0);
+	d1 : STD_LOGIC_VECTOR(input_width-1 downto 0);
 	sel: in STD_LOGIC;
-	dout: out STD_LOGIC_VECTOR(15 downto 0)
+	dout: out STD_LOGIC_VECTOR(input_width-1 downto 0)
 );
 end component;
 
@@ -34,12 +34,12 @@ generic(
 	input_width : integer
 	);
 port(
-	d0 : STD_LOGIC_VECTOR(15 downto 0);
-	d1 : STD_LOGIC_VECTOR(15 downto 0);
-	d2 : STD_LOGIC_VECTOR(15 downto 0);
-	d3 : STD_LOGIC_VECTOR(15 downto 0);
-	sel: in STD_LOGIC_VECTOR(0 to 1);
-	dout: out STD_LOGIC_VECTOR(15 downto 0)
+	d0 : STD_LOGIC_VECTOR(input_width-1 downto 0);
+	d1 : STD_LOGIC_VECTOR(input_width-1 downto 0);
+	d2 : STD_LOGIC_VECTOR(input_width-1 downto 0);
+	d3 : STD_LOGIC_VECTOR(input_width-1 downto 0);
+	sel: in STD_LOGIC_VECTOR(1 downto 0);
+	dout: out STD_LOGIC_VECTOR(input_width-1 downto 0)
 );
 end component;
 
@@ -48,16 +48,16 @@ end component;
 component mux8to1 is
 generic(input_width : integer);
 port(
-	d0 : STD_LOGIC_VECTOR(15 downto 0);
-	d1 : STD_LOGIC_VECTOR(15 downto 0);
-	d2 : STD_LOGIC_VECTOR(15 downto 0);
-	d3 : STD_LOGIC_VECTOR(15 downto 0);
-	d4 : STD_LOGIC_VECTOR(15 downto 0);
-	d5 : STD_LOGIC_VECTOR(15 downto 0);
-	d6 : STD_LOGIC_VECTOR(15 downto 0);
-	d7 : STD_LOGIC_VECTOR(15 downto 0);
-	sel: in STD_LOGIC_VECTOR(0 to 2);
-	dout: out STD_LOGIC_VECTOR(15 downto 0)
+	d0 : STD_LOGIC_VECTOR(input_width-1 downto 0);
+	d1 : STD_LOGIC_VECTOR(input_width-1 downto 0);
+	d2 : STD_LOGIC_VECTOR(input_width-1 downto 0);
+	d3 : STD_LOGIC_VECTOR(input_width-1 downto 0);
+	d4 : STD_LOGIC_VECTOR(input_width-1 downto 0);
+	d5 : STD_LOGIC_VECTOR(input_width-1 downto 0);
+	d6 : STD_LOGIC_VECTOR(input_width-1 downto 0);
+	d7 : STD_LOGIC_VECTOR(input_width-1 downto 0);
+	sel: in STD_LOGIC_VECTOR(2 downto 0);
+	dout: out STD_LOGIC_VECTOR(input_width-1 downto 0)
 );
 end component;
 
@@ -71,8 +71,8 @@ generic
 port
 (
 	clock				: IN  std_logic;
-	data_in				: IN  std_logic_vector(DATA_WIDTH - 1 DOWNTO 0);
-	address				: IN  std_logic_vector(ADDRESS_WIDTH - 1 DOWNTO 0);
+	data_in			: IN  std_logic_vector(DATA_WIDTH - 1 DOWNTO 0);
+	address			: IN  std_logic_vector(ADDRESS_WIDTH - 1 DOWNTO 0);
 	wr_en				: IN  std_logic;
 	rd_en				: IN  std_logic;
 	data_out			: OUT std_logic_vector(DATA_WIDTH - 1 DOWNTO 0)
@@ -82,7 +82,7 @@ end component;
 --------------------trailing zeroes-----------------------------------
 component trail_zero7 is
  port(
- 	din 	: in STD_LOGIC_VECTOR(6 downto 0);
+ 	din 	: in STD_LOGIC_VECTOR(8 downto 0);
  	dout	: out STD_LOGIC_VECTOR(15 downto 0)
  	);
 end component;
@@ -101,8 +101,8 @@ component temp_reg is
 	input_width : integer	
 	);
   port( clock 	: in std_logic; 
-  		en      : in std_logic;
-		din 	: in std_logic_vector(input_width-1 downto 0);  
+  		en      	: in std_logic;
+		din 		: in std_logic_vector(input_width-1 downto 0);  
         dout 	: out std_logic_vector(input_width-1 downto 0)
 );  
 end component;
@@ -114,13 +114,13 @@ component register_file is
     rf_d1          	: out std_logic_vector(15 downto 0);    --dataout 1 
     rf_d2          	: out std_logic_vector(15 downto 0);    --dataout 2
     rf_d3          	: in  std_logic_vector(15 downto 0);    --datain 3
-    writeEnable     : in  std_logic;
+    writeEnable      : in  std_logic;
     readEnable1		: in  std_logic;
-    readEnable2     : in  std_logic;
-    rf_a1   	    : in  std_logic_vector(2 downto 0);		--address in 1
-    rf_a2	        : in  std_logic_vector(2 downto 0);		--address in 2
-    rf_a3   	    : in  std_logic_vector(2 downto 0);		--address in 3
-    clk             : in  std_logic
+    readEnable2      : in  std_logic;
+    rf_a1   	      : in  std_logic_vector(2 downto 0);		--address in 1
+    rf_a2	         : in  std_logic_vector(2 downto 0);		--address in 2
+    rf_a3   	      : in  std_logic_vector(2 downto 0);		--address in 3
+    clk              : in  std_logic
     );
 end component;
 
@@ -138,21 +138,28 @@ component priorityEncoder is
      port(
          din 	: in STD_LOGIC_VECTOR(15 downto 0);
          dout 	: out STD_LOGIC_VECTOR(2 downto 0);
-		 valid  : out STD_LOGIC
+		   valid : out STD_LOGIC
          );
 end component;
 
+----------
+
+component registers is  
+  port( clock 	  : in std_logic;
+        en       : in std_logic; 
+		  din 	  : in std_logic;  
+        dout 	  : out std_logic
+);  
+end component;
+  
 ------------------------ALU-----------------------
 component alu is
- Port ( reg_a 	: in STD_LOGIC_VECTOR(15 downto 0); 			--input A
- 		reg_b  	: in STD_LOGIC_VECTOR(15 downto 0); 			--input B
- 		op_sel 	: in STD_LOGIC_VECTOR (2 downto 0); --operation select
- 		reg_c 	: out STD_LOGIC_VECTOR(15 downto 0); 			--output
-	   en_c     : in std_logic;
-		en_z     : in std_logic;
-		carry_flag 	: out STD_LOGIC;					--carry flag
- 		zero_flag 		: out STD_LOGIC 				--zero flag
-);
+   port(reg_a, reg_b: in std_logic_vector(15 downto 0);
+	     add1bit: in std_logic;
+        op_sel: in std_logic_vector(3 downto 0);
+        reg_c: out std_logic_vector(15 downto 0);
+        carry_flag: out std_logic;
+        zero_flag: out std_logic);
 end component;
 
 -------------sign extender----------------
@@ -160,16 +167,16 @@ component sign_ext is
  generic( input_width : integer --input width is variable while output width remains constant
  );
  port(
- 		din 	: in STD_LOGIC_VECTOR(input_width-1 downto 0);
+ 		din 	: in STD_LOGIC_VECTOR(15 - input_width downto 0);
  		dout	: out STD_LOGIC_VECTOR(15 downto 0)
  	);
 end component;
 
 ------------signals----------------------------
 	signal D1,D2,mem_out,alu_out,t1,t2,t3,t4,t5,ir_out, se7_out, se8_out, se10_out, trail_zero_out, decoder_out,pc_out : STD_LOGIC_VECTOR(15 downto 0) := (others => '0');
-	signal muxout_mema, muxout_mem_din, muxout_a1, muxout_a3, muxout_d3,muxout_t1 ,muxout_t2, muxout_t4,muxout_alu_a, muxout_alu_b: STD_LOGIC_VECTOR(15 downto 0) := (others => '0'); 
-	signal pr_enc_out,a3_mux : STD_LOGIC_VECTOR(2 downto 0):= (others => '0');
-	signal en_t1, en_t4, wren, rden1, rden2, memwr, memrd, memd_mux, alu_enc, alu_enz : std_logic:= (others => '0');
+	signal muxout_mema, muxout_mem_din, muxout_d3,muxout_t1 ,muxout_t2, muxout_t4,muxout_alu_a, muxout_alu_b: STD_LOGIC_VECTOR(15 downto 0) := (others => '0'); 
+	signal pr_enc_out,a3_mux,muxout_a1, muxout_a3 : STD_LOGIC_VECTOR(2 downto 0):= (others => '0');
+	signal en_t1, en_t4, wren, rden1, rden2, memwr, memrd, memd_mux, alu_enc, alu_enz,en1_bit, carry1, zeroflag1 : std_logic:= '0';
 	signal a1_mux, d3_mux, mema, alu2_mux : std_logic_vector(1 downto 0):= (others => '0');
 	signal alu1_mux : std_logic_vector(2 downto 0):= (others => '0');
 
@@ -233,7 +240,7 @@ port map(
 	d1   => t3,
 	d2   => D1,
 	d3   => "1111111111111111",
-	sel  => C(1 to 2),
+	sel  => C(2 downto 1),
 	dout => muxout_t1
 );
 
@@ -244,7 +251,7 @@ port map(
 	d1   => D1,
 	d2   => se8_out,
 	d3   => "1111111111111111",
-	sel  => C(6 to 7),
+	sel  => C(7 downto 6),
 	dout => muxout_t4
 );
 
@@ -301,9 +308,9 @@ port map(
 	d2   => ir_out(11 downto 9),
 	d3   => pr_enc_out,
 	d4   => ir_out(8 downto 6),
-	d5   => "1111111111111111",
-	d6   => "1111111111111111",
-	d7   => "1111111111111111",
+	d5   => "111",
+	d6   => "111",
+	d7   => "111",
 	
 	sel  => a3_mux(2 downto 0),
 	dout => muxout_a3
@@ -326,18 +333,33 @@ port map(
 );
 
 
+
 ---- alu instantiation--------
 my_alu: alu
 port map(
 	reg_a	=> muxout_alu_a, 	
 	reg_b => muxout_alu_b,
-	en_c 	=> alu_enc,
-	en_z 	=> alu_enz,
-	op_sel 	=> "111", --will be provided from opcode
+	add1bit => en1_bit,
+	op_sel 	=> ir_out(15 downto 12), --will be provided from opcode
 	reg_c 	=> alu_out,
-	carry_flag 		=> carry, --output from the entity
-	zero_flag 		=> zeroflag -- output from the entity
+	carry_flag 		=> carry1, --output from the entity
+	zero_flag 		=> zeroflag1 -- output from the entity
 );
+car : registers
+port map(
+	clock => clk,
+	en    => alu_enc,
+	din   => carry1,
+    dout  => carry 
+	);
+
+z : registers
+port map(
+	clock => clk,
+	en    => alu_enz,
+	din   => zeroflag1,
+   dout  => zeroflag
+	);
 
 ---------------------sign extendors ---------------------
 sign_ext7: sign_ext
@@ -439,9 +461,9 @@ temp5 : temp_reg
 generic map(16)
 port map( 	
 	clock 	=> clk,
-	en      => C(8), 
-	din 	=> decoder_out,  
-	dout 	=> t5
+	en       => C(8), 
+	din 		=> decoder_out,  
+	dout 		=> t5
 );
 ------------------ trailing zero -------------------------------
 trail_zero : trail_zero7 
@@ -461,18 +483,18 @@ port map(
 	rf_d1          	=> D1, 
 	rf_d2          	=> D2,
 	rf_d3          	=> muxout_d3,
-	writeEnable     => wren,
-	readEnable1		=> rden1,
-	readEnable2		=> rden2,
-	rf_a1   	    => muxout_a1,
-	rf_a2	        => ir_out(8 downto 6),
-	rf_a3   	    => muxout_a3,
-	clk             => clk
+	writeEnable     	=> wren,
+	readEnable1			=> rden1,
+	readEnable2			=> rden2,
+	rf_a1   	    		=> muxout_a1,
+	rf_a2	        		=> ir_out(8 downto 6),
+	rf_a3   	    		=> muxout_a3,
+	clk             	=> clk
 );
 -- temp register
 
 
-
+--effectively 1 and 2 are changed in the sheet
 
 en_t1 <= not (C(1) and C(2));
 en_t4 <= not (C(6) and C(7));
@@ -517,5 +539,7 @@ alu2_mux(0) <= C(14);
 op_code <= ir_out(15 downto 12);
 IR_3_5 <= ir_out(5 downto 3);
 IR_7   <= ir_out(7);
+
+en1_bit <= not C(14) and (C(13) xor C(15));
 
 end architecture ; -- rtl
