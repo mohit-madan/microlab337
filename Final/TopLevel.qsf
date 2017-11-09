@@ -56,21 +56,20 @@ set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_RO
 set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
 set_global_assignment -name POWER_PRESET_COOLING_SOLUTION "23 MM HEAT SINK WITH 200 LFPM AIRFLOW"
 set_global_assignment -name POWER_BOARD_THERMAL_MODEL "NONE (CONSERVATIVE)"
-set_global_assignment -name VHDL_FILE ../MicroLab/TwosComplement.vhd
-set_global_assignment -name VHDL_FILE ../MicroLab/registers.vhd
-set_global_assignment -name VHDL_FILE ../MicroLab/mux4to1.vhd
-set_global_assignment -name VHDL_FILE ../MicroLab/mux2to1.vhd
-set_global_assignment -name VHDL_FILE ../MicroLab/instr_reg.vhd
-set_global_assignment -name VHDL_FILE ../MicroLab/decoder3_16.vhd
-set_global_assignment -name VHDL_FILE ../MicroLab/alu.vhd
-set_global_assignment -name VHDL_FILE ../MicroLab/trail_zero7.vhd
-set_global_assignment -name VHDL_FILE ../MicroLab/temp_reg.vhdl
-set_global_assignment -name VHDL_FILE ../MicroLab/sign_ext.vhd
-set_global_assignment -name VHDL_FILE ../MicroLab/regfile.vhd
-set_global_assignment -name VHDL_FILE ../MicroLab/ram.vhd
-set_global_assignment -name VHDL_FILE ../MicroLab/priorityEncoder.vhd
-set_global_assignment -name VHDL_FILE ../MicroLab/mux8to1.vhd
+set_global_assignment -name VHDL_FILE ../components_datapath/mux4to1.vhd
+set_global_assignment -name VHDL_FILE ../components_datapath/mux2to1.vhd
+set_global_assignment -name VHDL_FILE ../components_datapath/decoder3_16.vhd
+set_global_assignment -name VHDL_FILE ../components_datapath/datapath.vhd
+set_global_assignment -name VHDL_FILE ../components_datapath/alu.vhd
+set_global_assignment -name VHDL_FILE ../components_datapath/TwosComplement.vhd
+set_global_assignment -name VHDL_FILE ../components_datapath/trail_zero7.vhd
+set_global_assignment -name VHDL_FILE ../components_datapath/temp_reg.vhdl
+set_global_assignment -name VHDL_FILE ../components_datapath/sign_ext.vhd
+set_global_assignment -name VHDL_FILE ../components_datapath/registers.vhd
+set_global_assignment -name VHDL_FILE ../components_datapath/regfile.vhd
+set_global_assignment -name VHDL_FILE ../components_datapath/ram.vhd
+set_global_assignment -name VHDL_FILE ../components_datapath/priorityEncoder.vhd
+set_global_assignment -name VHDL_FILE ../components_datapath/mux8to1.vhd
 set_global_assignment -name VHDL_FILE ../TopLevel.vhd
 set_global_assignment -name VHDL_FILE ../controlPath/FSM_new.vhd
-set_global_assignment -name VHDL_FILE ../MicroLab/datapath.vhd
 set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top

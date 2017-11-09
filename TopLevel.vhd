@@ -33,7 +33,8 @@ architecture Struct of TopLevel is
 			carry,zeroflag 	 : out STD_LOGIC;
 			op_code  		 : out STD_LOGIC_VECTOR(3 downto 0);
 			IR_3_5 			 : out STD_LOGIC;
-			IR_7      		 : out STD_LOGIC);
+			IR_7      		 : out STD_LOGIC;
+			op_type		: out std_logic_vector(1 downto 0) );
 	end component;
 
 	signal opcode : std_logic_vector(3 downto 0);
@@ -70,6 +71,7 @@ Data: datapath
     zeroflag => zero,
     IR_3_5 => IR_3_5,
     IR_7 => IR_7,
-    op_code => opcode);
+    op_code => opcode,
+	 op_type => op_type);
     
 end Struct;

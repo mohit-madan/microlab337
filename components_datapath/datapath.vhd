@@ -11,7 +11,8 @@ Port(
 	op_code  		 : out STD_LOGIC_VECTOR(3 downto 0);
 	IR_3_5 			 : out STD_LOGIC;
 	IR_7      		 : out STD_LOGIC;
-	cmp              : out std_logic 
+	op_type			 : out std_logic_vector(1 downto 0) ;
+	cmp             : out std_logic 
 	);
 end datapath;
 
@@ -101,10 +102,11 @@ component temp_reg is
   generic(
 	input_width : integer	
 	);
-  port( clock 	: in std_logic; 
-  		en      	: in std_logic;
-		din 		: in std_logic_vector(input_width-1 downto 0);  
-        dout 	: out std_logic_vector(input_width-1 downto 0)
+   port( 
+			clock,reset : in std_logic;
+        en      : in std_logic; 
+	      din 	  : in std_logic_vector(input_width-1 downto 0);  
+        dout 	  : out std_logic_vector(input_width-1 downto 0)
 );  
 end component;
 
@@ -121,17 +123,10 @@ component register_file is
     rf_a1   	      : in  std_logic_vector(2 downto 0);		--address in 1
     rf_a2	         : in  std_logic_vector(2 downto 0);		--address in 2
     rf_a3   	      : in  std_logic_vector(2 downto 0);		--address in 3
-    clk              : in  std_logic
+    clk,reset        : in  std_logic
     );
 end component;
 
-------------instruction register -------------------------------
-component instr_reg is  
-  port(clock : in std_logic;
-       din   : in std_logic_vector(15 downto 0);  
-       dout  : out std_logic_vector(15 downto 0)
-      );  
-end component;
 
 
 ------------priority encoder----------------------
@@ -146,7 +141,7 @@ end component;
 ----------
 
 component registers is  
-  port( clock 	  : in std_logic;
+  port( clock,reset 	  : in std_logic;
         en       : in std_logic; 
 		  din 	  : in std_logic;  
         dout 	  : out std_logic
@@ -350,6 +345,7 @@ port map(
 );
 car : registers
 port map(
+	reset => reset,
 	clock => clk,
 	en    => alu_enc,
 	din   => carry1,
@@ -358,6 +354,7 @@ port map(
 
 z : registers
 port map(
+	reset => reset,
 	clock => clk,
 	en    => alu_enz,
 	din   => zeroflag1,
@@ -410,6 +407,7 @@ port map
 instruction_reg : temp_reg
 generic map(16)
 port map(
+	reset => reset ,
 	clock => clk, 
 	en      => C(9),
 	din 	=> mem_out,  
@@ -419,6 +417,7 @@ port map(
 program_counter : temp_reg
 generic map(16)
 port map(
+	reset => reset ,
 	clock 	=> clk,
 	en      => C(0), 
 	din 	=> alu_out,  
@@ -430,6 +429,7 @@ port map(
 temp1 : temp_reg   
 generic map(16)
 port map( 	
+	reset => reset ,
 	clock 	=> clk,
 	en      => en_t1, 
 	din 	=> muxout_t1,  
@@ -439,6 +439,7 @@ port map(
 temp2 : temp_reg   
 generic map(16)
 port map( 	
+	reset => reset ,
 	clock 	=> clk,
 	en      => C(3), 
 	din 	=> muxout_t2,  
@@ -447,6 +448,7 @@ port map(
 temp3 : temp_reg   
 generic map(16)
 port map( 	
+	reset => reset ,
 	clock 	=> clk,
 	en      => C(5), 
 	din 	=> alu_out,  
@@ -454,7 +456,8 @@ port map(
 );
 temp4 : temp_reg   
 generic map(16)
-port map( 	
+port map( 
+		reset => reset ,
 	clock 	=> clk,
 	en      => en_t4, 
 	din 	=> muxout_t4,  
@@ -462,7 +465,8 @@ port map(
 );
 temp5 : temp_reg   
 generic map(16)
-port map( 	
+port map( 
+		reset => reset ,
 	clock 	=> clk,
 	en       => C(8), 
 	din 		=> decoder_out,  
@@ -492,7 +496,8 @@ port map(
 	rf_a1   	    		=> muxout_a1,
 	rf_a2	        		=> ir_out(8 downto 6),
 	rf_a3   	    		=> muxout_a3,
-	clk             	=> clk
+	clk             	=> clk,
+	reset 				=> reset
 );
 -- temp register
 
@@ -542,7 +547,7 @@ alu2_mux(0) <= C(14);
 op_code <= ir_out(15 downto 12);
 IR_3_5 <= ir_out(5) and ir_out(4) and ir_out(3) ;
 IR_7   <= ir_out(7);
-
+op_type <= ir_out(1 downto 0);
 en1_bit <= not C(14) and (C(13) xor C(15));
 
 end architecture ; -- rtl
