@@ -1,0 +1,201 @@
+# do TopLevel_run_msim_rtl_vhdl.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Model Technology ModelSim - Intel FPGA Edition vmap 10.5b Lib Mapping Utility 2016.10 Oct  5 2016
+# vmap work rtl_work 
+# Copying /home/shrey/intelFPGA_lite/17.0/modelsim_ase/linuxaloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# 
+# vcom -93 -work work {/home/shrey/Documents/microlab337/MicroLab/TwosComplement.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 05:31:59 on Nov 09,2017
+# vcom -reportprogress 300 -93 -work work /home/shrey/Documents/microlab337/MicroLab/TwosComplement.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity TwosComplement
+# -- Compiling architecture Behave of TwosComplement
+# End time: 05:31:59 on Nov 09,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {/home/shrey/Documents/microlab337/MicroLab/registers.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 05:31:59 on Nov 09,2017
+# vcom -reportprogress 300 -93 -work work /home/shrey/Documents/microlab337/MicroLab/registers.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity registers
+# -- Compiling architecture behav of registers
+# End time: 05:31:59 on Nov 09,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {/home/shrey/Documents/microlab337/MicroLab/mux4to1.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 05:31:59 on Nov 09,2017
+# vcom -reportprogress 300 -93 -work work /home/shrey/Documents/microlab337/MicroLab/mux4to1.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity mux4to1
+# -- Compiling architecture rtl of mux4to1
+# End time: 05:31:59 on Nov 09,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {/home/shrey/Documents/microlab337/MicroLab/mux2to1.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 05:31:59 on Nov 09,2017
+# vcom -reportprogress 300 -93 -work work /home/shrey/Documents/microlab337/MicroLab/mux2to1.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity mux2to1
+# -- Compiling architecture rtl of mux2to1
+# End time: 05:31:59 on Nov 09,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {/home/shrey/Documents/microlab337/MicroLab/decoder3_16.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 05:31:59 on Nov 09,2017
+# vcom -reportprogress 300 -93 -work work /home/shrey/Documents/microlab337/MicroLab/decoder3_16.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity decoder3_16
+# -- Compiling architecture decoder3_16_arc of decoder3_16
+# End time: 05:31:59 on Nov 09,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {/home/shrey/Documents/microlab337/MicroLab/alu.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 05:31:59 on Nov 09,2017
+# vcom -reportprogress 300 -93 -work work /home/shrey/Documents/microlab337/MicroLab/alu.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity ALU
+# -- Compiling architecture Struct of ALU
+# End time: 05:31:59 on Nov 09,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {/home/shrey/Documents/microlab337/MicroLab/trail_zero7.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 05:31:59 on Nov 09,2017
+# vcom -reportprogress 300 -93 -work work /home/shrey/Documents/microlab337/MicroLab/trail_zero7.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity trail_zero7
+# -- Compiling architecture behav of trail_zero7
+# End time: 05:31:59 on Nov 09,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {/home/shrey/Documents/microlab337/MicroLab/temp_reg.vhdl}
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 05:31:59 on Nov 09,2017
+# vcom -reportprogress 300 -93 -work work /home/shrey/Documents/microlab337/MicroLab/temp_reg.vhdl 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity temp_reg
+# -- Compiling architecture behav of temp_reg
+# End time: 05:31:59 on Nov 09,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {/home/shrey/Documents/microlab337/MicroLab/sign_ext.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 05:31:59 on Nov 09,2017
+# vcom -reportprogress 300 -93 -work work /home/shrey/Documents/microlab337/MicroLab/sign_ext.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity sign_ext
+# -- Compiling architecture rtl of sign_ext
+# End time: 05:31:59 on Nov 09,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {/home/shrey/Documents/microlab337/MicroLab/regfile.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 05:31:59 on Nov 09,2017
+# vcom -reportprogress 300 -93 -work work /home/shrey/Documents/microlab337/MicroLab/regfile.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity register_file
+# -- Compiling architecture behavioral of register_file
+# End time: 05:31:59 on Nov 09,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {/home/shrey/Documents/microlab337/MicroLab/ram.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 05:31:59 on Nov 09,2017
+# vcom -reportprogress 300 -93 -work work /home/shrey/Documents/microlab337/MicroLab/ram.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity ram
+# -- Compiling architecture rtl of ram
+# End time: 05:31:59 on Nov 09,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {/home/shrey/Documents/microlab337/MicroLab/priorityEncoder.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 05:31:59 on Nov 09,2017
+# vcom -reportprogress 300 -93 -work work /home/shrey/Documents/microlab337/MicroLab/priorityEncoder.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity priorityEncoder
+# -- Compiling architecture priority_enc_arc of priorityEncoder
+# End time: 05:31:59 on Nov 09,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {/home/shrey/Documents/microlab337/MicroLab/mux8to1.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 05:31:59 on Nov 09,2017
+# vcom -reportprogress 300 -93 -work work /home/shrey/Documents/microlab337/MicroLab/mux8to1.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity mux8to1
+# -- Compiling architecture rtl of mux8to1
+# End time: 05:31:59 on Nov 09,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {/home/shrey/Documents/microlab337/TopLevel.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 05:31:59 on Nov 09,2017
+# vcom -reportprogress 300 -93 -work work /home/shrey/Documents/microlab337/TopLevel.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity TopLevel
+# -- Compiling architecture Struct of TopLevel
+# End time: 05:31:59 on Nov 09,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {/home/shrey/Documents/microlab337/controlPath/FSM_new.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 05:31:59 on Nov 09,2017
+# vcom -reportprogress 300 -93 -work work /home/shrey/Documents/microlab337/controlPath/FSM_new.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity FSM_new
+# -- Compiling architecture rtl of FSM_new
+# End time: 05:31:59 on Nov 09,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {/home/shrey/Documents/microlab337/MicroLab/datapath.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 05:31:59 on Nov 09,2017
+# vcom -reportprogress 300 -93 -work work /home/shrey/Documents/microlab337/MicroLab/datapath.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity datapath
+# -- Compiling architecture rtl of datapath
+# End time: 05:31:59 on Nov 09,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# 
+# stdin: <EOF>

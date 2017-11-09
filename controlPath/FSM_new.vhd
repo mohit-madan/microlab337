@@ -13,7 +13,7 @@ entity FSM_new is
 		carry,zero,valid	: in 	std_logic;
 		IR_3_5				: in  std_logic;
 		IR_7					: in  std_logic;
-		control_store 		: out std_logic_vector (19 downto 0);
+		control_store 		: out std_logic_vector (19 downto 0)
 	);
 	
 end entity;

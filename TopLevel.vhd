@@ -1,12 +1,11 @@
 library std;
 library ieee;
 use ieee.std_logic_1164.all;
-library work;
-use work.ProcessorComponents.all;
+
 
 entity TopLevel is
   port (
-    clk, reset: in std_logic;
+    clk, reset: in std_logic
    );
 end entity TopLevel;
 
@@ -22,7 +21,7 @@ architecture Struct of TopLevel is
 			carry,zero,valid	: in  std_logic;
 			IR_3_5				: in  std_logic;
 			IR_7				: in  std_logic;
-			control_store 		: out std_logic_vector (19 downto 0);
+			control_store 		: out std_logic_vector (19 downto 0));
 	end component;
 
 	component datapath is
@@ -33,17 +32,17 @@ architecture Struct of TopLevel is
 			valid 	 		 : out STD_LOGIC;
 			carry,zeroflag 	 : out STD_LOGIC;
 			op_code  		 : out STD_LOGIC_VECTOR(3 downto 0);
-			IR_3_5 			 : out STD_LOGIC_VECTOR(2 downto 0);
+			IR_3_5 			 : out STD_LOGIC;
 			IR_7      		 : out STD_LOGIC);
 	end component;
 
-	signal opcode : in std_logic_vector(3 downto 0);
-	signal reset : in  std_logic;
-	signal clk : in  std_logic;
-	signal carry,zero,valid : in  std_logic;
-	signal zeroflag : in std_logic;
-	signal IR_3_5 : out STD_LOGIC_VECTOR(2 downto 0);
-	signal IR_7 : out STD_LOGIC;
+	signal opcode : std_logic_vector(3 downto 0);
+	signal op_type : std_logic_vector(1 downto 0);
+	signal carry,zero,valid : std_logic;
+	signal IR_3_5 : STD_LOGIC;
+	signal IR_7 : STD_LOGIC;
+	signal control_store: std_logic_vector (19 downto 0);
+
 
 begin
 
@@ -63,14 +62,14 @@ ControlPath:FSM_new
 
 Data: datapath
     port map (
-    C => C,
+    C => control_store,
     clk => clk,
     reset => reset,
     valid => valid,
     carry => carry,
-    zeroflag => zeroflag,
+    zeroflag => zero,
     IR_3_5 => IR_3_5,
     IR_7 => IR_7,
-    opcode => opcode);
+    op_code => opcode);
     
 end Struct;

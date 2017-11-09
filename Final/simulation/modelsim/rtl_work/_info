@@ -1,0 +1,656 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 d/home/shrey/Documents/microlab337/Final/simulation/modelsim
+Ealu
+Z1 w1510182603
+Z2 DPx4 ieee 11 numeric_std 0 22 :ASDNFgHXf_ih3J@9F3Ze1
+Z3 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z4 DPx4 ieee 14 std_logic_1164 0 22 eNV`TJ_GofJTzYa?f<@Oe1
+R0
+Z5 8/home/shrey/Documents/microlab337/MicroLab/alu.vhd
+Z6 F/home/shrey/Documents/microlab337/MicroLab/alu.vhd
+l0
+L5
+Vj^mPb6OSLK`aNgHHREaO@0
+!s100 G^kFeYHQI3c5A@DL2Y=D63
+Z7 OV;C;10.5b;63
+31
+Z8 !s110 1510185719
+!i10b 1
+Z9 !s108 1510185719.000000
+Z10 !s90 -reportprogress|300|-93|-work|work|/home/shrey/Documents/microlab337/MicroLab/alu.vhd|
+Z11 !s107 /home/shrey/Documents/microlab337/MicroLab/alu.vhd|
+!i113 1
+Z12 o-93 -work work
+Z13 tExplicit 1 CvgOpt 0
+Astruct
+R2
+R3
+R4
+DEx4 work 3 alu 0 22 j^mPb6OSLK`aNgHHREaO@0
+l30
+L16
+VJ?ZKaHLKMBFhh=UK9S;1o2
+!s100 5;[8Ab9nc2MH4ZVKbBJcL0
+R7
+31
+R8
+!i10b 1
+R9
+R10
+R11
+!i113 1
+R12
+R13
+Edatapath
+Z14 w1510184590
+R2
+R3
+R4
+R0
+Z15 8/home/shrey/Documents/microlab337/MicroLab/datapath.vhd
+Z16 F/home/shrey/Documents/microlab337/MicroLab/datapath.vhd
+l0
+L5
+V4Yogi3N5lE]5g7j><WAlc2
+!s100 OUUfnkIPSPSkORS3jfbjS0
+R7
+31
+R8
+!i10b 1
+R9
+Z17 !s90 -reportprogress|300|-93|-work|work|/home/shrey/Documents/microlab337/MicroLab/datapath.vhd|
+Z18 !s107 /home/shrey/Documents/microlab337/MicroLab/datapath.vhd|
+!i113 1
+R12
+R13
+Artl
+R2
+R3
+R4
+DEx4 work 8 datapath 0 22 4Yogi3N5lE]5g7j><WAlc2
+l185
+L18
+V8_R2zKC7>O6g;P4?aL9g<0
+!s100 LCd@2f0g]`o:HS>F?;UcP2
+R7
+31
+R8
+!i10b 1
+R9
+R17
+R18
+!i113 1
+R12
+R13
+Edecoder3_16
+Z19 w1510072609
+R3
+R4
+R0
+Z20 8/home/shrey/Documents/microlab337/MicroLab/decoder3_16.vhd
+Z21 F/home/shrey/Documents/microlab337/MicroLab/decoder3_16.vhd
+l0
+L4
+V=nP_McDcAMEC;hLdm4^k:3
+!s100 [H3PL>3i6To0HW^Y<2Vd90
+R7
+31
+R8
+!i10b 1
+R9
+Z22 !s90 -reportprogress|300|-93|-work|work|/home/shrey/Documents/microlab337/MicroLab/decoder3_16.vhd|
+Z23 !s107 /home/shrey/Documents/microlab337/MicroLab/decoder3_16.vhd|
+!i113 1
+R12
+R13
+Adecoder3_16_arc
+R3
+R4
+DEx4 work 11 decoder3_16 0 22 =nP_McDcAMEC;hLdm4^k:3
+l13
+L12
+VCf?A^`TB2KYhZzZb`bV5f1
+!s100 ZKBD9amnbFZXiO<bX:ogR1
+R7
+31
+R8
+!i10b 1
+R9
+R22
+R23
+!i113 1
+R12
+R13
+Efsm_new
+Z24 w1510184020
+R2
+R3
+R4
+R0
+Z25 8/home/shrey/Documents/microlab337/controlPath/FSM_new.vhd
+Z26 F/home/shrey/Documents/microlab337/controlPath/FSM_new.vhd
+l0
+L5
+V?Vk;XAMB6S=KJX8H1=N;_2
+!s100 K?8XCz4O]z]YS_3_idejX0
+R7
+31
+R8
+!i10b 1
+R9
+Z27 !s90 -reportprogress|300|-93|-work|work|/home/shrey/Documents/microlab337/controlPath/FSM_new.vhd|
+Z28 !s107 /home/shrey/Documents/microlab337/controlPath/FSM_new.vhd|
+!i113 1
+R12
+R13
+Artl
+R2
+R3
+R4
+DEx4 work 7 fsm_new 0 22 ?Vk;XAMB6S=KJX8H1=N;_2
+l29
+L21
+V4<VhRFiQ85NaAEWz?d:KR0
+!s100 KL?PSAb9XkReo@;l;FNEg1
+R7
+31
+R8
+!i10b 1
+R9
+R27
+R28
+!i113 1
+R12
+R13
+Emux2to1
+Z29 w1510072797
+R3
+R4
+R0
+Z30 8/home/shrey/Documents/microlab337/MicroLab/mux2to1.vhd
+Z31 F/home/shrey/Documents/microlab337/MicroLab/mux2to1.vhd
+l0
+L4
+V4an9^a8RB97<9TLX7nXE?0
+!s100 8:[K5?KGNQET[GUOh68:61
+R7
+31
+R8
+!i10b 1
+R9
+Z32 !s90 -reportprogress|300|-93|-work|work|/home/shrey/Documents/microlab337/MicroLab/mux2to1.vhd|
+Z33 !s107 /home/shrey/Documents/microlab337/MicroLab/mux2to1.vhd|
+!i113 1
+R12
+R13
+Artl
+R3
+R4
+DEx4 work 7 mux2to1 0 22 4an9^a8RB97<9TLX7nXE?0
+l16
+L15
+Vz5jn4jj09276geia?E_gb2
+!s100 7d3^4BnPgCZl]fAaKzaIQ1
+R7
+31
+R8
+!i10b 1
+R9
+R32
+R33
+!i113 1
+R12
+R13
+Emux4to1
+Z34 w1510072771
+R3
+R4
+R0
+Z35 8/home/shrey/Documents/microlab337/MicroLab/mux4to1.vhd
+Z36 F/home/shrey/Documents/microlab337/MicroLab/mux4to1.vhd
+l0
+L4
+V3`e38223fY@Ydj8l4_0VJ1
+!s100 >Mo:z=X4Q1R32@ziE]@?P0
+R7
+31
+R8
+!i10b 1
+R9
+Z37 !s90 -reportprogress|300|-93|-work|work|/home/shrey/Documents/microlab337/MicroLab/mux4to1.vhd|
+Z38 !s107 /home/shrey/Documents/microlab337/MicroLab/mux4to1.vhd|
+!i113 1
+R12
+R13
+Artl
+R3
+R4
+DEx4 work 7 mux4to1 0 22 3`e38223fY@Ydj8l4_0VJ1
+l19
+L18
+VUEjWe;iW5OiDHJ2F7b2od3
+!s100 J96liZ`6915=P_DHZF0<B1
+R7
+31
+R8
+!i10b 1
+R9
+R37
+R38
+!i113 1
+R12
+R13
+Emux8to1
+Z39 w1510072705
+R3
+R4
+R0
+Z40 8/home/shrey/Documents/microlab337/MicroLab/mux8to1.vhd
+Z41 F/home/shrey/Documents/microlab337/MicroLab/mux8to1.vhd
+l0
+L4
+Vl3fQ``SR@O9O7nU<KKP5d1
+!s100 9HMEASz_m2nO6R5hXC`o[2
+R7
+31
+R8
+!i10b 1
+R9
+Z42 !s90 -reportprogress|300|-93|-work|work|/home/shrey/Documents/microlab337/MicroLab/mux8to1.vhd|
+Z43 !s107 /home/shrey/Documents/microlab337/MicroLab/mux8to1.vhd|
+!i113 1
+R12
+R13
+Artl
+R3
+R4
+DEx4 work 7 mux8to1 0 22 l3fQ``SR@O9O7nU<KKP5d1
+l23
+L22
+V@7QA3O>HGneAWhNP^IiPB1
+!s100 2Vb2UN89i`Z7H6o0YIFfa1
+R7
+31
+R8
+!i10b 1
+R9
+R42
+R43
+!i113 1
+R12
+R13
+Epriorityencoder
+Z44 w1510072088
+R2
+R3
+R4
+R0
+Z45 8/home/shrey/Documents/microlab337/MicroLab/priorityEncoder.vhd
+Z46 F/home/shrey/Documents/microlab337/MicroLab/priorityEncoder.vhd
+l0
+L5
+VDEXRzEWK5h[;bY:3L0e=Y0
+!s100 bhf9GYA]IM=oXNVGOFhzc3
+R7
+31
+R8
+!i10b 1
+R9
+Z47 !s90 -reportprogress|300|-93|-work|work|/home/shrey/Documents/microlab337/MicroLab/priorityEncoder.vhd|
+Z48 !s107 /home/shrey/Documents/microlab337/MicroLab/priorityEncoder.vhd|
+!i113 1
+R12
+R13
+Apriority_enc_arc
+R2
+R3
+R4
+DEx4 work 15 priorityencoder 0 22 DEXRzEWK5h[;bY:3L0e=Y0
+l16
+L15
+Vzgb:=UIEMHP?Kf:nA=idQ0
+!s100 :1ncNmTGz=fzROhJd^J9G0
+R7
+31
+R8
+!i10b 1
+R9
+R47
+R48
+!i113 1
+R12
+R13
+Eram
+R1
+R2
+R3
+R4
+R0
+Z49 8/home/shrey/Documents/microlab337/MicroLab/ram.vhd
+Z50 F/home/shrey/Documents/microlab337/MicroLab/ram.vhd
+l0
+L5
+V1>3figAR[oD;mDi`bz4;B3
+!s100 2l>]K?PgE;:jh?B>1:6gP3
+R7
+31
+R8
+!i10b 1
+R9
+Z51 !s90 -reportprogress|300|-93|-work|work|/home/shrey/Documents/microlab337/MicroLab/ram.vhd|
+Z52 !s107 /home/shrey/Documents/microlab337/MicroLab/ram.vhd|
+!i113 1
+R12
+R13
+Artl
+R2
+R3
+R4
+DEx4 work 3 ram 0 22 1>3figAR[oD;mDi`bz4;B3
+l26
+L22
+VLbbU8J93WLaElXhC@h;UK3
+!s100 ioA9^3_EPiQo6Wo4ZAVz32
+R7
+31
+R8
+!i10b 1
+R9
+R51
+R52
+!i113 1
+R12
+R13
+Eregister_file
+R44
+R2
+R3
+R4
+R0
+Z53 8/home/shrey/Documents/microlab337/MicroLab/regfile.vhd
+Z54 F/home/shrey/Documents/microlab337/MicroLab/regfile.vhd
+l0
+L5
+VBJTm_?4c1I5Va6U;dhGog3
+!s100 [Ee]6L0DMf11f2f@gma8;2
+R7
+31
+R8
+!i10b 1
+R9
+Z55 !s90 -reportprogress|300|-93|-work|work|/home/shrey/Documents/microlab337/MicroLab/regfile.vhd|
+Z56 !s107 /home/shrey/Documents/microlab337/MicroLab/regfile.vhd|
+!i113 1
+R12
+R13
+Abehavioral
+R2
+R3
+R4
+DEx4 work 13 register_file 0 22 BJTm_?4c1I5Va6U;dhGog3
+l24
+L21
+V`GiTm5MGUVR;Rc9kKTjJL2
+!s100 F4zi]hR@OUj44oX30O?b@1
+R7
+31
+R8
+!i10b 1
+R9
+R55
+R56
+!i113 1
+R12
+R13
+Eregisters
+R1
+R2
+R3
+R4
+R0
+Z57 8/home/shrey/Documents/microlab337/MicroLab/registers.vhd
+Z58 F/home/shrey/Documents/microlab337/MicroLab/registers.vhd
+l0
+L5
+V`<LlX=NL9[CHoaK4<;NKA3
+!s100 ]FEGNK_8;cH1>F2UnQd`c1
+R7
+31
+R8
+!i10b 1
+R9
+Z59 !s90 -reportprogress|300|-93|-work|work|/home/shrey/Documents/microlab337/MicroLab/registers.vhd|
+Z60 !s107 /home/shrey/Documents/microlab337/MicroLab/registers.vhd|
+!i113 1
+R12
+R13
+Abehav
+R2
+R3
+R4
+DEx4 work 9 registers 0 22 `<LlX=NL9[CHoaK4<;NKA3
+l14
+L13
+VzXL?M7F<4cmD7D=nmDGQA1
+!s100 3N]VDZm8V@N5iR?3>Xlgg3
+R7
+31
+R8
+!i10b 1
+R9
+R59
+R60
+!i113 1
+R12
+R13
+Esign_ext
+R1
+R2
+R3
+R4
+R0
+Z61 8/home/shrey/Documents/microlab337/MicroLab/sign_ext.vhd
+Z62 F/home/shrey/Documents/microlab337/MicroLab/sign_ext.vhd
+l0
+L5
+VoIfc2GAgIYV78EM><Mh_k3
+!s100 Pn>_7NoT:8PHZoRgRbb:Z1
+R7
+31
+R8
+!i10b 1
+R9
+Z63 !s90 -reportprogress|300|-93|-work|work|/home/shrey/Documents/microlab337/MicroLab/sign_ext.vhd|
+Z64 !s107 /home/shrey/Documents/microlab337/MicroLab/sign_ext.vhd|
+!i113 1
+R12
+R13
+Artl
+R2
+R3
+R4
+DEx4 work 8 sign_ext 0 22 oIfc2GAgIYV78EM><Mh_k3
+l18
+L16
+VMS:]lE_Shl;m6LWoJOOm91
+!s100 hXWz[[^8Qik6>WZ0[_MXU3
+R7
+31
+R8
+!i10b 1
+R9
+R63
+R64
+!i113 1
+R12
+R13
+Etemp_reg
+R44
+R2
+R3
+R4
+R0
+Z65 8/home/shrey/Documents/microlab337/MicroLab/temp_reg.vhdl
+Z66 F/home/shrey/Documents/microlab337/MicroLab/temp_reg.vhdl
+l0
+L5
+V>=IXcJFKabJQXm]5k1Kdn3
+!s100 9KeORGOZ9@oR:<1HDSX3T2
+R7
+31
+R8
+!i10b 1
+R9
+Z67 !s90 -reportprogress|300|-93|-work|work|/home/shrey/Documents/microlab337/MicroLab/temp_reg.vhdl|
+Z68 !s107 /home/shrey/Documents/microlab337/MicroLab/temp_reg.vhdl|
+!i113 1
+R12
+R13
+Abehav
+R2
+R3
+R4
+DEx4 work 8 temp_reg 0 22 >=IXcJFKabJQXm]5k1Kdn3
+l17
+L16
+VHh98onJmN4]icGdNIQGE12
+!s100 jn4A?aSGTCMPKKoZ]f2;g2
+R7
+31
+R8
+!i10b 1
+R9
+R67
+R68
+!i113 1
+R12
+R13
+Etoplevel
+Z69 w1510184934
+R3
+R4
+R0
+Z70 8/home/shrey/Documents/microlab337/TopLevel.vhd
+Z71 F/home/shrey/Documents/microlab337/TopLevel.vhd
+l0
+L6
+VI7PjLTITYk4R:IFQZUWaG0
+!s100 flz>Po>hK=2a7HkF2zCEJ1
+R7
+31
+R8
+!i10b 1
+R9
+Z72 !s90 -reportprogress|300|-93|-work|work|/home/shrey/Documents/microlab337/TopLevel.vhd|
+Z73 !s107 /home/shrey/Documents/microlab337/TopLevel.vhd|
+!i113 1
+R12
+R13
+Astruct
+R3
+R4
+DEx4 work 8 toplevel 0 22 I7PjLTITYk4R:IFQZUWaG0
+l47
+L12
+V9JE=DMGFJgPI4HK:Hk2Yd3
+!s100 L0bN^m:DG79jh9k3>cPz;3
+R7
+31
+R8
+!i10b 1
+R9
+R72
+R73
+!i113 1
+R12
+R13
+Etrail_zero7
+R1
+R2
+R3
+R4
+R0
+Z74 8/home/shrey/Documents/microlab337/MicroLab/trail_zero7.vhd
+Z75 F/home/shrey/Documents/microlab337/MicroLab/trail_zero7.vhd
+l0
+L5
+VL5DL?8IZT:jQ<QJYaa@zE2
+!s100 J>NWFkb9;<8F?EO:b>`bL1
+R7
+31
+R8
+!i10b 1
+R9
+Z76 !s90 -reportprogress|300|-93|-work|work|/home/shrey/Documents/microlab337/MicroLab/trail_zero7.vhd|
+Z77 !s107 /home/shrey/Documents/microlab337/MicroLab/trail_zero7.vhd|
+!i113 1
+R12
+R13
+Abehav
+R2
+R3
+R4
+DEx4 work 11 trail_zero7 0 22 L5DL?8IZT:jQ<QJYaa@zE2
+l14
+L12
+VXEU9ERko`ic@LEii5CKO80
+!s100 T=;f1Uii@hc5Mb8]nO:h@0
+R7
+31
+R8
+!i10b 1
+R9
+R76
+R77
+!i113 1
+R12
+R13
+Etwoscomplement
+R1
+R2
+R3
+R4
+R0
+Z78 8/home/shrey/Documents/microlab337/MicroLab/TwosComplement.vhd
+Z79 F/home/shrey/Documents/microlab337/MicroLab/TwosComplement.vhd
+l0
+L5
+V5:B[ijASI<0RlS8`T<4_g0
+!s100 ]LE`<4Nni];o4eU1;T=gd2
+R7
+31
+R8
+!i10b 1
+R9
+Z80 !s90 -reportprogress|300|-93|-work|work|/home/shrey/Documents/microlab337/MicroLab/TwosComplement.vhd|
+Z81 !s107 /home/shrey/Documents/microlab337/MicroLab/TwosComplement.vhd|
+!i113 1
+R12
+R13
+Abehave
+R2
+R3
+R4
+DEx4 work 14 twoscomplement 0 22 5:B[ijASI<0RlS8`T<4_g0
+l13
+L12
+V8m_>`XQ`e6NZ6D6SiN@3O1
+!s100 NjQ:Ed=d7H4P5DTk3T4G73
+R7
+31
+R8
+!i10b 1
+R9
+R80
+R81
+!i113 1
+R12
+R13
