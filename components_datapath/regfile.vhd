@@ -36,13 +36,13 @@ begin
 					 
 				  end if;
 				  
-				  if rising_edge(clk) then
-					if(readEnable1 = '1') then
+				 if rising_edge(clk) then
+				--	if(readEnable1 = '1') then
 						  rf_d1 <= registers(to_integer(unsigned(rf_a1)));
-					end if;
-						if(readEnable2 = '1') then
+					--end if;
+						--if(readEnable2 = '1') then
 							 rf_d2 <= registers(to_integer(unsigned(rf_a2)));
-						end if;
+						--end if;
 				 end if;
 			 end if ;
 

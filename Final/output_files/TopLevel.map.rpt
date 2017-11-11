@@ -1,5 +1,5 @@
 Analysis & Synthesis report for TopLevel
-Thu Nov  9 08:05:44 2017
+Sat Nov 11 23:54:45 2017
 Quartus Prime Version 17.0.0 Build 595 04/25/2017 SJ Lite Edition
 
 
@@ -80,7 +80,7 @@ agreement for further details.
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +------------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Thu Nov  9 08:05:44 2017       ;
+; Analysis & Synthesis Status        ; Successful - Sat Nov 11 23:54:45 2017       ;
 ; Quartus Prime Version              ; 17.0.0 Build 595 04/25/2017 SJ Lite Edition ;
 ; Revision Name                      ; TopLevel                                    ;
 ; Top-level Entity Name              ; TopLevel                                    ;
@@ -276,33 +276,32 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 
 
 Encoding Type:  One-Hot
-+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; State Machine - |TopLevel|FSM_new:ControlPath|state                                                                                                                                                                                                         ;
-+-----------+-----------+-----------+-----------+-----------+-----------+-----------+-----------+-----------+-----------+-----------+-----------+----------+----------+----------+----------+----------+----------+----------+----------+----------+----------+
-; Name      ; state.s20 ; state.s19 ; state.s18 ; state.s17 ; state.s16 ; state.s15 ; state.s14 ; state.s13 ; state.s12 ; state.s11 ; state.s10 ; state.s9 ; state.s8 ; state.s7 ; state.s6 ; state.s5 ; state.s4 ; state.s3 ; state.s2 ; state.s1 ; state.s0 ;
-+-----------+-----------+-----------+-----------+-----------+-----------+-----------+-----------+-----------+-----------+-----------+-----------+----------+----------+----------+----------+----------+----------+----------+----------+----------+----------+
-; state.s0  ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0        ; 0        ; 0        ; 0        ; 0        ; 0        ; 0        ; 0        ; 0        ; 0        ;
-; state.s1  ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0        ; 0        ; 0        ; 0        ; 0        ; 0        ; 0        ; 0        ; 1        ; 1        ;
-; state.s2  ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0        ; 0        ; 0        ; 0        ; 0        ; 0        ; 0        ; 1        ; 0        ; 1        ;
-; state.s3  ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0        ; 0        ; 0        ; 0        ; 0        ; 0        ; 1        ; 0        ; 0        ; 1        ;
-; state.s4  ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0        ; 0        ; 0        ; 0        ; 0        ; 1        ; 0        ; 0        ; 0        ; 1        ;
-; state.s5  ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0        ; 0        ; 0        ; 0        ; 1        ; 0        ; 0        ; 0        ; 0        ; 1        ;
-; state.s6  ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0        ; 0        ; 0        ; 1        ; 0        ; 0        ; 0        ; 0        ; 0        ; 1        ;
-; state.s7  ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0        ; 0        ; 1        ; 0        ; 0        ; 0        ; 0        ; 0        ; 0        ; 1        ;
-; state.s8  ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0        ; 1        ; 0        ; 0        ; 0        ; 0        ; 0        ; 0        ; 0        ; 1        ;
-; state.s9  ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 1        ; 0        ; 0        ; 0        ; 0        ; 0        ; 0        ; 0        ; 0        ; 1        ;
-; state.s10 ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 1         ; 0        ; 0        ; 0        ; 0        ; 0        ; 0        ; 0        ; 0        ; 0        ; 1        ;
-; state.s11 ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 1         ; 0         ; 0        ; 0        ; 0        ; 0        ; 0        ; 0        ; 0        ; 0        ; 0        ; 1        ;
-; state.s12 ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 1         ; 0         ; 0         ; 0        ; 0        ; 0        ; 0        ; 0        ; 0        ; 0        ; 0        ; 0        ; 1        ;
-; state.s13 ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 1         ; 0         ; 0         ; 0         ; 0        ; 0        ; 0        ; 0        ; 0        ; 0        ; 0        ; 0        ; 0        ; 1        ;
-; state.s14 ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 1         ; 0         ; 0         ; 0         ; 0         ; 0        ; 0        ; 0        ; 0        ; 0        ; 0        ; 0        ; 0        ; 0        ; 1        ;
-; state.s15 ; 0         ; 0         ; 0         ; 0         ; 0         ; 1         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0        ; 0        ; 0        ; 0        ; 0        ; 0        ; 0        ; 0        ; 0        ; 1        ;
-; state.s16 ; 0         ; 0         ; 0         ; 0         ; 1         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0        ; 0        ; 0        ; 0        ; 0        ; 0        ; 0        ; 0        ; 0        ; 1        ;
-; state.s17 ; 0         ; 0         ; 0         ; 1         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0        ; 0        ; 0        ; 0        ; 0        ; 0        ; 0        ; 0        ; 0        ; 1        ;
-; state.s18 ; 0         ; 0         ; 1         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0        ; 0        ; 0        ; 0        ; 0        ; 0        ; 0        ; 0        ; 0        ; 1        ;
-; state.s19 ; 0         ; 1         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0        ; 0        ; 0        ; 0        ; 0        ; 0        ; 0        ; 0        ; 0        ; 1        ;
-; state.s20 ; 1         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0        ; 0        ; 0        ; 0        ; 0        ; 0        ; 0        ; 0        ; 0        ; 1        ;
-+-----------+-----------+-----------+-----------+-----------+-----------+-----------+-----------+-----------+-----------+-----------+-----------+----------+----------+----------+----------+----------+----------+----------+----------+----------+----------+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; State Machine - |TopLevel|FSM_new:ControlPath|state                                                                                                                                                                                              ;
++-----------+-----------+-----------+-----------+-----------+-----------+-----------+-----------+-----------+-----------+-----------+-----------+----------+----------+----------+----------+----------+----------+----------+----------+----------+
+; Name      ; state.s20 ; state.s19 ; state.s18 ; state.s17 ; state.s16 ; state.s15 ; state.s14 ; state.s13 ; state.s12 ; state.s11 ; state.s10 ; state.s9 ; state.s8 ; state.s7 ; state.s6 ; state.s5 ; state.s4 ; state.s3 ; state.s2 ; state.s1 ;
++-----------+-----------+-----------+-----------+-----------+-----------+-----------+-----------+-----------+-----------+-----------+-----------+----------+----------+----------+----------+----------+----------+----------+----------+----------+
+; state.s1  ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0        ; 0        ; 0        ; 0        ; 0        ; 0        ; 0        ; 0        ; 0        ;
+; state.s2  ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0        ; 0        ; 0        ; 0        ; 0        ; 0        ; 0        ; 1        ; 1        ;
+; state.s3  ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0        ; 0        ; 0        ; 0        ; 0        ; 0        ; 1        ; 0        ; 1        ;
+; state.s4  ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0        ; 0        ; 0        ; 0        ; 0        ; 1        ; 0        ; 0        ; 1        ;
+; state.s5  ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0        ; 0        ; 0        ; 0        ; 1        ; 0        ; 0        ; 0        ; 1        ;
+; state.s6  ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0        ; 0        ; 0        ; 1        ; 0        ; 0        ; 0        ; 0        ; 1        ;
+; state.s7  ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0        ; 0        ; 1        ; 0        ; 0        ; 0        ; 0        ; 0        ; 1        ;
+; state.s8  ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0        ; 1        ; 0        ; 0        ; 0        ; 0        ; 0        ; 0        ; 1        ;
+; state.s9  ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 1        ; 0        ; 0        ; 0        ; 0        ; 0        ; 0        ; 0        ; 1        ;
+; state.s10 ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 1         ; 0        ; 0        ; 0        ; 0        ; 0        ; 0        ; 0        ; 0        ; 1        ;
+; state.s11 ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 1         ; 0         ; 0        ; 0        ; 0        ; 0        ; 0        ; 0        ; 0        ; 0        ; 1        ;
+; state.s12 ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 1         ; 0         ; 0         ; 0        ; 0        ; 0        ; 0        ; 0        ; 0        ; 0        ; 0        ; 1        ;
+; state.s13 ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 1         ; 0         ; 0         ; 0         ; 0        ; 0        ; 0        ; 0        ; 0        ; 0        ; 0        ; 0        ; 1        ;
+; state.s14 ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 1         ; 0         ; 0         ; 0         ; 0         ; 0        ; 0        ; 0        ; 0        ; 0        ; 0        ; 0        ; 0        ; 1        ;
+; state.s15 ; 0         ; 0         ; 0         ; 0         ; 0         ; 1         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0        ; 0        ; 0        ; 0        ; 0        ; 0        ; 0        ; 0        ; 1        ;
+; state.s16 ; 0         ; 0         ; 0         ; 0         ; 1         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0        ; 0        ; 0        ; 0        ; 0        ; 0        ; 0        ; 0        ; 1        ;
+; state.s17 ; 0         ; 0         ; 0         ; 1         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0        ; 0        ; 0        ; 0        ; 0        ; 0        ; 0        ; 0        ; 1        ;
+; state.s18 ; 0         ; 0         ; 1         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0        ; 0        ; 0        ; 0        ; 0        ; 0        ; 0        ; 0        ; 1        ;
+; state.s19 ; 0         ; 1         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0        ; 0        ; 0        ; 0        ; 0        ; 0        ; 0        ; 0        ; 1        ;
+; state.s20 ; 1         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0        ; 0        ; 0        ; 0        ; 0        ; 0        ; 0        ; 0        ; 1        ;
++-----------+-----------+-----------+-----------+-----------+-----------+-----------+-----------+-----------+-----------+-----------+-----------+----------+----------+----------+----------+----------+----------+----------+----------+----------+
 
 
 +------------------------------------------------------------------------------------------------+
@@ -311,18 +310,18 @@ Encoding Type:  One-Hot
 ; Register name                                         ; Reason for Removal                     ;
 +-------------------------------------------------------+----------------------------------------+
 ; datapath:Data|temp_reg:temp5|dout[8..15]              ; Stuck at GND due to stuck port data_in ;
-; datapath:Data|temp_reg:temp5|dout[0..7]               ; Lost fanout                            ;
 ; FSM_new:ControlPath|state.s20                         ; Lost fanout                            ;
 ; FSM_new:ControlPath|state.s13                         ; Stuck at GND due to stuck port data_in ;
 ; FSM_new:ControlPath|state.s18                         ; Stuck at GND due to stuck port data_in ;
 ; FSM_new:ControlPath|state.s6                          ; Stuck at GND due to stuck port data_in ;
 ; FSM_new:ControlPath|state.s19                         ; Stuck at GND due to stuck port data_in ;
-; FSM_new:ControlPath|state.s1                          ; Lost fanout                            ;
+; FSM_new:ControlPath|state.s8                          ; Lost fanout                            ;
+; FSM_new:ControlPath|state.s11                         ; Lost fanout                            ;
+; FSM_new:ControlPath|state.s14                         ; Lost fanout                            ;
+; FSM_new:ControlPath|state.s15                         ; Lost fanout                            ;
 ; datapath:Data|temp_reg:temp1|dout[0]                  ; Lost fanout                            ;
 ; datapath:Data|temp_reg:temp4|dout[0]                  ; Lost fanout                            ;
-; FSM_new:ControlPath|state.s2                          ; Lost fanout                            ;
-; FSM_new:ControlPath|state.s15                         ; Lost fanout                            ;
-; FSM_new:ControlPath|state.s8                          ; Lost fanout                            ;
+; FSM_new:ControlPath|state.s1                          ; Lost fanout                            ;
 ; datapath:Data|temp_reg:temp1|dout[1]                  ; Lost fanout                            ;
 ; datapath:Data|temp_reg:temp4|dout[1]                  ; Lost fanout                            ;
 ; datapath:Data|temp_reg:temp1|dout[2]                  ; Lost fanout                            ;
@@ -335,7 +334,24 @@ Encoding Type:  One-Hot
 ; datapath:Data|temp_reg:temp4|dout[5]                  ; Lost fanout                            ;
 ; datapath:Data|temp_reg:temp1|dout[6]                  ; Lost fanout                            ;
 ; datapath:Data|temp_reg:temp4|dout[6]                  ; Lost fanout                            ;
-; datapath:Data|temp_reg:temp1|dout[7..15]              ; Lost fanout                            ;
+; datapath:Data|temp_reg:temp1|dout[7]                  ; Lost fanout                            ;
+; datapath:Data|temp_reg:temp4|dout[7]                  ; Lost fanout                            ;
+; datapath:Data|temp_reg:temp1|dout[8]                  ; Lost fanout                            ;
+; datapath:Data|temp_reg:temp4|dout[8]                  ; Lost fanout                            ;
+; datapath:Data|temp_reg:temp1|dout[9]                  ; Lost fanout                            ;
+; datapath:Data|temp_reg:temp4|dout[9]                  ; Lost fanout                            ;
+; datapath:Data|temp_reg:temp1|dout[10]                 ; Lost fanout                            ;
+; datapath:Data|temp_reg:temp4|dout[10]                 ; Lost fanout                            ;
+; datapath:Data|temp_reg:temp1|dout[11]                 ; Lost fanout                            ;
+; datapath:Data|temp_reg:temp4|dout[11]                 ; Lost fanout                            ;
+; datapath:Data|temp_reg:temp1|dout[12]                 ; Lost fanout                            ;
+; datapath:Data|temp_reg:temp4|dout[12]                 ; Lost fanout                            ;
+; datapath:Data|temp_reg:temp1|dout[13]                 ; Lost fanout                            ;
+; datapath:Data|temp_reg:temp4|dout[13]                 ; Lost fanout                            ;
+; datapath:Data|temp_reg:temp1|dout[14]                 ; Lost fanout                            ;
+; datapath:Data|temp_reg:temp4|dout[14]                 ; Lost fanout                            ;
+; datapath:Data|temp_reg:temp1|dout[15]                 ; Lost fanout                            ;
+; datapath:Data|temp_reg:temp4|dout[15]                 ; Lost fanout                            ;
 ; datapath:Data|temp_reg:temp3|dout[0]                  ; Lost fanout                            ;
 ; datapath:Data|register_file:reg_file|rf_d1[0]         ; Lost fanout                            ;
 ; datapath:Data|temp_reg:temp3|dout[1]                  ; Lost fanout                            ;
@@ -346,14 +362,9 @@ Encoding Type:  One-Hot
 ; datapath:Data|register_file:reg_file|rf_d1[3]         ; Lost fanout                            ;
 ; datapath:Data|temp_reg:temp3|dout[4]                  ; Lost fanout                            ;
 ; datapath:Data|register_file:reg_file|rf_d1[4]         ; Lost fanout                            ;
-; FSM_new:ControlPath|state.s5                          ; Lost fanout                            ;
-; FSM_new:ControlPath|state.s9                          ; Lost fanout                            ;
+; FSM_new:ControlPath|state.s2                          ; Lost fanout                            ;
 ; FSM_new:ControlPath|state.s10                         ; Lost fanout                            ;
-; FSM_new:ControlPath|state.s14                         ; Lost fanout                            ;
-; FSM_new:ControlPath|state.s4                          ; Lost fanout                            ;
-; FSM_new:ControlPath|state.s11                         ; Lost fanout                            ;
-; FSM_new:ControlPath|state.s16                         ; Lost fanout                            ;
-; FSM_new:ControlPath|state.s17                         ; Lost fanout                            ;
+; FSM_new:ControlPath|state.s3                          ; Lost fanout                            ;
 ; datapath:Data|temp_reg:instruction_reg|dout[0..4]     ; Lost fanout                            ;
 ; datapath:Data|register_file:reg_file|rf_d1[5]         ; Lost fanout                            ;
 ; datapath:Data|temp_reg:temp3|dout[5]                  ; Lost fanout                            ;
@@ -382,8 +393,11 @@ Encoding Type:  One-Hot
 ; datapath:Data|temp_reg:temp3|dout[15]                 ; Lost fanout                            ;
 ; FSM_new:ControlPath|state.s7                          ; Lost fanout                            ;
 ; datapath:Data|register_file:reg_file|registers[2][0]  ; Lost fanout                            ;
+; FSM_new:ControlPath|state.s4                          ; Lost fanout                            ;
+; FSM_new:ControlPath|state.s9                          ; Lost fanout                            ;
+; FSM_new:ControlPath|state.s5                          ; Lost fanout                            ;
+; FSM_new:ControlPath|state.s12                         ; Lost fanout                            ;
 ; datapath:Data|temp_reg:instruction_reg|dout[10]       ; Lost fanout                            ;
-; FSM_new:ControlPath|state.s3                          ; Lost fanout                            ;
 ; datapath:Data|register_file:reg_file|registers[1][0]  ; Lost fanout                            ;
 ; datapath:Data|temp_reg:instruction_reg|dout[9]        ; Lost fanout                            ;
 ; datapath:Data|register_file:reg_file|registers[0][0]  ; Lost fanout                            ;
@@ -425,13 +439,26 @@ Encoding Type:  One-Hot
 ; datapath:Data|register_file:reg_file|registers[6][4]  ; Lost fanout                            ;
 ; datapath:Data|register_file:reg_file|registers[4][4]  ; Lost fanout                            ;
 ; datapath:Data|register_file:reg_file|registers[7][4]  ; Lost fanout                            ;
-; FSM_new:ControlPath|state.s0                          ; Lost fanout                            ;
-; FSM_new:ControlPath|state.s12                         ; Lost fanout                            ;
+; FSM_new:ControlPath|state.s16                         ; Lost fanout                            ;
 ; datapath:Data|temp_reg:instruction_reg|dout[12..15]   ; Lost fanout                            ;
-; datapath:Data|temp_reg:temp2|dout[0]                  ; Lost fanout                            ;
 ; datapath:Data|registers:car|dout                      ; Lost fanout                            ;
 ; datapath:Data|registers:z|dout                        ; Lost fanout                            ;
-; datapath:Data|temp_reg:temp2|dout[1..4]               ; Lost fanout                            ;
+; FSM_new:ControlPath|state.s17                         ; Lost fanout                            ;
+; datapath:Data|temp_reg:temp2|dout[0]                  ; Lost fanout                            ;
+; datapath:Data|temp_reg:temp5|dout[0]                  ; Lost fanout                            ;
+; datapath:Data|temp_reg:program_counter|dout[0]        ; Lost fanout                            ;
+; datapath:Data|temp_reg:temp2|dout[1]                  ; Lost fanout                            ;
+; datapath:Data|temp_reg:temp5|dout[1]                  ; Lost fanout                            ;
+; datapath:Data|temp_reg:program_counter|dout[1]        ; Lost fanout                            ;
+; datapath:Data|temp_reg:temp2|dout[2]                  ; Lost fanout                            ;
+; datapath:Data|temp_reg:temp5|dout[2]                  ; Lost fanout                            ;
+; datapath:Data|temp_reg:program_counter|dout[2]        ; Lost fanout                            ;
+; datapath:Data|temp_reg:temp2|dout[3]                  ; Lost fanout                            ;
+; datapath:Data|temp_reg:temp5|dout[3]                  ; Lost fanout                            ;
+; datapath:Data|temp_reg:program_counter|dout[3]        ; Lost fanout                            ;
+; datapath:Data|temp_reg:temp2|dout[4]                  ; Lost fanout                            ;
+; datapath:Data|temp_reg:temp5|dout[4]                  ; Lost fanout                            ;
+; datapath:Data|temp_reg:program_counter|dout[4]        ; Lost fanout                            ;
 ; datapath:Data|register_file:reg_file|registers[2][5]  ; Lost fanout                            ;
 ; datapath:Data|register_file:reg_file|registers[1][5]  ; Lost fanout                            ;
 ; datapath:Data|register_file:reg_file|registers[0][5]  ; Lost fanout                            ;
@@ -441,6 +468,8 @@ Encoding Type:  One-Hot
 ; datapath:Data|register_file:reg_file|registers[4][5]  ; Lost fanout                            ;
 ; datapath:Data|register_file:reg_file|registers[7][5]  ; Lost fanout                            ;
 ; datapath:Data|temp_reg:temp2|dout[5]                  ; Lost fanout                            ;
+; datapath:Data|temp_reg:temp5|dout[5]                  ; Lost fanout                            ;
+; datapath:Data|temp_reg:program_counter|dout[5]        ; Lost fanout                            ;
 ; datapath:Data|register_file:reg_file|registers[2][6]  ; Lost fanout                            ;
 ; datapath:Data|register_file:reg_file|registers[1][6]  ; Lost fanout                            ;
 ; datapath:Data|register_file:reg_file|registers[0][6]  ; Lost fanout                            ;
@@ -450,6 +479,8 @@ Encoding Type:  One-Hot
 ; datapath:Data|register_file:reg_file|registers[4][6]  ; Lost fanout                            ;
 ; datapath:Data|register_file:reg_file|registers[7][6]  ; Lost fanout                            ;
 ; datapath:Data|temp_reg:temp2|dout[6]                  ; Lost fanout                            ;
+; datapath:Data|temp_reg:temp5|dout[6]                  ; Lost fanout                            ;
+; datapath:Data|temp_reg:program_counter|dout[6]        ; Lost fanout                            ;
 ; datapath:Data|register_file:reg_file|registers[2][7]  ; Lost fanout                            ;
 ; datapath:Data|register_file:reg_file|registers[1][7]  ; Lost fanout                            ;
 ; datapath:Data|register_file:reg_file|registers[0][7]  ; Lost fanout                            ;
@@ -459,6 +490,8 @@ Encoding Type:  One-Hot
 ; datapath:Data|register_file:reg_file|registers[4][7]  ; Lost fanout                            ;
 ; datapath:Data|register_file:reg_file|registers[7][7]  ; Lost fanout                            ;
 ; datapath:Data|temp_reg:temp2|dout[7]                  ; Lost fanout                            ;
+; datapath:Data|temp_reg:temp5|dout[7]                  ; Lost fanout                            ;
+; datapath:Data|temp_reg:program_counter|dout[7]        ; Lost fanout                            ;
 ; datapath:Data|register_file:reg_file|registers[2][8]  ; Lost fanout                            ;
 ; datapath:Data|register_file:reg_file|registers[1][8]  ; Lost fanout                            ;
 ; datapath:Data|register_file:reg_file|registers[0][8]  ; Lost fanout                            ;
@@ -468,6 +501,7 @@ Encoding Type:  One-Hot
 ; datapath:Data|register_file:reg_file|registers[4][8]  ; Lost fanout                            ;
 ; datapath:Data|register_file:reg_file|registers[7][8]  ; Lost fanout                            ;
 ; datapath:Data|temp_reg:temp2|dout[8]                  ; Lost fanout                            ;
+; datapath:Data|temp_reg:program_counter|dout[8]        ; Lost fanout                            ;
 ; datapath:Data|register_file:reg_file|registers[2][9]  ; Lost fanout                            ;
 ; datapath:Data|register_file:reg_file|registers[1][9]  ; Lost fanout                            ;
 ; datapath:Data|register_file:reg_file|registers[0][9]  ; Lost fanout                            ;
@@ -477,6 +511,7 @@ Encoding Type:  One-Hot
 ; datapath:Data|register_file:reg_file|registers[4][9]  ; Lost fanout                            ;
 ; datapath:Data|register_file:reg_file|registers[7][9]  ; Lost fanout                            ;
 ; datapath:Data|temp_reg:temp2|dout[9]                  ; Lost fanout                            ;
+; datapath:Data|temp_reg:program_counter|dout[9]        ; Lost fanout                            ;
 ; datapath:Data|register_file:reg_file|registers[2][10] ; Lost fanout                            ;
 ; datapath:Data|register_file:reg_file|registers[1][10] ; Lost fanout                            ;
 ; datapath:Data|register_file:reg_file|registers[0][10] ; Lost fanout                            ;
@@ -486,6 +521,7 @@ Encoding Type:  One-Hot
 ; datapath:Data|register_file:reg_file|registers[4][10] ; Lost fanout                            ;
 ; datapath:Data|register_file:reg_file|registers[7][10] ; Lost fanout                            ;
 ; datapath:Data|temp_reg:temp2|dout[10]                 ; Lost fanout                            ;
+; datapath:Data|temp_reg:program_counter|dout[10]       ; Lost fanout                            ;
 ; datapath:Data|register_file:reg_file|registers[2][11] ; Lost fanout                            ;
 ; datapath:Data|register_file:reg_file|registers[1][11] ; Lost fanout                            ;
 ; datapath:Data|register_file:reg_file|registers[0][11] ; Lost fanout                            ;
@@ -495,6 +531,7 @@ Encoding Type:  One-Hot
 ; datapath:Data|register_file:reg_file|registers[4][11] ; Lost fanout                            ;
 ; datapath:Data|register_file:reg_file|registers[7][11] ; Lost fanout                            ;
 ; datapath:Data|temp_reg:temp2|dout[11]                 ; Lost fanout                            ;
+; datapath:Data|temp_reg:program_counter|dout[11]       ; Lost fanout                            ;
 ; datapath:Data|register_file:reg_file|registers[2][12] ; Lost fanout                            ;
 ; datapath:Data|register_file:reg_file|registers[1][12] ; Lost fanout                            ;
 ; datapath:Data|register_file:reg_file|registers[0][12] ; Lost fanout                            ;
@@ -504,6 +541,7 @@ Encoding Type:  One-Hot
 ; datapath:Data|register_file:reg_file|registers[4][12] ; Lost fanout                            ;
 ; datapath:Data|register_file:reg_file|registers[7][12] ; Lost fanout                            ;
 ; datapath:Data|temp_reg:temp2|dout[12]                 ; Lost fanout                            ;
+; datapath:Data|temp_reg:program_counter|dout[12]       ; Lost fanout                            ;
 ; datapath:Data|register_file:reg_file|registers[2][13] ; Lost fanout                            ;
 ; datapath:Data|register_file:reg_file|registers[1][13] ; Lost fanout                            ;
 ; datapath:Data|register_file:reg_file|registers[0][13] ; Lost fanout                            ;
@@ -513,6 +551,7 @@ Encoding Type:  One-Hot
 ; datapath:Data|register_file:reg_file|registers[4][13] ; Lost fanout                            ;
 ; datapath:Data|register_file:reg_file|registers[7][13] ; Lost fanout                            ;
 ; datapath:Data|temp_reg:temp2|dout[13]                 ; Lost fanout                            ;
+; datapath:Data|temp_reg:program_counter|dout[13]       ; Lost fanout                            ;
 ; datapath:Data|register_file:reg_file|registers[2][14] ; Lost fanout                            ;
 ; datapath:Data|register_file:reg_file|registers[1][14] ; Lost fanout                            ;
 ; datapath:Data|register_file:reg_file|registers[0][14] ; Lost fanout                            ;
@@ -522,6 +561,7 @@ Encoding Type:  One-Hot
 ; datapath:Data|register_file:reg_file|registers[4][14] ; Lost fanout                            ;
 ; datapath:Data|register_file:reg_file|registers[7][14] ; Lost fanout                            ;
 ; datapath:Data|temp_reg:temp2|dout[14]                 ; Lost fanout                            ;
+; datapath:Data|temp_reg:program_counter|dout[14]       ; Lost fanout                            ;
 ; datapath:Data|register_file:reg_file|registers[2][15] ; Lost fanout                            ;
 ; datapath:Data|register_file:reg_file|registers[1][15] ; Lost fanout                            ;
 ; datapath:Data|register_file:reg_file|registers[0][15] ; Lost fanout                            ;
@@ -531,276 +571,255 @@ Encoding Type:  One-Hot
 ; datapath:Data|register_file:reg_file|registers[4][15] ; Lost fanout                            ;
 ; datapath:Data|register_file:reg_file|registers[7][15] ; Lost fanout                            ;
 ; datapath:Data|temp_reg:temp2|dout[15]                 ; Lost fanout                            ;
-; datapath:Data|temp_reg:program_counter|dout[0]        ; Lost fanout                            ;
-; datapath:Data|temp_reg:instruction_reg|dout[8]        ; Lost fanout                            ;
-; datapath:Data|temp_reg:program_counter|dout[1..4]     ; Lost fanout                            ;
-; datapath:Data|register_file:reg_file|rf_d2[0..4]      ; Lost fanout                            ;
-; datapath:Data|temp_reg:program_counter|dout[5]        ; Lost fanout                            ;
-; datapath:Data|register_file:reg_file|rf_d2[5]         ; Lost fanout                            ;
-; datapath:Data|temp_reg:program_counter|dout[6]        ; Lost fanout                            ;
-; datapath:Data|register_file:reg_file|rf_d2[6]         ; Lost fanout                            ;
-; datapath:Data|temp_reg:program_counter|dout[7]        ; Lost fanout                            ;
-; datapath:Data|register_file:reg_file|rf_d2[7]         ; Lost fanout                            ;
-; datapath:Data|temp_reg:program_counter|dout[8]        ; Lost fanout                            ;
-; datapath:Data|register_file:reg_file|rf_d2[8]         ; Lost fanout                            ;
-; datapath:Data|temp_reg:program_counter|dout[9]        ; Lost fanout                            ;
-; datapath:Data|register_file:reg_file|rf_d2[9]         ; Lost fanout                            ;
-; datapath:Data|temp_reg:program_counter|dout[10]       ; Lost fanout                            ;
-; datapath:Data|register_file:reg_file|rf_d2[10]        ; Lost fanout                            ;
-; datapath:Data|temp_reg:program_counter|dout[11]       ; Lost fanout                            ;
-; datapath:Data|register_file:reg_file|rf_d2[11]        ; Lost fanout                            ;
-; datapath:Data|temp_reg:program_counter|dout[12]       ; Lost fanout                            ;
-; datapath:Data|register_file:reg_file|rf_d2[12]        ; Lost fanout                            ;
-; datapath:Data|temp_reg:program_counter|dout[13]       ; Lost fanout                            ;
-; datapath:Data|register_file:reg_file|rf_d2[13]        ; Lost fanout                            ;
-; datapath:Data|temp_reg:program_counter|dout[14]       ; Lost fanout                            ;
-; datapath:Data|register_file:reg_file|rf_d2[14]        ; Lost fanout                            ;
 ; datapath:Data|temp_reg:program_counter|dout[15]       ; Lost fanout                            ;
-; datapath:Data|register_file:reg_file|rf_d2[15]        ; Lost fanout                            ;
-; datapath:Data|temp_reg:temp4|dout[7..15]              ; Lost fanout                            ;
-; Total Number of Removed Registers = 295               ;                                        ;
+; datapath:Data|temp_reg:instruction_reg|dout[8]        ; Lost fanout                            ;
+; datapath:Data|register_file:reg_file|rf_d2[0..15]     ; Lost fanout                            ;
+; Total Number of Removed Registers = 294               ;                                        ;
 +-------------------------------------------------------+----------------------------------------+
 
 
-+--------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Removed Registers Triggering Further Register Optimizations                                                                                            ;
-+---------------------------------------+---------------------------+------------------------------------------------------------------------------------+
-; Register name                         ; Reason for Removal        ; Registers Removed due to This Register                                             ;
-+---------------------------------------+---------------------------+------------------------------------------------------------------------------------+
-; FSM_new:ControlPath|state.s18         ; Stuck at GND              ; datapath:Data|temp_reg:temp1|dout[0], FSM_new:ControlPath|state.s15,               ;
-;                                       ; due to stuck port data_in ; datapath:Data|temp_reg:temp1|dout[1],                                              ;
-;                                       ;                           ; datapath:Data|register_file:reg_file|rf_d1[0],                                     ;
-;                                       ;                           ; datapath:Data|register_file:reg_file|rf_d1[1],                                     ;
-;                                       ;                           ; datapath:Data|register_file:reg_file|rf_d1[2],                                     ;
-;                                       ;                           ; datapath:Data|register_file:reg_file|rf_d1[3],                                     ;
-;                                       ;                           ; datapath:Data|register_file:reg_file|rf_d1[4],                                     ;
-;                                       ;                           ; datapath:Data|register_file:reg_file|rf_d1[5],                                     ;
-;                                       ;                           ; datapath:Data|register_file:reg_file|rf_d1[6],                                     ;
-;                                       ;                           ; datapath:Data|register_file:reg_file|rf_d1[7],                                     ;
-;                                       ;                           ; datapath:Data|register_file:reg_file|rf_d1[11],                                    ;
-;                                       ;                           ; datapath:Data|register_file:reg_file|rf_d1[13],                                    ;
-;                                       ;                           ; datapath:Data|register_file:reg_file|registers[2][0],                              ;
-;                                       ;                           ; datapath:Data|register_file:reg_file|registers[1][0],                              ;
-;                                       ;                           ; datapath:Data|register_file:reg_file|registers[0][0],                              ;
-;                                       ;                           ; datapath:Data|register_file:reg_file|registers[3][0],                              ;
-;                                       ;                           ; datapath:Data|register_file:reg_file|registers[5][0],                              ;
-;                                       ;                           ; datapath:Data|register_file:reg_file|registers[6][0],                              ;
-;                                       ;                           ; datapath:Data|register_file:reg_file|registers[4][0],                              ;
-;                                       ;                           ; datapath:Data|register_file:reg_file|registers[7][0],                              ;
-;                                       ;                           ; datapath:Data|register_file:reg_file|registers[2][1],                              ;
-;                                       ;                           ; datapath:Data|register_file:reg_file|registers[1][1],                              ;
-;                                       ;                           ; datapath:Data|register_file:reg_file|registers[0][1],                              ;
-;                                       ;                           ; datapath:Data|register_file:reg_file|registers[3][1],                              ;
-;                                       ;                           ; datapath:Data|register_file:reg_file|registers[5][1],                              ;
-;                                       ;                           ; datapath:Data|register_file:reg_file|registers[6][1],                              ;
-;                                       ;                           ; datapath:Data|register_file:reg_file|registers[4][1],                              ;
-;                                       ;                           ; datapath:Data|register_file:reg_file|registers[7][1],                              ;
-;                                       ;                           ; datapath:Data|register_file:reg_file|registers[2][2],                              ;
-;                                       ;                           ; datapath:Data|register_file:reg_file|registers[1][2],                              ;
-;                                       ;                           ; datapath:Data|register_file:reg_file|registers[0][2],                              ;
-;                                       ;                           ; datapath:Data|register_file:reg_file|registers[3][2],                              ;
-;                                       ;                           ; datapath:Data|register_file:reg_file|registers[5][2],                              ;
-;                                       ;                           ; datapath:Data|register_file:reg_file|registers[6][2],                              ;
-;                                       ;                           ; datapath:Data|register_file:reg_file|registers[4][2],                              ;
-;                                       ;                           ; datapath:Data|register_file:reg_file|registers[7][2],                              ;
-;                                       ;                           ; datapath:Data|register_file:reg_file|registers[2][3],                              ;
-;                                       ;                           ; datapath:Data|register_file:reg_file|registers[1][3],                              ;
-;                                       ;                           ; datapath:Data|register_file:reg_file|registers[0][3],                              ;
-;                                       ;                           ; datapath:Data|register_file:reg_file|registers[3][3],                              ;
-;                                       ;                           ; datapath:Data|register_file:reg_file|registers[5][3],                              ;
-;                                       ;                           ; datapath:Data|register_file:reg_file|registers[6][3],                              ;
-;                                       ;                           ; datapath:Data|register_file:reg_file|registers[4][3],                              ;
-;                                       ;                           ; datapath:Data|register_file:reg_file|registers[7][3],                              ;
-;                                       ;                           ; datapath:Data|register_file:reg_file|registers[2][4],                              ;
-;                                       ;                           ; datapath:Data|register_file:reg_file|registers[1][4],                              ;
-;                                       ;                           ; datapath:Data|register_file:reg_file|registers[0][4],                              ;
-;                                       ;                           ; datapath:Data|register_file:reg_file|registers[3][4],                              ;
-;                                       ;                           ; datapath:Data|register_file:reg_file|registers[5][4],                              ;
-;                                       ;                           ; datapath:Data|register_file:reg_file|registers[6][4],                              ;
-;                                       ;                           ; datapath:Data|register_file:reg_file|registers[4][4],                              ;
-;                                       ;                           ; datapath:Data|register_file:reg_file|registers[7][4],                              ;
-;                                       ;                           ; FSM_new:ControlPath|state.s12, datapath:Data|temp_reg:temp2|dout[1],               ;
-;                                       ;                           ; datapath:Data|temp_reg:temp2|dout[2], datapath:Data|temp_reg:temp2|dout[3],        ;
-;                                       ;                           ; datapath:Data|temp_reg:temp2|dout[4],                                              ;
-;                                       ;                           ; datapath:Data|register_file:reg_file|registers[2][5],                              ;
-;                                       ;                           ; datapath:Data|register_file:reg_file|registers[1][5],                              ;
-;                                       ;                           ; datapath:Data|register_file:reg_file|registers[0][5],                              ;
-;                                       ;                           ; datapath:Data|register_file:reg_file|registers[3][5],                              ;
-;                                       ;                           ; datapath:Data|register_file:reg_file|registers[5][5],                              ;
-;                                       ;                           ; datapath:Data|register_file:reg_file|registers[6][5],                              ;
-;                                       ;                           ; datapath:Data|register_file:reg_file|registers[4][5],                              ;
-;                                       ;                           ; datapath:Data|register_file:reg_file|registers[7][5],                              ;
-;                                       ;                           ; datapath:Data|register_file:reg_file|registers[2][6],                              ;
-;                                       ;                           ; datapath:Data|register_file:reg_file|registers[1][6],                              ;
-;                                       ;                           ; datapath:Data|register_file:reg_file|registers[0][6],                              ;
-;                                       ;                           ; datapath:Data|register_file:reg_file|registers[3][6],                              ;
-;                                       ;                           ; datapath:Data|register_file:reg_file|registers[5][6],                              ;
-;                                       ;                           ; datapath:Data|register_file:reg_file|registers[6][6],                              ;
-;                                       ;                           ; datapath:Data|register_file:reg_file|registers[4][6],                              ;
-;                                       ;                           ; datapath:Data|register_file:reg_file|registers[7][6],                              ;
-;                                       ;                           ; datapath:Data|register_file:reg_file|registers[2][7],                              ;
-;                                       ;                           ; datapath:Data|register_file:reg_file|registers[1][7],                              ;
-;                                       ;                           ; datapath:Data|register_file:reg_file|registers[0][7],                              ;
-;                                       ;                           ; datapath:Data|register_file:reg_file|registers[3][7],                              ;
-;                                       ;                           ; datapath:Data|register_file:reg_file|registers[5][7],                              ;
-;                                       ;                           ; datapath:Data|register_file:reg_file|registers[6][7],                              ;
-;                                       ;                           ; datapath:Data|register_file:reg_file|registers[4][7],                              ;
-;                                       ;                           ; datapath:Data|register_file:reg_file|registers[7][7],                              ;
-;                                       ;                           ; datapath:Data|register_file:reg_file|registers[2][11],                             ;
-;                                       ;                           ; datapath:Data|register_file:reg_file|registers[1][11],                             ;
-;                                       ;                           ; datapath:Data|register_file:reg_file|registers[0][11],                             ;
-;                                       ;                           ; datapath:Data|register_file:reg_file|registers[3][11],                             ;
-;                                       ;                           ; datapath:Data|register_file:reg_file|registers[5][11],                             ;
-;                                       ;                           ; datapath:Data|register_file:reg_file|registers[6][11],                             ;
-;                                       ;                           ; datapath:Data|register_file:reg_file|registers[4][11],                             ;
-;                                       ;                           ; datapath:Data|register_file:reg_file|registers[7][11],                             ;
-;                                       ;                           ; datapath:Data|register_file:reg_file|registers[2][13],                             ;
-;                                       ;                           ; datapath:Data|register_file:reg_file|registers[1][13],                             ;
-;                                       ;                           ; datapath:Data|register_file:reg_file|registers[0][13],                             ;
-;                                       ;                           ; datapath:Data|register_file:reg_file|registers[3][13],                             ;
-;                                       ;                           ; datapath:Data|register_file:reg_file|registers[5][13],                             ;
-;                                       ;                           ; datapath:Data|register_file:reg_file|registers[6][13],                             ;
-;                                       ;                           ; datapath:Data|register_file:reg_file|registers[4][13],                             ;
-;                                       ;                           ; datapath:Data|register_file:reg_file|registers[7][13],                             ;
-;                                       ;                           ; datapath:Data|temp_reg:program_counter|dout[0],                                    ;
-;                                       ;                           ; datapath:Data|temp_reg:program_counter|dout[1],                                    ;
-;                                       ;                           ; datapath:Data|temp_reg:program_counter|dout[2],                                    ;
-;                                       ;                           ; datapath:Data|temp_reg:program_counter|dout[3],                                    ;
-;                                       ;                           ; datapath:Data|temp_reg:program_counter|dout[4],                                    ;
-;                                       ;                           ; datapath:Data|register_file:reg_file|rf_d2[1],                                     ;
-;                                       ;                           ; datapath:Data|register_file:reg_file|rf_d2[2],                                     ;
-;                                       ;                           ; datapath:Data|register_file:reg_file|rf_d2[3],                                     ;
-;                                       ;                           ; datapath:Data|register_file:reg_file|rf_d2[4],                                     ;
-;                                       ;                           ; datapath:Data|temp_reg:program_counter|dout[5],                                    ;
-;                                       ;                           ; datapath:Data|temp_reg:program_counter|dout[6],                                    ;
-;                                       ;                           ; datapath:Data|temp_reg:program_counter|dout[7],                                    ;
-;                                       ;                           ; datapath:Data|temp_reg:program_counter|dout[13],                                   ;
-;                                       ;                           ; datapath:Data|temp_reg:temp4|dout[7]                                               ;
-; FSM_new:ControlPath|state.s13         ; Stuck at GND              ; FSM_new:ControlPath|state.s1, datapath:Data|temp_reg:temp4|dout[0],                ;
-;                                       ; due to stuck port data_in ; FSM_new:ControlPath|state.s2, FSM_new:ControlPath|state.s8,                        ;
-;                                       ;                           ; datapath:Data|temp_reg:temp4|dout[1], datapath:Data|temp_reg:temp4|dout[2],        ;
-;                                       ;                           ; datapath:Data|temp_reg:temp4|dout[3], datapath:Data|temp_reg:temp4|dout[4],        ;
-;                                       ;                           ; datapath:Data|temp_reg:temp1|dout[5], datapath:Data|temp_reg:temp4|dout[5],        ;
-;                                       ;                           ; datapath:Data|temp_reg:temp1|dout[6], datapath:Data|temp_reg:temp1|dout[7],        ;
-;                                       ;                           ; datapath:Data|temp_reg:temp1|dout[11], datapath:Data|temp_reg:temp1|dout[12],      ;
-;                                       ;                           ; datapath:Data|temp_reg:temp1|dout[13], datapath:Data|temp_reg:temp1|dout[14],      ;
-;                                       ;                           ; datapath:Data|temp_reg:temp3|dout[0], datapath:Data|temp_reg:temp3|dout[1],        ;
-;                                       ;                           ; datapath:Data|temp_reg:temp3|dout[2], datapath:Data|temp_reg:temp3|dout[3],        ;
-;                                       ;                           ; datapath:Data|temp_reg:temp3|dout[4], FSM_new:ControlPath|state.s5,                ;
-;                                       ;                           ; FSM_new:ControlPath|state.s9, FSM_new:ControlPath|state.s10,                       ;
-;                                       ;                           ; FSM_new:ControlPath|state.s14, FSM_new:ControlPath|state.s4,                       ;
-;                                       ;                           ; FSM_new:ControlPath|state.s11, FSM_new:ControlPath|state.s16,                      ;
-;                                       ;                           ; FSM_new:ControlPath|state.s17, datapath:Data|temp_reg:instruction_reg|dout[0],     ;
-;                                       ;                           ; datapath:Data|temp_reg:instruction_reg|dout[1],                                    ;
-;                                       ;                           ; datapath:Data|temp_reg:instruction_reg|dout[2],                                    ;
-;                                       ;                           ; datapath:Data|temp_reg:instruction_reg|dout[3],                                    ;
-;                                       ;                           ; datapath:Data|temp_reg:instruction_reg|dout[4],                                    ;
-;                                       ;                           ; datapath:Data|temp_reg:temp3|dout[5], datapath:Data|temp_reg:temp3|dout[6],        ;
-;                                       ;                           ; datapath:Data|temp_reg:instruction_reg|dout[6],                                    ;
-;                                       ;                           ; datapath:Data|temp_reg:temp3|dout[7],                                              ;
-;                                       ;                           ; datapath:Data|temp_reg:instruction_reg|dout[7],                                    ;
-;                                       ;                           ; datapath:Data|temp_reg:temp3|dout[8], datapath:Data|temp_reg:temp3|dout[9],        ;
-;                                       ;                           ; datapath:Data|temp_reg:temp3|dout[10], datapath:Data|temp_reg:temp3|dout[11],      ;
-;                                       ;                           ; datapath:Data|temp_reg:temp3|dout[12], datapath:Data|temp_reg:temp3|dout[13],      ;
-;                                       ;                           ; datapath:Data|temp_reg:temp3|dout[14], datapath:Data|temp_reg:temp3|dout[15],      ;
-;                                       ;                           ; FSM_new:ControlPath|state.s7, datapath:Data|temp_reg:instruction_reg|dout[10],     ;
-;                                       ;                           ; FSM_new:ControlPath|state.s3, datapath:Data|temp_reg:instruction_reg|dout[9],      ;
-;                                       ;                           ; datapath:Data|temp_reg:instruction_reg|dout[11],                                   ;
-;                                       ;                           ; datapath:Data|temp_reg:instruction_reg|dout[12],                                   ;
-;                                       ;                           ; datapath:Data|temp_reg:instruction_reg|dout[13],                                   ;
-;                                       ;                           ; datapath:Data|temp_reg:instruction_reg|dout[14], datapath:Data|registers:car|dout, ;
-;                                       ;                           ; datapath:Data|registers:z|dout, datapath:Data|temp_reg:temp2|dout[5],              ;
-;                                       ;                           ; datapath:Data|temp_reg:instruction_reg|dout[8],                                    ;
-;                                       ;                           ; datapath:Data|register_file:reg_file|rf_d2[5]                                      ;
-; datapath:Data|temp_reg:temp5|dout[8]  ; Stuck at GND              ; datapath:Data|temp_reg:temp1|dout[8], datapath:Data|temp_reg:temp1|dout[15],       ;
-;                                       ; due to stuck port data_in ; datapath:Data|temp_reg:instruction_reg|dout[5],                                    ;
-;                                       ;                           ; datapath:Data|register_file:reg_file|rf_d1[8],                                     ;
-;                                       ;                           ; datapath:Data|register_file:reg_file|rf_d1[12],                                    ;
-;                                       ;                           ; datapath:Data|register_file:reg_file|rf_d1[14],                                    ;
-;                                       ;                           ; datapath:Data|register_file:reg_file|rf_d1[15],                                    ;
-;                                       ;                           ; datapath:Data|temp_reg:instruction_reg|dout[15],                                   ;
-;                                       ;                           ; datapath:Data|register_file:reg_file|registers[2][8],                              ;
-;                                       ;                           ; datapath:Data|register_file:reg_file|registers[1][8],                              ;
-;                                       ;                           ; datapath:Data|register_file:reg_file|registers[0][8],                              ;
-;                                       ;                           ; datapath:Data|register_file:reg_file|registers[3][8],                              ;
-;                                       ;                           ; datapath:Data|register_file:reg_file|registers[5][8],                              ;
-;                                       ;                           ; datapath:Data|register_file:reg_file|registers[6][8],                              ;
-;                                       ;                           ; datapath:Data|register_file:reg_file|registers[4][8],                              ;
-;                                       ;                           ; datapath:Data|register_file:reg_file|registers[7][8],                              ;
-;                                       ;                           ; datapath:Data|temp_reg:temp2|dout[8],                                              ;
-;                                       ;                           ; datapath:Data|register_file:reg_file|registers[2][12],                             ;
-;                                       ;                           ; datapath:Data|register_file:reg_file|registers[1][12],                             ;
-;                                       ;                           ; datapath:Data|register_file:reg_file|registers[0][12],                             ;
-;                                       ;                           ; datapath:Data|register_file:reg_file|registers[3][12],                             ;
-;                                       ;                           ; datapath:Data|register_file:reg_file|registers[5][12],                             ;
-;                                       ;                           ; datapath:Data|register_file:reg_file|registers[6][12],                             ;
-;                                       ;                           ; datapath:Data|register_file:reg_file|registers[4][12],                             ;
-;                                       ;                           ; datapath:Data|register_file:reg_file|registers[7][12],                             ;
-;                                       ;                           ; datapath:Data|register_file:reg_file|registers[2][14],                             ;
-;                                       ;                           ; datapath:Data|register_file:reg_file|registers[1][14],                             ;
-;                                       ;                           ; datapath:Data|register_file:reg_file|registers[0][14],                             ;
-;                                       ;                           ; datapath:Data|register_file:reg_file|registers[3][14],                             ;
-;                                       ;                           ; datapath:Data|register_file:reg_file|registers[5][14],                             ;
-;                                       ;                           ; datapath:Data|register_file:reg_file|registers[6][14],                             ;
-;                                       ;                           ; datapath:Data|register_file:reg_file|registers[4][14],                             ;
-;                                       ;                           ; datapath:Data|register_file:reg_file|registers[7][14],                             ;
-;                                       ;                           ; datapath:Data|register_file:reg_file|registers[2][15],                             ;
-;                                       ;                           ; datapath:Data|register_file:reg_file|registers[1][15],                             ;
-;                                       ;                           ; datapath:Data|register_file:reg_file|registers[0][15],                             ;
-;                                       ;                           ; datapath:Data|register_file:reg_file|registers[3][15],                             ;
-;                                       ;                           ; datapath:Data|register_file:reg_file|registers[5][15],                             ;
-;                                       ;                           ; datapath:Data|register_file:reg_file|registers[6][15],                             ;
-;                                       ;                           ; datapath:Data|register_file:reg_file|registers[4][15],                             ;
-;                                       ;                           ; datapath:Data|register_file:reg_file|registers[7][15],                             ;
-;                                       ;                           ; datapath:Data|temp_reg:program_counter|dout[8],                                    ;
-;                                       ;                           ; datapath:Data|register_file:reg_file|rf_d2[8],                                     ;
-;                                       ;                           ; datapath:Data|temp_reg:program_counter|dout[15]                                    ;
-; datapath:Data|temp_reg:temp5|dout[9]  ; Stuck at GND              ; datapath:Data|temp_reg:temp1|dout[9],                                              ;
-;                                       ; due to stuck port data_in ; datapath:Data|register_file:reg_file|rf_d1[9],                                     ;
-;                                       ;                           ; datapath:Data|register_file:reg_file|registers[2][9],                              ;
-;                                       ;                           ; datapath:Data|register_file:reg_file|registers[1][9],                              ;
-;                                       ;                           ; datapath:Data|register_file:reg_file|registers[0][9],                              ;
-;                                       ;                           ; datapath:Data|register_file:reg_file|registers[3][9],                              ;
-;                                       ;                           ; datapath:Data|register_file:reg_file|registers[5][9],                              ;
-;                                       ;                           ; datapath:Data|register_file:reg_file|registers[6][9],                              ;
-;                                       ;                           ; datapath:Data|register_file:reg_file|registers[4][9],                              ;
-;                                       ;                           ; datapath:Data|register_file:reg_file|registers[7][9],                              ;
-;                                       ;                           ; datapath:Data|temp_reg:temp2|dout[9],                                              ;
-;                                       ;                           ; datapath:Data|temp_reg:program_counter|dout[9],                                    ;
-;                                       ;                           ; datapath:Data|register_file:reg_file|rf_d2[9]                                      ;
-; datapath:Data|temp_reg:temp5|dout[10] ; Stuck at GND              ; datapath:Data|temp_reg:temp1|dout[10],                                             ;
-;                                       ; due to stuck port data_in ; datapath:Data|register_file:reg_file|rf_d1[10],                                    ;
-;                                       ;                           ; datapath:Data|register_file:reg_file|registers[2][10],                             ;
-;                                       ;                           ; datapath:Data|register_file:reg_file|registers[1][10],                             ;
-;                                       ;                           ; datapath:Data|register_file:reg_file|registers[0][10],                             ;
-;                                       ;                           ; datapath:Data|register_file:reg_file|registers[3][10],                             ;
-;                                       ;                           ; datapath:Data|register_file:reg_file|registers[5][10],                             ;
-;                                       ;                           ; datapath:Data|register_file:reg_file|registers[6][10],                             ;
-;                                       ;                           ; datapath:Data|register_file:reg_file|registers[4][10],                             ;
-;                                       ;                           ; datapath:Data|register_file:reg_file|registers[7][10],                             ;
-;                                       ;                           ; datapath:Data|temp_reg:temp2|dout[10],                                             ;
-;                                       ;                           ; datapath:Data|temp_reg:program_counter|dout[10],                                   ;
-;                                       ;                           ; datapath:Data|register_file:reg_file|rf_d2[10]                                     ;
-; FSM_new:ControlPath|state.s6          ; Stuck at GND              ; datapath:Data|temp_reg:temp1|dout[3], datapath:Data|temp_reg:temp1|dout[4],        ;
-;                                       ; due to stuck port data_in ; FSM_new:ControlPath|state.s0, datapath:Data|temp_reg:temp2|dout[0],                ;
-;                                       ;                           ; datapath:Data|temp_reg:temp2|dout[6], datapath:Data|temp_reg:temp2|dout[7],        ;
-;                                       ;                           ; datapath:Data|register_file:reg_file|rf_d2[0],                                     ;
-;                                       ;                           ; datapath:Data|register_file:reg_file|rf_d2[6],                                     ;
-;                                       ;                           ; datapath:Data|register_file:reg_file|rf_d2[7]                                      ;
-; datapath:Data|temp_reg:temp5|dout[11] ; Stuck at GND              ; datapath:Data|temp_reg:temp2|dout[11],                                             ;
-;                                       ; due to stuck port data_in ; datapath:Data|temp_reg:program_counter|dout[11],                                   ;
-;                                       ;                           ; datapath:Data|register_file:reg_file|rf_d2[11]                                     ;
-; datapath:Data|temp_reg:temp5|dout[12] ; Stuck at GND              ; datapath:Data|temp_reg:temp2|dout[12],                                             ;
-;                                       ; due to stuck port data_in ; datapath:Data|temp_reg:program_counter|dout[12],                                   ;
-;                                       ;                           ; datapath:Data|register_file:reg_file|rf_d2[12]                                     ;
-; datapath:Data|temp_reg:temp5|dout[14] ; Stuck at GND              ; datapath:Data|temp_reg:temp2|dout[14],                                             ;
-;                                       ; due to stuck port data_in ; datapath:Data|temp_reg:program_counter|dout[14],                                   ;
-;                                       ;                           ; datapath:Data|register_file:reg_file|rf_d2[14]                                     ;
-; datapath:Data|temp_reg:temp5|dout[13] ; Stuck at GND              ; datapath:Data|temp_reg:temp2|dout[13],                                             ;
-;                                       ; due to stuck port data_in ; datapath:Data|register_file:reg_file|rf_d2[13]                                     ;
-; datapath:Data|temp_reg:temp5|dout[15] ; Stuck at GND              ; datapath:Data|temp_reg:temp2|dout[15],                                             ;
-;                                       ; due to stuck port data_in ; datapath:Data|register_file:reg_file|rf_d2[15]                                     ;
-+---------------------------------------+---------------------------+------------------------------------------------------------------------------------+
++---------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Removed Registers Triggering Further Register Optimizations                                                                                             ;
++---------------------------------------+---------------------------+-------------------------------------------------------------------------------------+
+; Register name                         ; Reason for Removal        ; Registers Removed due to This Register                                              ;
++---------------------------------------+---------------------------+-------------------------------------------------------------------------------------+
+; FSM_new:ControlPath|state.s13         ; Stuck at GND              ; FSM_new:ControlPath|state.s8, FSM_new:ControlPath|state.s11,                        ;
+;                                       ; due to stuck port data_in ; FSM_new:ControlPath|state.s14, FSM_new:ControlPath|state.s15,                       ;
+;                                       ;                           ; datapath:Data|temp_reg:temp1|dout[0], datapath:Data|temp_reg:temp4|dout[0],         ;
+;                                       ;                           ; FSM_new:ControlPath|state.s1, datapath:Data|temp_reg:temp1|dout[1],                 ;
+;                                       ;                           ; datapath:Data|temp_reg:temp4|dout[1], datapath:Data|temp_reg:temp1|dout[2],         ;
+;                                       ;                           ; datapath:Data|temp_reg:temp4|dout[2], datapath:Data|temp_reg:temp1|dout[3],         ;
+;                                       ;                           ; datapath:Data|temp_reg:temp3|dout[0],                                               ;
+;                                       ;                           ; datapath:Data|register_file:reg_file|rf_d1[0],                                      ;
+;                                       ;                           ; datapath:Data|temp_reg:temp3|dout[1],                                               ;
+;                                       ;                           ; datapath:Data|register_file:reg_file|rf_d1[1],                                      ;
+;                                       ;                           ; datapath:Data|temp_reg:temp3|dout[2],                                               ;
+;                                       ;                           ; datapath:Data|register_file:reg_file|rf_d1[2],                                      ;
+;                                       ;                           ; datapath:Data|temp_reg:temp3|dout[3],                                               ;
+;                                       ;                           ; datapath:Data|register_file:reg_file|rf_d1[3],                                      ;
+;                                       ;                           ; datapath:Data|temp_reg:temp3|dout[4], FSM_new:ControlPath|state.s2,                 ;
+;                                       ;                           ; FSM_new:ControlPath|state.s3, datapath:Data|temp_reg:instruction_reg|dout[0],       ;
+;                                       ;                           ; datapath:Data|temp_reg:instruction_reg|dout[1],                                     ;
+;                                       ;                           ; datapath:Data|temp_reg:instruction_reg|dout[2],                                     ;
+;                                       ;                           ; datapath:Data|temp_reg:instruction_reg|dout[3],                                     ;
+;                                       ;                           ; datapath:Data|temp_reg:instruction_reg|dout[4],                                     ;
+;                                       ;                           ; datapath:Data|temp_reg:temp3|dout[5], datapath:Data|temp_reg:temp3|dout[6],         ;
+;                                       ;                           ; datapath:Data|temp_reg:instruction_reg|dout[6],                                     ;
+;                                       ;                           ; datapath:Data|temp_reg:temp3|dout[7],                                               ;
+;                                       ;                           ; datapath:Data|temp_reg:instruction_reg|dout[7],                                     ;
+;                                       ;                           ; datapath:Data|temp_reg:temp3|dout[8], datapath:Data|temp_reg:temp3|dout[9],         ;
+;                                       ;                           ; datapath:Data|temp_reg:temp3|dout[10], datapath:Data|temp_reg:temp3|dout[11],       ;
+;                                       ;                           ; datapath:Data|temp_reg:temp3|dout[12], datapath:Data|temp_reg:temp3|dout[13],       ;
+;                                       ;                           ; datapath:Data|temp_reg:temp3|dout[14], datapath:Data|temp_reg:temp3|dout[15],       ;
+;                                       ;                           ; FSM_new:ControlPath|state.s7, datapath:Data|register_file:reg_file|registers[2][0], ;
+;                                       ;                           ; FSM_new:ControlPath|state.s4, FSM_new:ControlPath|state.s9,                         ;
+;                                       ;                           ; FSM_new:ControlPath|state.s5, datapath:Data|temp_reg:instruction_reg|dout[10],      ;
+;                                       ;                           ; datapath:Data|register_file:reg_file|registers[1][0],                               ;
+;                                       ;                           ; datapath:Data|temp_reg:instruction_reg|dout[9],                                     ;
+;                                       ;                           ; datapath:Data|register_file:reg_file|registers[0][0],                               ;
+;                                       ;                           ; datapath:Data|register_file:reg_file|registers[3][0],                               ;
+;                                       ;                           ; datapath:Data|register_file:reg_file|registers[5][0],                               ;
+;                                       ;                           ; datapath:Data|register_file:reg_file|registers[6][0],                               ;
+;                                       ;                           ; datapath:Data|register_file:reg_file|registers[4][0],                               ;
+;                                       ;                           ; datapath:Data|register_file:reg_file|registers[7][0],                               ;
+;                                       ;                           ; datapath:Data|temp_reg:instruction_reg|dout[11],                                    ;
+;                                       ;                           ; datapath:Data|register_file:reg_file|registers[2][1],                               ;
+;                                       ;                           ; datapath:Data|register_file:reg_file|registers[1][1],                               ;
+;                                       ;                           ; datapath:Data|register_file:reg_file|registers[0][1],                               ;
+;                                       ;                           ; datapath:Data|register_file:reg_file|registers[3][1],                               ;
+;                                       ;                           ; datapath:Data|register_file:reg_file|registers[5][1],                               ;
+;                                       ;                           ; datapath:Data|register_file:reg_file|registers[6][1],                               ;
+;                                       ;                           ; datapath:Data|register_file:reg_file|registers[4][1],                               ;
+;                                       ;                           ; datapath:Data|register_file:reg_file|registers[7][1],                               ;
+;                                       ;                           ; datapath:Data|register_file:reg_file|registers[2][2],                               ;
+;                                       ;                           ; datapath:Data|register_file:reg_file|registers[1][2],                               ;
+;                                       ;                           ; datapath:Data|register_file:reg_file|registers[0][2],                               ;
+;                                       ;                           ; datapath:Data|register_file:reg_file|registers[3][2],                               ;
+;                                       ;                           ; datapath:Data|register_file:reg_file|registers[5][2],                               ;
+;                                       ;                           ; datapath:Data|register_file:reg_file|registers[6][2],                               ;
+;                                       ;                           ; datapath:Data|register_file:reg_file|registers[4][2],                               ;
+;                                       ;                           ; datapath:Data|register_file:reg_file|registers[7][2],                               ;
+;                                       ;                           ; datapath:Data|register_file:reg_file|registers[2][3],                               ;
+;                                       ;                           ; datapath:Data|register_file:reg_file|registers[1][3],                               ;
+;                                       ;                           ; datapath:Data|register_file:reg_file|registers[0][3],                               ;
+;                                       ;                           ; datapath:Data|register_file:reg_file|registers[3][3],                               ;
+;                                       ;                           ; datapath:Data|register_file:reg_file|registers[5][3],                               ;
+;                                       ;                           ; datapath:Data|register_file:reg_file|registers[6][3],                               ;
+;                                       ;                           ; datapath:Data|register_file:reg_file|registers[4][3],                               ;
+;                                       ;                           ; datapath:Data|register_file:reg_file|registers[7][3],                               ;
+;                                       ;                           ; FSM_new:ControlPath|state.s16, datapath:Data|temp_reg:instruction_reg|dout[12],     ;
+;                                       ;                           ; datapath:Data|temp_reg:instruction_reg|dout[13],                                    ;
+;                                       ;                           ; datapath:Data|temp_reg:instruction_reg|dout[14], datapath:Data|registers:car|dout,  ;
+;                                       ;                           ; datapath:Data|registers:z|dout, datapath:Data|temp_reg:instruction_reg|dout[8],     ;
+;                                       ;                           ; datapath:Data|register_file:reg_file|rf_d2[0],                                      ;
+;                                       ;                           ; datapath:Data|register_file:reg_file|rf_d2[1],                                      ;
+;                                       ;                           ; datapath:Data|register_file:reg_file|rf_d2[2],                                      ;
+;                                       ;                           ; datapath:Data|register_file:reg_file|rf_d2[3],                                      ;
+;                                       ;                           ; datapath:Data|register_file:reg_file|rf_d2[4],                                      ;
+;                                       ;                           ; datapath:Data|register_file:reg_file|rf_d2[5],                                      ;
+;                                       ;                           ; datapath:Data|register_file:reg_file|rf_d2[6],                                      ;
+;                                       ;                           ; datapath:Data|register_file:reg_file|rf_d2[7],                                      ;
+;                                       ;                           ; datapath:Data|register_file:reg_file|rf_d2[8],                                      ;
+;                                       ;                           ; datapath:Data|register_file:reg_file|rf_d2[9],                                      ;
+;                                       ;                           ; datapath:Data|register_file:reg_file|rf_d2[10],                                     ;
+;                                       ;                           ; datapath:Data|register_file:reg_file|rf_d2[11],                                     ;
+;                                       ;                           ; datapath:Data|register_file:reg_file|rf_d2[12],                                     ;
+;                                       ;                           ; datapath:Data|register_file:reg_file|rf_d2[13],                                     ;
+;                                       ;                           ; datapath:Data|register_file:reg_file|rf_d2[14],                                     ;
+;                                       ;                           ; datapath:Data|register_file:reg_file|rf_d2[15]                                      ;
+; FSM_new:ControlPath|state.s18         ; Stuck at GND              ; FSM_new:ControlPath|state.s19, datapath:Data|temp_reg:temp4|dout[3],                ;
+;                                       ; due to stuck port data_in ; datapath:Data|temp_reg:temp1|dout[4], datapath:Data|temp_reg:temp4|dout[4],         ;
+;                                       ;                           ; datapath:Data|temp_reg:temp1|dout[5], datapath:Data|temp_reg:temp1|dout[6],         ;
+;                                       ;                           ; datapath:Data|temp_reg:temp1|dout[7], datapath:Data|temp_reg:temp1|dout[11],        ;
+;                                       ;                           ; datapath:Data|register_file:reg_file|rf_d1[4],                                      ;
+;                                       ;                           ; datapath:Data|register_file:reg_file|rf_d1[5],                                      ;
+;                                       ;                           ; datapath:Data|register_file:reg_file|rf_d1[6],                                      ;
+;                                       ;                           ; datapath:Data|register_file:reg_file|rf_d1[7],                                      ;
+;                                       ;                           ; datapath:Data|register_file:reg_file|rf_d1[11],                                     ;
+;                                       ;                           ; datapath:Data|register_file:reg_file|registers[2][4],                               ;
+;                                       ;                           ; datapath:Data|register_file:reg_file|registers[1][4],                               ;
+;                                       ;                           ; datapath:Data|register_file:reg_file|registers[0][4],                               ;
+;                                       ;                           ; datapath:Data|register_file:reg_file|registers[3][4],                               ;
+;                                       ;                           ; datapath:Data|register_file:reg_file|registers[5][4],                               ;
+;                                       ;                           ; datapath:Data|register_file:reg_file|registers[6][4],                               ;
+;                                       ;                           ; datapath:Data|register_file:reg_file|registers[4][4],                               ;
+;                                       ;                           ; datapath:Data|register_file:reg_file|registers[7][4],                               ;
+;                                       ;                           ; FSM_new:ControlPath|state.s17, datapath:Data|temp_reg:temp2|dout[0],                ;
+;                                       ;                           ; datapath:Data|temp_reg:temp2|dout[1], datapath:Data|temp_reg:temp5|dout[1],         ;
+;                                       ;                           ; datapath:Data|temp_reg:temp2|dout[2], datapath:Data|temp_reg:temp5|dout[2],         ;
+;                                       ;                           ; datapath:Data|temp_reg:temp2|dout[3], datapath:Data|temp_reg:temp5|dout[3],         ;
+;                                       ;                           ; datapath:Data|temp_reg:program_counter|dout[3],                                     ;
+;                                       ;                           ; datapath:Data|temp_reg:temp2|dout[4], datapath:Data|temp_reg:temp5|dout[4],         ;
+;                                       ;                           ; datapath:Data|temp_reg:program_counter|dout[4],                                     ;
+;                                       ;                           ; datapath:Data|register_file:reg_file|registers[2][5],                               ;
+;                                       ;                           ; datapath:Data|register_file:reg_file|registers[1][5],                               ;
+;                                       ;                           ; datapath:Data|register_file:reg_file|registers[0][5],                               ;
+;                                       ;                           ; datapath:Data|register_file:reg_file|registers[3][5],                               ;
+;                                       ;                           ; datapath:Data|register_file:reg_file|registers[5][5],                               ;
+;                                       ;                           ; datapath:Data|register_file:reg_file|registers[6][5],                               ;
+;                                       ;                           ; datapath:Data|register_file:reg_file|registers[4][5],                               ;
+;                                       ;                           ; datapath:Data|register_file:reg_file|registers[7][5],                               ;
+;                                       ;                           ; datapath:Data|temp_reg:temp2|dout[5],                                               ;
+;                                       ;                           ; datapath:Data|register_file:reg_file|registers[2][6],                               ;
+;                                       ;                           ; datapath:Data|register_file:reg_file|registers[1][6],                               ;
+;                                       ;                           ; datapath:Data|register_file:reg_file|registers[0][6],                               ;
+;                                       ;                           ; datapath:Data|register_file:reg_file|registers[3][6],                               ;
+;                                       ;                           ; datapath:Data|register_file:reg_file|registers[5][6],                               ;
+;                                       ;                           ; datapath:Data|register_file:reg_file|registers[6][6],                               ;
+;                                       ;                           ; datapath:Data|register_file:reg_file|registers[4][6],                               ;
+;                                       ;                           ; datapath:Data|register_file:reg_file|registers[7][6],                               ;
+;                                       ;                           ; datapath:Data|temp_reg:temp2|dout[6],                                               ;
+;                                       ;                           ; datapath:Data|register_file:reg_file|registers[2][7],                               ;
+;                                       ;                           ; datapath:Data|register_file:reg_file|registers[1][7],                               ;
+;                                       ;                           ; datapath:Data|register_file:reg_file|registers[0][7],                               ;
+;                                       ;                           ; datapath:Data|register_file:reg_file|registers[3][7],                               ;
+;                                       ;                           ; datapath:Data|register_file:reg_file|registers[5][7],                               ;
+;                                       ;                           ; datapath:Data|register_file:reg_file|registers[6][7],                               ;
+;                                       ;                           ; datapath:Data|register_file:reg_file|registers[4][7],                               ;
+;                                       ;                           ; datapath:Data|register_file:reg_file|registers[7][7],                               ;
+;                                       ;                           ; datapath:Data|temp_reg:temp2|dout[7],                                               ;
+;                                       ;                           ; datapath:Data|register_file:reg_file|registers[2][11],                              ;
+;                                       ;                           ; datapath:Data|register_file:reg_file|registers[1][11],                              ;
+;                                       ;                           ; datapath:Data|register_file:reg_file|registers[0][11],                              ;
+;                                       ;                           ; datapath:Data|register_file:reg_file|registers[3][11],                              ;
+;                                       ;                           ; datapath:Data|register_file:reg_file|registers[5][11],                              ;
+;                                       ;                           ; datapath:Data|register_file:reg_file|registers[6][11],                              ;
+;                                       ;                           ; datapath:Data|register_file:reg_file|registers[4][11],                              ;
+;                                       ;                           ; datapath:Data|register_file:reg_file|registers[7][11],                              ;
+;                                       ;                           ; datapath:Data|temp_reg:program_counter|dout[13]                                     ;
+; datapath:Data|temp_reg:temp5|dout[8]  ; Stuck at GND              ; datapath:Data|temp_reg:temp1|dout[8], datapath:Data|temp_reg:temp1|dout[15],        ;
+;                                       ; due to stuck port data_in ; datapath:Data|temp_reg:instruction_reg|dout[5],                                     ;
+;                                       ;                           ; datapath:Data|register_file:reg_file|rf_d1[8],                                      ;
+;                                       ;                           ; datapath:Data|register_file:reg_file|rf_d1[12],                                     ;
+;                                       ;                           ; datapath:Data|register_file:reg_file|rf_d1[14],                                     ;
+;                                       ;                           ; datapath:Data|register_file:reg_file|rf_d1[15],                                     ;
+;                                       ;                           ; datapath:Data|temp_reg:instruction_reg|dout[15],                                    ;
+;                                       ;                           ; datapath:Data|register_file:reg_file|registers[2][8],                               ;
+;                                       ;                           ; datapath:Data|register_file:reg_file|registers[1][8],                               ;
+;                                       ;                           ; datapath:Data|register_file:reg_file|registers[0][8],                               ;
+;                                       ;                           ; datapath:Data|register_file:reg_file|registers[3][8],                               ;
+;                                       ;                           ; datapath:Data|register_file:reg_file|registers[5][8],                               ;
+;                                       ;                           ; datapath:Data|register_file:reg_file|registers[6][8],                               ;
+;                                       ;                           ; datapath:Data|register_file:reg_file|registers[4][8],                               ;
+;                                       ;                           ; datapath:Data|register_file:reg_file|registers[7][8],                               ;
+;                                       ;                           ; datapath:Data|temp_reg:temp2|dout[8],                                               ;
+;                                       ;                           ; datapath:Data|register_file:reg_file|registers[2][12],                              ;
+;                                       ;                           ; datapath:Data|register_file:reg_file|registers[1][12],                              ;
+;                                       ;                           ; datapath:Data|register_file:reg_file|registers[0][12],                              ;
+;                                       ;                           ; datapath:Data|register_file:reg_file|registers[3][12],                              ;
+;                                       ;                           ; datapath:Data|register_file:reg_file|registers[5][12],                              ;
+;                                       ;                           ; datapath:Data|register_file:reg_file|registers[6][12],                              ;
+;                                       ;                           ; datapath:Data|register_file:reg_file|registers[4][12],                              ;
+;                                       ;                           ; datapath:Data|register_file:reg_file|registers[7][12],                              ;
+;                                       ;                           ; datapath:Data|register_file:reg_file|registers[2][14],                              ;
+;                                       ;                           ; datapath:Data|register_file:reg_file|registers[1][14],                              ;
+;                                       ;                           ; datapath:Data|register_file:reg_file|registers[0][14],                              ;
+;                                       ;                           ; datapath:Data|register_file:reg_file|registers[3][14],                              ;
+;                                       ;                           ; datapath:Data|register_file:reg_file|registers[5][14],                              ;
+;                                       ;                           ; datapath:Data|register_file:reg_file|registers[6][14],                              ;
+;                                       ;                           ; datapath:Data|register_file:reg_file|registers[4][14],                              ;
+;                                       ;                           ; datapath:Data|register_file:reg_file|registers[7][14],                              ;
+;                                       ;                           ; datapath:Data|register_file:reg_file|registers[2][15],                              ;
+;                                       ;                           ; datapath:Data|register_file:reg_file|registers[1][15],                              ;
+;                                       ;                           ; datapath:Data|register_file:reg_file|registers[0][15],                              ;
+;                                       ;                           ; datapath:Data|register_file:reg_file|registers[3][15],                              ;
+;                                       ;                           ; datapath:Data|register_file:reg_file|registers[5][15],                              ;
+;                                       ;                           ; datapath:Data|register_file:reg_file|registers[6][15],                              ;
+;                                       ;                           ; datapath:Data|register_file:reg_file|registers[4][15],                              ;
+;                                       ;                           ; datapath:Data|register_file:reg_file|registers[7][15]                               ;
+; datapath:Data|temp_reg:temp5|dout[10] ; Stuck at GND              ; datapath:Data|temp_reg:temp1|dout[10],                                              ;
+;                                       ; due to stuck port data_in ; datapath:Data|register_file:reg_file|rf_d1[10],                                     ;
+;                                       ;                           ; datapath:Data|register_file:reg_file|registers[2][10],                              ;
+;                                       ;                           ; datapath:Data|register_file:reg_file|registers[1][10],                              ;
+;                                       ;                           ; datapath:Data|register_file:reg_file|registers[0][10],                              ;
+;                                       ;                           ; datapath:Data|register_file:reg_file|registers[3][10],                              ;
+;                                       ;                           ; datapath:Data|register_file:reg_file|registers[5][10],                              ;
+;                                       ;                           ; datapath:Data|register_file:reg_file|registers[6][10],                              ;
+;                                       ;                           ; datapath:Data|register_file:reg_file|registers[4][10],                              ;
+;                                       ;                           ; datapath:Data|register_file:reg_file|registers[7][10],                              ;
+;                                       ;                           ; datapath:Data|temp_reg:temp2|dout[10],                                              ;
+;                                       ;                           ; datapath:Data|temp_reg:program_counter|dout[10]                                     ;
+; datapath:Data|temp_reg:temp5|dout[9]  ; Stuck at GND              ; datapath:Data|temp_reg:temp1|dout[9],                                               ;
+;                                       ; due to stuck port data_in ; datapath:Data|register_file:reg_file|rf_d1[9],                                      ;
+;                                       ;                           ; datapath:Data|register_file:reg_file|registers[2][9],                               ;
+;                                       ;                           ; datapath:Data|register_file:reg_file|registers[1][9],                               ;
+;                                       ;                           ; datapath:Data|register_file:reg_file|registers[0][9],                               ;
+;                                       ;                           ; datapath:Data|register_file:reg_file|registers[3][9],                               ;
+;                                       ;                           ; datapath:Data|register_file:reg_file|registers[5][9],                               ;
+;                                       ;                           ; datapath:Data|register_file:reg_file|registers[6][9],                               ;
+;                                       ;                           ; datapath:Data|register_file:reg_file|registers[4][9],                               ;
+;                                       ;                           ; datapath:Data|register_file:reg_file|registers[7][9],                               ;
+;                                       ;                           ; datapath:Data|temp_reg:temp2|dout[9]                                                ;
+; FSM_new:ControlPath|state.s6          ; Stuck at GND              ; FSM_new:ControlPath|state.s10, FSM_new:ControlPath|state.s12,                       ;
+;                                       ; due to stuck port data_in ; datapath:Data|temp_reg:program_counter|dout[0],                                     ;
+;                                       ;                           ; datapath:Data|temp_reg:program_counter|dout[1],                                     ;
+;                                       ;                           ; datapath:Data|temp_reg:program_counter|dout[2],                                     ;
+;                                       ;                           ; datapath:Data|temp_reg:program_counter|dout[5],                                     ;
+;                                       ;                           ; datapath:Data|temp_reg:program_counter|dout[6],                                     ;
+;                                       ;                           ; datapath:Data|temp_reg:program_counter|dout[7],                                     ;
+;                                       ;                           ; datapath:Data|temp_reg:program_counter|dout[8],                                     ;
+;                                       ;                           ; datapath:Data|temp_reg:program_counter|dout[9],                                     ;
+;                                       ;                           ; datapath:Data|temp_reg:program_counter|dout[15]                                     ;
+; datapath:Data|temp_reg:temp1|dout[13] ; Lost Fanouts              ; datapath:Data|register_file:reg_file|rf_d1[13],                                     ;
+;                                       ;                           ; datapath:Data|register_file:reg_file|registers[2][13],                              ;
+;                                       ;                           ; datapath:Data|register_file:reg_file|registers[1][13],                              ;
+;                                       ;                           ; datapath:Data|register_file:reg_file|registers[0][13],                              ;
+;                                       ;                           ; datapath:Data|register_file:reg_file|registers[3][13],                              ;
+;                                       ;                           ; datapath:Data|register_file:reg_file|registers[5][13],                              ;
+;                                       ;                           ; datapath:Data|register_file:reg_file|registers[6][13],                              ;
+;                                       ;                           ; datapath:Data|register_file:reg_file|registers[4][13],                              ;
+;                                       ;                           ; datapath:Data|register_file:reg_file|registers[7][13]                               ;
+; datapath:Data|temp_reg:temp5|dout[11] ; Stuck at GND              ; datapath:Data|temp_reg:temp2|dout[11],                                              ;
+;                                       ; due to stuck port data_in ; datapath:Data|temp_reg:program_counter|dout[11]                                     ;
+; datapath:Data|temp_reg:temp5|dout[12] ; Stuck at GND              ; datapath:Data|temp_reg:temp2|dout[12],                                              ;
+;                                       ; due to stuck port data_in ; datapath:Data|temp_reg:program_counter|dout[12]                                     ;
+; datapath:Data|temp_reg:temp5|dout[14] ; Stuck at GND              ; datapath:Data|temp_reg:temp2|dout[14],                                              ;
+;                                       ; due to stuck port data_in ; datapath:Data|temp_reg:program_counter|dout[14]                                     ;
+; datapath:Data|temp_reg:temp5|dout[13] ; Stuck at GND              ; datapath:Data|temp_reg:temp2|dout[13]                                               ;
+;                                       ; due to stuck port data_in ;                                                                                     ;
+; datapath:Data|temp_reg:temp5|dout[15] ; Stuck at GND              ; datapath:Data|temp_reg:temp2|dout[15]                                               ;
+;                                       ; due to stuck port data_in ;                                                                                     ;
++---------------------------------------+---------------------------+-------------------------------------------------------------------------------------+
 
 
 +------------------------------------------------------+
@@ -832,22 +851,21 @@ Encoding Type:  One-Hot
 +--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------------------------------------+
 ; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                               ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------------------------------------+
-; 4:1                ; 16 bits   ; 32 LEs        ; 32 LEs               ; 0 LEs                  ; Yes        ; |TopLevel|datapath:Data|temp_reg:temp1|dout[4]           ;
-; 4:1                ; 7 bits    ; 14 LEs        ; 14 LEs               ; 0 LEs                  ; Yes        ; |TopLevel|datapath:Data|temp_reg:temp4|dout[6]           ;
-; 3:1                ; 9 bits    ; 18 LEs        ; 18 LEs               ; 0 LEs                  ; Yes        ; |TopLevel|datapath:Data|temp_reg:temp4|dout[12]          ;
-; 8:1                ; 16 bits   ; 80 LEs        ; 80 LEs               ; 0 LEs                  ; Yes        ; |TopLevel|datapath:Data|register_file:reg_file|rf_d2[14] ;
-; 8:1                ; 16 bits   ; 80 LEs        ; 80 LEs               ; 0 LEs                  ; Yes        ; |TopLevel|datapath:Data|register_file:reg_file|rf_d1[8]  ;
-; 4:1                ; 8 bits    ; 16 LEs        ; 16 LEs               ; 0 LEs                  ; No         ; |TopLevel|datapath:Data|mux4to1:alu_b_mux|dout[13]       ;
-; 4:1                ; 8 bits    ; 16 LEs        ; 16 LEs               ; 0 LEs                  ; No         ; |TopLevel|datapath:Data|mux4to1:alu_b_mux|dout[2]        ;
-; 3:1                ; 30 bits   ; 60 LEs        ; 60 LEs               ; 0 LEs                  ; No         ; |TopLevel|datapath:Data|ALU:my_alu|two_complement_add[4] ;
-; 4:1                ; 5 bits    ; 10 LEs        ; 10 LEs               ; 0 LEs                  ; No         ; |TopLevel|datapath:Data|mux4to1:mema_mux|dout[2]         ;
-; 4:1                ; 7 bits    ; 14 LEs        ; 14 LEs               ; 0 LEs                  ; No         ; |TopLevel|datapath:Data|mux4to1:d3_of_rf|dout[13]        ;
-; 4:1                ; 9 bits    ; 18 LEs        ; 18 LEs               ; 0 LEs                  ; No         ; |TopLevel|datapath:Data|mux4to1:d3_of_rf|dout[5]         ;
-; 8:1                ; 5 bits    ; 25 LEs        ; 10 LEs               ; 15 LEs                 ; No         ; |TopLevel|datapath:Data|mux8to1:alu_a_mux|Mux15          ;
-; 8:1                ; 3 bits    ; 15 LEs        ; 9 LEs                ; 6 LEs                  ; No         ; |TopLevel|datapath:Data|mux8to1:a3_rf|Mux2               ;
+; 4:1                ; 16 bits   ; 32 LEs        ; 32 LEs               ; 0 LEs                  ; Yes        ; |TopLevel|datapath:Data|temp_reg:temp1|dout[3]           ;
+; 8:1                ; 16 bits   ; 80 LEs        ; 80 LEs               ; 0 LEs                  ; Yes        ; |TopLevel|datapath:Data|register_file:reg_file|rf_d2[7]  ;
+; 8:1                ; 16 bits   ; 80 LEs        ; 80 LEs               ; 0 LEs                  ; Yes        ; |TopLevel|datapath:Data|register_file:reg_file|rf_d1[10] ;
+; 3:1                ; 16 bits   ; 32 LEs        ; 32 LEs               ; 0 LEs                  ; Yes        ; |TopLevel|datapath:Data|temp_reg:temp4|dout[12]          ;
+; 4:1                ; 8 bits    ; 16 LEs        ; 16 LEs               ; 0 LEs                  ; No         ; |TopLevel|datapath:Data|mux4to1:alu_b_mux|dout[12]       ;
+; 4:1                ; 8 bits    ; 16 LEs        ; 16 LEs               ; 0 LEs                  ; No         ; |TopLevel|datapath:Data|mux4to1:alu_b_mux|dout[5]        ;
+; 3:1                ; 30 bits   ; 60 LEs        ; 60 LEs               ; 0 LEs                  ; No         ; |TopLevel|datapath:Data|ALU:my_alu|alu_out_read[10]      ;
+; 4:1                ; 5 bits    ; 10 LEs        ; 10 LEs               ; 0 LEs                  ; No         ; |TopLevel|datapath:Data|mux4to1:mema_mux|dout[1]         ;
+; 4:1                ; 7 bits    ; 14 LEs        ; 14 LEs               ; 0 LEs                  ; No         ; |TopLevel|datapath:Data|mux4to1:d3_of_rf|dout[9]         ;
+; 4:1                ; 9 bits    ; 18 LEs        ; 18 LEs               ; 0 LEs                  ; No         ; |TopLevel|datapath:Data|mux4to1:d3_of_rf|dout[3]         ;
+; 8:1                ; 5 bits    ; 25 LEs        ; 10 LEs               ; 15 LEs                 ; No         ; |TopLevel|datapath:Data|mux8to1:alu_a_mux|Mux14          ;
+; 8:1                ; 3 bits    ; 15 LEs        ; 9 LEs                ; 6 LEs                  ; No         ; |TopLevel|datapath:Data|mux8to1:a3_rf|Mux0               ;
 ; 4:1                ; 3 bits    ; 6 LEs         ; 6 LEs                ; 0 LEs                  ; No         ; |TopLevel|datapath:Data|mux4to1:a1_rf|dout[0]            ;
-; 5:1                ; 8 bits    ; 24 LEs        ; 24 LEs               ; 0 LEs                  ; No         ; |TopLevel|datapath:Data|mux8to1:alu_a_mux|Mux0           ;
-; 7:1                ; 2 bits    ; 8 LEs         ; 8 LEs                ; 0 LEs                  ; No         ; |TopLevel|datapath:Data|mux8to1:alu_a_mux|Mux9           ;
+; 5:1                ; 8 bits    ; 24 LEs        ; 24 LEs               ; 0 LEs                  ; No         ; |TopLevel|datapath:Data|mux8to1:alu_a_mux|Mux1           ;
+; 7:1                ; 2 bits    ; 8 LEs         ; 8 LEs                ; 0 LEs                  ; No         ; |TopLevel|datapath:Data|mux8to1:alu_a_mux|Mux8           ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------------------------------------+
 
 
@@ -1258,7 +1276,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 17.0.0 Build 595 04/25/2017 SJ Lite Edition
-    Info: Processing started: Thu Nov  9 08:05:33 2017
+    Info: Processing started: Sat Nov 11 23:54:34 2017
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off TopLevel -c TopLevel
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 2 of the 2 processors detected
@@ -1337,7 +1355,6 @@ Info (10041): Inferred latch for "next_state.s4" at FSM_new.vhd(109) File: /home
 Info (10041): Inferred latch for "next_state.s3" at FSM_new.vhd(109) File: /home/shrey/Documents/microlab337/controlPath/FSM_new.vhd Line: 109
 Info (10041): Inferred latch for "next_state.s2" at FSM_new.vhd(109) File: /home/shrey/Documents/microlab337/controlPath/FSM_new.vhd Line: 109
 Info (10041): Inferred latch for "next_state.s1" at FSM_new.vhd(109) File: /home/shrey/Documents/microlab337/controlPath/FSM_new.vhd Line: 109
-Info (10041): Inferred latch for "next_state.s0" at FSM_new.vhd(109) File: /home/shrey/Documents/microlab337/controlPath/FSM_new.vhd Line: 109
 Info (12128): Elaborating entity "datapath" for hierarchy "datapath:Data" File: /home/shrey/Documents/microlab337/TopLevel.vhd Line: 64
 Info (12128): Elaborating entity "mux2to1" for hierarchy "datapath:Data|mux2to1:t2_mux" File: /home/shrey/Documents/microlab337/components_datapath/datapath.vhd Line: 214
 Info (12128): Elaborating entity "mux4to1" for hierarchy "datapath:Data|mux4to1:muxt1" File: /home/shrey/Documents/microlab337/components_datapath/datapath.vhd Line: 233
@@ -1459,7 +1476,7 @@ Warning (14284): Synthesized away the following node(s):
         Warning (14320): Synthesized away node "datapath:Data|ram:memory|altsyncram:ram_block_rtl_0|altsyncram_m0i1:auto_generated|ram_block1a14" File: /home/shrey/Documents/microlab337/Final/db/altsyncram_m0i1.tdf Line: 488
         Warning (14320): Synthesized away node "datapath:Data|ram:memory|altsyncram:ram_block_rtl_0|altsyncram_m0i1:auto_generated|ram_block1a15" File: /home/shrey/Documents/microlab337/Final/db/altsyncram_m0i1.tdf Line: 520
 Warning (12241): 1 hierarchies have connectivity warnings - see the Connectivity Checks report folder
-Info (17049): 283 registers lost all their fanouts during netlist optimizations.
+Info (17049): 282 registers lost all their fanouts during netlist optimizations.
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
 Warning (21074): Design contains 2 input pin(s) that do not drive logic
@@ -1470,7 +1487,7 @@ Info (21057): Implemented 2 device resources after synthesis - the final resourc
     Info (21059): Implemented 0 output pins
 Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 40 warnings
     Info: Peak virtual memory: 1004 megabytes
-    Info: Processing ended: Thu Nov  9 08:05:44 2017
+    Info: Processing ended: Sat Nov 11 23:54:45 2017
     Info: Elapsed time: 00:00:11
     Info: Total CPU time (on all processors): 00:00:25
 

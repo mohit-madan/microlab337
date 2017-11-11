@@ -22,9 +22,9 @@ Vj^mPb6OSLK`aNgHHREaO@0
 !s100 G^kFeYHQI3c5A@DL2Y=D63
 Z7 OV;C;10.5b;63
 31
-Z8 !s110 1510194953
+Z8 !s110 1510424710
 !i10b 1
-Z9 !s108 1510194953.000000
+Z9 !s108 1510424710.000000
 Z10 !s90 -reportprogress|300|-93|-work|work|/home/shrey/Documents/microlab337/components_datapath/alu.vhd|
 Z11 !s107 /home/shrey/Documents/microlab337/components_datapath/alu.vhd|
 !i113 1
@@ -130,7 +130,7 @@ R23
 R12
 R13
 Efsm_new
-Z24 w1510184020
+Z24 w1510421403
 R2
 R3
 R4
@@ -158,8 +158,8 @@ R4
 DEx4 work 7 fsm_new 0 22 ?Vk;XAMB6S=KJX8H1=N;_2
 l29
 L21
-V4<VhRFiQ85NaAEWz?d:KR0
-!s100 KL?PSAb9XkReo@;l;FNEg1
+VLV;mI9a`RcJOYMU7@H2MM2
+!s100 ak?o`Di]>QzbTh;l>Zhz11
 R7
 31
 R8
@@ -329,7 +329,7 @@ R48
 R12
 R13
 Eram
-Z49 w1510193595
+Z49 w1510418148
 R2
 R3
 R4
@@ -370,7 +370,7 @@ R53
 R12
 R13
 Eregister_file
-Z54 w1510191500
+Z54 w1510424673
 R2
 R3
 R4
@@ -398,8 +398,8 @@ R4
 DEx4 work 13 register_file 0 22 L_@X`f7nV2V2W7Non43Q[1
 l24
 L21
-V565cOcV1Q6dJCE5c2@_1_1
-!s100 FEDca6;7flDeQTzn_2Hme3
+V^bdU`eC^kEMPF4FcLz2So3
+!s100 O]80gAM36V;5P2goPHVLI2
 R7
 31
 R8
