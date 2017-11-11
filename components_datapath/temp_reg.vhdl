@@ -16,7 +16,7 @@ end temp_reg;
   
 architecture behav of temp_reg is  
   begin  
-    process (clock)  
+    process (clock, reset, din)  
       begin  
 		if reset = '1' then
 			dout <= (others => '0' ) ;

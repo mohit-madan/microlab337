@@ -23,7 +23,7 @@ ARCHITECTURE rtl OF ram IS
 	TYPE RAM IS ARRAY(0 TO 31) OF std_logic_vector(DATA_WIDTH - 1 DOWNTO 0);
 	SIGNAL ram_block : RAM := (0 => "0000001010000000", others => x"0000");
 BEGIN
-	PROCESS (clock, wr_en)
+	PROCESS (clock, wr_en, data_in)
 	BEGIN
 		IF (clock'event AND clock = '1') THEN
 			IF (wr_en = '1') THEN
