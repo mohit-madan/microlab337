@@ -12,5 +12,6 @@ end trail_zero7;
 architecture behav of trail_zero7 is
 
 begin
-    dout <= std_logic_vector(resize(unsigned(din), dout'length));
+    dout(15 downto 7) <= din;
+    dout(6 downto 0)  <= "0000000";
 end behav;

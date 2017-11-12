@@ -59,7 +59,7 @@ if(add1bit = '1') then --add1
 	alu_out_read <= std_logic_vector(unsigned(reg_a) + "0000000000000001");  
 	two_complement_add <= std_logic_vector(unsigned(two_complement1) + "0000000000000001");
 
-elsif(op_sel = "0000" or op_sel ="0001" or op_sel = "0100" or op_sel = "0101" or op_sel = "1000" or op_sel = "1001"  ) then--add
+elsif(op_sel = "0000" or op_sel ="0001" or op_sel = "0100" or op_sel = "0101" or op_sel = "1000") then--add
 	alu_out_read <= std_logic_vector(unsigned(reg_a) + unsigned(reg_b));
    two_complement_add <= std_logic_vector(unsigned(two_complement1) + unsigned(two_complement2));
 
