@@ -111,7 +111,7 @@ component temp_reg is
 end component;
 
 -----------------------register file component-------------------------
-component register_file is   
+component regfile is   
     port
     (
     rf_d1          	: out std_logic_vector(15 downto 0);    --dataout 1 
@@ -485,7 +485,7 @@ port map(
 	dout 	=> decoder_out
 );
 
-reg_file : register_file 
+reg_file : regfile 
 port map(
 	rf_d1          	=> D1, 
 	rf_d2          	=> D2,

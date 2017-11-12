@@ -13,7 +13,7 @@ end registers;
   
 architecture behav of registers is  
   begin  
-    process (clock)  
+    process (clock, reset, din)  
       begin  
 		if reset = '1' then
 			dout <= '0' ;
