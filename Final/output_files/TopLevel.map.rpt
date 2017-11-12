@@ -1,5 +1,5 @@
 Analysis & Synthesis report for TopLevel
-Sun Nov 12 07:43:16 2017
+Sun Nov 12 09:13:47 2017
 Quartus Prime Version 16.1.0 Build 196 10/24/2016 SJ Lite Edition
 
 
@@ -76,7 +76,7 @@ agreement for further details.
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +------------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Sun Nov 12 07:43:16 2017       ;
+; Analysis & Synthesis Status        ; Successful - Sun Nov 12 09:13:47 2017       ;
 ; Quartus Prime Version              ; 16.1.0 Build 196 10/24/2016 SJ Lite Edition ;
 ; Revision Name                      ; TopLevel                                    ;
 ; Top-level Entity Name              ; TopLevel                                    ;
@@ -377,6 +377,7 @@ Encoding Type:  One-Hot
 ; datapath:Data|regfile:reg_file|registers[7][6]             ; Lost fanout                            ;
 ; datapath:Data|temp_reg:temp1|dout[6]                       ; Lost fanout                            ;
 ; datapath:Data|temp_reg:temp4|dout[6]                       ; Lost fanout                            ;
+; datapath:Data|temp_reg:instruction_reg|dout[6]             ; Lost fanout                            ;
 ; datapath:Data|regfile:reg_file|registers[0][7]             ; Lost fanout                            ;
 ; datapath:Data|regfile:reg_file|registers[1][7]             ; Lost fanout                            ;
 ; datapath:Data|regfile:reg_file|registers[2][7]             ; Lost fanout                            ;
@@ -397,6 +398,7 @@ Encoding Type:  One-Hot
 ; datapath:Data|regfile:reg_file|registers[7][8]             ; Lost fanout                            ;
 ; datapath:Data|temp_reg:temp1|dout[8]                       ; Lost fanout                            ;
 ; datapath:Data|temp_reg:temp4|dout[8]                       ; Lost fanout                            ;
+; datapath:Data|temp_reg:instruction_reg|dout[8]             ; Lost fanout                            ;
 ; datapath:Data|regfile:reg_file|registers[0][9]             ; Lost fanout                            ;
 ; datapath:Data|regfile:reg_file|registers[1][9]             ; Lost fanout                            ;
 ; datapath:Data|regfile:reg_file|registers[2][9]             ; Lost fanout                            ;
@@ -457,6 +459,8 @@ Encoding Type:  One-Hot
 ; datapath:Data|regfile:reg_file|registers[7][14]            ; Lost fanout                            ;
 ; datapath:Data|temp_reg:temp1|dout[14]                      ; Lost fanout                            ;
 ; datapath:Data|temp_reg:temp4|dout[14]                      ; Lost fanout                            ;
+; datapath:Data|temp_reg:temp2|dout[15]                      ; Lost fanout                            ;
+; datapath:Data|temp_reg:program_counter|dout[15]            ; Lost fanout                            ;
 ; datapath:Data|regfile:reg_file|registers[0][15]            ; Lost fanout                            ;
 ; datapath:Data|regfile:reg_file|registers[1][15]            ; Lost fanout                            ;
 ; datapath:Data|regfile:reg_file|registers[2][15]            ; Lost fanout                            ;
@@ -467,12 +471,9 @@ Encoding Type:  One-Hot
 ; datapath:Data|regfile:reg_file|registers[7][15]            ; Lost fanout                            ;
 ; datapath:Data|temp_reg:temp1|dout[15]                      ; Lost fanout                            ;
 ; datapath:Data|temp_reg:temp4|dout[15]                      ; Lost fanout                            ;
-; datapath:Data|temp_reg:temp2|dout[15]                      ; Lost fanout                            ;
-; datapath:Data|temp_reg:program_counter|dout[15]            ; Lost fanout                            ;
 ; datapath:Data|temp_reg:temp3|dout[0..4]                    ; Lost fanout                            ;
 ; datapath:Data|temp_reg:program_counter|dout[1]             ; Lost fanout                            ;
 ; datapath:Data|temp_reg:temp2|dout[1]                       ; Lost fanout                            ;
-; datapath:Data|temp_reg:instruction_reg|dout[6,8]           ; Lost fanout                            ;
 ; datapath:Data|temp_reg:program_counter|dout[0]             ; Lost fanout                            ;
 ; datapath:Data|temp_reg:temp2|dout[0]                       ; Lost fanout                            ;
 ; datapath:Data|temp_reg:program_counter|dout[2]             ; Lost fanout                            ;
@@ -555,26 +556,28 @@ Encoding Type:  One-Hot
 ;                                       ;                           ; datapath:Data|temp_reg:temp1|dout[3], datapath:Data|temp_reg:temp4|dout[3],    ;
 ;                                       ;                           ; datapath:Data|temp_reg:temp1|dout[4], datapath:Data|temp_reg:temp4|dout[4],    ;
 ;                                       ;                           ; datapath:Data|temp_reg:temp1|dout[5], datapath:Data|temp_reg:temp4|dout[5],    ;
-;                                       ;                           ; datapath:Data|temp_reg:temp1|dout[6], datapath:Data|temp_reg:temp1|dout[7],    ;
-;                                       ;                           ; datapath:Data|temp_reg:temp1|dout[11], datapath:Data|temp_reg:temp3|dout[0],   ;
-;                                       ;                           ; datapath:Data|temp_reg:temp3|dout[1], datapath:Data|temp_reg:temp3|dout[2],    ;
-;                                       ;                           ; datapath:Data|temp_reg:temp3|dout[3], datapath:Data|temp_reg:temp3|dout[4],    ;
-;                                       ;                           ; datapath:Data|temp_reg:instruction_reg|dout[8],                                ;
+;                                       ;                           ; datapath:Data|temp_reg:temp1|dout[6],                                          ;
 ;                                       ;                           ; datapath:Data|temp_reg:instruction_reg|dout[6],                                ;
-;                                       ;                           ; datapath:Data|temp_reg:temp3|dout[5], datapath:Data|temp_reg:temp3|dout[6],    ;
-;                                       ;                           ; datapath:Data|temp_reg:temp3|dout[7], datapath:Data|temp_reg:temp3|dout[8],    ;
-;                                       ;                           ; datapath:Data|temp_reg:temp3|dout[9], datapath:Data|temp_reg:temp3|dout[10],   ;
-;                                       ;                           ; datapath:Data|temp_reg:temp3|dout[11], datapath:Data|temp_reg:temp3|dout[12],  ;
-;                                       ;                           ; datapath:Data|temp_reg:temp3|dout[13], datapath:Data|temp_reg:temp3|dout[14],  ;
-;                                       ;                           ; datapath:Data|temp_reg:temp3|dout[15], FSM_new:ControlPath|state.s1,           ;
-;                                       ;                           ; FSM_new:ControlPath|state.s2, FSM_new:ControlPath|state.s3,                    ;
-;                                       ;                           ; FSM_new:ControlPath|state.s4, FSM_new:ControlPath|state.s5,                    ;
-;                                       ;                           ; FSM_new:ControlPath|state.s7, FSM_new:ControlPath|state.s8,                    ;
-;                                       ;                           ; FSM_new:ControlPath|state.s9, FSM_new:ControlPath|state.s11,                   ;
+;                                       ;                           ; datapath:Data|temp_reg:temp1|dout[7],                                          ;
+;                                       ;                           ; datapath:Data|temp_reg:instruction_reg|dout[8],                                ;
+;                                       ;                           ; datapath:Data|temp_reg:temp1|dout[11], datapath:Data|temp_reg:temp1|dout[12],  ;
+;                                       ;                           ; datapath:Data|temp_reg:temp3|dout[0], datapath:Data|temp_reg:temp3|dout[1],    ;
+;                                       ;                           ; datapath:Data|temp_reg:temp3|dout[2], datapath:Data|temp_reg:temp3|dout[3],    ;
+;                                       ;                           ; datapath:Data|temp_reg:temp3|dout[4], datapath:Data|temp_reg:temp3|dout[5],    ;
+;                                       ;                           ; datapath:Data|temp_reg:temp3|dout[6], datapath:Data|temp_reg:temp3|dout[7],    ;
+;                                       ;                           ; datapath:Data|temp_reg:temp3|dout[8], datapath:Data|temp_reg:temp3|dout[9],    ;
+;                                       ;                           ; datapath:Data|temp_reg:temp3|dout[10], datapath:Data|temp_reg:temp3|dout[11],  ;
+;                                       ;                           ; datapath:Data|temp_reg:temp3|dout[12], datapath:Data|temp_reg:temp3|dout[13],  ;
+;                                       ;                           ; datapath:Data|temp_reg:temp3|dout[14], datapath:Data|temp_reg:temp3|dout[15],  ;
+;                                       ;                           ; FSM_new:ControlPath|state.s1, FSM_new:ControlPath|state.s2,                    ;
+;                                       ;                           ; FSM_new:ControlPath|state.s3, FSM_new:ControlPath|state.s4,                    ;
+;                                       ;                           ; FSM_new:ControlPath|state.s5, FSM_new:ControlPath|state.s7,                    ;
+;                                       ;                           ; FSM_new:ControlPath|state.s8, FSM_new:ControlPath|state.s9,                    ;
 ;                                       ;                           ; FSM_new:ControlPath|state.s16                                                  ;
 ; FSM_new:ControlPath|state.s6          ; Stuck at GND              ; datapath:Data|temp_reg:temp4|dout[2], datapath:Data|temp_reg:temp4|dout[6],    ;
 ;                                       ; due to stuck port data_in ; datapath:Data|temp_reg:temp4|dout[7], datapath:Data|temp_reg:temp4|dout[8],    ;
 ;                                       ;                           ; datapath:Data|temp_reg:temp4|dout[9], datapath:Data|temp_reg:temp4|dout[10],   ;
+;                                       ;                           ; datapath:Data|temp_reg:temp4|dout[11],                                         ;
 ;                                       ;                           ; datapath:Data|temp_reg:program_counter|dout[15],                               ;
 ;                                       ;                           ; datapath:Data|temp_reg:program_counter|dout[1],                                ;
 ;                                       ;                           ; datapath:Data|temp_reg:program_counter|dout[0],                                ;
@@ -586,8 +589,8 @@ Encoding Type:  One-Hot
 ;                                       ;                           ; datapath:Data|temp_reg:program_counter|dout[7],                                ;
 ;                                       ;                           ; datapath:Data|temp_reg:program_counter|dout[8],                                ;
 ;                                       ;                           ; datapath:Data|temp_reg:program_counter|dout[9], FSM_new:ControlPath|state.s10, ;
-;                                       ;                           ; FSM_new:ControlPath|state.s12, FSM_new:ControlPath|state.s14,                  ;
-;                                       ;                           ; FSM_new:ControlPath|state.s15                                                  ;
+;                                       ;                           ; FSM_new:ControlPath|state.s11, FSM_new:ControlPath|state.s12,                  ;
+;                                       ;                           ; FSM_new:ControlPath|state.s14, FSM_new:ControlPath|state.s15                   ;
 ; FSM_new:ControlPath|state.s18         ; Stuck at GND              ; FSM_new:ControlPath|state.s19, datapath:Data|temp_reg:temp2|dout[1],           ;
 ;                                       ; due to stuck port data_in ; datapath:Data|temp_reg:temp2|dout[0], datapath:Data|temp_reg:temp2|dout[2],    ;
 ;                                       ;                           ; datapath:Data|temp_reg:temp2|dout[3], datapath:Data|temp_reg:temp2|dout[4],    ;
@@ -599,10 +602,11 @@ Encoding Type:  One-Hot
 ;                                       ; due to stuck port data_in ; datapath:Data|temp_reg:instruction_reg|dout[15],                               ;
 ;                                       ;                           ; datapath:Data|temp_reg:temp1|dout[8], datapath:Data|temp_reg:temp1|dout[15],   ;
 ;                                       ;                           ; datapath:Data|temp_reg:temp2|dout[8]                                           ;
-; datapath:Data|registers:car|dout      ; Lost Fanouts              ; datapath:Data|regfile:reg_file|registers[0][1],                                ;
-;                                       ;                           ; datapath:Data|temp_reg:temp1|dout[14],                                         ;
-;                                       ;                           ; datapath:Data|regfile:reg_file|registers[0][15],                               ;
-;                                       ;                           ; datapath:Data|temp_reg:temp4|dout[15], FSM_new:ControlPath|state.s17           ;
+; datapath:Data|temp_reg:temp5|dout[15] ; Stuck at GND              ; datapath:Data|temp_reg:temp2|dout[15],                                         ;
+;                                       ; due to stuck port data_in ; datapath:Data|regfile:reg_file|registers[0][15],                               ;
+;                                       ;                           ; datapath:Data|regfile:reg_file|registers[1][15],                               ;
+;                                       ;                           ; datapath:Data|regfile:reg_file|registers[2][15],                               ;
+;                                       ;                           ; datapath:Data|regfile:reg_file|registers[3][15]                                ;
 ; datapath:Data|temp_reg:temp5|dout[10] ; Stuck at GND              ; datapath:Data|temp_reg:temp1|dout[10],                                         ;
 ;                                       ; due to stuck port data_in ; datapath:Data|temp_reg:program_counter|dout[10],                               ;
 ;                                       ;                           ; datapath:Data|temp_reg:temp2|dout[10]                                          ;
@@ -614,9 +618,8 @@ Encoding Type:  One-Hot
 ;                                       ; due to stuck port data_in ; datapath:Data|temp_reg:temp2|dout[12]                                          ;
 ; datapath:Data|temp_reg:temp5|dout[14] ; Stuck at GND              ; datapath:Data|temp_reg:program_counter|dout[14],                               ;
 ;                                       ; due to stuck port data_in ; datapath:Data|temp_reg:temp2|dout[14]                                          ;
+; datapath:Data|registers:car|dout      ; Lost Fanouts              ; datapath:Data|regfile:reg_file|registers[0][1], FSM_new:ControlPath|state.s17  ;
 ; datapath:Data|temp_reg:temp5|dout[13] ; Stuck at GND              ; datapath:Data|temp_reg:temp2|dout[13]                                          ;
-;                                       ; due to stuck port data_in ;                                                                                ;
-; datapath:Data|temp_reg:temp5|dout[15] ; Stuck at GND              ; datapath:Data|temp_reg:temp2|dout[15]                                          ;
 ;                                       ; due to stuck port data_in ;                                                                                ;
 +---------------------------------------+---------------------------+--------------------------------------------------------------------------------+
 
@@ -976,7 +979,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 16.1.0 Build 196 10/24/2016 SJ Lite Edition
-    Info: Processing started: Sun Nov 12 07:43:02 2017
+    Info: Processing started: Sun Nov 12 09:13:29 2017
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off TopLevel -c TopLevel
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 2 of the 2 processors detected
@@ -1130,9 +1133,9 @@ Info (21057): Implemented 2 device resources after synthesis - the final resourc
     Info (21058): Implemented 2 input pins
     Info (21059): Implemented 0 output pins
 Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 18 warnings
-    Info: Peak virtual memory: 958 megabytes
-    Info: Processing ended: Sun Nov 12 07:43:16 2017
-    Info: Elapsed time: 00:00:14
-    Info: Total CPU time (on all processors): 00:00:33
+    Info: Peak virtual memory: 957 megabytes
+    Info: Processing ended: Sun Nov 12 09:13:47 2017
+    Info: Elapsed time: 00:00:18
+    Info: Total CPU time (on all processors): 00:00:36
 
 
