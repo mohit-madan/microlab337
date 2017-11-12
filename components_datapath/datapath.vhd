@@ -210,6 +210,57 @@ begin
 --instatntiation of all the parts
 
 
+---------------------
+
+
+--effectively 1 and 2 are changed in the sheet
+
+en_t1 <= not (C(1) and C(2));
+en_t4 <= not (C(6) and C(7));
+
+----reg file
+wren  <= (not(C(16)) and C(17)) or (C(18) and C(19)); -- write enable pin register file
+rden1  <= (not C(16) and not C(17)) and (C(18) xor C(19)) ; 
+rden2  <= (C(17) and not C(18)) and (C(16) xor C(19));
+a1_mux(1) <= C(16) and C(17) and not C(18) and not C(19);
+a1_mux(0) <= not C(16) and not C(17) and C(18) and not C(19);
+
+a3_mux(2) <= C(16) and not C(17) and not C(18) and not C(19); 
+a3_mux(1) <= (not C(16) and C(17) and (C(18) or C(19))) or (C(16) and not C(17) and not C(18) and C(19));
+a3_mux(0) <= (C(16) and not C(17) and C(18)) or (not C(16) and C(17) and (not(C(18) xor C(19))));
+
+d3_mux(1) <= C(18) and ((not C(16) and C(17)) or (C(16) and not C(17) and C(19)));
+d3_mux(0) <= (not C(16) and C(17) and (not C(18) or C(19))) or ((C(16) and C(17) and C(18)));
+
+
+---memory
+memwr <= C(10) and not C(11);
+memrd <= not C(10) and (C(11) or C(12));
+
+memd_mux <= C(11) or C(12);
+
+mema(1) <= not(C(11) xor C(12));
+mema(0) <= (not C(10) and C(11) and not C(12)) or (C(10) and not C(11) and C(12));
+
+----alu
+
+alu_enc <= not C(13) and C(14);
+alu_enz <= (not C(13) and C(14)) or (C(13) and (not C(14)) and C(15));
+
+alu1_mux(2) <= C(13) and C(14);
+alu1_mux(1) <= C(15) and (C(13) xor C(14));
+alu1_mux(0) <= (C(13) and not C(14)) or (C(14) and not (C(13) xor C(14)));
+
+alu2_mux(1) <= C(13) and (C(14) or C(15));
+alu2_mux(0) <= C(14);
+
+------ opcode for user -----------------
+op_code <= ir_out(15 downto 12);
+IR_3_5 <= not(ir_out(5) and ir_out(4) and ir_out(3)) ;
+IR_7   <= ir_out(7);
+op_type <= ir_out(1 downto 0);
+en1_bit <= not C(14) and (C(13) xor C(15));
+
 -------muxes inititalisation --------------
 t2_mux : mux2to1 
 generic map(16)
@@ -263,16 +314,30 @@ port map(
 	dout => muxout_mema
 );
 
-alu_b_mux : mux4to1
+-----TEMP1 AND TEMP2 -------------
+
+temp1 : temp_reg   
 generic map(16)
-port map(
-	d0   => "1111111111111111",
-	d1   => t2,
-	d2   => t5,
-	d3   => pc_out,
-	sel  => alu2_mux(1 downto 0),
-	dout => muxout_alu_b
+port map( 	
+	reset => reset ,
+	clock 	=> clk,
+	en      => en_t1, 
+	din 	=> muxout_t1,  
+	dout 	=> t1
+);  
+
+temp2 : temp_reg   
+generic map(16)
+port map( 	
+	reset => reset ,
+	clock 	=> clk,
+	en      => C(3), 
+	din 	=> muxout_t2,  
+	dout 	=> t2
 );
+
+
+
 
 d3_of_rf : mux4to1
 generic map(16)
@@ -327,6 +392,18 @@ port map(
 	
 	sel  => alu1_mux (2 downto 0),
 	dout => muxout_alu_a
+);
+------------
+
+alu_b_mux : mux4to1
+generic map(16)
+port map(
+	d0   => "1111111111111111",
+	d1   => t2,
+	d2   => t5,
+	d3   => pc_out,
+	sel  => alu2_mux(1 downto 0),
+	dout => muxout_alu_b
 );
 
 
@@ -426,25 +503,6 @@ port map(
 
 ------------------------------ five temporary registers of 16 bit each ------------------------------
 
-temp1 : temp_reg   
-generic map(16)
-port map( 	
-	reset => reset ,
-	clock 	=> clk,
-	en      => en_t1, 
-	din 	=> muxout_t1,  
-	dout 	=> t1
-);  
-
-temp2 : temp_reg   
-generic map(16)
-port map( 	
-	reset => reset ,
-	clock 	=> clk,
-	en      => C(3), 
-	din 	=> muxout_t2,  
-	dout 	=> t2
-);
 temp3 : temp_reg   
 generic map(16)
 port map( 	
@@ -502,52 +560,5 @@ port map(
 -- temp register
 
 
---effectively 1 and 2 are changed in the sheet
-
-en_t1 <= not (C(1) and C(2));
-en_t4 <= not (C(6) and C(7));
-
-----reg file
-wren  <= (not(C(16)) and C(17)) or (C(18) and C(19)); -- write enable pin register file
-rden1  <= (not C(16) and not C(17)) and (C(18) xor C(19)) ; 
-rden2  <= (C(17) and not C(18)) and (C(16) xor C(19));
-a1_mux(1) <= C(16) and C(17) and not C(18) and not C(19);
-a1_mux(0) <= not C(16) and not C(17) and C(18) and not C(19);
-
-a3_mux(2) <= C(16) and not C(17) and not C(18) and not C(19); 
-a3_mux(1) <= (not C(16) and C(17) and (C(18) or C(19))) or (C(16) and not C(17) and not C(18) and C(19));
-a3_mux(0) <= (C(16) and not C(17) and C(18)) or (not C(16) and C(17) and (not(C(18) xor C(19))));
-
-d3_mux(1) <= C(18) and ((not C(16) and C(17)) or (C(16) and not C(17) and C(19)));
-d3_mux(0) <= (not C(16) and C(17) and (not C(18) or C(19))) or ((C(16) and C(17) and C(18)));
-
-
----memory
-memwr <= C(10) and not C(11);
-memrd <= not C(10) and (C(11) or C(12));
-
-memd_mux <= C(11) or C(12);
-
-mema(1) <= not(C(11) xor C(12));
-mema(0) <= (not C(10) and C(11) and not C(12)) or (C(10) and not C(11) and C(12));
-
-----alu
-
-alu_enc <= not C(13) and C(14);
-alu_enz <= (not C(13) and C(14)) or (C(13) and (not C(14)) and C(15));
-
-alu1_mux(2) <= C(13) and C(14);
-alu1_mux(1) <= C(15) and (C(13) xor C(14));
-alu1_mux(0) <= (C(13) and not C(14)) or (C(14) and not (C(13) xor C(14)));
-
-alu2_mux(1) <= C(13) and (C(14) or C(15));
-alu2_mux(0) <= C(14);
-
------- opcode for user -----------------
-op_code <= ir_out(15 downto 12);
-IR_3_5 <= ir_out(5) and ir_out(4) and ir_out(3) ;
-IR_7   <= ir_out(7);
-op_type <= ir_out(1 downto 0);
-en1_bit <= not C(14) and (C(13) xor C(15));
 
 end architecture ; -- rtl
