@@ -1,4 +1,0 @@
-set tool_name "ModelSim-Altera (Verilog)"
-set corner_file_list {
-    {{"Slow Model"} {sign_ext7.vo sign_ext7_v.sdo}}
-}
