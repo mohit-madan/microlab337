@@ -249,7 +249,7 @@ alu_enz <= (not C(13) and C(14)) or (C(13) and (not C(14)) and C(15));
 
 alu1_mux(2) <= C(13) and C(14);
 alu1_mux(1) <= C(15) and (C(13) xor C(14));
-alu1_mux(0) <= (C(13) and not C(14)) or (C(14) and not (C(13) xor C(14)));
+alu1_mux(0) <= (C(13) and not C(14)) or (C(14) and (not C(13) and not C(15)));
 
 alu2_mux(1) <= C(13) and (C(14) or C(15));
 alu2_mux(0) <= C(14);
