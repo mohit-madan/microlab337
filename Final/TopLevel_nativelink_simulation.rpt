@@ -5,8 +5,8 @@ Info: NativeLink has detected VHDL design -- VHDL simulation models will be used
 
 Sim Mode              :  RTL
 Family                :  cycloneive
-Quartus root          :  /home/shrey/intelFPGA_lite/17.0/quartus/linux64/
-Quartus sim root      :  /home/shrey/intelFPGA_lite/17.0/quartus/eda/sim_lib
+Quartus root          :  /home/mohit/intelFPGA_lite/16.1/quartus/linux64/
+Quartus sim root      :  /home/mohit/intelFPGA_lite/16.1/quartus/eda/sim_lib
 Simulation Tool       :  modelsim-altera
 Simulation Language   :  vhdl
 Version               :  93
@@ -18,7 +18,6 @@ Sim dir               :  simulation/modelsim
 =======================================================
 
 Info: Starting NativeLink simulation with ModelSim-Altera software
-Sourced NativeLink script /home/shrey/intelFPGA_lite/17.0/quartus/common/tcl/internal/nativelink/modelsim.tcl
+Sourced NativeLink script /home/mohit/intelFPGA_lite/16.1/quartus/common/tcl/internal/nativelink/modelsim.tcl
 Warning: File TopLevel_run_msim_rtl_vhdl.do already exists - backing up current file as TopLevel_run_msim_rtl_vhdl.do.bak11
 Info: Spawning ModelSim-Altera Simulation software 
-Info: NativeLink simulation flow was successful
