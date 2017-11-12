@@ -1,0 +1,9 @@
+lw r0,r1,10
+lw r1,r2,11
+lw r5,r6,12
+jal r2,3
+
+
+add r4,r1,r0
+sm r5,0b00010011
+jal r6,0

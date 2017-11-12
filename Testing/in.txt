@@ -1,0 +1,16 @@
+add r0,r1,r2
+adc r3,r4,r5
+adz r6,r7,r4
+adi r2,r6,13
+ndu r4,r7,r1
+ndc r5,r2,r3
+ndz r1,r5,r3
+lhi r7,47
+lw r1,r2,44
+sw r4,r5,51
+lm r6,0b10110110
+sm r7,0b11011001
+beq r3,r1,32
+jal r2,0b000000011
+jlr r5,r6
+db 4
