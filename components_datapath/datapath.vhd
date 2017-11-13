@@ -259,7 +259,7 @@ op_code <= ir_out(15 downto 12);
 IR_3_5 <= not(ir_out(5) and ir_out(4) and ir_out(3)) ;
 IR_7   <= ir_out(7);
 op_type <= ir_out(1 downto 0);
-en1_bit <= not C(14) and (C(13) xor C(15));
+en1_bit <= (not C(14) and (C(13) xor C(15))) or (C(13) and C(14) and not C(15)); -- add1 bit
 
 -------muxes inititalisation --------------
 t2_mux : mux2to1 
@@ -398,7 +398,7 @@ port map(
 alu_b_mux : mux4to1
 generic map(16)
 port map(
-	d0   => "1111111111111111",
+	d0   => "0000000000000001",
 	d1   => t2,
 	d2   => t5,
 	d3   => pc_out,
