@@ -12,40 +12,40 @@
 # 
 # vcom -93 -work work {/home/mohit/microlab337/components_datapath/mux4to1.vhd}
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 08:33:38 on Nov 12,2017
+# Start time: 10:40:56 on Nov 13,2017
 # vcom -reportprogress 300 -93 -work work /home/mohit/microlab337/components_datapath/mux4to1.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
 # -- Compiling entity mux4to1
 # -- Compiling architecture rtl of mux4to1
-# End time: 08:33:38 on Nov 12,2017, Elapsed time: 0:00:00
+# End time: 10:40:56 on Nov 13,2017, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vcom -93 -work work {/home/mohit/microlab337/components_datapath/mux2to1.vhd}
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 08:33:38 on Nov 12,2017
+# Start time: 10:40:56 on Nov 13,2017
 # vcom -reportprogress 300 -93 -work work /home/mohit/microlab337/components_datapath/mux2to1.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
 # -- Compiling entity mux2to1
 # -- Compiling architecture rtl of mux2to1
-# End time: 08:33:38 on Nov 12,2017, Elapsed time: 0:00:00
+# End time: 10:40:56 on Nov 13,2017, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vcom -93 -work work {/home/mohit/microlab337/components_datapath/decoder3_16.vhd}
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 08:33:38 on Nov 12,2017
+# Start time: 10:40:56 on Nov 13,2017
 # vcom -reportprogress 300 -93 -work work /home/mohit/microlab337/components_datapath/decoder3_16.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
 # -- Compiling entity decoder3_16
 # -- Compiling architecture decoder3_16_arc of decoder3_16
-# End time: 08:33:38 on Nov 12,2017, Elapsed time: 0:00:00
+# End time: 10:40:56 on Nov 13,2017, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vcom -93 -work work {/home/mohit/microlab337/components_datapath/datapath.vhd}
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 08:33:38 on Nov 12,2017
+# Start time: 10:40:56 on Nov 13,2017
 # vcom -reportprogress 300 -93 -work work /home/mohit/microlab337/components_datapath/datapath.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -53,11 +53,11 @@
 # -- Loading package NUMERIC_STD
 # -- Compiling entity datapath
 # -- Compiling architecture rtl of datapath
-# End time: 08:33:38 on Nov 12,2017, Elapsed time: 0:00:00
+# End time: 10:40:56 on Nov 13,2017, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vcom -93 -work work {/home/mohit/microlab337/components_datapath/alu.vhd}
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 08:33:38 on Nov 12,2017
+# Start time: 10:40:56 on Nov 13,2017
 # vcom -reportprogress 300 -93 -work work /home/mohit/microlab337/components_datapath/alu.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -65,11 +65,11 @@
 # -- Loading package NUMERIC_STD
 # -- Compiling entity ALU
 # -- Compiling architecture Struct of ALU
-# End time: 08:33:38 on Nov 12,2017, Elapsed time: 0:00:00
+# End time: 10:40:56 on Nov 13,2017, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vcom -93 -work work {/home/mohit/microlab337/components_datapath/TwosComplement.vhd}
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 08:33:38 on Nov 12,2017
+# Start time: 10:40:56 on Nov 13,2017
 # vcom -reportprogress 300 -93 -work work /home/mohit/microlab337/components_datapath/TwosComplement.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -77,11 +77,11 @@
 # -- Loading package NUMERIC_STD
 # -- Compiling entity TwosComplement
 # -- Compiling architecture Behave of TwosComplement
-# End time: 08:33:38 on Nov 12,2017, Elapsed time: 0:00:00
+# End time: 10:40:56 on Nov 13,2017, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vcom -93 -work work {/home/mohit/microlab337/components_datapath/trail_zero7.vhd}
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 08:33:38 on Nov 12,2017
+# Start time: 10:40:56 on Nov 13,2017
 # vcom -reportprogress 300 -93 -work work /home/mohit/microlab337/components_datapath/trail_zero7.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -89,11 +89,11 @@
 # -- Loading package NUMERIC_STD
 # -- Compiling entity trail_zero7
 # -- Compiling architecture behav of trail_zero7
-# End time: 08:33:38 on Nov 12,2017, Elapsed time: 0:00:00
+# End time: 10:40:57 on Nov 13,2017, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
 # vcom -93 -work work {/home/mohit/microlab337/components_datapath/temp_reg.vhdl}
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 08:33:38 on Nov 12,2017
+# Start time: 10:40:57 on Nov 13,2017
 # vcom -reportprogress 300 -93 -work work /home/mohit/microlab337/components_datapath/temp_reg.vhdl 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -101,11 +101,11 @@
 # -- Loading package NUMERIC_STD
 # -- Compiling entity temp_reg
 # -- Compiling architecture behav of temp_reg
-# End time: 08:33:38 on Nov 12,2017, Elapsed time: 0:00:00
+# End time: 10:40:57 on Nov 13,2017, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vcom -93 -work work {/home/mohit/microlab337/components_datapath/sign_ext.vhd}
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 08:33:38 on Nov 12,2017
+# Start time: 10:40:57 on Nov 13,2017
 # vcom -reportprogress 300 -93 -work work /home/mohit/microlab337/components_datapath/sign_ext.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -113,11 +113,11 @@
 # -- Loading package NUMERIC_STD
 # -- Compiling entity sign_ext
 # -- Compiling architecture rtl of sign_ext
-# End time: 08:33:38 on Nov 12,2017, Elapsed time: 0:00:00
+# End time: 10:40:57 on Nov 13,2017, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vcom -93 -work work {/home/mohit/microlab337/components_datapath/registers.vhd}
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 08:33:38 on Nov 12,2017
+# Start time: 10:40:57 on Nov 13,2017
 # vcom -reportprogress 300 -93 -work work /home/mohit/microlab337/components_datapath/registers.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -125,11 +125,11 @@
 # -- Loading package NUMERIC_STD
 # -- Compiling entity registers
 # -- Compiling architecture behav of registers
-# End time: 08:33:38 on Nov 12,2017, Elapsed time: 0:00:00
+# End time: 10:40:57 on Nov 13,2017, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vcom -93 -work work {/home/mohit/microlab337/components_datapath/regfile.vhd}
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 08:33:38 on Nov 12,2017
+# Start time: 10:40:57 on Nov 13,2017
 # vcom -reportprogress 300 -93 -work work /home/mohit/microlab337/components_datapath/regfile.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -137,11 +137,11 @@
 # -- Loading package NUMERIC_STD
 # -- Compiling entity regfile
 # -- Compiling architecture behavioral of regfile
-# End time: 08:33:38 on Nov 12,2017, Elapsed time: 0:00:00
+# End time: 10:40:57 on Nov 13,2017, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vcom -93 -work work {/home/mohit/microlab337/components_datapath/ram.vhd}
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 08:33:38 on Nov 12,2017
+# Start time: 10:40:57 on Nov 13,2017
 # vcom -reportprogress 300 -93 -work work /home/mohit/microlab337/components_datapath/ram.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -149,11 +149,11 @@
 # -- Loading package NUMERIC_STD
 # -- Compiling entity ram
 # -- Compiling architecture rtl of ram
-# End time: 08:33:38 on Nov 12,2017, Elapsed time: 0:00:00
+# End time: 10:40:57 on Nov 13,2017, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vcom -93 -work work {/home/mohit/microlab337/components_datapath/priorityEncoder.vhd}
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 08:33:38 on Nov 12,2017
+# Start time: 10:40:57 on Nov 13,2017
 # vcom -reportprogress 300 -93 -work work /home/mohit/microlab337/components_datapath/priorityEncoder.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -161,33 +161,33 @@
 # -- Loading package NUMERIC_STD
 # -- Compiling entity priorityEncoder
 # -- Compiling architecture priority_enc_arc of priorityEncoder
-# End time: 08:33:38 on Nov 12,2017, Elapsed time: 0:00:00
+# End time: 10:40:57 on Nov 13,2017, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vcom -93 -work work {/home/mohit/microlab337/components_datapath/mux8to1.vhd}
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 08:33:38 on Nov 12,2017
+# Start time: 10:40:57 on Nov 13,2017
 # vcom -reportprogress 300 -93 -work work /home/mohit/microlab337/components_datapath/mux8to1.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
 # -- Compiling entity mux8to1
 # -- Compiling architecture rtl of mux8to1
-# End time: 08:33:38 on Nov 12,2017, Elapsed time: 0:00:00
+# End time: 10:40:57 on Nov 13,2017, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vcom -93 -work work {/home/mohit/microlab337/TopLevel.vhd}
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 08:33:38 on Nov 12,2017
+# Start time: 10:40:57 on Nov 13,2017
 # vcom -reportprogress 300 -93 -work work /home/mohit/microlab337/TopLevel.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
 # -- Compiling entity TopLevel
 # -- Compiling architecture Struct of TopLevel
-# End time: 08:33:39 on Nov 12,2017, Elapsed time: 0:00:01
+# End time: 10:40:57 on Nov 13,2017, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vcom -93 -work work {/home/mohit/microlab337/controlPath/FSM_new.vhd}
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 08:33:39 on Nov 12,2017
+# Start time: 10:40:57 on Nov 13,2017
 # vcom -reportprogress 300 -93 -work work /home/mohit/microlab337/controlPath/FSM_new.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -195,14 +195,14 @@
 # -- Loading package NUMERIC_STD
 # -- Compiling entity FSM_new
 # -- Compiling architecture rtl of FSM_new
-# End time: 08:33:39 on Nov 12,2017, Elapsed time: 0:00:00
+# End time: 10:40:57 on Nov 13,2017, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # 
 # 
 # stdin: <EOF>
 vsim work.toplevel
 # vsim work.toplevel 
-# Start time: 08:33:48 on Nov 12,2017
+# Start time: 10:41:03 on Nov 13,2017
 # Loading std.standard
 # Loading std.textio(body)
 # Loading ieee.std_logic_1164(body)
@@ -225,58 +225,42 @@ vsim work.toplevel
 # Loading work.regfile(behavioral)
 add wave -position insertpoint  \
 sim:/toplevel/clk \
-sim:/toplevel/reset
-add wave -position insertpoint  \
-sim:/toplevel/Data/reg_file/registers
+sim:/toplevel/reset \
+sim:/toplevel/opcode \
+sim:/toplevel/op_type \
+sim:/toplevel/carry \
+sim:/toplevel/zero \
+sim:/toplevel/valid \
+sim:/toplevel/cmp \
+sim:/toplevel/IR_3_5 \
+sim:/toplevel/IR_7 \
+sim:/toplevel/control_store
 add wave -position insertpoint  \
 sim:/toplevel/ControlPath/control_store \
 sim:/toplevel/ControlPath/state \
 sim:/toplevel/ControlPath/next_state
-force -freeze sim:/toplevel/reset 1 0
-force -freeze sim:/toplevel/clk 1 0, 0 {50 ps} -r 100
-force -freeze sim:/toplevel/Data/reg_file/registers(1) 0000000000000001 0
-force -freeze sim:/toplevel/Data/reg_file/registers(2) 0000000000000010 0
-run
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 0  Instance: /toplevel/Data/reg_file
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 0  Instance: /toplevel/Data/memory
-force -freeze sim:/toplevel/reset 0 0
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-add wave -position insertpoint  \
-sim:/toplevel/Data/temp1/din \
-sim:/toplevel/Data/temp1/dout
-add wave -position insertpoint  \
-sim:/toplevel/Data/temp2/din \
-sim:/toplevel/Data/temp2/dout
 add wave -position insertpoint  \
 sim:/toplevel/Data/temp3/din \
 sim:/toplevel/Data/temp3/dout
 add wave -position insertpoint  \
+sim:/toplevel/Data/temp2/din \
+sim:/toplevel/Data/temp2/dout
+add wave -position insertpoint  \
+sim:/toplevel/Data/temp1/din \
+sim:/toplevel/Data/temp1/dout
+add wave -position insertpoint  \
+sim:/toplevel/Data/sign_ext10/din \
+sim:/toplevel/Data/sign_ext10/dout
+add wave -position insertpoint  \
+sim:/toplevel/Data/program_counter/din \
+sim:/toplevel/Data/program_counter/dout
+add wave -position insertpoint  \
 sim:/toplevel/Data/my_alu/reg_a \
-sim:/toplevel/Data/my_alu/reg_b \
-sim:/toplevel/Data/my_alu/op_sel \
-sim:/toplevel/Data/my_alu/reg_c
-restart
+sim:/toplevel/Data/my_alu/reg_b
+add wave -position insertpoint  \
+sim:/toplevel/Data/memory/data_in \
+sim:/toplevel/Data/memory/data_out \
+sim:/toplevel/Data/memory/ram_block
 force -freeze sim:/toplevel/clk 1 0, 0 {50 ps} -r 100
 force -freeze sim:/toplevel/reset 1 0
 run
@@ -284,59 +268,30 @@ run
 #    Time: 0 ps  Iteration: 0  Instance: /toplevel/Data/reg_file
 # ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
 #    Time: 0 ps  Iteration: 0  Instance: /toplevel/Data/memory
-force -deposit sim:/toplevel/Data/reg_file/registers(1) 0000000000000001 0
-force -freeze sim:/toplevel/Data/reg_file/registers(2) 0000000000000010 0
-force -deposit sim:/toplevel/Data/reg_file/registers(2) 0000000000000010 0
-# couldn't load file "/home/mohit/intelFPGA_lite/16.1/modelsim_ase/linuxaloem/ScintillaTk/libScintillaTk0.36.so": libstdc++.so.6: wrong ELF class: ELFCLASS64
 force -freeze sim:/toplevel/reset 0 0
 run
 run
 run
 run
 run
-run
-run
-run
+force -freeze sim:/toplevel/reset 1 0
 add wave -position insertpoint  \
 sim:/toplevel/Data/reg_file/rf_d1 \
 sim:/toplevel/Data/reg_file/rf_d2 \
 sim:/toplevel/Data/reg_file/rf_d3 \
-sim:/toplevel/Data/reg_file/rf_a1 \
-sim:/toplevel/Data/reg_file/rf_a2 \
-sim:/toplevel/Data/reg_file/rf_a3
-restart
-force -freeze sim:/toplevel/clk 1 0, 0 {50 ps} -r 100
-force -freeze sim:/toplevel/reset 1 0
+sim:/toplevel/Data/reg_file/registers
 run
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 0  Instance: /toplevel/Data/reg_file
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 0  Instance: /toplevel/Data/memory
 force -freeze sim:/toplevel/reset 0 0
-force -freeze sim:/toplevel/Data/reg_file/registers(1) 0000000000000001 0
-force -freeze sim:/toplevel/Data/reg_file/registers(2) 0000000000000010 0
-run
-run
-run
-run
-run
-run
-run
 run
 run
 run
 run
 run
 restart
-add wave -position insertpoint  \
-sim:/toplevel/Data/program_counter/reset \
-sim:/toplevel/Data/program_counter/din \
-sim:/toplevel/Data/program_counter/dout
-restart
-force -freeze sim:/toplevel/Data/reg_file/registers(1) 0110000000000000 0
-force -freeze sim:/toplevel/Data/reg_file/registers(2) 0100000000000000 0
-force -freeze sim:/toplevel/reset 1 0
 force -freeze sim:/toplevel/clk 1 0, 0 {50 ps} -r 100
+force -freeze sim:/toplevel/reset 1 0
+force -freeze sim:/toplevel/Data/reg_file/registers(4) 0000000000000011 0
+force -freeze sim:/toplevel/Data/reg_file/registers(5) 0000000000000111 0
 run
 # ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
 #    Time: 0 ps  Iteration: 0  Instance: /toplevel/Data/reg_file
@@ -348,50 +303,5 @@ run
 run
 run
 run
-add wave -position insertpoint  \
-sim:/toplevel/Data/my_alu/reg_a \
-sim:/toplevel/Data/my_alu/reg_b \
-sim:/toplevel/Data/my_alu/add1bit \
-sim:/toplevel/Data/my_alu/op_sel \
-sim:/toplevel/Data/my_alu/reg_c \
-sim:/toplevel/Data/my_alu/carry \
-sim:/toplevel/Data/my_alu/zero \
-sim:/toplevel/Data/my_alu/cmp \
-sim:/toplevel/Data/my_alu/alu_out_read \
-sim:/toplevel/Data/my_alu/two_complement1 \
-sim:/toplevel/Data/my_alu/two_complement2 \
-sim:/toplevel/Data/my_alu/two_complement_add \
-sim:/toplevel/Data/my_alu/carry1 \
-sim:/toplevel/Data/my_alu/carry2
-force -freeze sim:/toplevel/reset 1 0
-run
-force -freeze sim:/toplevel/reset 0 0
-run
-run
-run
-run
-run
-add wave -position insertpoint  \
-sim:/toplevel/Data/z/din \
-sim:/toplevel/Data/z/dout
-add wave -position insertpoint  \
-sim:/toplevel/Data/car/en \
-sim:/toplevel/Data/car/din \
-sim:/toplevel/Data/car/dout
-add wave -position insertpoint  \
-sim:/toplevel/Data/z/en
-force -freeze sim:/toplevel/reset 1 0
-run
-force -freeze sim:/toplevel/reset 0 0
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-# End time: 09:10:02 on Nov 12,2017, Elapsed time: 0:36:14
-# Errors: 1, Warnings: 8
+# End time: 10:59:40 on Nov 13,2017, Elapsed time: 0:18:37
+# Errors: 0, Warnings: 4

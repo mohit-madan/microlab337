@@ -6,14 +6,14 @@ entity FSM_new is
 
 	port
 	(
-		clk		 			: in	std_logic;
-		opcode				: in	std_logic_vector(3 downto 0);
-		op_type 				: in 	std_logic_vector(1 downto 0);
-		reset	 				: in	std_logic;
-		carry,zero,valid	: in 	std_logic;
-		IR_3_5				: in  std_logic;
-		IR_7					: in  std_logic;
-		control_store 		: out std_logic_vector (19 downto 0)
+		clk		 				: in	std_logic;
+		opcode					: in	std_logic_vector(3 downto 0);
+		op_type 					: in 	std_logic_vector(1 downto 0);
+		reset	 					: in	std_logic;
+		carry,zero,valid,cmp	: in 	std_logic;
+		IR_3_5					: in  std_logic;
+		IR_7						: in  std_logic;
+		control_store 			: out std_logic_vector (19 downto 0)
 	);
 	
 end entity;
@@ -46,7 +46,7 @@ begin
 					control_store <= "10001001001000000111";
 					
 				when s2=>
-					control_store <= "01000000000010011100";
+					control_store <= "01000000001010011100";
 					
 				when s3=>
 					control_store <= "00000100000000110110";
@@ -106,7 +106,7 @@ begin
 			
 		
 	end process;
-NEXT_STATE_DECODE : process (state, opcode,op_type,carry,zero,valid)
+NEXT_STATE_DECODE : process (state, opcode,op_type,carry,zero,valid,cmp)
 begin
 	case state is
 				--when s0 =>
@@ -118,7 +118,7 @@ begin
 
 					if ((opcode = "0000") and ((op_type = "01" and zero = '0') or (op_type = "10" and carry = '0'))) then
 						next_state <= s5;
-					elsif ((opcode = "0001") or (opcode = "0100")) then
+					elsif ((opcode = "0001") or (opcode = "0100") or (opcode = "0101")) then
 						next_state <= s7;
 					elsif ((opcode = "0010") and ((op_type = "10" and carry = '0') or (op_type = "01" and zero = '0'))) then
 						next_state <= s5;
@@ -126,6 +126,8 @@ begin
 						next_state <= s9;
 					elsif ((opcode = "0110") or (opcode = "0111")) then
 						next_state <= s8;
+					elsif (opcode = "0101") then
+						next_state <= s7 ;
 					else 
 						next_state <= s3;
 					end if;
@@ -134,7 +136,7 @@ begin
 					if (opcode = "0100") then
 						next_state <= s12;
 					elsif opcode = "1100" then
-						if (zero = '0') then
+						if (cmp = '0') then
 							next_state <= s5;
 						else 
 							next_state <= s17;

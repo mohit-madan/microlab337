@@ -9,7 +9,7 @@ z2
 cModel Technology
 Z0 d/home/mohit/microlab337/Final/simulation/modelsim
 Ealu
-Z1 w1510438727
+Z1 w1510542668
 Z2 DPx4 ieee 11 numeric_std 0 22 :ASDNFgHXf_ih3J@9F3Ze1
 Z3 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
 Z4 DPx4 ieee 14 std_logic_1164 0 22 eNV`TJ_GofJTzYa?f<@Oe1
@@ -22,9 +22,9 @@ Vj^mPb6OSLK`aNgHHREaO@0
 !s100 G^kFeYHQI3c5A@DL2Y=D63
 Z7 OV;C;10.5b;63
 31
-Z8 !s110 1510455818
+Z8 !s110 1510549856
 !i10b 1
-Z9 !s108 1510455818.000000
+Z9 !s108 1510549856.000000
 Z10 !s90 -reportprogress|300|-93|-work|work|/home/mohit/microlab337/components_datapath/alu.vhd|
 Z11 !s107 /home/mohit/microlab337/components_datapath/alu.vhd|
 !i113 1
@@ -37,8 +37,8 @@ R4
 DEx4 work 3 alu 0 22 j^mPb6OSLK`aNgHHREaO@0
 l30
 L16
-VJ?ZKaHLKMBFhh=UK9S;1o2
-!s100 5;[8Ab9nc2MH4ZVKbBJcL0
+V4]WjEmVm6VbYEGU>JjSQH1
+!s100 m@A:?elXG3LeSXO@h1bRK1
 R7
 31
 R8
@@ -50,7 +50,7 @@ R11
 R12
 R13
 Edatapath
-Z14 w1510455746
+Z14 w1510542669
 R2
 R3
 R4
@@ -78,8 +78,8 @@ R4
 DEx4 work 8 datapath 0 22 @_FMQfJ8cQAPd8mI<aN^82
 l180
 L19
-V0X;hTl_1FlKVf7SQM>UGN0
-!s100 8LQaW_DgMh;zCbE?ofmlo2
+VcWgQ:J=GCeHnZYCL0=gaN0
+!s100 NI;zCdFOi=3E=h?zS1Nmn3
 R7
 31
 R8
@@ -91,12 +91,12 @@ R18
 R12
 R13
 Edecoder3_16
-R1
+Z19 w1510438727
 R3
 R4
 R0
-Z19 8/home/mohit/microlab337/components_datapath/decoder3_16.vhd
-Z20 F/home/mohit/microlab337/components_datapath/decoder3_16.vhd
+Z20 8/home/mohit/microlab337/components_datapath/decoder3_16.vhd
+Z21 F/home/mohit/microlab337/components_datapath/decoder3_16.vhd
 l0
 L4
 V=nP_McDcAMEC;hLdm4^k:3
@@ -106,8 +106,8 @@ R7
 R8
 !i10b 1
 R9
-Z21 !s90 -reportprogress|300|-93|-work|work|/home/mohit/microlab337/components_datapath/decoder3_16.vhd|
-Z22 !s107 /home/mohit/microlab337/components_datapath/decoder3_16.vhd|
+Z22 !s90 -reportprogress|300|-93|-work|work|/home/mohit/microlab337/components_datapath/decoder3_16.vhd|
+Z23 !s107 /home/mohit/microlab337/components_datapath/decoder3_16.vhd|
 !i113 1
 R12
 R13
@@ -124,30 +124,30 @@ R7
 R8
 !i10b 1
 R9
-R21
 R22
+R23
 !i113 1
 R12
 R13
 Efsm_new
-Z23 w1510454079
+Z24 w1510548129
 R2
 R3
 R4
 R0
-Z24 8/home/mohit/microlab337/controlPath/FSM_new.vhd
-Z25 F/home/mohit/microlab337/controlPath/FSM_new.vhd
+Z25 8/home/mohit/microlab337/controlPath/FSM_new.vhd
+Z26 F/home/mohit/microlab337/controlPath/FSM_new.vhd
 l0
 L5
-V?Vk;XAMB6S=KJX8H1=N;_2
-!s100 K?8XCz4O]z]YS_3_idejX0
+VTB;[cRULlYaeo5ozbCcW80
+!s100 RKjYDf1XV7^;bO@2PWWM10
 R7
 31
-Z26 !s110 1510455819
+Z27 !s110 1510549857
 !i10b 1
-Z27 !s108 1510455819.000000
-Z28 !s90 -reportprogress|300|-93|-work|work|/home/mohit/microlab337/controlPath/FSM_new.vhd|
-Z29 !s107 /home/mohit/microlab337/controlPath/FSM_new.vhd|
+Z28 !s108 1510549857.000000
+Z29 !s90 -reportprogress|300|-93|-work|work|/home/mohit/microlab337/controlPath/FSM_new.vhd|
+Z30 !s107 /home/mohit/microlab337/controlPath/FSM_new.vhd|
 !i113 1
 R12
 R13
@@ -155,28 +155,28 @@ Artl
 R2
 R3
 R4
-DEx4 work 7 fsm_new 0 22 ?Vk;XAMB6S=KJX8H1=N;_2
+DEx4 work 7 fsm_new 0 22 TB;[cRULlYaeo5ozbCcW80
 l29
 L21
-VXMak_YNXG:cPcBolFjKE22
-!s100 SKGXXVF5oz1@ibbkF9TYb3
+Va4i9<2iX:0e1ESShzLh@F2
+!s100 ]oWL5YamjY@jRaE;IV>8>0
 R7
 31
-R26
-!i10b 1
 R27
+!i10b 1
 R28
 R29
+R30
 !i113 1
 R12
 R13
 Emux2to1
-R1
+R19
 R3
 R4
 R0
-Z30 8/home/mohit/microlab337/components_datapath/mux2to1.vhd
-Z31 F/home/mohit/microlab337/components_datapath/mux2to1.vhd
+Z31 8/home/mohit/microlab337/components_datapath/mux2to1.vhd
+Z32 F/home/mohit/microlab337/components_datapath/mux2to1.vhd
 l0
 L4
 V4an9^a8RB97<9TLX7nXE?0
@@ -186,8 +186,8 @@ R7
 R8
 !i10b 1
 R9
-Z32 !s90 -reportprogress|300|-93|-work|work|/home/mohit/microlab337/components_datapath/mux2to1.vhd|
-Z33 !s107 /home/mohit/microlab337/components_datapath/mux2to1.vhd|
+Z33 !s90 -reportprogress|300|-93|-work|work|/home/mohit/microlab337/components_datapath/mux2to1.vhd|
+Z34 !s107 /home/mohit/microlab337/components_datapath/mux2to1.vhd|
 !i113 1
 R12
 R13
@@ -204,18 +204,18 @@ R7
 R8
 !i10b 1
 R9
-R32
 R33
+R34
 !i113 1
 R12
 R13
 Emux4to1
-R1
+R19
 R3
 R4
 R0
-Z34 8/home/mohit/microlab337/components_datapath/mux4to1.vhd
-Z35 F/home/mohit/microlab337/components_datapath/mux4to1.vhd
+Z35 8/home/mohit/microlab337/components_datapath/mux4to1.vhd
+Z36 F/home/mohit/microlab337/components_datapath/mux4to1.vhd
 l0
 L4
 V3`e38223fY@Ydj8l4_0VJ1
@@ -225,8 +225,8 @@ R7
 R8
 !i10b 1
 R9
-Z36 !s90 -reportprogress|300|-93|-work|work|/home/mohit/microlab337/components_datapath/mux4to1.vhd|
-Z37 !s107 /home/mohit/microlab337/components_datapath/mux4to1.vhd|
+Z37 !s90 -reportprogress|300|-93|-work|work|/home/mohit/microlab337/components_datapath/mux4to1.vhd|
+Z38 !s107 /home/mohit/microlab337/components_datapath/mux4to1.vhd|
 !i113 1
 R12
 R13
@@ -243,29 +243,29 @@ R7
 R8
 !i10b 1
 R9
-R36
 R37
+R38
 !i113 1
 R12
 R13
 Emux8to1
-R1
+R19
 R3
 R4
 R0
-Z38 8/home/mohit/microlab337/components_datapath/mux8to1.vhd
-Z39 F/home/mohit/microlab337/components_datapath/mux8to1.vhd
+Z39 8/home/mohit/microlab337/components_datapath/mux8to1.vhd
+Z40 F/home/mohit/microlab337/components_datapath/mux8to1.vhd
 l0
 L4
 Vl3fQ``SR@O9O7nU<KKP5d1
 !s100 9HMEASz_m2nO6R5hXC`o[2
 R7
 31
-R8
+R27
 !i10b 1
-R9
-Z40 !s90 -reportprogress|300|-93|-work|work|/home/mohit/microlab337/components_datapath/mux8to1.vhd|
-Z41 !s107 /home/mohit/microlab337/components_datapath/mux8to1.vhd|
+R28
+Z41 !s90 -reportprogress|300|-93|-work|work|/home/mohit/microlab337/components_datapath/mux8to1.vhd|
+Z42 !s107 /home/mohit/microlab337/components_datapath/mux8to1.vhd|
 !i113 1
 R12
 R13
@@ -279,33 +279,33 @@ V@7QA3O>HGneAWhNP^IiPB1
 !s100 2Vb2UN89i`Z7H6o0YIFfa1
 R7
 31
-R8
+R27
 !i10b 1
-R9
-R40
+R28
 R41
+R42
 !i113 1
 R12
 R13
 Epriorityencoder
-R1
+R19
 R2
 R3
 R4
 R0
-Z42 8/home/mohit/microlab337/components_datapath/priorityEncoder.vhd
-Z43 F/home/mohit/microlab337/components_datapath/priorityEncoder.vhd
+Z43 8/home/mohit/microlab337/components_datapath/priorityEncoder.vhd
+Z44 F/home/mohit/microlab337/components_datapath/priorityEncoder.vhd
 l0
 L5
 VDEXRzEWK5h[;bY:3L0e=Y0
 !s100 bhf9GYA]IM=oXNVGOFhzc3
 R7
 31
-R8
+R27
 !i10b 1
-R9
-Z44 !s90 -reportprogress|300|-93|-work|work|/home/mohit/microlab337/components_datapath/priorityEncoder.vhd|
-Z45 !s107 /home/mohit/microlab337/components_datapath/priorityEncoder.vhd|
+R28
+Z45 !s90 -reportprogress|300|-93|-work|work|/home/mohit/microlab337/components_datapath/priorityEncoder.vhd|
+Z46 !s107 /home/mohit/microlab337/components_datapath/priorityEncoder.vhd|
 !i113 1
 R12
 R13
@@ -320,33 +320,33 @@ Vzgb:=UIEMHP?Kf:nA=idQ0
 !s100 :1ncNmTGz=fzROhJd^J9G0
 R7
 31
-R8
+R27
 !i10b 1
-R9
-R44
+R28
 R45
+R46
 !i113 1
 R12
 R13
 Eram
-Z46 w1510441456
+Z47 w1510549807
 R2
 R3
 R4
 R0
-Z47 8/home/mohit/microlab337/components_datapath/ram.vhd
-Z48 F/home/mohit/microlab337/components_datapath/ram.vhd
+Z48 8/home/mohit/microlab337/components_datapath/ram.vhd
+Z49 F/home/mohit/microlab337/components_datapath/ram.vhd
 l0
 L5
 V1>3figAR[oD;mDi`bz4;B3
 !s100 2l>]K?PgE;:jh?B>1:6gP3
 R7
 31
-R8
+R27
 !i10b 1
-R9
-Z49 !s90 -reportprogress|300|-93|-work|work|/home/mohit/microlab337/components_datapath/ram.vhd|
-Z50 !s107 /home/mohit/microlab337/components_datapath/ram.vhd|
+R28
+Z50 !s90 -reportprogress|300|-93|-work|work|/home/mohit/microlab337/components_datapath/ram.vhd|
+Z51 !s107 /home/mohit/microlab337/components_datapath/ram.vhd|
 !i113 1
 R12
 R13
@@ -355,39 +355,39 @@ R2
 R3
 R4
 DEx4 work 3 ram 0 22 1>3figAR[oD;mDi`bz4;B3
-l25
+l26
 L22
-VA;[:;PXP0g_Z<nj_IZYVQ0
-!s100 AH[`M^XzGP3I^h?lh[Ba>1
+VmSaF1iS>6dV<KJYiJ=6`Q3
+!s100 E3<i6P1AmhVNTiLE<KJAR3
 R7
 31
-R8
+R27
 !i10b 1
-R9
-R49
+R28
 R50
+R51
 !i113 1
 R12
 R13
 Eregfile
-Z51 w1510441454
+Z52 w1510441454
 R2
 R3
 R4
 R0
-Z52 8/home/mohit/microlab337/components_datapath/regfile.vhd
-Z53 F/home/mohit/microlab337/components_datapath/regfile.vhd
+Z53 8/home/mohit/microlab337/components_datapath/regfile.vhd
+Z54 F/home/mohit/microlab337/components_datapath/regfile.vhd
 l0
 L5
 VEV=Jh]D5R7aojeMU09lmI0
 !s100 EX>NEN@D26g2FQMI]3T<41
 R7
 31
-R8
+R27
 !i10b 1
-R9
-Z54 !s90 -reportprogress|300|-93|-work|work|/home/mohit/microlab337/components_datapath/regfile.vhd|
-Z55 !s107 /home/mohit/microlab337/components_datapath/regfile.vhd|
+R28
+Z55 !s90 -reportprogress|300|-93|-work|work|/home/mohit/microlab337/components_datapath/regfile.vhd|
+Z56 !s107 /home/mohit/microlab337/components_datapath/regfile.vhd|
 !i113 1
 R12
 R13
@@ -402,33 +402,33 @@ VWRTHaUVkFnNS:dk6LH[n33
 !s100 ZkDKTDjK5RDi:aFbVc6Vk3
 R7
 31
-R8
+R27
 !i10b 1
-R9
-R54
+R28
 R55
+R56
 !i113 1
 R12
 R13
 Eregisters
-Z56 w1510441455
+Z57 w1510441455
 R2
 R3
 R4
 R0
-Z57 8/home/mohit/microlab337/components_datapath/registers.vhd
-Z58 F/home/mohit/microlab337/components_datapath/registers.vhd
+Z58 8/home/mohit/microlab337/components_datapath/registers.vhd
+Z59 F/home/mohit/microlab337/components_datapath/registers.vhd
 l0
 L5
 Vbg=P4K<L7DRh02hGYBP=N3
 !s100 >SBd>HSeh5B[:a;DdlH630
 R7
 31
-R8
+R27
 !i10b 1
-R9
-Z59 !s90 -reportprogress|300|-93|-work|work|/home/mohit/microlab337/components_datapath/registers.vhd|
-Z60 !s107 /home/mohit/microlab337/components_datapath/registers.vhd|
+R28
+Z60 !s90 -reportprogress|300|-93|-work|work|/home/mohit/microlab337/components_datapath/registers.vhd|
+Z61 !s107 /home/mohit/microlab337/components_datapath/registers.vhd|
 !i113 1
 R12
 R13
@@ -443,33 +443,33 @@ VB4Adb9g`Tb@FUT_Xf6z>l2
 !s100 =1z3`4_O8b9F[?i;db6c51
 R7
 31
-R8
+R27
 !i10b 1
-R9
-R59
+R28
 R60
+R61
 !i113 1
 R12
 R13
 Esign_ext
-R1
+R19
 R2
 R3
 R4
 R0
-Z61 8/home/mohit/microlab337/components_datapath/sign_ext.vhd
-Z62 F/home/mohit/microlab337/components_datapath/sign_ext.vhd
+Z62 8/home/mohit/microlab337/components_datapath/sign_ext.vhd
+Z63 F/home/mohit/microlab337/components_datapath/sign_ext.vhd
 l0
 L5
 VoIfc2GAgIYV78EM><Mh_k3
 !s100 Pn>_7NoT:8PHZoRgRbb:Z1
 R7
 31
-R8
+R27
 !i10b 1
-R9
-Z63 !s90 -reportprogress|300|-93|-work|work|/home/mohit/microlab337/components_datapath/sign_ext.vhd|
-Z64 !s107 /home/mohit/microlab337/components_datapath/sign_ext.vhd|
+R28
+Z64 !s90 -reportprogress|300|-93|-work|work|/home/mohit/microlab337/components_datapath/sign_ext.vhd|
+Z65 !s107 /home/mohit/microlab337/components_datapath/sign_ext.vhd|
 !i113 1
 R12
 R13
@@ -484,33 +484,33 @@ VMS:]lE_Shl;m6LWoJOOm91
 !s100 hXWz[[^8Qik6>WZ0[_MXU3
 R7
 31
-R8
+R27
 !i10b 1
-R9
-R63
+R28
 R64
+R65
 !i113 1
 R12
 R13
 Etemp_reg
-R56
+R57
 R2
 R3
 R4
 R0
-Z65 8/home/mohit/microlab337/components_datapath/temp_reg.vhdl
-Z66 F/home/mohit/microlab337/components_datapath/temp_reg.vhdl
+Z66 8/home/mohit/microlab337/components_datapath/temp_reg.vhdl
+Z67 F/home/mohit/microlab337/components_datapath/temp_reg.vhdl
 l0
 L5
 V;7G4TDQXV]S:K9GKaWYZj3
 !s100 18;XO291:zg3S:9Sa1;5Z0
 R7
 31
-R8
+R27
 !i10b 1
-R9
-Z67 !s90 -reportprogress|300|-93|-work|work|/home/mohit/microlab337/components_datapath/temp_reg.vhdl|
-Z68 !s107 /home/mohit/microlab337/components_datapath/temp_reg.vhdl|
+R28
+Z68 !s90 -reportprogress|300|-93|-work|work|/home/mohit/microlab337/components_datapath/temp_reg.vhdl|
+Z69 !s107 /home/mohit/microlab337/components_datapath/temp_reg.vhdl|
 !i113 1
 R12
 R13
@@ -525,32 +525,32 @@ VRf<GD=C:z??VU;9Zj^^mU1
 !s100 POSbTBjdGNDfjRY3UIbWR0
 R7
 31
-R8
+R27
 !i10b 1
-R9
-R67
+R28
 R68
+R69
 !i113 1
 R12
 R13
 Etoplevel
-R1
+Z70 w1510540523
 R3
 R4
 R0
-Z69 8/home/mohit/microlab337/TopLevel.vhd
-Z70 F/home/mohit/microlab337/TopLevel.vhd
+Z71 8/home/mohit/microlab337/TopLevel.vhd
+Z72 F/home/mohit/microlab337/TopLevel.vhd
 l0
 L6
 VI7PjLTITYk4R:IFQZUWaG0
 !s100 flz>Po>hK=2a7HkF2zCEJ1
 R7
 31
-R26
+R27
 !i10b 1
-R9
-Z71 !s90 -reportprogress|300|-93|-work|work|/home/mohit/microlab337/TopLevel.vhd|
-Z72 !s107 /home/mohit/microlab337/TopLevel.vhd|
+R28
+Z73 !s90 -reportprogress|300|-93|-work|work|/home/mohit/microlab337/TopLevel.vhd|
+Z74 !s107 /home/mohit/microlab337/TopLevel.vhd|
 !i113 1
 R12
 R13
@@ -558,39 +558,39 @@ Astruct
 R3
 R4
 DEx4 work 8 toplevel 0 22 I7PjLTITYk4R:IFQZUWaG0
-l48
+l49
 L12
-VSJ_z69UXLfjoB7e2aH3Z:1
-!s100 SoSSP]Bl_E^An3ThOS:mU3
+VcCPSVUDICb53L=>HUERS80
+!s100 km=6NXMEB^V`D8H^RV06?3
 R7
 31
-R26
+R27
 !i10b 1
-R9
-R71
-R72
+R28
+R73
+R74
 !i113 1
 R12
 R13
 Etrail_zero7
-R1
+Z75 w1510459422
 R2
 R3
 R4
 R0
-Z73 8/home/mohit/microlab337/components_datapath/trail_zero7.vhd
-Z74 F/home/mohit/microlab337/components_datapath/trail_zero7.vhd
+Z76 8/home/mohit/microlab337/components_datapath/trail_zero7.vhd
+Z77 F/home/mohit/microlab337/components_datapath/trail_zero7.vhd
 l0
 L5
 VL5DL?8IZT:jQ<QJYaa@zE2
 !s100 J>NWFkb9;<8F?EO:b>`bL1
 R7
 31
-R8
+R27
 !i10b 1
 R9
-Z75 !s90 -reportprogress|300|-93|-work|work|/home/mohit/microlab337/components_datapath/trail_zero7.vhd|
-Z76 !s107 /home/mohit/microlab337/components_datapath/trail_zero7.vhd|
+Z78 !s90 -reportprogress|300|-93|-work|work|/home/mohit/microlab337/components_datapath/trail_zero7.vhd|
+Z79 !s107 /home/mohit/microlab337/components_datapath/trail_zero7.vhd|
 !i113 1
 R12
 R13
@@ -601,26 +601,26 @@ R4
 DEx4 work 11 trail_zero7 0 22 L5DL?8IZT:jQ<QJYaa@zE2
 l14
 L12
-VXEU9ERko`ic@LEii5CKO80
-!s100 T=;f1Uii@hc5Mb8]nO:h@0
+V[9@UW;BUT`Hgd>k7RT1X82
+!s100 Cbb[N2`zV^;jQJH>PbgcO1
 R7
 31
-R8
+R27
 !i10b 1
 R9
-R75
-R76
+R78
+R79
 !i113 1
 R12
 R13
 Etwoscomplement
-R1
+R19
 R2
 R3
 R4
 R0
-Z77 8/home/mohit/microlab337/components_datapath/TwosComplement.vhd
-Z78 F/home/mohit/microlab337/components_datapath/TwosComplement.vhd
+Z80 8/home/mohit/microlab337/components_datapath/TwosComplement.vhd
+Z81 F/home/mohit/microlab337/components_datapath/TwosComplement.vhd
 l0
 L5
 V5:B[ijASI<0RlS8`T<4_g0
@@ -630,8 +630,8 @@ R7
 R8
 !i10b 1
 R9
-Z79 !s90 -reportprogress|300|-93|-work|work|/home/mohit/microlab337/components_datapath/TwosComplement.vhd|
-Z80 !s107 /home/mohit/microlab337/components_datapath/TwosComplement.vhd|
+Z82 !s90 -reportprogress|300|-93|-work|work|/home/mohit/microlab337/components_datapath/TwosComplement.vhd|
+Z83 !s107 /home/mohit/microlab337/components_datapath/TwosComplement.vhd|
 !i113 1
 R12
 R13
@@ -649,8 +649,8 @@ R7
 R8
 !i10b 1
 R9
-R79
-R80
+R82
+R83
 !i113 1
 R12
 R13

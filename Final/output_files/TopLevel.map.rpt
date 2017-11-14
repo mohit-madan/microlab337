@@ -1,6 +1,6 @@
 Analysis & Synthesis report for TopLevel
-Sun Nov 12 09:23:05 2017
-Quartus Prime Version 17.0.0 Build 595 04/25/2017 SJ Lite Edition
+Mon Nov 13 10:40:23 2017
+Quartus Prime Version 16.1.0 Build 196 10/24/2016 SJ Lite Edition
 
 
 ---------------------
@@ -46,17 +46,16 @@ Quartus Prime Version 17.0.0 Build 595 04/25/2017 SJ Lite Edition
  38. Port Connectivity Checks: "datapath:Data|mux4to1:mema_mux"
  39. Port Connectivity Checks: "datapath:Data|mux4to1:muxt4"
  40. Port Connectivity Checks: "datapath:Data|mux4to1:muxt1"
- 41. Port Connectivity Checks: "datapath:Data"
- 42. Post-Synthesis Netlist Statistics for Top Partition
- 43. Elapsed Time Per Partition
- 44. Analysis & Synthesis Messages
+ 41. Post-Synthesis Netlist Statistics for Top Partition
+ 42. Elapsed Time Per Partition
+ 43. Analysis & Synthesis Messages
 
 
 
 ----------------
 ; Legal Notice ;
 ----------------
-Copyright (C) 2017  Intel Corporation. All rights reserved.
+Copyright (C) 2016  Intel Corporation. All rights reserved.
 Your use of Intel Corporation's design tools, logic functions 
 and other software and tools, and its AMPP partner logic 
 functions, and any output files from any of the foregoing 
@@ -76,8 +75,8 @@ agreement for further details.
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +------------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Sun Nov 12 09:23:05 2017       ;
-; Quartus Prime Version              ; 17.0.0 Build 595 04/25/2017 SJ Lite Edition ;
+; Analysis & Synthesis Status        ; Successful - Mon Nov 13 10:40:23 2017       ;
+; Quartus Prime Version              ; 16.1.0 Build 196 10/24/2016 SJ Lite Edition ;
 ; Revision Name                      ; TopLevel                                    ;
 ; Top-level Entity Name              ; TopLevel                                    ;
 ; Family                             ; Cyclone IV E                                ;
@@ -195,28 +194,28 @@ agreement for further details.
 +----------------------------+-------------+
 
 
-+----------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                                               ;
-+--------------------------------------------+-----------------+-----------------+---------------------------------------------------------------------------+---------+
-; File Name with User-Entered Path           ; Used in Netlist ; File Type       ; File Name with Absolute Path                                              ; Library ;
-+--------------------------------------------+-----------------+-----------------+---------------------------------------------------------------------------+---------+
-; ../components_datapath/mux4to1.vhd         ; yes             ; User VHDL File  ; /home/shrey/Documents/microlab337/components_datapath/mux4to1.vhd         ;         ;
-; ../components_datapath/mux2to1.vhd         ; yes             ; User VHDL File  ; /home/shrey/Documents/microlab337/components_datapath/mux2to1.vhd         ;         ;
-; ../components_datapath/decoder3_16.vhd     ; yes             ; User VHDL File  ; /home/shrey/Documents/microlab337/components_datapath/decoder3_16.vhd     ;         ;
-; ../components_datapath/datapath.vhd        ; yes             ; User VHDL File  ; /home/shrey/Documents/microlab337/components_datapath/datapath.vhd        ;         ;
-; ../components_datapath/alu.vhd             ; yes             ; User VHDL File  ; /home/shrey/Documents/microlab337/components_datapath/alu.vhd             ;         ;
-; ../components_datapath/TwosComplement.vhd  ; yes             ; User VHDL File  ; /home/shrey/Documents/microlab337/components_datapath/TwosComplement.vhd  ;         ;
-; ../components_datapath/trail_zero7.vhd     ; yes             ; User VHDL File  ; /home/shrey/Documents/microlab337/components_datapath/trail_zero7.vhd     ;         ;
-; ../components_datapath/temp_reg.vhdl       ; yes             ; User VHDL File  ; /home/shrey/Documents/microlab337/components_datapath/temp_reg.vhdl       ;         ;
-; ../components_datapath/sign_ext.vhd        ; yes             ; User VHDL File  ; /home/shrey/Documents/microlab337/components_datapath/sign_ext.vhd        ;         ;
-; ../components_datapath/registers.vhd       ; yes             ; User VHDL File  ; /home/shrey/Documents/microlab337/components_datapath/registers.vhd       ;         ;
-; ../components_datapath/regfile.vhd         ; yes             ; User VHDL File  ; /home/shrey/Documents/microlab337/components_datapath/regfile.vhd         ;         ;
-; ../components_datapath/ram.vhd             ; yes             ; User VHDL File  ; /home/shrey/Documents/microlab337/components_datapath/ram.vhd             ;         ;
-; ../components_datapath/priorityEncoder.vhd ; yes             ; User VHDL File  ; /home/shrey/Documents/microlab337/components_datapath/priorityEncoder.vhd ;         ;
-; ../components_datapath/mux8to1.vhd         ; yes             ; User VHDL File  ; /home/shrey/Documents/microlab337/components_datapath/mux8to1.vhd         ;         ;
-; ../TopLevel.vhd                            ; yes             ; User VHDL File  ; /home/shrey/Documents/microlab337/TopLevel.vhd                            ;         ;
-; ../controlPath/FSM_new.vhd                 ; yes             ; User VHDL File  ; /home/shrey/Documents/microlab337/controlPath/FSM_new.vhd                 ;         ;
-+--------------------------------------------+-----------------+-----------------+---------------------------------------------------------------------------+---------+
++------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                     ;
++--------------------------------------------+-----------------+-----------------+-----------------------------------------------------------------+---------+
+; File Name with User-Entered Path           ; Used in Netlist ; File Type       ; File Name with Absolute Path                                    ; Library ;
++--------------------------------------------+-----------------+-----------------+-----------------------------------------------------------------+---------+
+; ../components_datapath/mux4to1.vhd         ; yes             ; User VHDL File  ; /home/mohit/microlab337/components_datapath/mux4to1.vhd         ;         ;
+; ../components_datapath/mux2to1.vhd         ; yes             ; User VHDL File  ; /home/mohit/microlab337/components_datapath/mux2to1.vhd         ;         ;
+; ../components_datapath/decoder3_16.vhd     ; yes             ; User VHDL File  ; /home/mohit/microlab337/components_datapath/decoder3_16.vhd     ;         ;
+; ../components_datapath/datapath.vhd        ; yes             ; User VHDL File  ; /home/mohit/microlab337/components_datapath/datapath.vhd        ;         ;
+; ../components_datapath/alu.vhd             ; yes             ; User VHDL File  ; /home/mohit/microlab337/components_datapath/alu.vhd             ;         ;
+; ../components_datapath/TwosComplement.vhd  ; yes             ; User VHDL File  ; /home/mohit/microlab337/components_datapath/TwosComplement.vhd  ;         ;
+; ../components_datapath/trail_zero7.vhd     ; yes             ; User VHDL File  ; /home/mohit/microlab337/components_datapath/trail_zero7.vhd     ;         ;
+; ../components_datapath/temp_reg.vhdl       ; yes             ; User VHDL File  ; /home/mohit/microlab337/components_datapath/temp_reg.vhdl       ;         ;
+; ../components_datapath/sign_ext.vhd        ; yes             ; User VHDL File  ; /home/mohit/microlab337/components_datapath/sign_ext.vhd        ;         ;
+; ../components_datapath/registers.vhd       ; yes             ; User VHDL File  ; /home/mohit/microlab337/components_datapath/registers.vhd       ;         ;
+; ../components_datapath/regfile.vhd         ; yes             ; User VHDL File  ; /home/mohit/microlab337/components_datapath/regfile.vhd         ;         ;
+; ../components_datapath/ram.vhd             ; yes             ; User VHDL File  ; /home/mohit/microlab337/components_datapath/ram.vhd             ;         ;
+; ../components_datapath/priorityEncoder.vhd ; yes             ; User VHDL File  ; /home/mohit/microlab337/components_datapath/priorityEncoder.vhd ;         ;
+; ../components_datapath/mux8to1.vhd         ; yes             ; User VHDL File  ; /home/mohit/microlab337/components_datapath/mux8to1.vhd         ;         ;
+; ../TopLevel.vhd                            ; yes             ; User VHDL File  ; /home/mohit/microlab337/TopLevel.vhd                            ;         ;
+; ../controlPath/FSM_new.vhd                 ; yes             ; User VHDL File  ; /home/mohit/microlab337/controlPath/FSM_new.vhd                 ;         ;
++--------------------------------------------+-----------------+-----------------+-----------------------------------------------------------------+---------+
 
 
 +-----------------------------------------------------+
@@ -305,27 +304,27 @@ Encoding Type:  One-Hot
 ; datapath:Data|temp_reg:instruction_reg|dout[0,1]           ; Lost fanout                            ;
 ; datapath:Data|registers:z|dout                             ; Lost fanout                            ;
 ; datapath:Data|temp_reg:instruction_reg|dout[9,10]          ; Lost fanout                            ;
-; datapath:Data|regfile:reg_file|registers[0][1]             ; Lost fanout                            ;
-; datapath:Data|regfile:reg_file|registers[1][1]             ; Lost fanout                            ;
-; datapath:Data|regfile:reg_file|registers[2][1]             ; Lost fanout                            ;
-; datapath:Data|regfile:reg_file|registers[3][1]             ; Lost fanout                            ;
-; datapath:Data|temp_reg:instruction_reg|dout[11]            ; Lost fanout                            ;
-; datapath:Data|regfile:reg_file|registers[4][1]             ; Lost fanout                            ;
-; datapath:Data|regfile:reg_file|registers[5][1]             ; Lost fanout                            ;
-; datapath:Data|regfile:reg_file|registers[6][1]             ; Lost fanout                            ;
-; datapath:Data|regfile:reg_file|registers[7][1]             ; Lost fanout                            ;
-; datapath:Data|temp_reg:temp1|dout[1]                       ; Lost fanout                            ;
-; datapath:Data|temp_reg:temp4|dout[1]                       ; Lost fanout                            ;
 ; datapath:Data|regfile:reg_file|registers[0][0]             ; Lost fanout                            ;
 ; datapath:Data|regfile:reg_file|registers[1][0]             ; Lost fanout                            ;
 ; datapath:Data|regfile:reg_file|registers[2][0]             ; Lost fanout                            ;
 ; datapath:Data|regfile:reg_file|registers[3][0]             ; Lost fanout                            ;
+; datapath:Data|temp_reg:instruction_reg|dout[11]            ; Lost fanout                            ;
 ; datapath:Data|regfile:reg_file|registers[4][0]             ; Lost fanout                            ;
 ; datapath:Data|regfile:reg_file|registers[5][0]             ; Lost fanout                            ;
 ; datapath:Data|regfile:reg_file|registers[6][0]             ; Lost fanout                            ;
 ; datapath:Data|regfile:reg_file|registers[7][0]             ; Lost fanout                            ;
 ; datapath:Data|temp_reg:temp1|dout[0]                       ; Lost fanout                            ;
 ; datapath:Data|temp_reg:temp4|dout[0]                       ; Lost fanout                            ;
+; datapath:Data|regfile:reg_file|registers[0][1]             ; Lost fanout                            ;
+; datapath:Data|regfile:reg_file|registers[1][1]             ; Lost fanout                            ;
+; datapath:Data|regfile:reg_file|registers[2][1]             ; Lost fanout                            ;
+; datapath:Data|regfile:reg_file|registers[3][1]             ; Lost fanout                            ;
+; datapath:Data|regfile:reg_file|registers[4][1]             ; Lost fanout                            ;
+; datapath:Data|regfile:reg_file|registers[5][1]             ; Lost fanout                            ;
+; datapath:Data|regfile:reg_file|registers[6][1]             ; Lost fanout                            ;
+; datapath:Data|regfile:reg_file|registers[7][1]             ; Lost fanout                            ;
+; datapath:Data|temp_reg:temp1|dout[1]                       ; Lost fanout                            ;
+; datapath:Data|temp_reg:temp4|dout[1]                       ; Lost fanout                            ;
 ; datapath:Data|regfile:reg_file|registers[0][2]             ; Lost fanout                            ;
 ; datapath:Data|regfile:reg_file|registers[1][2]             ; Lost fanout                            ;
 ; datapath:Data|regfile:reg_file|registers[2][2]             ; Lost fanout                            ;
@@ -471,49 +470,45 @@ Encoding Type:  One-Hot
 ; datapath:Data|regfile:reg_file|registers[7][15]            ; Lost fanout                            ;
 ; datapath:Data|temp_reg:temp1|dout[15]                      ; Lost fanout                            ;
 ; datapath:Data|temp_reg:temp4|dout[15]                      ; Lost fanout                            ;
-; datapath:Data|temp_reg:temp3|dout[0..4]                    ; Lost fanout                            ;
-; datapath:Data|temp_reg:program_counter|dout[1]             ; Lost fanout                            ;
-; datapath:Data|temp_reg:temp2|dout[1]                       ; Lost fanout                            ;
-; datapath:Data|temp_reg:program_counter|dout[0]             ; Lost fanout                            ;
-; datapath:Data|temp_reg:temp2|dout[0]                       ; Lost fanout                            ;
-; datapath:Data|temp_reg:program_counter|dout[2]             ; Lost fanout                            ;
-; datapath:Data|temp_reg:temp2|dout[2]                       ; Lost fanout                            ;
-; datapath:Data|temp_reg:program_counter|dout[3]             ; Lost fanout                            ;
-; datapath:Data|temp_reg:temp2|dout[3]                       ; Lost fanout                            ;
-; datapath:Data|temp_reg:program_counter|dout[4]             ; Lost fanout                            ;
-; datapath:Data|temp_reg:temp2|dout[4]                       ; Lost fanout                            ;
-; datapath:Data|temp_reg:temp3|dout[5]                       ; Lost fanout                            ;
-; datapath:Data|temp_reg:program_counter|dout[5]             ; Lost fanout                            ;
-; datapath:Data|temp_reg:temp2|dout[5]                       ; Lost fanout                            ;
-; datapath:Data|temp_reg:temp3|dout[6]                       ; Lost fanout                            ;
-; datapath:Data|temp_reg:program_counter|dout[6]             ; Lost fanout                            ;
-; datapath:Data|temp_reg:temp2|dout[6]                       ; Lost fanout                            ;
-; datapath:Data|temp_reg:temp3|dout[7]                       ; Lost fanout                            ;
-; datapath:Data|temp_reg:program_counter|dout[7]             ; Lost fanout                            ;
-; datapath:Data|temp_reg:temp2|dout[7]                       ; Lost fanout                            ;
-; datapath:Data|temp_reg:temp3|dout[8]                       ; Lost fanout                            ;
-; datapath:Data|temp_reg:program_counter|dout[8]             ; Lost fanout                            ;
-; datapath:Data|temp_reg:temp2|dout[8]                       ; Lost fanout                            ;
-; datapath:Data|temp_reg:temp3|dout[9]                       ; Lost fanout                            ;
-; datapath:Data|temp_reg:program_counter|dout[9]             ; Lost fanout                            ;
-; datapath:Data|temp_reg:temp2|dout[9]                       ; Lost fanout                            ;
-; datapath:Data|temp_reg:temp3|dout[10]                      ; Lost fanout                            ;
-; datapath:Data|temp_reg:program_counter|dout[10]            ; Lost fanout                            ;
-; datapath:Data|temp_reg:temp2|dout[10]                      ; Lost fanout                            ;
-; datapath:Data|temp_reg:temp3|dout[11]                      ; Lost fanout                            ;
-; datapath:Data|temp_reg:program_counter|dout[11]            ; Lost fanout                            ;
-; datapath:Data|temp_reg:temp2|dout[11]                      ; Lost fanout                            ;
-; datapath:Data|temp_reg:temp3|dout[12]                      ; Lost fanout                            ;
-; datapath:Data|temp_reg:program_counter|dout[12]            ; Lost fanout                            ;
-; datapath:Data|temp_reg:temp2|dout[12]                      ; Lost fanout                            ;
-; datapath:Data|temp_reg:temp3|dout[13]                      ; Lost fanout                            ;
-; datapath:Data|temp_reg:program_counter|dout[13]            ; Lost fanout                            ;
-; datapath:Data|temp_reg:temp2|dout[13]                      ; Lost fanout                            ;
-; datapath:Data|temp_reg:temp3|dout[14]                      ; Lost fanout                            ;
-; datapath:Data|temp_reg:program_counter|dout[14]            ; Lost fanout                            ;
 ; datapath:Data|temp_reg:temp2|dout[14]                      ; Lost fanout                            ;
-; datapath:Data|temp_reg:temp5|dout[0..7]                    ; Lost fanout                            ;
-; datapath:Data|temp_reg:temp3|dout[15]                      ; Lost fanout                            ;
+; datapath:Data|temp_reg:program_counter|dout[14]            ; Lost fanout                            ;
+; datapath:Data|temp_reg:temp2|dout[13]                      ; Lost fanout                            ;
+; datapath:Data|temp_reg:program_counter|dout[13]            ; Lost fanout                            ;
+; datapath:Data|temp_reg:temp2|dout[12]                      ; Lost fanout                            ;
+; datapath:Data|temp_reg:program_counter|dout[12]            ; Lost fanout                            ;
+; datapath:Data|temp_reg:temp2|dout[11]                      ; Lost fanout                            ;
+; datapath:Data|temp_reg:program_counter|dout[11]            ; Lost fanout                            ;
+; datapath:Data|temp_reg:temp2|dout[10]                      ; Lost fanout                            ;
+; datapath:Data|temp_reg:program_counter|dout[10]            ; Lost fanout                            ;
+; datapath:Data|temp_reg:temp2|dout[9]                       ; Lost fanout                            ;
+; datapath:Data|temp_reg:program_counter|dout[9]             ; Lost fanout                            ;
+; datapath:Data|temp_reg:temp2|dout[8]                       ; Lost fanout                            ;
+; datapath:Data|temp_reg:program_counter|dout[8]             ; Lost fanout                            ;
+; datapath:Data|temp_reg:temp2|dout[7]                       ; Lost fanout                            ;
+; datapath:Data|temp_reg:temp5|dout[7]                       ; Lost fanout                            ;
+; datapath:Data|temp_reg:program_counter|dout[7]             ; Lost fanout                            ;
+; datapath:Data|temp_reg:temp2|dout[6]                       ; Lost fanout                            ;
+; datapath:Data|temp_reg:temp5|dout[6]                       ; Lost fanout                            ;
+; datapath:Data|temp_reg:program_counter|dout[6]             ; Lost fanout                            ;
+; datapath:Data|temp_reg:temp2|dout[5]                       ; Lost fanout                            ;
+; datapath:Data|temp_reg:temp5|dout[5]                       ; Lost fanout                            ;
+; datapath:Data|temp_reg:program_counter|dout[5]             ; Lost fanout                            ;
+; datapath:Data|temp_reg:temp2|dout[4]                       ; Lost fanout                            ;
+; datapath:Data|temp_reg:temp5|dout[4]                       ; Lost fanout                            ;
+; datapath:Data|temp_reg:program_counter|dout[4]             ; Lost fanout                            ;
+; datapath:Data|temp_reg:temp2|dout[3]                       ; Lost fanout                            ;
+; datapath:Data|temp_reg:temp5|dout[3]                       ; Lost fanout                            ;
+; datapath:Data|temp_reg:program_counter|dout[3]             ; Lost fanout                            ;
+; datapath:Data|temp_reg:temp2|dout[2]                       ; Lost fanout                            ;
+; datapath:Data|temp_reg:temp5|dout[2]                       ; Lost fanout                            ;
+; datapath:Data|temp_reg:program_counter|dout[2]             ; Lost fanout                            ;
+; datapath:Data|temp_reg:temp2|dout[1]                       ; Lost fanout                            ;
+; datapath:Data|temp_reg:temp5|dout[1]                       ; Lost fanout                            ;
+; datapath:Data|temp_reg:program_counter|dout[1]             ; Lost fanout                            ;
+; datapath:Data|temp_reg:temp2|dout[0]                       ; Lost fanout                            ;
+; datapath:Data|temp_reg:temp5|dout[0]                       ; Lost fanout                            ;
+; datapath:Data|temp_reg:program_counter|dout[0]             ; Lost fanout                            ;
+; datapath:Data|temp_reg:temp3|dout[0..15]                   ; Lost fanout                            ;
 ; FSM_new:ControlPath|state.s1                               ; Lost fanout                            ;
 ; FSM_new:ControlPath|state.s2                               ; Lost fanout                            ;
 ; FSM_new:ControlPath|state.s3                               ; Lost fanout                            ;
@@ -533,95 +528,93 @@ Encoding Type:  One-Hot
 +------------------------------------------------------------+----------------------------------------+
 
 
-+----------------------------------------------------------------------------------------------------------------------------------------------------+
-; Removed Registers Triggering Further Register Optimizations                                                                                        ;
-+---------------------------------------+---------------------------+--------------------------------------------------------------------------------+
-; Register name                         ; Reason for Removal        ; Registers Removed due to This Register                                         ;
-+---------------------------------------+---------------------------+--------------------------------------------------------------------------------+
-; FSM_new:ControlPath|state.s13         ; Stuck at GND              ; datapath:Data|temp_reg:instruction_reg|dout[3],                                ;
-;                                       ; due to stuck port data_in ; datapath:Data|temp_reg:instruction_reg|dout[4],                                ;
-;                                       ;                           ; datapath:Data|temp_reg:instruction_reg|dout[7],                                ;
-;                                       ;                           ; datapath:Data|temp_reg:instruction_reg|dout[12],                               ;
-;                                       ;                           ; datapath:Data|temp_reg:instruction_reg|dout[13],                               ;
-;                                       ;                           ; datapath:Data|temp_reg:instruction_reg|dout[14],                               ;
-;                                       ;                           ; datapath:Data|temp_reg:instruction_reg|dout[0],                                ;
-;                                       ;                           ; datapath:Data|temp_reg:instruction_reg|dout[1],                                ;
-;                                       ;                           ; datapath:Data|temp_reg:instruction_reg|dout[9],                                ;
-;                                       ;                           ; datapath:Data|temp_reg:instruction_reg|dout[10],                               ;
-;                                       ;                           ; datapath:Data|temp_reg:instruction_reg|dout[11],                               ;
-;                                       ;                           ; datapath:Data|temp_reg:temp1|dout[1], datapath:Data|temp_reg:temp4|dout[1],    ;
-;                                       ;                           ; datapath:Data|temp_reg:temp1|dout[0], datapath:Data|temp_reg:temp4|dout[0],    ;
-;                                       ;                           ; datapath:Data|temp_reg:temp1|dout[2],                                          ;
-;                                       ;                           ; datapath:Data|temp_reg:instruction_reg|dout[2],                                ;
-;                                       ;                           ; datapath:Data|temp_reg:temp1|dout[3], datapath:Data|temp_reg:temp4|dout[3],    ;
-;                                       ;                           ; datapath:Data|temp_reg:temp1|dout[4], datapath:Data|temp_reg:temp4|dout[4],    ;
-;                                       ;                           ; datapath:Data|temp_reg:temp1|dout[5], datapath:Data|temp_reg:temp4|dout[5],    ;
-;                                       ;                           ; datapath:Data|temp_reg:temp1|dout[6],                                          ;
-;                                       ;                           ; datapath:Data|temp_reg:instruction_reg|dout[6],                                ;
-;                                       ;                           ; datapath:Data|temp_reg:temp1|dout[7],                                          ;
-;                                       ;                           ; datapath:Data|temp_reg:instruction_reg|dout[8],                                ;
-;                                       ;                           ; datapath:Data|temp_reg:temp1|dout[11], datapath:Data|temp_reg:temp1|dout[12],  ;
-;                                       ;                           ; datapath:Data|temp_reg:temp3|dout[0], datapath:Data|temp_reg:temp3|dout[1],    ;
-;                                       ;                           ; datapath:Data|temp_reg:temp3|dout[2], datapath:Data|temp_reg:temp3|dout[3],    ;
-;                                       ;                           ; datapath:Data|temp_reg:temp3|dout[4], datapath:Data|temp_reg:temp3|dout[5],    ;
-;                                       ;                           ; datapath:Data|temp_reg:temp3|dout[6], datapath:Data|temp_reg:temp3|dout[7],    ;
-;                                       ;                           ; datapath:Data|temp_reg:temp3|dout[8], datapath:Data|temp_reg:temp3|dout[9],    ;
-;                                       ;                           ; datapath:Data|temp_reg:temp3|dout[10], datapath:Data|temp_reg:temp3|dout[11],  ;
-;                                       ;                           ; datapath:Data|temp_reg:temp3|dout[12], datapath:Data|temp_reg:temp3|dout[13],  ;
-;                                       ;                           ; datapath:Data|temp_reg:temp3|dout[14], datapath:Data|temp_reg:temp3|dout[15],  ;
-;                                       ;                           ; FSM_new:ControlPath|state.s1, FSM_new:ControlPath|state.s2,                    ;
-;                                       ;                           ; FSM_new:ControlPath|state.s3, FSM_new:ControlPath|state.s4,                    ;
-;                                       ;                           ; FSM_new:ControlPath|state.s5, FSM_new:ControlPath|state.s7,                    ;
-;                                       ;                           ; FSM_new:ControlPath|state.s8, FSM_new:ControlPath|state.s9,                    ;
-;                                       ;                           ; FSM_new:ControlPath|state.s16                                                  ;
-; FSM_new:ControlPath|state.s6          ; Stuck at GND              ; datapath:Data|temp_reg:temp4|dout[2], datapath:Data|temp_reg:temp4|dout[6],    ;
-;                                       ; due to stuck port data_in ; datapath:Data|temp_reg:temp4|dout[7], datapath:Data|temp_reg:temp4|dout[8],    ;
-;                                       ;                           ; datapath:Data|temp_reg:temp4|dout[9], datapath:Data|temp_reg:temp4|dout[10],   ;
-;                                       ;                           ; datapath:Data|temp_reg:temp4|dout[11],                                         ;
-;                                       ;                           ; datapath:Data|temp_reg:program_counter|dout[15],                               ;
-;                                       ;                           ; datapath:Data|temp_reg:program_counter|dout[1],                                ;
-;                                       ;                           ; datapath:Data|temp_reg:program_counter|dout[0],                                ;
-;                                       ;                           ; datapath:Data|temp_reg:program_counter|dout[2],                                ;
-;                                       ;                           ; datapath:Data|temp_reg:program_counter|dout[3],                                ;
-;                                       ;                           ; datapath:Data|temp_reg:program_counter|dout[4],                                ;
-;                                       ;                           ; datapath:Data|temp_reg:program_counter|dout[5],                                ;
-;                                       ;                           ; datapath:Data|temp_reg:program_counter|dout[6],                                ;
-;                                       ;                           ; datapath:Data|temp_reg:program_counter|dout[7],                                ;
-;                                       ;                           ; datapath:Data|temp_reg:program_counter|dout[8],                                ;
-;                                       ;                           ; datapath:Data|temp_reg:program_counter|dout[9], FSM_new:ControlPath|state.s10, ;
-;                                       ;                           ; FSM_new:ControlPath|state.s11, FSM_new:ControlPath|state.s12,                  ;
-;                                       ;                           ; FSM_new:ControlPath|state.s14, FSM_new:ControlPath|state.s15                   ;
-; FSM_new:ControlPath|state.s18         ; Stuck at GND              ; FSM_new:ControlPath|state.s19, datapath:Data|temp_reg:temp2|dout[1],           ;
-;                                       ; due to stuck port data_in ; datapath:Data|temp_reg:temp2|dout[0], datapath:Data|temp_reg:temp2|dout[2],    ;
-;                                       ;                           ; datapath:Data|temp_reg:temp2|dout[3], datapath:Data|temp_reg:temp2|dout[4],    ;
-;                                       ;                           ; datapath:Data|temp_reg:temp2|dout[5], datapath:Data|temp_reg:temp2|dout[6],    ;
-;                                       ;                           ; datapath:Data|temp_reg:temp2|dout[7],                                          ;
-;                                       ;                           ; datapath:Data|temp_reg:program_counter|dout[13],                               ;
-;                                       ;                           ; datapath:Data|temp_reg:temp5|dout[2]                                           ;
-; datapath:Data|temp_reg:temp5|dout[8]  ; Stuck at GND              ; datapath:Data|temp_reg:instruction_reg|dout[5],                                ;
-;                                       ; due to stuck port data_in ; datapath:Data|temp_reg:instruction_reg|dout[15],                               ;
-;                                       ;                           ; datapath:Data|temp_reg:temp1|dout[8], datapath:Data|temp_reg:temp1|dout[15],   ;
-;                                       ;                           ; datapath:Data|temp_reg:temp2|dout[8]                                           ;
-; datapath:Data|temp_reg:temp5|dout[15] ; Stuck at GND              ; datapath:Data|temp_reg:temp2|dout[15],                                         ;
-;                                       ; due to stuck port data_in ; datapath:Data|regfile:reg_file|registers[0][15],                               ;
-;                                       ;                           ; datapath:Data|regfile:reg_file|registers[1][15],                               ;
-;                                       ;                           ; datapath:Data|regfile:reg_file|registers[2][15],                               ;
-;                                       ;                           ; datapath:Data|regfile:reg_file|registers[3][15]                                ;
-; datapath:Data|temp_reg:temp5|dout[10] ; Stuck at GND              ; datapath:Data|temp_reg:temp1|dout[10],                                         ;
-;                                       ; due to stuck port data_in ; datapath:Data|temp_reg:program_counter|dout[10],                               ;
-;                                       ;                           ; datapath:Data|temp_reg:temp2|dout[10]                                          ;
-; datapath:Data|temp_reg:temp5|dout[9]  ; Stuck at GND              ; datapath:Data|temp_reg:temp1|dout[9], datapath:Data|temp_reg:temp2|dout[9]     ;
-;                                       ; due to stuck port data_in ;                                                                                ;
-; datapath:Data|temp_reg:temp5|dout[11] ; Stuck at GND              ; datapath:Data|temp_reg:program_counter|dout[11],                               ;
-;                                       ; due to stuck port data_in ; datapath:Data|temp_reg:temp2|dout[11]                                          ;
-; datapath:Data|temp_reg:temp5|dout[12] ; Stuck at GND              ; datapath:Data|temp_reg:program_counter|dout[12],                               ;
-;                                       ; due to stuck port data_in ; datapath:Data|temp_reg:temp2|dout[12]                                          ;
-; datapath:Data|temp_reg:temp5|dout[14] ; Stuck at GND              ; datapath:Data|temp_reg:program_counter|dout[14],                               ;
-;                                       ; due to stuck port data_in ; datapath:Data|temp_reg:temp2|dout[14]                                          ;
-; datapath:Data|registers:car|dout      ; Lost Fanouts              ; datapath:Data|regfile:reg_file|registers[0][1], FSM_new:ControlPath|state.s17  ;
-; datapath:Data|temp_reg:temp5|dout[13] ; Stuck at GND              ; datapath:Data|temp_reg:temp2|dout[13]                                          ;
-;                                       ; due to stuck port data_in ;                                                                                ;
-+---------------------------------------+---------------------------+--------------------------------------------------------------------------------+
++-----------------------------------------------------------------------------------------------------------------------------------------------------+
+; Removed Registers Triggering Further Register Optimizations                                                                                         ;
++---------------------------------------+---------------------------+---------------------------------------------------------------------------------+
+; Register name                         ; Reason for Removal        ; Registers Removed due to This Register                                          ;
++---------------------------------------+---------------------------+---------------------------------------------------------------------------------+
+; FSM_new:ControlPath|state.s13         ; Stuck at GND              ; datapath:Data|temp_reg:instruction_reg|dout[3],                                 ;
+;                                       ; due to stuck port data_in ; datapath:Data|temp_reg:instruction_reg|dout[4],                                 ;
+;                                       ;                           ; datapath:Data|temp_reg:instruction_reg|dout[7],                                 ;
+;                                       ;                           ; datapath:Data|temp_reg:instruction_reg|dout[12],                                ;
+;                                       ;                           ; datapath:Data|temp_reg:instruction_reg|dout[14],                                ;
+;                                       ;                           ; datapath:Data|temp_reg:instruction_reg|dout[0],                                 ;
+;                                       ;                           ; datapath:Data|temp_reg:instruction_reg|dout[1],                                 ;
+;                                       ;                           ; datapath:Data|temp_reg:instruction_reg|dout[9],                                 ;
+;                                       ;                           ; datapath:Data|temp_reg:instruction_reg|dout[10],                                ;
+;                                       ;                           ; datapath:Data|temp_reg:instruction_reg|dout[11],                                ;
+;                                       ;                           ; datapath:Data|temp_reg:temp1|dout[0], datapath:Data|temp_reg:temp4|dout[0],     ;
+;                                       ;                           ; datapath:Data|temp_reg:temp1|dout[1], datapath:Data|temp_reg:temp4|dout[1],     ;
+;                                       ;                           ; datapath:Data|temp_reg:temp1|dout[2],                                           ;
+;                                       ;                           ; datapath:Data|temp_reg:instruction_reg|dout[2],                                 ;
+;                                       ;                           ; datapath:Data|temp_reg:temp1|dout[3], datapath:Data|temp_reg:temp4|dout[3],     ;
+;                                       ;                           ; datapath:Data|temp_reg:temp1|dout[4], datapath:Data|temp_reg:temp4|dout[4],     ;
+;                                       ;                           ; datapath:Data|temp_reg:temp1|dout[5], datapath:Data|temp_reg:temp4|dout[5],     ;
+;                                       ;                           ; datapath:Data|temp_reg:temp1|dout[6],                                           ;
+;                                       ;                           ; datapath:Data|temp_reg:instruction_reg|dout[6],                                 ;
+;                                       ;                           ; datapath:Data|temp_reg:temp1|dout[7],                                           ;
+;                                       ;                           ; datapath:Data|temp_reg:instruction_reg|dout[8],                                 ;
+;                                       ;                           ; datapath:Data|temp_reg:temp1|dout[11], datapath:Data|temp_reg:temp1|dout[12],   ;
+;                                       ;                           ; datapath:Data|temp_reg:temp3|dout[0], datapath:Data|temp_reg:temp3|dout[1],     ;
+;                                       ;                           ; datapath:Data|temp_reg:temp3|dout[2], datapath:Data|temp_reg:temp3|dout[3],     ;
+;                                       ;                           ; datapath:Data|temp_reg:temp3|dout[4], datapath:Data|temp_reg:temp3|dout[5],     ;
+;                                       ;                           ; datapath:Data|temp_reg:temp3|dout[6], datapath:Data|temp_reg:temp3|dout[7],     ;
+;                                       ;                           ; datapath:Data|temp_reg:temp3|dout[8], datapath:Data|temp_reg:temp3|dout[9],     ;
+;                                       ;                           ; datapath:Data|temp_reg:temp3|dout[10], datapath:Data|temp_reg:temp3|dout[11],   ;
+;                                       ;                           ; datapath:Data|temp_reg:temp3|dout[12], datapath:Data|temp_reg:temp3|dout[13],   ;
+;                                       ;                           ; datapath:Data|temp_reg:temp3|dout[14], datapath:Data|temp_reg:temp3|dout[15],   ;
+;                                       ;                           ; FSM_new:ControlPath|state.s1, FSM_new:ControlPath|state.s2,                     ;
+;                                       ;                           ; FSM_new:ControlPath|state.s4, FSM_new:ControlPath|state.s5,                     ;
+;                                       ;                           ; FSM_new:ControlPath|state.s7, FSM_new:ControlPath|state.s8,                     ;
+;                                       ;                           ; FSM_new:ControlPath|state.s9, FSM_new:ControlPath|state.s16                     ;
+; FSM_new:ControlPath|state.s6          ; Stuck at GND              ; datapath:Data|temp_reg:temp4|dout[2], datapath:Data|temp_reg:temp4|dout[6],     ;
+;                                       ; due to stuck port data_in ; datapath:Data|temp_reg:temp4|dout[7], datapath:Data|temp_reg:temp4|dout[8],     ;
+;                                       ;                           ; datapath:Data|temp_reg:temp4|dout[9], datapath:Data|temp_reg:temp4|dout[10],    ;
+;                                       ;                           ; datapath:Data|temp_reg:temp4|dout[11],                                          ;
+;                                       ;                           ; datapath:Data|temp_reg:program_counter|dout[12],                                ;
+;                                       ;                           ; datapath:Data|temp_reg:program_counter|dout[7],                                 ;
+;                                       ;                           ; datapath:Data|temp_reg:program_counter|dout[6],                                 ;
+;                                       ;                           ; datapath:Data|temp_reg:program_counter|dout[5],                                 ;
+;                                       ;                           ; datapath:Data|temp_reg:program_counter|dout[4],                                 ;
+;                                       ;                           ; datapath:Data|temp_reg:program_counter|dout[3],                                 ;
+;                                       ;                           ; datapath:Data|temp_reg:program_counter|dout[2],                                 ;
+;                                       ;                           ; datapath:Data|temp_reg:program_counter|dout[1],                                 ;
+;                                       ;                           ; datapath:Data|temp_reg:program_counter|dout[0], FSM_new:ControlPath|state.s3,   ;
+;                                       ;                           ; FSM_new:ControlPath|state.s10, FSM_new:ControlPath|state.s11,                   ;
+;                                       ;                           ; FSM_new:ControlPath|state.s14, FSM_new:ControlPath|state.s15                    ;
+; FSM_new:ControlPath|state.s18         ; Stuck at GND              ; FSM_new:ControlPath|state.s19, datapath:Data|temp_reg:program_counter|dout[15], ;
+;                                       ; due to stuck port data_in ; datapath:Data|temp_reg:program_counter|dout[9],                                 ;
+;                                       ;                           ; datapath:Data|temp_reg:program_counter|dout[8],                                 ;
+;                                       ;                           ; datapath:Data|temp_reg:temp2|dout[7], datapath:Data|temp_reg:temp2|dout[6],     ;
+;                                       ;                           ; datapath:Data|temp_reg:temp2|dout[5], datapath:Data|temp_reg:temp2|dout[4],     ;
+;                                       ;                           ; datapath:Data|temp_reg:temp2|dout[3], datapath:Data|temp_reg:temp2|dout[2],     ;
+;                                       ;                           ; datapath:Data|temp_reg:temp5|dout[2], datapath:Data|temp_reg:temp2|dout[1],     ;
+;                                       ;                           ; datapath:Data|temp_reg:temp5|dout[1], datapath:Data|temp_reg:temp2|dout[0],     ;
+;                                       ;                           ; FSM_new:ControlPath|state.s12                                                   ;
+; datapath:Data|temp_reg:temp5|dout[8]  ; Stuck at GND              ; datapath:Data|temp_reg:instruction_reg|dout[5],                                 ;
+;                                       ; due to stuck port data_in ; datapath:Data|temp_reg:instruction_reg|dout[13],                                ;
+;                                       ;                           ; datapath:Data|temp_reg:instruction_reg|dout[15],                                ;
+;                                       ;                           ; datapath:Data|temp_reg:temp1|dout[8], datapath:Data|temp_reg:temp1|dout[14],    ;
+;                                       ;                           ; datapath:Data|temp_reg:temp1|dout[15], datapath:Data|temp_reg:temp2|dout[8]     ;
+; datapath:Data|temp_reg:temp5|dout[15] ; Stuck at GND              ; datapath:Data|temp_reg:temp2|dout[15],                                          ;
+;                                       ; due to stuck port data_in ; datapath:Data|regfile:reg_file|registers[0][15],                                ;
+;                                       ;                           ; datapath:Data|regfile:reg_file|registers[1][15],                                ;
+;                                       ;                           ; datapath:Data|regfile:reg_file|registers[2][15],                                ;
+;                                       ;                           ; datapath:Data|regfile:reg_file|registers[3][15]                                 ;
+; datapath:Data|temp_reg:temp5|dout[10] ; Stuck at GND              ; datapath:Data|temp_reg:temp1|dout[10], datapath:Data|temp_reg:temp2|dout[10],   ;
+;                                       ; due to stuck port data_in ; datapath:Data|temp_reg:program_counter|dout[10]                                 ;
+; datapath:Data|temp_reg:temp5|dout[9]  ; Stuck at GND              ; datapath:Data|temp_reg:temp1|dout[9], datapath:Data|temp_reg:temp2|dout[9]      ;
+;                                       ; due to stuck port data_in ;                                                                                 ;
+; datapath:Data|temp_reg:temp5|dout[11] ; Stuck at GND              ; datapath:Data|temp_reg:temp2|dout[11],                                          ;
+;                                       ; due to stuck port data_in ; datapath:Data|temp_reg:program_counter|dout[11]                                 ;
+; datapath:Data|temp_reg:temp5|dout[13] ; Stuck at GND              ; datapath:Data|temp_reg:temp2|dout[13],                                          ;
+;                                       ; due to stuck port data_in ; datapath:Data|temp_reg:program_counter|dout[13]                                 ;
+; datapath:Data|temp_reg:temp5|dout[14] ; Stuck at GND              ; datapath:Data|temp_reg:temp2|dout[14],                                          ;
+;                                       ; due to stuck port data_in ; datapath:Data|temp_reg:program_counter|dout[14]                                 ;
+; datapath:Data|registers:car|dout      ; Lost Fanouts              ; datapath:Data|regfile:reg_file|registers[0][0], FSM_new:ControlPath|state.s17   ;
+; datapath:Data|temp_reg:temp5|dout[12] ; Stuck at GND              ; datapath:Data|temp_reg:temp2|dout[12]                                           ;
+;                                       ; due to stuck port data_in ;                                                                                 ;
++---------------------------------------+---------------------------+---------------------------------------------------------------------------------+
 
 
 +------------------------------------------------------+
@@ -639,27 +632,26 @@ Encoding Type:  One-Hot
 +----------------------------------------------+-------+
 
 
-+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                                                          ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+-----------------------------------------------------------+
-; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                                ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+-----------------------------------------------------------+
-; 4:1                ; 16 bits   ; 32 LEs        ; 32 LEs               ; 0 LEs                  ; Yes        ; |TopLevel|datapath:Data|temp_reg:temp1|dout[4]            ;
-; 3:1                ; 16 bits   ; 32 LEs        ; 32 LEs               ; 0 LEs                  ; Yes        ; |TopLevel|datapath:Data|temp_reg:temp4|dout[14]           ;
-; 9:1                ; 16 bits   ; 96 LEs        ; 96 LEs               ; 0 LEs                  ; Yes        ; |TopLevel|datapath:Data|temp_reg:temp2|dout[10]           ;
-; 4:1                ; 8 bits    ; 16 LEs        ; 16 LEs               ; 0 LEs                  ; No         ; |TopLevel|datapath:Data|mux4to1:alu_b_mux|dout[14]        ;
-; 4:1                ; 8 bits    ; 16 LEs        ; 16 LEs               ; 0 LEs                  ; No         ; |TopLevel|datapath:Data|mux4to1:alu_b_mux|dout[2]         ;
-; 4:1                ; 5 bits    ; 10 LEs        ; 10 LEs               ; 0 LEs                  ; No         ; |TopLevel|datapath:Data|mux4to1:mema_mux|dout[0]          ;
-; 4:1                ; 7 bits    ; 14 LEs        ; 14 LEs               ; 0 LEs                  ; No         ; |TopLevel|datapath:Data|mux4to1:d3_of_rf|dout[10]         ;
-; 4:1                ; 9 bits    ; 18 LEs        ; 18 LEs               ; 0 LEs                  ; No         ; |TopLevel|datapath:Data|mux4to1:d3_of_rf|dout[5]          ;
-; 3:1                ; 30 bits   ; 60 LEs        ; 60 LEs               ; 0 LEs                  ; No         ; |TopLevel|datapath:Data|ALU:my_alu|two_complement_add[10] ;
-; 8:1                ; 16 bits   ; 80 LEs        ; 80 LEs               ; 0 LEs                  ; No         ; |TopLevel|datapath:Data|regfile:reg_file|Mux10            ;
-; 8:1                ; 5 bits    ; 25 LEs        ; 10 LEs               ; 15 LEs                 ; No         ; |TopLevel|datapath:Data|mux8to1:alu_a_mux|Mux11           ;
-; 8:1                ; 3 bits    ; 15 LEs        ; 9 LEs                ; 6 LEs                  ; No         ; |TopLevel|datapath:Data|mux8to1:a3_rf|Mux2                ;
-; 4:1                ; 3 bits    ; 6 LEs         ; 6 LEs                ; 0 LEs                  ; No         ; |TopLevel|datapath:Data|mux4to1:a1_rf|dout[2]             ;
-; 5:1                ; 8 bits    ; 24 LEs        ; 24 LEs               ; 0 LEs                  ; No         ; |TopLevel|datapath:Data|mux8to1:alu_a_mux|Mux6            ;
-; 7:1                ; 2 bits    ; 8 LEs         ; 8 LEs                ; 0 LEs                  ; No         ; |TopLevel|datapath:Data|mux8to1:alu_a_mux|Mux8            ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+-----------------------------------------------------------+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                                                   ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------------------------------+
+; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                         ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------------------------------+
+; 4:1                ; 16 bits   ; 32 LEs        ; 32 LEs               ; 0 LEs                  ; Yes        ; |TopLevel|datapath:Data|temp_reg:temp1|dout[5]     ;
+; 3:1                ; 16 bits   ; 32 LEs        ; 32 LEs               ; 0 LEs                  ; Yes        ; |TopLevel|datapath:Data|temp_reg:temp4|dout[9]     ;
+; 9:1                ; 16 bits   ; 96 LEs        ; 96 LEs               ; 0 LEs                  ; Yes        ; |TopLevel|datapath:Data|temp_reg:temp2|dout[7]     ;
+; 4:1                ; 8 bits    ; 16 LEs        ; 16 LEs               ; 0 LEs                  ; No         ; |TopLevel|datapath:Data|mux4to1:alu_b_mux|dout[10] ;
+; 4:1                ; 8 bits    ; 16 LEs        ; 16 LEs               ; 0 LEs                  ; No         ; |TopLevel|datapath:Data|mux4to1:alu_b_mux|dout[0]  ;
+; 4:1                ; 5 bits    ; 10 LEs        ; 10 LEs               ; 0 LEs                  ; No         ; |TopLevel|datapath:Data|mux4to1:mema_mux|dout[3]   ;
+; 4:1                ; 7 bits    ; 14 LEs        ; 14 LEs               ; 0 LEs                  ; No         ; |TopLevel|datapath:Data|mux4to1:d3_of_rf|dout[0]   ;
+; 4:1                ; 9 bits    ; 18 LEs        ; 18 LEs               ; 0 LEs                  ; No         ; |TopLevel|datapath:Data|mux4to1:d3_of_rf|dout[13]  ;
+; 8:1                ; 16 bits   ; 80 LEs        ; 80 LEs               ; 0 LEs                  ; No         ; |TopLevel|datapath:Data|regfile:reg_file|Mux10     ;
+; 8:1                ; 5 bits    ; 25 LEs        ; 10 LEs               ; 15 LEs                 ; No         ; |TopLevel|datapath:Data|mux8to1:alu_a_mux|Mux11    ;
+; 8:1                ; 3 bits    ; 15 LEs        ; 9 LEs                ; 6 LEs                  ; No         ; |TopLevel|datapath:Data|mux8to1:a3_rf|Mux2         ;
+; 4:1                ; 3 bits    ; 6 LEs         ; 6 LEs                ; 0 LEs                  ; No         ; |TopLevel|datapath:Data|mux4to1:a1_rf|dout[2]      ;
+; 5:1                ; 8 bits    ; 24 LEs        ; 24 LEs               ; 0 LEs                  ; No         ; |TopLevel|datapath:Data|mux8to1:alu_a_mux|Mux6     ;
+; 7:1                ; 2 bits    ; 8 LEs         ; 8 LEs                ; 0 LEs                  ; No         ; |TopLevel|datapath:Data|mux8to1:alu_a_mux|Mux8     ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------------------------------+
 
 
 +---------------------------------------------------------------------------+
@@ -875,11 +867,12 @@ Note: In order to hide this table in the UI and the text report file, please set
 
 +-------------------------------------------------------------+
 ; Port Connectivity Checks: "datapath:Data|mux4to1:alu_b_mux" ;
-+------+-------+----------+-----------------------------------+
-; Port ; Type  ; Severity ; Details                           ;
-+------+-------+----------+-----------------------------------+
-; d0   ; Input ; Info     ; Stuck at VCC                      ;
-+------+-------+----------+-----------------------------------+
++-----------+-------+----------+------------------------------+
+; Port      ; Type  ; Severity ; Details                      ;
++-----------+-------+----------+------------------------------+
+; d0[15..1] ; Input ; Info     ; Stuck at GND                 ;
+; d0[0]     ; Input ; Info     ; Stuck at VCC                 ;
++-----------+-------+----------+------------------------------+
 
 
 +-------------------------------------------------------------+
@@ -943,15 +936,6 @@ Note: In order to hide this table in the UI and the text report file, please set
 +------+-------+----------+-------------------------------+
 
 
-+-------------------------------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "datapath:Data"                                                                                           ;
-+------+--------+----------+----------------------------------------------------------------------------------------------------------+
-; Port ; Type   ; Severity ; Details                                                                                                  ;
-+------+--------+----------+----------------------------------------------------------------------------------------------------------+
-; cmp  ; Output ; Warning  ; Declared by entity but not connected by instance. Logic that only feeds a dangling port will be removed. ;
-+------+--------+----------+----------------------------------------------------------------------------------------------------------+
-
-
 +-----------------------------------------------------+
 ; Post-Synthesis Netlist Statistics for Top Partition ;
 +-------------------+---------------------------------+
@@ -978,164 +962,162 @@ Note: In order to hide this table in the UI and the text report file, please set
 +-------------------------------+
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
-    Info: Version 17.0.0 Build 595 04/25/2017 SJ Lite Edition
-    Info: Processing started: Sun Nov 12 09:22:54 2017
+    Info: Version 16.1.0 Build 196 10/24/2016 SJ Lite Edition
+    Info: Processing started: Mon Nov 13 10:40:08 2017
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off TopLevel -c TopLevel
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 2 of the 2 processors detected
-Info (12021): Found 2 design units, including 1 entities, in source file /home/shrey/Documents/microlab337/components_datapath/mux4to1.vhd
-    Info (12022): Found design unit 1: mux4to1-rtl File: /home/shrey/Documents/microlab337/components_datapath/mux4to1.vhd Line: 18
-    Info (12023): Found entity 1: mux4to1 File: /home/shrey/Documents/microlab337/components_datapath/mux4to1.vhd Line: 4
-Info (12021): Found 2 design units, including 1 entities, in source file /home/shrey/Documents/microlab337/components_datapath/mux2to1.vhd
-    Info (12022): Found design unit 1: mux2to1-rtl File: /home/shrey/Documents/microlab337/components_datapath/mux2to1.vhd Line: 15
-    Info (12023): Found entity 1: mux2to1 File: /home/shrey/Documents/microlab337/components_datapath/mux2to1.vhd Line: 4
-Info (12021): Found 2 design units, including 1 entities, in source file /home/shrey/Documents/microlab337/components_datapath/decoder3_16.vhd
-    Info (12022): Found design unit 1: decoder3_16-decoder3_16_arc File: /home/shrey/Documents/microlab337/components_datapath/decoder3_16.vhd Line: 12
-    Info (12023): Found entity 1: decoder3_16 File: /home/shrey/Documents/microlab337/components_datapath/decoder3_16.vhd Line: 4
-Info (12021): Found 2 design units, including 1 entities, in source file /home/shrey/Documents/microlab337/components_datapath/datapath.vhd
-    Info (12022): Found design unit 1: datapath-rtl File: /home/shrey/Documents/microlab337/components_datapath/datapath.vhd Line: 19
-    Info (12023): Found entity 1: datapath File: /home/shrey/Documents/microlab337/components_datapath/datapath.vhd Line: 5
-Info (12021): Found 2 design units, including 1 entities, in source file /home/shrey/Documents/microlab337/components_datapath/alu.vhd
-    Info (12022): Found design unit 1: ALU-Struct File: /home/shrey/Documents/microlab337/components_datapath/alu.vhd Line: 16
-    Info (12023): Found entity 1: ALU File: /home/shrey/Documents/microlab337/components_datapath/alu.vhd Line: 5
-Info (12021): Found 2 design units, including 1 entities, in source file /home/shrey/Documents/microlab337/components_datapath/TwosComplement.vhd
-    Info (12022): Found design unit 1: TwosComplement-Behave File: /home/shrey/Documents/microlab337/components_datapath/TwosComplement.vhd Line: 12
-    Info (12023): Found entity 1: TwosComplement File: /home/shrey/Documents/microlab337/components_datapath/TwosComplement.vhd Line: 5
-Info (12021): Found 2 design units, including 1 entities, in source file /home/shrey/Documents/microlab337/components_datapath/trail_zero7.vhd
-    Info (12022): Found design unit 1: trail_zero7-behav File: /home/shrey/Documents/microlab337/components_datapath/trail_zero7.vhd Line: 12
-    Info (12023): Found entity 1: trail_zero7 File: /home/shrey/Documents/microlab337/components_datapath/trail_zero7.vhd Line: 5
-Info (12021): Found 2 design units, including 1 entities, in source file /home/shrey/Documents/microlab337/components_datapath/temp_reg.vhdl
-    Info (12022): Found design unit 1: temp_reg-behav File: /home/shrey/Documents/microlab337/components_datapath/temp_reg.vhdl Line: 17
-    Info (12023): Found entity 1: temp_reg File: /home/shrey/Documents/microlab337/components_datapath/temp_reg.vhdl Line: 5
-Info (12021): Found 2 design units, including 1 entities, in source file /home/shrey/Documents/microlab337/components_datapath/sign_ext.vhd
-    Info (12022): Found design unit 1: sign_ext-rtl File: /home/shrey/Documents/microlab337/components_datapath/sign_ext.vhd Line: 16
-    Info (12023): Found entity 1: sign_ext File: /home/shrey/Documents/microlab337/components_datapath/sign_ext.vhd Line: 5
-Info (12021): Found 2 design units, including 1 entities, in source file /home/shrey/Documents/microlab337/components_datapath/registers.vhd
-    Info (12022): Found design unit 1: registers-behav File: /home/shrey/Documents/microlab337/components_datapath/registers.vhd Line: 14
-    Info (12023): Found entity 1: registers File: /home/shrey/Documents/microlab337/components_datapath/registers.vhd Line: 5
-Info (12021): Found 2 design units, including 1 entities, in source file /home/shrey/Documents/microlab337/components_datapath/regfile.vhd
-    Info (12022): Found design unit 1: regfile-behavioral File: /home/shrey/Documents/microlab337/components_datapath/regfile.vhd Line: 21
-    Info (12023): Found entity 1: regfile File: /home/shrey/Documents/microlab337/components_datapath/regfile.vhd Line: 5
-Info (12021): Found 2 design units, including 1 entities, in source file /home/shrey/Documents/microlab337/components_datapath/ram.vhd
-    Info (12022): Found design unit 1: ram-rtl File: /home/shrey/Documents/microlab337/components_datapath/ram.vhd Line: 22
-    Info (12023): Found entity 1: ram File: /home/shrey/Documents/microlab337/components_datapath/ram.vhd Line: 5
-Info (12021): Found 2 design units, including 1 entities, in source file /home/shrey/Documents/microlab337/components_datapath/priorityEncoder.vhd
-    Info (12022): Found design unit 1: priorityEncoder-priority_enc_arc File: /home/shrey/Documents/microlab337/components_datapath/priorityEncoder.vhd Line: 15
-    Info (12023): Found entity 1: priorityEncoder File: /home/shrey/Documents/microlab337/components_datapath/priorityEncoder.vhd Line: 5
-Info (12021): Found 2 design units, including 1 entities, in source file /home/shrey/Documents/microlab337/components_datapath/mux8to1.vhd
-    Info (12022): Found design unit 1: mux8to1-rtl File: /home/shrey/Documents/microlab337/components_datapath/mux8to1.vhd Line: 22
-    Info (12023): Found entity 1: mux8to1 File: /home/shrey/Documents/microlab337/components_datapath/mux8to1.vhd Line: 4
-Info (12021): Found 2 design units, including 1 entities, in source file /home/shrey/Documents/microlab337/TopLevel.vhd
-    Info (12022): Found design unit 1: TopLevel-Struct File: /home/shrey/Documents/microlab337/TopLevel.vhd Line: 12
-    Info (12023): Found entity 1: TopLevel File: /home/shrey/Documents/microlab337/TopLevel.vhd Line: 6
-Info (12021): Found 2 design units, including 1 entities, in source file /home/shrey/Documents/microlab337/controlPath/FSM_new.vhd
-    Info (12022): Found design unit 1: FSM_new-rtl File: /home/shrey/Documents/microlab337/controlPath/FSM_new.vhd Line: 21
-    Info (12023): Found entity 1: FSM_new File: /home/shrey/Documents/microlab337/controlPath/FSM_new.vhd Line: 5
+Info (12021): Found 2 design units, including 1 entities, in source file /home/mohit/microlab337/components_datapath/mux4to1.vhd
+    Info (12022): Found design unit 1: mux4to1-rtl File: /home/mohit/microlab337/components_datapath/mux4to1.vhd Line: 18
+    Info (12023): Found entity 1: mux4to1 File: /home/mohit/microlab337/components_datapath/mux4to1.vhd Line: 4
+Info (12021): Found 2 design units, including 1 entities, in source file /home/mohit/microlab337/components_datapath/mux2to1.vhd
+    Info (12022): Found design unit 1: mux2to1-rtl File: /home/mohit/microlab337/components_datapath/mux2to1.vhd Line: 15
+    Info (12023): Found entity 1: mux2to1 File: /home/mohit/microlab337/components_datapath/mux2to1.vhd Line: 4
+Info (12021): Found 2 design units, including 1 entities, in source file /home/mohit/microlab337/components_datapath/decoder3_16.vhd
+    Info (12022): Found design unit 1: decoder3_16-decoder3_16_arc File: /home/mohit/microlab337/components_datapath/decoder3_16.vhd Line: 12
+    Info (12023): Found entity 1: decoder3_16 File: /home/mohit/microlab337/components_datapath/decoder3_16.vhd Line: 4
+Info (12021): Found 2 design units, including 1 entities, in source file /home/mohit/microlab337/components_datapath/datapath.vhd
+    Info (12022): Found design unit 1: datapath-rtl File: /home/mohit/microlab337/components_datapath/datapath.vhd Line: 19
+    Info (12023): Found entity 1: datapath File: /home/mohit/microlab337/components_datapath/datapath.vhd Line: 5
+Info (12021): Found 2 design units, including 1 entities, in source file /home/mohit/microlab337/components_datapath/alu.vhd
+    Info (12022): Found design unit 1: ALU-Struct File: /home/mohit/microlab337/components_datapath/alu.vhd Line: 16
+    Info (12023): Found entity 1: ALU File: /home/mohit/microlab337/components_datapath/alu.vhd Line: 5
+Info (12021): Found 2 design units, including 1 entities, in source file /home/mohit/microlab337/components_datapath/TwosComplement.vhd
+    Info (12022): Found design unit 1: TwosComplement-Behave File: /home/mohit/microlab337/components_datapath/TwosComplement.vhd Line: 12
+    Info (12023): Found entity 1: TwosComplement File: /home/mohit/microlab337/components_datapath/TwosComplement.vhd Line: 5
+Info (12021): Found 2 design units, including 1 entities, in source file /home/mohit/microlab337/components_datapath/trail_zero7.vhd
+    Info (12022): Found design unit 1: trail_zero7-behav File: /home/mohit/microlab337/components_datapath/trail_zero7.vhd Line: 12
+    Info (12023): Found entity 1: trail_zero7 File: /home/mohit/microlab337/components_datapath/trail_zero7.vhd Line: 5
+Info (12021): Found 2 design units, including 1 entities, in source file /home/mohit/microlab337/components_datapath/temp_reg.vhdl
+    Info (12022): Found design unit 1: temp_reg-behav File: /home/mohit/microlab337/components_datapath/temp_reg.vhdl Line: 17
+    Info (12023): Found entity 1: temp_reg File: /home/mohit/microlab337/components_datapath/temp_reg.vhdl Line: 5
+Info (12021): Found 2 design units, including 1 entities, in source file /home/mohit/microlab337/components_datapath/sign_ext.vhd
+    Info (12022): Found design unit 1: sign_ext-rtl File: /home/mohit/microlab337/components_datapath/sign_ext.vhd Line: 16
+    Info (12023): Found entity 1: sign_ext File: /home/mohit/microlab337/components_datapath/sign_ext.vhd Line: 5
+Info (12021): Found 2 design units, including 1 entities, in source file /home/mohit/microlab337/components_datapath/registers.vhd
+    Info (12022): Found design unit 1: registers-behav File: /home/mohit/microlab337/components_datapath/registers.vhd Line: 14
+    Info (12023): Found entity 1: registers File: /home/mohit/microlab337/components_datapath/registers.vhd Line: 5
+Info (12021): Found 2 design units, including 1 entities, in source file /home/mohit/microlab337/components_datapath/regfile.vhd
+    Info (12022): Found design unit 1: regfile-behavioral File: /home/mohit/microlab337/components_datapath/regfile.vhd Line: 21
+    Info (12023): Found entity 1: regfile File: /home/mohit/microlab337/components_datapath/regfile.vhd Line: 5
+Info (12021): Found 2 design units, including 1 entities, in source file /home/mohit/microlab337/components_datapath/ram.vhd
+    Info (12022): Found design unit 1: ram-rtl File: /home/mohit/microlab337/components_datapath/ram.vhd Line: 22
+    Info (12023): Found entity 1: ram File: /home/mohit/microlab337/components_datapath/ram.vhd Line: 5
+Info (12021): Found 2 design units, including 1 entities, in source file /home/mohit/microlab337/components_datapath/priorityEncoder.vhd
+    Info (12022): Found design unit 1: priorityEncoder-priority_enc_arc File: /home/mohit/microlab337/components_datapath/priorityEncoder.vhd Line: 15
+    Info (12023): Found entity 1: priorityEncoder File: /home/mohit/microlab337/components_datapath/priorityEncoder.vhd Line: 5
+Info (12021): Found 2 design units, including 1 entities, in source file /home/mohit/microlab337/components_datapath/mux8to1.vhd
+    Info (12022): Found design unit 1: mux8to1-rtl File: /home/mohit/microlab337/components_datapath/mux8to1.vhd Line: 22
+    Info (12023): Found entity 1: mux8to1 File: /home/mohit/microlab337/components_datapath/mux8to1.vhd Line: 4
+Info (12021): Found 2 design units, including 1 entities, in source file /home/mohit/microlab337/TopLevel.vhd
+    Info (12022): Found design unit 1: TopLevel-Struct File: /home/mohit/microlab337/TopLevel.vhd Line: 12
+    Info (12023): Found entity 1: TopLevel File: /home/mohit/microlab337/TopLevel.vhd Line: 6
+Info (12021): Found 2 design units, including 1 entities, in source file /home/mohit/microlab337/controlPath/FSM_new.vhd
+    Info (12022): Found design unit 1: FSM_new-rtl File: /home/mohit/microlab337/controlPath/FSM_new.vhd Line: 21
+    Info (12023): Found entity 1: FSM_new File: /home/mohit/microlab337/controlPath/FSM_new.vhd Line: 5
 Info (12127): Elaborating entity "TopLevel" for the top level hierarchy
-Info (12128): Elaborating entity "FSM_new" for hierarchy "FSM_new:ControlPath" File: /home/shrey/Documents/microlab337/TopLevel.vhd Line: 50
-Warning (10492): VHDL Process Statement warning at FSM_new.vhd(147): signal "IR_3_5" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: /home/shrey/Documents/microlab337/controlPath/FSM_new.vhd Line: 147
-Warning (10492): VHDL Process Statement warning at FSM_new.vhd(170): signal "IR_7" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: /home/shrey/Documents/microlab337/controlPath/FSM_new.vhd Line: 170
-Warning (10492): VHDL Process Statement warning at FSM_new.vhd(182): signal "IR_3_5" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: /home/shrey/Documents/microlab337/controlPath/FSM_new.vhd Line: 182
-Warning (10492): VHDL Process Statement warning at FSM_new.vhd(198): signal "IR_3_5" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: /home/shrey/Documents/microlab337/controlPath/FSM_new.vhd Line: 198
-Warning (10631): VHDL Process Statement warning at FSM_new.vhd(109): inferring latch(es) for signal or variable "next_state", which holds its previous value in one or more paths through the process File: /home/shrey/Documents/microlab337/controlPath/FSM_new.vhd Line: 109
-Info (10041): Inferred latch for "next_state.s20" at FSM_new.vhd(109) File: /home/shrey/Documents/microlab337/controlPath/FSM_new.vhd Line: 109
-Info (10041): Inferred latch for "next_state.s19" at FSM_new.vhd(109) File: /home/shrey/Documents/microlab337/controlPath/FSM_new.vhd Line: 109
-Info (10041): Inferred latch for "next_state.s18" at FSM_new.vhd(109) File: /home/shrey/Documents/microlab337/controlPath/FSM_new.vhd Line: 109
-Info (10041): Inferred latch for "next_state.s17" at FSM_new.vhd(109) File: /home/shrey/Documents/microlab337/controlPath/FSM_new.vhd Line: 109
-Info (10041): Inferred latch for "next_state.s16" at FSM_new.vhd(109) File: /home/shrey/Documents/microlab337/controlPath/FSM_new.vhd Line: 109
-Info (10041): Inferred latch for "next_state.s15" at FSM_new.vhd(109) File: /home/shrey/Documents/microlab337/controlPath/FSM_new.vhd Line: 109
-Info (10041): Inferred latch for "next_state.s14" at FSM_new.vhd(109) File: /home/shrey/Documents/microlab337/controlPath/FSM_new.vhd Line: 109
-Info (10041): Inferred latch for "next_state.s13" at FSM_new.vhd(109) File: /home/shrey/Documents/microlab337/controlPath/FSM_new.vhd Line: 109
-Info (10041): Inferred latch for "next_state.s12" at FSM_new.vhd(109) File: /home/shrey/Documents/microlab337/controlPath/FSM_new.vhd Line: 109
-Info (10041): Inferred latch for "next_state.s11" at FSM_new.vhd(109) File: /home/shrey/Documents/microlab337/controlPath/FSM_new.vhd Line: 109
-Info (10041): Inferred latch for "next_state.s10" at FSM_new.vhd(109) File: /home/shrey/Documents/microlab337/controlPath/FSM_new.vhd Line: 109
-Info (10041): Inferred latch for "next_state.s9" at FSM_new.vhd(109) File: /home/shrey/Documents/microlab337/controlPath/FSM_new.vhd Line: 109
-Info (10041): Inferred latch for "next_state.s8" at FSM_new.vhd(109) File: /home/shrey/Documents/microlab337/controlPath/FSM_new.vhd Line: 109
-Info (10041): Inferred latch for "next_state.s7" at FSM_new.vhd(109) File: /home/shrey/Documents/microlab337/controlPath/FSM_new.vhd Line: 109
-Info (10041): Inferred latch for "next_state.s6" at FSM_new.vhd(109) File: /home/shrey/Documents/microlab337/controlPath/FSM_new.vhd Line: 109
-Info (10041): Inferred latch for "next_state.s5" at FSM_new.vhd(109) File: /home/shrey/Documents/microlab337/controlPath/FSM_new.vhd Line: 109
-Info (10041): Inferred latch for "next_state.s4" at FSM_new.vhd(109) File: /home/shrey/Documents/microlab337/controlPath/FSM_new.vhd Line: 109
-Info (10041): Inferred latch for "next_state.s3" at FSM_new.vhd(109) File: /home/shrey/Documents/microlab337/controlPath/FSM_new.vhd Line: 109
-Info (10041): Inferred latch for "next_state.s2" at FSM_new.vhd(109) File: /home/shrey/Documents/microlab337/controlPath/FSM_new.vhd Line: 109
-Info (10041): Inferred latch for "next_state.s1" at FSM_new.vhd(109) File: /home/shrey/Documents/microlab337/controlPath/FSM_new.vhd Line: 109
-Info (12128): Elaborating entity "datapath" for hierarchy "datapath:Data" File: /home/shrey/Documents/microlab337/TopLevel.vhd Line: 64
-Info (12128): Elaborating entity "mux2to1" for hierarchy "datapath:Data|mux2to1:t2_mux" File: /home/shrey/Documents/microlab337/components_datapath/datapath.vhd Line: 265
-Info (12128): Elaborating entity "mux4to1" for hierarchy "datapath:Data|mux4to1:muxt1" File: /home/shrey/Documents/microlab337/components_datapath/datapath.vhd Line: 284
-Info (12128): Elaborating entity "temp_reg" for hierarchy "datapath:Data|temp_reg:temp1" File: /home/shrey/Documents/microlab337/components_datapath/datapath.vhd Line: 319
-Warning (10492): VHDL Process Statement warning at temp_reg.vhdl(23): signal "en" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: /home/shrey/Documents/microlab337/components_datapath/temp_reg.vhdl Line: 23
-Info (12128): Elaborating entity "mux4to1" for hierarchy "datapath:Data|mux4to1:a1_rf" File: /home/shrey/Documents/microlab337/components_datapath/datapath.vhd Line: 354
-Info (12128): Elaborating entity "mux8to1" for hierarchy "datapath:Data|mux8to1:a3_rf" File: /home/shrey/Documents/microlab337/components_datapath/datapath.vhd Line: 365
-Info (12128): Elaborating entity "mux8to1" for hierarchy "datapath:Data|mux8to1:alu_a_mux" File: /home/shrey/Documents/microlab337/components_datapath/datapath.vhd Line: 381
-Info (12128): Elaborating entity "ALU" for hierarchy "datapath:Data|ALU:my_alu" File: /home/shrey/Documents/microlab337/components_datapath/datapath.vhd Line: 412
-Warning (10492): VHDL Process Statement warning at alu.vhd(58): signal "add1bit" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: /home/shrey/Documents/microlab337/components_datapath/alu.vhd Line: 58
-Warning (10631): VHDL Process Statement warning at alu.vhd(53): inferring latch(es) for signal or variable "alu_out_read", which holds its previous value in one or more paths through the process File: /home/shrey/Documents/microlab337/components_datapath/alu.vhd Line: 53
-Warning (10631): VHDL Process Statement warning at alu.vhd(53): inferring latch(es) for signal or variable "two_complement_add", which holds its previous value in one or more paths through the process File: /home/shrey/Documents/microlab337/components_datapath/alu.vhd Line: 53
-Warning (10631): VHDL Process Statement warning at alu.vhd(53): inferring latch(es) for signal or variable "cmp", which holds its previous value in one or more paths through the process File: /home/shrey/Documents/microlab337/components_datapath/alu.vhd Line: 53
-Info (10041): Inferred latch for "cmp" at alu.vhd(53) File: /home/shrey/Documents/microlab337/components_datapath/alu.vhd Line: 53
-Info (10041): Inferred latch for "two_complement_add[0]" at alu.vhd(53) File: /home/shrey/Documents/microlab337/components_datapath/alu.vhd Line: 53
-Info (10041): Inferred latch for "two_complement_add[1]" at alu.vhd(53) File: /home/shrey/Documents/microlab337/components_datapath/alu.vhd Line: 53
-Info (10041): Inferred latch for "two_complement_add[2]" at alu.vhd(53) File: /home/shrey/Documents/microlab337/components_datapath/alu.vhd Line: 53
-Info (10041): Inferred latch for "two_complement_add[3]" at alu.vhd(53) File: /home/shrey/Documents/microlab337/components_datapath/alu.vhd Line: 53
-Info (10041): Inferred latch for "two_complement_add[4]" at alu.vhd(53) File: /home/shrey/Documents/microlab337/components_datapath/alu.vhd Line: 53
-Info (10041): Inferred latch for "two_complement_add[5]" at alu.vhd(53) File: /home/shrey/Documents/microlab337/components_datapath/alu.vhd Line: 53
-Info (10041): Inferred latch for "two_complement_add[6]" at alu.vhd(53) File: /home/shrey/Documents/microlab337/components_datapath/alu.vhd Line: 53
-Info (10041): Inferred latch for "two_complement_add[7]" at alu.vhd(53) File: /home/shrey/Documents/microlab337/components_datapath/alu.vhd Line: 53
-Info (10041): Inferred latch for "two_complement_add[8]" at alu.vhd(53) File: /home/shrey/Documents/microlab337/components_datapath/alu.vhd Line: 53
-Info (10041): Inferred latch for "two_complement_add[9]" at alu.vhd(53) File: /home/shrey/Documents/microlab337/components_datapath/alu.vhd Line: 53
-Info (10041): Inferred latch for "two_complement_add[10]" at alu.vhd(53) File: /home/shrey/Documents/microlab337/components_datapath/alu.vhd Line: 53
-Info (10041): Inferred latch for "two_complement_add[11]" at alu.vhd(53) File: /home/shrey/Documents/microlab337/components_datapath/alu.vhd Line: 53
-Info (10041): Inferred latch for "two_complement_add[12]" at alu.vhd(53) File: /home/shrey/Documents/microlab337/components_datapath/alu.vhd Line: 53
-Info (10041): Inferred latch for "two_complement_add[13]" at alu.vhd(53) File: /home/shrey/Documents/microlab337/components_datapath/alu.vhd Line: 53
-Info (10041): Inferred latch for "two_complement_add[14]" at alu.vhd(53) File: /home/shrey/Documents/microlab337/components_datapath/alu.vhd Line: 53
-Info (10041): Inferred latch for "alu_out_read[0]" at alu.vhd(53) File: /home/shrey/Documents/microlab337/components_datapath/alu.vhd Line: 53
-Info (10041): Inferred latch for "alu_out_read[1]" at alu.vhd(53) File: /home/shrey/Documents/microlab337/components_datapath/alu.vhd Line: 53
-Info (10041): Inferred latch for "alu_out_read[2]" at alu.vhd(53) File: /home/shrey/Documents/microlab337/components_datapath/alu.vhd Line: 53
-Info (10041): Inferred latch for "alu_out_read[3]" at alu.vhd(53) File: /home/shrey/Documents/microlab337/components_datapath/alu.vhd Line: 53
-Info (10041): Inferred latch for "alu_out_read[4]" at alu.vhd(53) File: /home/shrey/Documents/microlab337/components_datapath/alu.vhd Line: 53
-Info (10041): Inferred latch for "alu_out_read[5]" at alu.vhd(53) File: /home/shrey/Documents/microlab337/components_datapath/alu.vhd Line: 53
-Info (10041): Inferred latch for "alu_out_read[6]" at alu.vhd(53) File: /home/shrey/Documents/microlab337/components_datapath/alu.vhd Line: 53
-Info (10041): Inferred latch for "alu_out_read[7]" at alu.vhd(53) File: /home/shrey/Documents/microlab337/components_datapath/alu.vhd Line: 53
-Info (10041): Inferred latch for "alu_out_read[8]" at alu.vhd(53) File: /home/shrey/Documents/microlab337/components_datapath/alu.vhd Line: 53
-Info (10041): Inferred latch for "alu_out_read[9]" at alu.vhd(53) File: /home/shrey/Documents/microlab337/components_datapath/alu.vhd Line: 53
-Info (10041): Inferred latch for "alu_out_read[10]" at alu.vhd(53) File: /home/shrey/Documents/microlab337/components_datapath/alu.vhd Line: 53
-Info (10041): Inferred latch for "alu_out_read[11]" at alu.vhd(53) File: /home/shrey/Documents/microlab337/components_datapath/alu.vhd Line: 53
-Info (10041): Inferred latch for "alu_out_read[12]" at alu.vhd(53) File: /home/shrey/Documents/microlab337/components_datapath/alu.vhd Line: 53
-Info (10041): Inferred latch for "alu_out_read[13]" at alu.vhd(53) File: /home/shrey/Documents/microlab337/components_datapath/alu.vhd Line: 53
-Info (10041): Inferred latch for "alu_out_read[14]" at alu.vhd(53) File: /home/shrey/Documents/microlab337/components_datapath/alu.vhd Line: 53
-Info (10041): Inferred latch for "alu_out_read[15]" at alu.vhd(53) File: /home/shrey/Documents/microlab337/components_datapath/alu.vhd Line: 53
-Info (12128): Elaborating entity "TwosComplement" for hierarchy "datapath:Data|ALU:my_alu|TwosComplement:two" File: /home/shrey/Documents/microlab337/components_datapath/alu.vhd Line: 31
-Info (12128): Elaborating entity "registers" for hierarchy "datapath:Data|registers:car" File: /home/shrey/Documents/microlab337/components_datapath/datapath.vhd Line: 423
-Warning (10492): VHDL Process Statement warning at registers.vhd(21): signal "en" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: /home/shrey/Documents/microlab337/components_datapath/registers.vhd Line: 21
-Info (12128): Elaborating entity "sign_ext" for hierarchy "datapath:Data|sign_ext:sign_ext7" File: /home/shrey/Documents/microlab337/components_datapath/datapath.vhd Line: 442
-Info (12128): Elaborating entity "sign_ext" for hierarchy "datapath:Data|sign_ext:sign_ext8" File: /home/shrey/Documents/microlab337/components_datapath/datapath.vhd Line: 449
-Info (12128): Elaborating entity "sign_ext" for hierarchy "datapath:Data|sign_ext:sign_ext10" File: /home/shrey/Documents/microlab337/components_datapath/datapath.vhd Line: 456
-Info (12128): Elaborating entity "priorityEncoder" for hierarchy "datapath:Data|priorityEncoder:pr_enc" File: /home/shrey/Documents/microlab337/components_datapath/datapath.vhd Line: 463
-Warning (10631): VHDL Process Statement warning at priorityEncoder.vhd(18): inferring latch(es) for signal or variable "dout", which holds its previous value in one or more paths through the process File: /home/shrey/Documents/microlab337/components_datapath/priorityEncoder.vhd Line: 18
-Warning (10631): VHDL Process Statement warning at priorityEncoder.vhd(18): inferring latch(es) for signal or variable "valid", which holds its previous value in one or more paths through the process File: /home/shrey/Documents/microlab337/components_datapath/priorityEncoder.vhd Line: 18
-Info (10041): Inferred latch for "valid" at priorityEncoder.vhd(18) File: /home/shrey/Documents/microlab337/components_datapath/priorityEncoder.vhd Line: 18
-Info (10041): Inferred latch for "dout[0]" at priorityEncoder.vhd(18) File: /home/shrey/Documents/microlab337/components_datapath/priorityEncoder.vhd Line: 18
-Info (10041): Inferred latch for "dout[1]" at priorityEncoder.vhd(18) File: /home/shrey/Documents/microlab337/components_datapath/priorityEncoder.vhd Line: 18
-Info (10041): Inferred latch for "dout[2]" at priorityEncoder.vhd(18) File: /home/shrey/Documents/microlab337/components_datapath/priorityEncoder.vhd Line: 18
-Info (12128): Elaborating entity "ram" for hierarchy "datapath:Data|ram:memory" File: /home/shrey/Documents/microlab337/components_datapath/datapath.vhd Line: 471
-Info (12128): Elaborating entity "trail_zero7" for hierarchy "datapath:Data|trail_zero7:trail_zero" File: /home/shrey/Documents/microlab337/components_datapath/datapath.vhd Line: 534
-Info (12128): Elaborating entity "decoder3_16" for hierarchy "datapath:Data|decoder3_16:decoder" File: /home/shrey/Documents/microlab337/components_datapath/datapath.vhd Line: 540
-Info (12128): Elaborating entity "regfile" for hierarchy "datapath:Data|regfile:reg_file" File: /home/shrey/Documents/microlab337/components_datapath/datapath.vhd Line: 546
+Info (12128): Elaborating entity "FSM_new" for hierarchy "FSM_new:ControlPath" File: /home/mohit/microlab337/TopLevel.vhd Line: 51
+Warning (10492): VHDL Process Statement warning at FSM_new.vhd(149): signal "IR_3_5" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: /home/mohit/microlab337/controlPath/FSM_new.vhd Line: 149
+Warning (10492): VHDL Process Statement warning at FSM_new.vhd(172): signal "IR_7" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: /home/mohit/microlab337/controlPath/FSM_new.vhd Line: 172
+Warning (10492): VHDL Process Statement warning at FSM_new.vhd(184): signal "IR_3_5" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: /home/mohit/microlab337/controlPath/FSM_new.vhd Line: 184
+Warning (10492): VHDL Process Statement warning at FSM_new.vhd(200): signal "IR_3_5" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: /home/mohit/microlab337/controlPath/FSM_new.vhd Line: 200
+Warning (10631): VHDL Process Statement warning at FSM_new.vhd(109): inferring latch(es) for signal or variable "next_state", which holds its previous value in one or more paths through the process File: /home/mohit/microlab337/controlPath/FSM_new.vhd Line: 109
+Info (10041): Inferred latch for "next_state.s20" at FSM_new.vhd(109) File: /home/mohit/microlab337/controlPath/FSM_new.vhd Line: 109
+Info (10041): Inferred latch for "next_state.s19" at FSM_new.vhd(109) File: /home/mohit/microlab337/controlPath/FSM_new.vhd Line: 109
+Info (10041): Inferred latch for "next_state.s18" at FSM_new.vhd(109) File: /home/mohit/microlab337/controlPath/FSM_new.vhd Line: 109
+Info (10041): Inferred latch for "next_state.s17" at FSM_new.vhd(109) File: /home/mohit/microlab337/controlPath/FSM_new.vhd Line: 109
+Info (10041): Inferred latch for "next_state.s16" at FSM_new.vhd(109) File: /home/mohit/microlab337/controlPath/FSM_new.vhd Line: 109
+Info (10041): Inferred latch for "next_state.s15" at FSM_new.vhd(109) File: /home/mohit/microlab337/controlPath/FSM_new.vhd Line: 109
+Info (10041): Inferred latch for "next_state.s14" at FSM_new.vhd(109) File: /home/mohit/microlab337/controlPath/FSM_new.vhd Line: 109
+Info (10041): Inferred latch for "next_state.s13" at FSM_new.vhd(109) File: /home/mohit/microlab337/controlPath/FSM_new.vhd Line: 109
+Info (10041): Inferred latch for "next_state.s12" at FSM_new.vhd(109) File: /home/mohit/microlab337/controlPath/FSM_new.vhd Line: 109
+Info (10041): Inferred latch for "next_state.s11" at FSM_new.vhd(109) File: /home/mohit/microlab337/controlPath/FSM_new.vhd Line: 109
+Info (10041): Inferred latch for "next_state.s10" at FSM_new.vhd(109) File: /home/mohit/microlab337/controlPath/FSM_new.vhd Line: 109
+Info (10041): Inferred latch for "next_state.s9" at FSM_new.vhd(109) File: /home/mohit/microlab337/controlPath/FSM_new.vhd Line: 109
+Info (10041): Inferred latch for "next_state.s8" at FSM_new.vhd(109) File: /home/mohit/microlab337/controlPath/FSM_new.vhd Line: 109
+Info (10041): Inferred latch for "next_state.s7" at FSM_new.vhd(109) File: /home/mohit/microlab337/controlPath/FSM_new.vhd Line: 109
+Info (10041): Inferred latch for "next_state.s6" at FSM_new.vhd(109) File: /home/mohit/microlab337/controlPath/FSM_new.vhd Line: 109
+Info (10041): Inferred latch for "next_state.s5" at FSM_new.vhd(109) File: /home/mohit/microlab337/controlPath/FSM_new.vhd Line: 109
+Info (10041): Inferred latch for "next_state.s4" at FSM_new.vhd(109) File: /home/mohit/microlab337/controlPath/FSM_new.vhd Line: 109
+Info (10041): Inferred latch for "next_state.s3" at FSM_new.vhd(109) File: /home/mohit/microlab337/controlPath/FSM_new.vhd Line: 109
+Info (10041): Inferred latch for "next_state.s2" at FSM_new.vhd(109) File: /home/mohit/microlab337/controlPath/FSM_new.vhd Line: 109
+Info (10041): Inferred latch for "next_state.s1" at FSM_new.vhd(109) File: /home/mohit/microlab337/controlPath/FSM_new.vhd Line: 109
+Info (12128): Elaborating entity "datapath" for hierarchy "datapath:Data" File: /home/mohit/microlab337/TopLevel.vhd Line: 67
+Info (12128): Elaborating entity "mux2to1" for hierarchy "datapath:Data|mux2to1:t2_mux" File: /home/mohit/microlab337/components_datapath/datapath.vhd Line: 265
+Info (12128): Elaborating entity "mux4to1" for hierarchy "datapath:Data|mux4to1:muxt1" File: /home/mohit/microlab337/components_datapath/datapath.vhd Line: 284
+Info (12128): Elaborating entity "temp_reg" for hierarchy "datapath:Data|temp_reg:temp1" File: /home/mohit/microlab337/components_datapath/datapath.vhd Line: 319
+Warning (10492): VHDL Process Statement warning at temp_reg.vhdl(23): signal "en" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: /home/mohit/microlab337/components_datapath/temp_reg.vhdl Line: 23
+Info (12128): Elaborating entity "mux4to1" for hierarchy "datapath:Data|mux4to1:a1_rf" File: /home/mohit/microlab337/components_datapath/datapath.vhd Line: 354
+Info (12128): Elaborating entity "mux8to1" for hierarchy "datapath:Data|mux8to1:a3_rf" File: /home/mohit/microlab337/components_datapath/datapath.vhd Line: 365
+Info (12128): Elaborating entity "mux8to1" for hierarchy "datapath:Data|mux8to1:alu_a_mux" File: /home/mohit/microlab337/components_datapath/datapath.vhd Line: 381
+Info (12128): Elaborating entity "ALU" for hierarchy "datapath:Data|ALU:my_alu" File: /home/mohit/microlab337/components_datapath/datapath.vhd Line: 412
+Warning (10631): VHDL Process Statement warning at alu.vhd(53): inferring latch(es) for signal or variable "alu_out_read", which holds its previous value in one or more paths through the process File: /home/mohit/microlab337/components_datapath/alu.vhd Line: 53
+Warning (10631): VHDL Process Statement warning at alu.vhd(53): inferring latch(es) for signal or variable "two_complement_add", which holds its previous value in one or more paths through the process File: /home/mohit/microlab337/components_datapath/alu.vhd Line: 53
+Warning (10631): VHDL Process Statement warning at alu.vhd(53): inferring latch(es) for signal or variable "cmp", which holds its previous value in one or more paths through the process File: /home/mohit/microlab337/components_datapath/alu.vhd Line: 53
+Info (10041): Inferred latch for "cmp" at alu.vhd(53) File: /home/mohit/microlab337/components_datapath/alu.vhd Line: 53
+Info (10041): Inferred latch for "two_complement_add[0]" at alu.vhd(53) File: /home/mohit/microlab337/components_datapath/alu.vhd Line: 53
+Info (10041): Inferred latch for "two_complement_add[1]" at alu.vhd(53) File: /home/mohit/microlab337/components_datapath/alu.vhd Line: 53
+Info (10041): Inferred latch for "two_complement_add[2]" at alu.vhd(53) File: /home/mohit/microlab337/components_datapath/alu.vhd Line: 53
+Info (10041): Inferred latch for "two_complement_add[3]" at alu.vhd(53) File: /home/mohit/microlab337/components_datapath/alu.vhd Line: 53
+Info (10041): Inferred latch for "two_complement_add[4]" at alu.vhd(53) File: /home/mohit/microlab337/components_datapath/alu.vhd Line: 53
+Info (10041): Inferred latch for "two_complement_add[5]" at alu.vhd(53) File: /home/mohit/microlab337/components_datapath/alu.vhd Line: 53
+Info (10041): Inferred latch for "two_complement_add[6]" at alu.vhd(53) File: /home/mohit/microlab337/components_datapath/alu.vhd Line: 53
+Info (10041): Inferred latch for "two_complement_add[7]" at alu.vhd(53) File: /home/mohit/microlab337/components_datapath/alu.vhd Line: 53
+Info (10041): Inferred latch for "two_complement_add[8]" at alu.vhd(53) File: /home/mohit/microlab337/components_datapath/alu.vhd Line: 53
+Info (10041): Inferred latch for "two_complement_add[9]" at alu.vhd(53) File: /home/mohit/microlab337/components_datapath/alu.vhd Line: 53
+Info (10041): Inferred latch for "two_complement_add[10]" at alu.vhd(53) File: /home/mohit/microlab337/components_datapath/alu.vhd Line: 53
+Info (10041): Inferred latch for "two_complement_add[11]" at alu.vhd(53) File: /home/mohit/microlab337/components_datapath/alu.vhd Line: 53
+Info (10041): Inferred latch for "two_complement_add[12]" at alu.vhd(53) File: /home/mohit/microlab337/components_datapath/alu.vhd Line: 53
+Info (10041): Inferred latch for "two_complement_add[13]" at alu.vhd(53) File: /home/mohit/microlab337/components_datapath/alu.vhd Line: 53
+Info (10041): Inferred latch for "two_complement_add[14]" at alu.vhd(53) File: /home/mohit/microlab337/components_datapath/alu.vhd Line: 53
+Info (10041): Inferred latch for "alu_out_read[0]" at alu.vhd(53) File: /home/mohit/microlab337/components_datapath/alu.vhd Line: 53
+Info (10041): Inferred latch for "alu_out_read[1]" at alu.vhd(53) File: /home/mohit/microlab337/components_datapath/alu.vhd Line: 53
+Info (10041): Inferred latch for "alu_out_read[2]" at alu.vhd(53) File: /home/mohit/microlab337/components_datapath/alu.vhd Line: 53
+Info (10041): Inferred latch for "alu_out_read[3]" at alu.vhd(53) File: /home/mohit/microlab337/components_datapath/alu.vhd Line: 53
+Info (10041): Inferred latch for "alu_out_read[4]" at alu.vhd(53) File: /home/mohit/microlab337/components_datapath/alu.vhd Line: 53
+Info (10041): Inferred latch for "alu_out_read[5]" at alu.vhd(53) File: /home/mohit/microlab337/components_datapath/alu.vhd Line: 53
+Info (10041): Inferred latch for "alu_out_read[6]" at alu.vhd(53) File: /home/mohit/microlab337/components_datapath/alu.vhd Line: 53
+Info (10041): Inferred latch for "alu_out_read[7]" at alu.vhd(53) File: /home/mohit/microlab337/components_datapath/alu.vhd Line: 53
+Info (10041): Inferred latch for "alu_out_read[8]" at alu.vhd(53) File: /home/mohit/microlab337/components_datapath/alu.vhd Line: 53
+Info (10041): Inferred latch for "alu_out_read[9]" at alu.vhd(53) File: /home/mohit/microlab337/components_datapath/alu.vhd Line: 53
+Info (10041): Inferred latch for "alu_out_read[10]" at alu.vhd(53) File: /home/mohit/microlab337/components_datapath/alu.vhd Line: 53
+Info (10041): Inferred latch for "alu_out_read[11]" at alu.vhd(53) File: /home/mohit/microlab337/components_datapath/alu.vhd Line: 53
+Info (10041): Inferred latch for "alu_out_read[12]" at alu.vhd(53) File: /home/mohit/microlab337/components_datapath/alu.vhd Line: 53
+Info (10041): Inferred latch for "alu_out_read[13]" at alu.vhd(53) File: /home/mohit/microlab337/components_datapath/alu.vhd Line: 53
+Info (10041): Inferred latch for "alu_out_read[14]" at alu.vhd(53) File: /home/mohit/microlab337/components_datapath/alu.vhd Line: 53
+Info (10041): Inferred latch for "alu_out_read[15]" at alu.vhd(53) File: /home/mohit/microlab337/components_datapath/alu.vhd Line: 53
+Info (12128): Elaborating entity "TwosComplement" for hierarchy "datapath:Data|ALU:my_alu|TwosComplement:two" File: /home/mohit/microlab337/components_datapath/alu.vhd Line: 31
+Info (12128): Elaborating entity "registers" for hierarchy "datapath:Data|registers:car" File: /home/mohit/microlab337/components_datapath/datapath.vhd Line: 423
+Warning (10492): VHDL Process Statement warning at registers.vhd(21): signal "en" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: /home/mohit/microlab337/components_datapath/registers.vhd Line: 21
+Info (12128): Elaborating entity "sign_ext" for hierarchy "datapath:Data|sign_ext:sign_ext7" File: /home/mohit/microlab337/components_datapath/datapath.vhd Line: 442
+Info (12128): Elaborating entity "sign_ext" for hierarchy "datapath:Data|sign_ext:sign_ext8" File: /home/mohit/microlab337/components_datapath/datapath.vhd Line: 449
+Info (12128): Elaborating entity "sign_ext" for hierarchy "datapath:Data|sign_ext:sign_ext10" File: /home/mohit/microlab337/components_datapath/datapath.vhd Line: 456
+Info (12128): Elaborating entity "priorityEncoder" for hierarchy "datapath:Data|priorityEncoder:pr_enc" File: /home/mohit/microlab337/components_datapath/datapath.vhd Line: 463
+Warning (10631): VHDL Process Statement warning at priorityEncoder.vhd(18): inferring latch(es) for signal or variable "dout", which holds its previous value in one or more paths through the process File: /home/mohit/microlab337/components_datapath/priorityEncoder.vhd Line: 18
+Warning (10631): VHDL Process Statement warning at priorityEncoder.vhd(18): inferring latch(es) for signal or variable "valid", which holds its previous value in one or more paths through the process File: /home/mohit/microlab337/components_datapath/priorityEncoder.vhd Line: 18
+Info (10041): Inferred latch for "valid" at priorityEncoder.vhd(18) File: /home/mohit/microlab337/components_datapath/priorityEncoder.vhd Line: 18
+Info (10041): Inferred latch for "dout[0]" at priorityEncoder.vhd(18) File: /home/mohit/microlab337/components_datapath/priorityEncoder.vhd Line: 18
+Info (10041): Inferred latch for "dout[1]" at priorityEncoder.vhd(18) File: /home/mohit/microlab337/components_datapath/priorityEncoder.vhd Line: 18
+Info (10041): Inferred latch for "dout[2]" at priorityEncoder.vhd(18) File: /home/mohit/microlab337/components_datapath/priorityEncoder.vhd Line: 18
+Info (12128): Elaborating entity "ram" for hierarchy "datapath:Data|ram:memory" File: /home/mohit/microlab337/components_datapath/datapath.vhd Line: 471
+Info (12128): Elaborating entity "trail_zero7" for hierarchy "datapath:Data|trail_zero7:trail_zero" File: /home/mohit/microlab337/components_datapath/datapath.vhd Line: 534
+Info (12128): Elaborating entity "decoder3_16" for hierarchy "datapath:Data|decoder3_16:decoder" File: /home/mohit/microlab337/components_datapath/datapath.vhd Line: 540
+Info (12128): Elaborating entity "regfile" for hierarchy "datapath:Data|regfile:reg_file" File: /home/mohit/microlab337/components_datapath/datapath.vhd Line: 546
 Info (276014): Found 1 instances of uninferred RAM logic
-    Info (276007): RAM logic "datapath:Data|ram:memory|ram_block" is uninferred due to asynchronous read logic File: /home/shrey/Documents/microlab337/components_datapath/ram.vhd Line: 24
-Warning (12241): 1 hierarchies have connectivity warnings - see the Connectivity Checks report folder
+    Info (276007): RAM logic "datapath:Data|ram:memory|ram_block" is uninferred due to asynchronous read logic File: /home/mohit/microlab337/components_datapath/ram.vhd Line: 24
 Info (17049): 250 registers lost all their fanouts during netlist optimizations.
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
 Warning (21074): Design contains 2 input pin(s) that do not drive logic
-    Warning (15610): No output dependent on input pin "clk" File: /home/shrey/Documents/microlab337/TopLevel.vhd Line: 8
-    Warning (15610): No output dependent on input pin "reset" File: /home/shrey/Documents/microlab337/TopLevel.vhd Line: 8
+    Warning (15610): No output dependent on input pin "clk" File: /home/mohit/microlab337/TopLevel.vhd Line: 8
+    Warning (15610): No output dependent on input pin "reset" File: /home/mohit/microlab337/TopLevel.vhd Line: 8
 Info (21057): Implemented 2 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 2 input pins
     Info (21059): Implemented 0 output pins
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 18 warnings
-    Info: Peak virtual memory: 971 megabytes
-    Info: Processing ended: Sun Nov 12 09:23:05 2017
-    Info: Elapsed time: 00:00:11
-    Info: Total CPU time (on all processors): 00:00:26
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 16 warnings
+    Info: Peak virtual memory: 957 megabytes
+    Info: Processing ended: Mon Nov 13 10:40:23 2017
+    Info: Elapsed time: 00:00:15
+    Info: Total CPU time (on all processors): 00:00:33
 
 
