@@ -128,6 +128,10 @@ begin
 						next_state <= s8;
 					elsif (opcode = "0101") then
 						next_state <= s7 ;
+					elsif (opcode = "1000") then
+						next_state <= s18 ;
+					elsif (opcode = "1001") then
+						next_state <= s13 ;
 					else 
 						next_state <= s3;
 					end if;

@@ -230,7 +230,7 @@ a3_mux(1) <= (not C(16) and C(17) and (C(18) or C(19))) or (C(16) and not C(17) 
 a3_mux(0) <= (C(16) and not C(17) and C(18)) or (not C(16) and C(17) and (not(C(18) xor C(19))));
 
 d3_mux(1) <= C(18) and ((not C(16) and C(17)) or (C(16) and not C(17) and C(19)));
-d3_mux(0) <= (not C(16) and C(17) and (not C(18) or C(19))) or ((C(16) and C(17) and C(18)));
+d3_mux(0) <= (not C(16) and C(17) and (not C(18) or C(19))) or ((C(16) and C(17) and C(18))) or (C(19) and C(18) and C(16) and (not C(17)));
 
 
 ---memory
