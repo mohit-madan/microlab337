@@ -43,46 +43,46 @@ begin
 				--when s0 =>
 					--control_store <= "00000000000000000000" ;
 				when s1=>
-					control_store <= "10001001001000000111";
+					control_store <= "10001001001011000111";
 					
 				when s2=>
-					control_store <= "01000000001010011100";
+					control_store <= "01000000000010011100";
 					
 				when s3=>
-					control_store <= "00000100000000110110";
+					control_store <= "00000100000011110110";
 					
 				when s4 =>
-					control_store <= "11000000000000000110";	
+					control_store <= "11000000000011000110";	
 				
 				when s5 =>
-					control_store <= "00100000000000000110";	
+					control_store <= "00100000000011000110";	
 					
 				when s6 =>
-					control_store <= "11010000000000010110";	
+					control_store <= "11010000000011010110";	
 				
 				when s7 =>
-					control_store <= "00001100000000110110";	
+					control_store <= "00001100000011110110";	
 					
 				when s8 =>
-					control_store <= "00000010100100101110";	
+					control_store <= "00000010100111101110";	
 					
 				when s9 =>
-					control_store <= "01100000000000000110";	
+					control_store <= "01100000000110000110";	
 					
 				when s10 =>
 					control_store <= "11101010000000010010";	
 					
 				when s11 =>
-					control_store <= "00000001100000001000";	
+					control_store <= "00000001100011001000";	
 					
 				when s12 =>
-					control_store <= "00010000000000000110";	
+					control_store <= "00010000000011000110";	
 					
 				when s13 =>
-					control_store <= "10100000000000011110";	
+					control_store <= "10100000000011011110";	
 					
 				when s14 =>
-					control_store <= "00100000010000000110";
+					control_store <= "00100000010011000110";
 					
 				when s15 =>
 					control_store <= "00000001010011000110";
@@ -91,13 +91,13 @@ begin
 					control_store <= "00001010000000000110";	
 					
 				when s17 =>
-					control_store <= "00000110000000000111";	
+					control_store <= "00000110000011000111";	
 					
 				when s18 =>
-					control_store <= "10010111000000100110";	
+					control_store <= "10010111000011100110";	
 					
 				when s19 =>
-					control_store <= "01010000000000000110";
+					control_store <= "01010000000011000110";
 					
 				when s20 =>
 					control_store <= "00110000000001000010";	
@@ -232,4 +232,4 @@ begin
 			end case;
 			
 	end process;
-end rtl;	
+end rtl;

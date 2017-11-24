@@ -15,8 +15,6 @@ end priorityEncoder;
 architecture priority_enc_arc of priorityEncoder is
 begin
 
-valid <= din(0) or din(1) or din(2) or din(3) or din(4) or din(5) or din(6) or din(7);
-
     pri_enc : process (din) is
     begin
         if (din(0)='1') then
@@ -42,6 +40,8 @@ valid <= din(0) or din(1) or din(2) or din(3) or din(4) or din(5) or din(6) or d
 
         elsif (din(7)='1') then
             dout <= "111";
+	else
+	    valid <= '0';
         
 	end if;
 	

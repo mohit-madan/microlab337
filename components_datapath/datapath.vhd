@@ -117,13 +117,13 @@ component regfile is
     rf_d1          	: out std_logic_vector(15 downto 0);    --dataout 1 
     rf_d2          	: out std_logic_vector(15 downto 0);    --dataout 2
     rf_d3          	: in  std_logic_vector(15 downto 0);    --datain 3
-    writeEnable      : in  std_logic;
+    writeEnable     : in  std_logic;
     readEnable1		: in  std_logic;
-    readEnable2      : in  std_logic;
-    rf_a1   	      : in  std_logic_vector(2 downto 0);		--address in 1
-    rf_a2	         : in  std_logic_vector(2 downto 0);		--address in 2
-    rf_a3   	      : in  std_logic_vector(2 downto 0);		--address in 3
-    clk,reset        : in  std_logic
+    readEnable2     : in  std_logic;
+    rf_a1   	    : in  std_logic_vector(2 downto 0);		--address in 1
+    rf_a2	        : in  std_logic_vector(2 downto 0);		--address in 2
+    rf_a3   	    : in  std_logic_vector(2 downto 0);		--address in 3
+    clk,reset       : in  std_logic
     );
 end component;
 
@@ -213,13 +213,14 @@ begin
 ---------------------
 
 
+
 --effectively 1 and 2 are changed in the sheet
 
 en_t1 <= not (C(1) and C(2));
 en_t4 <= not (C(6) and C(7));
 
 ----reg file
-wren  <= (not(C(16)) and C(17)) or (C(18) and C(19)); -- write enable pin register file
+wren  <= (not(C(16)) and C(17)) or (C(18) and C(19)); -- write enable pin registhttps://github.com/mohit-madan/microlab337.giter file
 rden1  <= (not C(16) and not C(17)) and (C(18) xor C(19)) ; 
 rden2  <= (C(17) and not C(18)) and (C(16) xor C(19));
 a1_mux(1) <= C(16) and C(17) and not C(18) and not C(19);
@@ -230,7 +231,7 @@ a3_mux(1) <= (not C(16) and C(17) and (C(18) or C(19))) or (C(16) and not C(17) 
 a3_mux(0) <= (C(16) and not C(17) and C(18)) or (not C(16) and C(17) and (not(C(18) xor C(19))));
 
 d3_mux(1) <= C(18) and ((not C(16) and C(17)) or (C(16) and not C(17) and C(19)));
-d3_mux(0) <= (not C(16) and C(17) and (not C(18) or C(19))) or ((C(16) and C(17) and C(18))) or (C(19) and C(18) and C(16) and (not C(17)));
+d3_mux(0) <= (not C(16) and C(17) and not C(18)) or (not C(16) and C(17) and C(18) and C(19)) or (C(16) and not C(17) and C(19));
 
 
 ---memory
@@ -247,18 +248,21 @@ mema(0) <= (not C(10) and C(11) and not C(12)) or (C(10) and not C(11) and C(12)
 alu_enc <= not C(13) and C(14);
 alu_enz <= (not C(13) and C(14)) or (C(13) and (not C(14)) and C(15));
 
-alu1_mux(2) <= C(13) and C(14);
-alu1_mux(1) <= C(15) and (C(13) xor C(14));
+alu1_mux(2) <= C(13) and C(14) and C(15);
+alu1_mux(1) <= (C(15) and (C(13) xor C(14))) or (C(13) and C(14) and not C(15));
 alu1_mux(0) <= (C(13) and not C(14)) or (C(14) and (not C(13) and not C(15)));
 
 alu2_mux(1) <= C(13) and (C(14) or C(15));
 alu2_mux(0) <= C(14);
+
+
 
 ------ opcode for user -----------------
 op_code <= ir_out(15 downto 12);
 IR_3_5 <= not(ir_out(5) and ir_out(4) and ir_out(3)) ;
 IR_7   <= ir_out(7);
 op_type <= ir_out(1 downto 0);
+
 en1_bit <= (not C(14) and (C(13) xor C(15))) or (C(13) and C(14) and not C(15)); -- add1 bit
 
 -------muxes inititalisation --------------
@@ -335,8 +339,6 @@ port map(
 	din 	=> muxout_t2,  
 	dout 	=> t2
 );
-
-
 
 
 d3_of_rf : mux4to1

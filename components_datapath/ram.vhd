@@ -21,7 +21,7 @@ END ram;
 
 ARCHITECTURE rtl OF ram IS
 	TYPE RAM IS ARRAY(0 TO 31) OF std_logic_vector(DATA_WIDTH - 1 DOWNTO 0);
-	SIGNAL ram_block : RAM := (0 => "1000010000000011", others => x"0000");
+	SIGNAL ram_block : RAM := (0 => "0111111011011001", others => x"0000");
 
 BEGIN
 data_out <= ram_block(to_integer(unsigned(address(4 downto 0))));			
