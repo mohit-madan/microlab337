@@ -158,6 +158,14 @@ component alu is
         zero: out std_logic;
    		cmp       : out std_logic);
 end component;
+---------------------------signext8---------------------
+
+component signext8 is
+ port(
+ 	din 	: in STD_LOGIC_VECTOR(7 downto 0);
+ 	dout	: out STD_LOGIC_VECTOR(15 downto 0)
+ 	);
+end component;
 
 -------------sign extender----------------
 component sign_ext is
@@ -170,10 +178,10 @@ component sign_ext is
 end component;
 
 ------------signals----------------------------
-	signal D1,D2,mem_out,alu_out,t1,t2,t3,t4,t5,ir_out, se7_out, se8_out, se10_out, trail_zero_out, decoder_out,pc_out : STD_LOGIC_VECTOR(15 downto 0) := (others => '0');
+	signal D1,D2,mem_out,alu_out,t1,t2,t3,t4,t5,t6,ir_out, se7_out, se8_out, se10_out, trail_zero_out, decoder_out,pc_out : STD_LOGIC_VECTOR(15 downto 0) := (others => '0');
 	signal muxout_mema, muxout_mem_din, muxout_d3,muxout_t1 ,muxout_t2, muxout_t4,muxout_alu_a, muxout_alu_b: STD_LOGIC_VECTOR(15 downto 0) := (others => '0'); 
 	signal pr_enc_out,a3_mux,muxout_a1, muxout_a3 : STD_LOGIC_VECTOR(2 downto 0):= (others => '0');
-	signal en_t1, en_t4, wren, rden1, rden2, memwr, memrd, memd_mux, alu_enc, alu_enz,en1_bit, carry1, zeroflag1 : std_logic:= '0';
+	signal en_t1, en_t4,en_t6, wren, rden1, rden2, memwr, memrd, memd_mux, alu_enc, alu_enz,en1_bit, carry1, zeroflag1 : std_logic:= '0';
 	signal a1_mux, d3_mux, mema, alu2_mux : std_logic_vector(1 downto 0):= (others => '0');
 	signal alu1_mux : std_logic_vector(2 downto 0):= (others => '0');
 
@@ -217,7 +225,8 @@ begin
 --effectively 1 and 2 are changed in the sheet
 
 en_t1 <= not (C(1) and C(2));
-en_t4 <= not (C(6) and C(7));
+en_t4 <= not C(6) ; -- this is changed from not 6 and 7
+en_t6 <= C(16) and C(17);    --lol
 
 ----reg file
 wren  <= (not(C(16)) and C(17)) or (C(18) and C(19)); -- write enable pin registhttps://github.com/mohit-madan/microlab337.giter file
@@ -279,7 +288,7 @@ memdin_mux : mux2to1
 generic map(16)
 port map(
 	d0   => t1,
-	d1   => t4,
+	d1   => t6,
 	sel  => memd_mux,
 	dout => muxout_mem_din
 );
@@ -448,8 +457,7 @@ port map(
 	dout	=> se7_out
 );
 
-sign_ext8: sign_ext
-generic map(8)
+sign_ext8: signext8
 port map(
 	din 	=> ir_out(7 downto 0),
 	dout	=> se8_out
@@ -504,6 +512,15 @@ port map(
 	);
 
 ------------------------------ five temporary registers of 16 bit each ------------------------------
+temp6 : temp_reg
+generic map(16)
+port map( 	
+	reset => reset ,
+	clock 	=> clk,
+	en      => en_t6, 
+	din 	=> D1,  
+	dout 	=> t6
+);
 
 temp3 : temp_reg   
 generic map(16)
