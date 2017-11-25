@@ -12,6 +12,8 @@ entity FSM_new is
 		reset	 					: in	std_logic;
 		carry,zero,valid,cmp	: in 	std_logic;
 		IR_3_5					: in  std_logic;
+		IR_6_8				   : in STD_LOGIC;--these two have been added
+		IR_9_11					: in STD_LOGIC;
 		IR_7						: in  std_logic;
 		control_store 			: out std_logic_vector (19 downto 0)
 	);
@@ -74,9 +76,12 @@ begin
 					
 				when s11 =>
 					control_store <= "00000001100011001000";	
-					
+				
 				when s12 =>
-					control_store <= "00010000000011000110";	
+					control_store <= "10110000000011000110";
+
+			--	when s12 =>
+			--		control_store <= "00010000000011000110";	
 					
 				when s13 =>
 					control_store <= "10100000000011011110";	
@@ -101,8 +106,8 @@ begin
 					
 				when s20 =>
 					control_store <= "00110000000001000010";	
-					
-			end case;
+				
+				end case;
 			
 		
 	end process;
@@ -138,7 +143,7 @@ begin
 				
 				when s3=>
 					if (opcode = "0100") then
-						next_state <= s12;
+						next_state <= s12	;
 					elsif opcode = "1100" then
 						if (cmp = '0') then
 							next_state <= s5;
@@ -150,8 +155,10 @@ begin
 					end if;	
 				
 				when s4 =>
-					if(IR_3_5 = '0' ) then
+					if(IR_3_5 = '0') then--and (opcode /= "0001") then
 						next_state <= s1;
+					--elsif (IR_6_8 = '0') and (opcode = "0001") then
+					--	next_state <= s1;
 					else
 						next_state <= s5;
 				   end if;
@@ -164,7 +171,7 @@ begin
 				
 				when s7 =>
 					if opcode = "0001" then
-						next_state <= s4;
+						next_state <= s12;
 					elsif opcode = "0100" then	
 						next_state <= s11;
 					elsif opcode = "0101" then
@@ -185,7 +192,7 @@ begin
 					end if;
 					
 				when s9 =>
-					if (IR_3_5 = '0') then
+					if (IR_9_11 = '0') then
 						next_state <= s1 ;
 					else
 						next_state <= s5;
@@ -199,13 +206,20 @@ begin
 					
 				when s11 =>
 					next_state <= s3;
-					
+				
 				when s12 =>
-					if (IR_3_5 = '0') then
-						next_state <= s1 ;
-					else
-						next_state <= s5;
+					if(IR_9_11 = '0') then
+						next_state <= s1;
+					else next_state <=s5;	
+					
 					end if;
+			
+--				when s12 =>
+--					if (IR_6_8 = '0') then
+--						next_state <= s1 ;
+--					else
+--						next_state <= s5;
+--					end if;
 				when s13 =>
 					next_state <= s6;
 				
@@ -228,7 +242,7 @@ begin
 					next_state <= s1;
 				when s20 =>
 					next_state <= s15;
-									
+				
 			end case;
 			
 	end process;

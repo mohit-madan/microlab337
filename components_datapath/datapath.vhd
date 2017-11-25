@@ -10,6 +10,8 @@ Port(
 	carry,zeroflag  : out STD_LOGIC;
 	op_code  		 : out STD_LOGIC_VECTOR(3 downto 0);
 	IR_3_5 			 : out STD_LOGIC;
+	IR_6_8			 : out STD_LOGIC;--these two have been added
+	IR_9_11			 : out STD_LOGIC;
 	IR_7      		 : out STD_LOGIC;
 	op_type			 : out std_logic_vector(1 downto 0) ;
 	cmp             : out std_logic 
@@ -229,14 +231,14 @@ en_t4 <= not C(6) ; -- this is changed from not 6 and 7
 en_t6 <= C(16) and C(17);    --lol
 
 ----reg file
-wren  <= (not(C(16)) and C(17)) or (C(18) and C(19)); -- write enable pin registhttps://github.com/mohit-madan/microlab337.giter file
+wren  <= (not(C(16)) and C(17)) or (C(18) and C(19)) or (C(16) and not C(17) and C(18) and not C(19)) or (C(16) and C(17) and not C(18) and C(19)) ; -- changed
 rden1  <= (not C(16) and not C(17)) and (C(18) xor C(19)) ; 
 rden2  <= (C(17) and not C(18)) and (C(16) xor C(19));
 a1_mux(1) <= C(16) and C(17) and not C(18) and not C(19);
 a1_mux(0) <= not C(16) and not C(17) and C(18) and not C(19);
 
 a3_mux(2) <= C(16) and not C(17) and not C(18) and not C(19); 
-a3_mux(1) <= (not C(16) and C(17) and (C(18) or C(19))) or (C(16) and not C(17) and not C(18) and C(19));
+a3_mux(1) <= (not C(16) and C(17) and (C(18) or C(19))) or (C(16) and not C(17) and not C(18) and C(19)) or (C(16) and C(17) and not C(18) and C(19)) ;
 a3_mux(0) <= (C(16) and not C(17) and C(18)) or (not C(16) and C(17) and (not(C(18) xor C(19))));
 
 d3_mux(1) <= C(18) and ((not C(16) and C(17)) or (C(16) and not C(17) and C(19)));
@@ -268,8 +270,11 @@ alu2_mux(0) <= C(14);
 
 ------ opcode for user -----------------
 op_code <= ir_out(15 downto 12);
-IR_3_5 <= not(ir_out(5) and ir_out(4) and ir_out(3)) ;
-IR_7   <= ir_out(7);
+IR_3_5  <= not(ir_out(5) and ir_out(4) and ir_out(3));
+IR_6_8  <= not(ir_out(6) and ir_out(7) and ir_out(8)); -- these two have been added now
+IR_9_11 <= not(ir_out(9) and ir_out(10) and ir_out(11)) ;
+
+IR_7    <= ir_out(7);
 op_type <= ir_out(1 downto 0);
 
 en1_bit <= (not C(14) and (C(13) xor C(15))) or (C(13) and C(14) and not C(15)); -- add1 bit

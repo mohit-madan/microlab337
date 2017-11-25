@@ -20,6 +20,8 @@ architecture Struct of TopLevel is
 			reset	 					: in  std_logic;
 			carry,zero,valid,cmp	: in  std_logic;
 			IR_3_5					: in  std_logic;
+			IR_6_8				   : in STD_LOGIC;--these two have been added
+			IR_9_11					: in STD_LOGIC;
 			IR_7						: in  std_logic;
 			control_store 			: out std_logic_vector (19 downto 0));
 	end component;
@@ -32,6 +34,8 @@ Port(
 	carry,zeroflag  : out STD_LOGIC;
 	op_code  		 : out STD_LOGIC_VECTOR(3 downto 0);
 	IR_3_5 			 : out STD_LOGIC;
+	IR_6_8			 : out STD_LOGIC;--these two have been added
+	IR_9_11			 : out STD_LOGIC;
 	IR_7      		 : out STD_LOGIC;
 	op_type			 : out std_logic_vector(1 downto 0) ;
 	cmp             : out std_logic 
@@ -42,6 +46,8 @@ end component;
 	signal op_type 					: std_logic_vector(1 downto 0);
 	signal carry,zero,valid,cmp 	: std_logic;
 	signal IR_3_5 						: STD_LOGIC;
+	signal IR_6_8 						: STD_LOGIC;
+	signal IR_9_11 					: STD_LOGIC;
 	signal IR_7 						: STD_LOGIC;
 	signal control_store				: std_logic_vector (19 downto 0);
 
@@ -59,6 +65,8 @@ ControlPath:FSM_new
     valid 				=> valid,
 	 cmp   				=> cmp,
     IR_3_5 				=> IR_3_5,
+	 IR_6_8			 	=> IR_6_8,
+	 IR_9_11			 	=> IR_9_11,
     IR_7 				=> IR_7,
     control_store 	=> control_store
 	 );
@@ -73,6 +81,8 @@ Data: datapath
     carry 		=> carry,
     zeroflag	=> zero,
     IR_3_5 		=> IR_3_5,
+	 IR_6_8	 	=> IR_6_8,
+	 IR_9_11	 	=> IR_9_11,
     IR_7 		=> IR_7,
     op_code 	=> opcode,
 	 op_type 	=> op_type,

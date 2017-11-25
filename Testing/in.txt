@@ -6,7 +6,7 @@ ndu r4,r7,r1
 ndc r5,r2,r3
 ndz r1,r5,r3
 lhi r7,47
-lw r1,r2,44
+lw r1,r2,5
 sw r4,r5,51
 lm r6,0b10110110
 sm r7,0b11011001
