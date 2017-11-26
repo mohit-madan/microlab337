@@ -105,13 +105,14 @@ begin
 					control_store <= "01010000000011000110";
 					
 				when s20 =>
-					control_store <= "00110000000001000010";	
+					control_store <= "00110000000001000010";
+				when others =>report "unreachable" severity failure;
 				
 				end case;
 			
 		
 	end process;
-NEXT_STATE_DECODE : process (state, opcode,op_type,carry,zero,valid,cmp)
+	NEXT_STATE_DECODE : process (state, opcode,op_type,carry,zero,valid,cmp, IR_3_5, IR_7, IR_9_11)
 begin
 	case state is
 				--when s0 =>
@@ -152,6 +153,7 @@ begin
 						end if;	
 					else
 						next_state <= s4;
+						
 					end if;	
 				
 				when s4 =>
@@ -176,6 +178,8 @@ begin
 						next_state <= s11;
 					elsif opcode = "0101" then
 						next_state <= s14;
+					else 
+						next_state <= s1;
 					end if;
 					
 				when s8 =>
@@ -184,6 +188,8 @@ begin
 							next_state <= s1;
 						elsif (valid ='1') then
 							next_state <= s10;
+						else
+							next_state <= s1;
 						end if;	
 					elsif (opcode = "0111" and valid = '1') then
 							next_state <= s20 ;
@@ -202,6 +208,7 @@ begin
 						next_state <= s8;
 					elsif opcode = "0111" then
 						next_state <= s15;
+					else next_state <= s1;	
 					end if;
 					
 				when s11 =>
@@ -242,7 +249,8 @@ begin
 					next_state <= s1;
 				when s20 =>
 					next_state <= s15;
-				
+				when others => 
+					next_state <= s1;
 			end case;
 			
 	end process;

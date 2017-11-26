@@ -16,11 +16,12 @@ architecture rtl of mux2to1 is
 begin
 process (d0,d1,sel) is
 begin
-  if (sel ='0') then
-      dout <= d0;
-  else
-      dout <= d1;
-  end if;
+	case sel is
+		when '0' =>
+			dout <= d0;
+		when '1' =>
+			dout <= d1;
+		end case;
  
 end process;
 

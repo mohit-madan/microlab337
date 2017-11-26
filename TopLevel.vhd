@@ -5,7 +5,8 @@ use ieee.std_logic_1164.all;
 
 entity TopLevel is
   port (
-    clk, reset: in std_logic
+    clk, reset : in std_logic;
+	 clk_50		: in std_logic
    );
 end entity TopLevel;
 

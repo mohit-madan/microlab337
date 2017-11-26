@@ -55,22 +55,36 @@ process(op_sel, reg_a, reg_b, two_complement1, two_complement2, add1bit)
 
 -------------
 
+
+
 if(add1bit = '1' or op_sel = "0000" or op_sel ="0001" or op_sel = "0100" or op_sel = "0101" or op_sel = "1000") then--add
 	alu_out_read <= std_logic_vector(unsigned(reg_a) + unsigned(reg_b));
    two_complement_add <= std_logic_vector(unsigned(two_complement1) + unsigned(two_complement2));
+	cmp <= '0';
 
 elsif(op_sel = "0010") then -- nand
 	alu_out_read <= reg_a nand reg_b;
    two_complement_add <= reg_a nand reg_b;
-
+	cmp <= '0';
+	
 elsif(op_sel = "0110" or op_sel = "0111" ) then -- xor
 	alu_out_read <= reg_a xor reg_b;
 	two_complement_add <= reg_a xor reg_b; 
-elsif(op_sel = "1100") then	
+	cmp <= '0';
+	
+elsif(op_sel = "1100") then
+	
+	alu_out_read <= "0000000000000000";
+	two_complement_add <= "0000000000000000";
+
 	if(reg_a = reg_b) then
 		cmp <= '1';
 	else cmp <= '0';
 	end if;
+else 
+	alu_out_read <= "0000000000000000";
+	two_complement_add <= "0000000000000000";
+	cmp <= '0';
 end if;
 	  
 end process; 

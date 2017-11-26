@@ -42,6 +42,8 @@ valid <= din(0) or din(1) or din(2) or din(3) or din(4) or din(5) or din(6) or d
 
         elsif (din(7)='1') then
             dout <= "111";
+		  else 	
+				dout <= "000";
         
 	end if;
 	
